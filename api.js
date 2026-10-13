@@ -189,7 +189,8 @@ export async function syncRollingCatalog() {
       .order("show_id", { ascending: true });
     if (error) return false;
 
-    if (!data || data.length === 0) {
+    const localCount = PROVIDERS.reduce((n, p) => n + p.shows.length, 0);
+    if (!data || data.length < localCount) {
       const seedRows = PROVIDERS.flatMap(p =>
         p.shows.map(s => ({
           provider_id: p.id,
@@ -204,11 +205,14 @@ export async function syncRollingCatalog() {
           colors: s.colors,
           tagline: s.tagline || "",
           synopsis: s.synopsis || "",
+          poster_url: s.posterUrl || null,
           is_active: true,
         }))
       );
-      await sb.from("catalog_shows").upsert(seedRows, { onConflict: "provider_id,show_id" });
-      return false;
+      for (let i = 0; i < seedRows.length; i += 250) {
+        await sb.from("catalog_shows").upsert(seedRows.slice(i, i + 250), { onConflict: "provider_id,show_id" });
+      }
+      if (!data || data.length === 0) return false;
     }
 
     return applyRemoteCatalog(data);

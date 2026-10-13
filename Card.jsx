@@ -97,7 +97,7 @@ export function PosterFace({ show, compact = false, badge = null, prominent = fa
   const genres = compact ? (show.genres || []).slice(0, 2) : (show.genres || []);
   const pill = { background: "rgba(8,6,16,.72)", border: "1px solid rgba(255,255,255,.16)", backdropFilter: "blur(8px)" };
   const pillSize = compact ? "px-2 py-0.5 text-[10px]" : "px-3 py-1 text-xs";
-  const posterUrl = useShowPoster(show.title);
+  const fetchedPoster = useShowPoster(show.posterUrl ? "" : show.title); const posterUrl = show.posterUrl || fetchedPoster;
   const [imgLoaded, setImgLoaded] = useState(false);
 
   return (

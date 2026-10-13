@@ -371,7 +371,7 @@ export default function App() {
         <div className="ambient" />
 
         <AnimatePresence>
-          {booting && <SplashScreen key="splash" onDone={() => setBooting(false)} />}
+          {booting && }
         </AnimatePresence>
 
         {!booting && (

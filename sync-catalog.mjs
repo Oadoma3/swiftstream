@@ -257,7 +257,7 @@ export const ACTIONS = {
 
 export const ALL_SHOWS = PROVIDERS.flatMap(p => p.shows.map(s => ({ ...s, network: p.name, providerId: p.id })));
 
-export const GUEST_LIMIT = 10;
+export const GUEST_LIMIT = 20;
 
 const CATALOG = new Map(ALL_SHOWS.map(s => [\`\${s.providerId}:\${s.id}\`, s]));
 export const findShow = (providerId, showId) => CATALOG.get(\`\${providerId}:\${showId}\`) || null;

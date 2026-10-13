@@ -1,4 +1,4 @@
-// sync-catalog.mjs - Accurate Network-to-Streamer Harvester (maps 60+ real networks & genres to their true streaming homes)
+// sync-catalog.mjs - Uncapped Full-Database Harvester: Pulls every available show across all 18 platforms
 import fs from "fs";
 
 const PALETTES = [
@@ -12,26 +12,25 @@ const PALETTES = [
 
 const PROVIDERS_META = [
   { id: "netflix",     name: "Netflix",      brand: "#E50914", accent: "#ff4d57", match: ["netflix"] },
-  { id: "hulu",        name: "Hulu",         brand: "#1CE783", accent: "#1ce783", match: ["hulu", "fx", "fxx", "abc", "fox", "freeform", "abc family"] },
-  { id: "prime",       name: "Prime Video",  brand: "#00A8E1", accent: "#2bb7ff", match: ["amazon", "prime video", "freevee", "imdb tv", "mgm"] },
-  { id: "peacock",     name: "Peacock",      brand: "#0d0d0d", accent: "#ffd23f", match: ["peacock", "nbc", "usa network", "syfy", "bravo", "e!", "oxygen", "universal", "msnbc", "cnbc"] },
-  { id: "paramount",   name: "Paramount+",   brand: "#0064FF", accent: "#4d8dff", match: ["paramount", "cbs", "showtime", "comedy central", "mtv", "vh1", "nickelodeon", "nick", "bet", "spike", "tv land", "smithsonian"] },
-  { id: "disney",      name: "Disney+",      brand: "#113CCF", accent: "#7b8cff", match: ["disney", "national geographic", "nat geo", "jetix", "abc kids"] },
-  { id: "max",         name: "Max",          brand: "#002BE7", accent: "#8f5bff", match: ["hbo", "max", "cinemax", "adult swim", "cartoon network", "tnt", "tbs", "trutv", "the cw", "cw", "wb", "dc universe"] },
-  { id: "apple",       name: "Apple TV+",    brand: "#000000", accent: "#e5e5ea", match: ["apple tv"] },
-  { id: "tubi",        name: "Tubi",         brand: "#FA382F", accent: "#ff6a5f", match: ["tubi", "upn", "wb", "syndication", "ion", "myx", "crackle"] },
-  { id: "crunchyroll", name: "Crunchyroll",  brand: "#F47521", accent: "#ff8a3d", match: ["crunchyroll", "funimation", "tv tokyo", "tokyo mx", "mbs", "fuji tv", "tv asahi", "nhk", "bs11", "at-x", "tbs"] },
-  { id: "starz",       name: "Starz",        brand: "#000000", accent: "#e5e5ea", match: ["starz", "encore", "epix", "lionsgate"] },
-  { id: "amc",         name: "AMC+",         brand: "#FF6600", accent: "#ff8833", match: ["amc", "bbc america", "ifc", "sundance", "we tv", "allblk"] },
-  { id: "discovery",   name: "Discovery+",   brand: "#00FFFF", accent: "#33ffff", match: ["discovery", "tlc", "hgtv", "food network", "investigation discovery", "animal planet", "history", "a&e", "lifetime", "travel channel", "science", "own", "motor trend", "magnolia"] },
-  { id: "pluto",       name: "Pluto TV",     brand: "#111111", accent: "#00d2ff", match: ["pluto", "cbsn", "tv land", "cmt", "logo", "game show network", "gsn"] },
-  { id: "roku",        name: "Roku Channel", brand: "#662d91", accent: "#9b51e0", match: ["roku", "quibi", "redbox", "pop", "ovation", "reelz", "axa"] },
-  { id: "shudder",     name: "Shudder",      brand: "#880000", accent: "#ff3333", match: ["shudder", "chiller", "fearnet", "screambox"] },
-  { id: "espn",        name: "ESPN+",        brand: "#CC0000", accent: "#ff3333", match: ["espn", "nfl network", "nba tv", "mlb network", "fox sports", "fs1", "nbcsn", "cbs sports", "dazn"] },
-  { id: "britbox",     name: "BritBox",      brand: "#1b2a4a", accent: "#4a7fc1", match: ["britbox", "bbc", "itv", "channel 4", "channel 5", "sky", "e4", "dave", "acorn", "uktv", "alibi", "cbebies", "cbbc"] },
+  { id: "hulu",        name: "Hulu",         brand: "#1CE783", accent: "#1ce783", match: ["hulu", "fx", "fxx", "abc", "fox", "freeform", "abc family", "20th television", "searchlight"] },
+  { id: "prime",       name: "Prime Video",  brand: "#00A8E1", accent: "#2bb7ff", match: ["amazon", "prime video", "freevee", "imdb tv", "mgm", "epix"] },
+  { id: "peacock",     name: "Peacock",      brand: "#0d0d0d", accent: "#ffd23f", match: ["peacock", "nbc", "usa network", "syfy", "bravo", "e!", "oxygen", "universal", "msnbc", "cnbc", "telemundo", "esquire", "chiller"] },
+  { id: "paramount",   name: "Paramount+",   brand: "#0064FF", accent: "#4d8dff", match: ["paramount", "cbs", "showtime", "comedy central", "mtv", "vh1", "nickelodeon", "nick", "bet", "spike", "tv land", "smithsonian", "pop", "cmt", "logo"] },
+  { id: "disney",      name: "Disney+",      brand: "#113CCF", accent: "#7b8cff", match: ["disney", "national geographic", "nat geo", "jetix", "toondisney", "marvel", "lucasfilm"] },
+  { id: "max",         name: "Max",          brand: "#002BE7", accent: "#8f5bff", match: ["hbo", "max", "cinemax", "adult swim", "cartoon network", "tnt", "tbs", "trutv", "the cw", "cw", "the wb", "dc universe", "boomerang", "rooster teeth"] },
+  { id: "apple",       name: "Apple TV+",    brand: "#000000", accent: "#e5e5ea", match: ["apple tv", "apple music"] },
+  { id: "tubi",        name: "Tubi",         brand: "#FA382F", accent: "#ff6a5f", match: ["tubi", "upn", "syndication", "ion", "crackle", "shout! factory", "filmrise", "cwtv"] },
+  { id: "crunchyroll", name: "Crunchyroll",  brand: "#F47521", accent: "#ff8a3d", match: ["crunchyroll", "funimation", "tv tokyo", "tokyo mx", "mbs", "fuji tv", "tv asahi", "nhk", "bs11", "at-x", "wowow", "animax", "nippon tv", "cbc", "bilbili"] },
+  { id: "starz",       name: "Starz",        brand: "#000000", accent: "#e5e5ea", match: ["starz", "encore", "lionsgate", "black family channel"] },
+  { id: "amc",         name: "AMC+",         brand: "#FF6600", accent: "#ff8833", match: ["amc", "bbc america", "ifc", "sundance", "we tv", "allblk", "acorn tv", "rlje"] },
+  { id: "discovery",   name: "Discovery+",   brand: "#00FFFF", accent: "#33ffff", match: ["discovery", "tlc", "hgtv", "food network", "investigation discovery", "animal planet", "history", "a&e", "lifetime", "travel channel", "science", "own", "motor trend", "magnolia", "destination america", "ahc", "cooking channel", "diy network", "fyi", "viceland"] },
+  { id: "pluto",       name: "Pluto TV",     brand: "#111111", accent: "#00d2ff", match: ["pluto", "cbsn", "game show network", "gsn", "buzzr", "bounce tv", "grit", "metv", "antennatv"] },
+  { id: "roku",        name: "Roku Channel", brand: "#662d91", accent: "#9b51e0", match: ["roku", "quibi", "redbox", "ovation", "reelz", "axs tv", "fuse", "el rey", "fullscreen", "youtube premium", "youtube red", "facebook watch", "go90"] },
+  { id: "shudder",     name: "Shudder",      brand: "#880000", accent: "#ff3333", match: ["shudder", "fearnet", "screambox", "crypt tv", "alter"] },
+  { id: "espn",        name: "ESPN+",        brand: "#CC0000", accent: "#ff3333", match: ["espn", "nfl network", "nba tv", "mlb network", "nhl network", "fox sports", "fs1", "fs2", "nbcsn", "cbs sports", "dazn", "sec network", "big ten network", "acc network", "golf channel", "tennis channel", "wwe network", "ufc"] },
+  { id: "britbox",     name: "BritBox",      brand: "#1b2a4a", accent: "#4a7fc1", match: ["britbox", "bbc", "itv", "channel 4", "channel 5", "sky", "e4", "more4", "dave", "uktv", "alibi", "gold", "drama", "cbeebies", "cbbc", "s4c", "stv", "rte"] },
 ];
 
-// Keep flagship hits at the very front of each deck so users swipe the biggest titles first
 const CURATED = {
   netflix: ["Stranger Things", "The Crown", "Squid Game", "Wednesday", "Bridgerton", "Breaking Bad", "Ozark", "Black Mirror", "Arcane", "The Night Agent", "Beef", "Peaky Blinders", "Better Call Saul", "Dark", "Narcos", "Mindhunter", "The Queen's Gambit", "Cobra Kai", "The Witcher", "BoJack Horseman", "Cyberpunk: Edgerunners", "The Gentlemen", "Money Heist"],
   hulu: ["The Bear", "Only Murders in the Building", "The Handmaid's Tale", "Shogun", "Reservation Dogs", "Snowfall", "Atlanta", "Fargo", "Abbott Elementary", "It's Always Sunny in Philadelphia", "Prison Break", "Futurama", "Sons of Anarchy", "The Shield", "Justified", "What We Do in the Shadows", "Dopesick", "Normal People", "Lost", "Modern Family", "Archer", "Bob's Burgers", "The Americans"],
@@ -47,11 +46,13 @@ const CURATED = {
   amc: ["The Walking Dead", "Mad Men", "Interview with the Vampire", "Dark Winds", "Halt and Catch Fire", "Killing Eve", "The Walking Dead: Daryl Dixon", "The Walking Dead: Dead City", "The Terror", "Preacher", "Into the Badlands", "Hell on Wheels", "Kevin Can F**k Himself", "A Discovery of Witches", "Gangs of London", "TURN: Washington's Spies", "Orphan Black"],
   discovery: ["Deadliest Catch", "MythBusters", "Gold Rush", "90 Day Fiance", "Diners, Drive-Ins and Dives", "Ghost Adventures", "Naked and Afraid", "Fixer Upper", "Chopped", "Pawn Stars", "Alone", "The First 48", "River Monsters", "BattleBots", "House Hunters", "Dirty Jobs", "How It's Made", "Shark Week"],
   pluto: ["CSI: Crime Scene Investigation", "NCIS", "Star Trek: The Next Generation", "Baywatch", "The Price Is Right", "Survivor", "Top Gear", "Unsolved Mysteries", "Forensic Files", "The Love Boat", "Three's Company", "Perry Mason", "Gunsmoke", "Rawhide", "Matlock", "MacGyver"],
-  roku: ["Weird: The Al Yankovic Story", "Die Hart", "The Great American Baking Show", "Most Dangerous Game", "Reno 911!", "The Spiderwick Chronicles", "Cypher", "Flipped", "Dummy", "zoey's Extraordinary Playlist", " sanctuary", "Warehouse 13", "Leverage: Redemption", "Heartland"],
-  shudder: ["Creepshow", "Channel Zero", "Slasher", "The Boulet Brothers' Dragula", "Eli Roth's History of Horror", "The Last Drive-In with Joe Bob Briggs", "Cursed Films", "A Discovery of Witches", "Hannibal", "The Exorcist", "Penny Dreadful", "The Strain", "Salem", "Bates Motel", "From"],
+  roku: ["Weird: The Al Yankovic Story", "Die Hart", "The Great American Baking Show", "Most Dangerous Game", "Reno 911!", "The Spiderwick Chronicles", "Cypher", "Flipped", "Dummy", "Zoey's Extraordinary Playlist", "Sanctuary", "Warehouse 13", "Leverage: Redemption", "Heartland"],
+  shudder: ["Creepshow", "Channel Zero", "Slasher", "The Boulet Brothers' Dragula", "Eli Roth's History of Horror", "The Last Drive-In with Joe Bob Briggs", "Cursed Films", "Hannibal", "The Exorcist", "Penny Dreadful", "The Strain", "Salem", "Bates Motel", "From"],
   espn: ["The Last Dance", "30 for 30", "Hard Knocks", "Formula 1: Drive to Survive", "Welcome to Wrexham", "Quarterback", "Receiver", "Full Swing", "Man in the Arena: Tom Brady", "The Captain", "O.J.: Made in America", "Peyton's Places", "Detail", "Dana White's Contender Series", "The Ultimate Fighter", "College GameDay"],
-  britbox: ["Sherlock", "Doctor Who", "Line of Duty", "Happy Valley", "Luther", "Broadchurch", "Peaky Blinders", "Downton Abbey", "Blackadder", "Mr. Bean", "Fawlty Towers", "Poirot", "Marple", "Vera", "Shetland", "Endeavour", "Inspector Morse", "Father Brown", "Death in Paradise", "avin & Stacey", "The IT Crowd", "The Inbetweeners"],
+  britbox: ["Sherlock", "Doctor Who", "Line of Duty", "Happy Valley", "Luther", "Broadchurch", "Peaky Blinders", "Downton Abbey", "Blackadder", "Mr. Bean", "Fawlty Towers", "Poirot", "Marple", "Vera", "Shetland", "Endeavour", "Inspector Morse", "Father Brown", "Death in Paradise", "Gavin & Stacey", "The IT Crowd", "The Inbetweeners"],
 };
+
+const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
 function stripHtml(html) {
   return (html || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
@@ -63,19 +64,33 @@ function makeTagline(synopsis, genres, year, netName) {
   return `${year} ${genres.slice(0, 2).join(" & ") || "Series"} streaming on ${netName}.`;
 }
 
-async function fetchPage(page) {
+async function fetchPageWithRetry(page, attempt = 1) {
   try {
     const res = await fetch(`https://api.tvmaze.com/shows?page=${page}`);
-    if (!res.ok) return null;
-    return await res.json();
+    if (res.status === 404) return { done: true, data: [] };
+    if (res.status === 429) {
+      await sleep(1800 * attempt);
+      return fetchPageWithRetry(page, attempt + 1);
+    }
+    if (!res.ok) return { done: false, data: [] };
+    const data = await res.json();
+    return { done: false, data: Array.isArray(data) ? data : [] };
   } catch {
-    return null;
+    if (attempt <= 3) {
+      await sleep(1000 * attempt);
+      return fetchPageWithRetry(page, attempt + 1);
+    }
+    return { done: false, data: [] };
   }
 }
 
 async function fetchSingle(title) {
   try {
     const res = await fetch(`https://api.tvmaze.com/singlesearch/shows?q=${encodeURIComponent(title)}`);
+    if (res.status === 429) {
+      await sleep(1500);
+      return fetchSingle(title);
+    }
     if (!res.ok) return null;
     return await res.json();
   } catch {
@@ -83,16 +98,37 @@ async function fetchSingle(title) {
   }
 }
 
-console.log("Downloading TVMaze master catalog (pages 0..150)...");
-const allRaw = [];
-const pages = Array.from({ length: 151 }, (_, i) => i);
-for (let i = 0; i < pages.length; i += 12) {
-  const batch = await Promise.all(pages.slice(i, i + 12).map(fetchPage));
-  batch.forEach(arr => { if (Array.isArray(arr)) allRaw.push(...arr); });
-}
-console.log(`Downloaded ${allRaw.length} raw shows. Sorting by popularity and mapping to true networks...`);
+const CACHE_FILE = "./.tvmaze-cache.json";
+let allRaw = [];
 
-// Sort all raw shows by popularity/weight + rating so the most famous shows always appear first!
+if (fs.existsSync(CACHE_FILE)) {
+  console.log("Loading cached TVMaze full database from .tvmaze-cache.json...");
+  allRaw = JSON.parse(fs.readFileSync(CACHE_FILE, "utf8"));
+} else {
+  console.log("Crawling EVERY page of TVMaze until HTTP 404 (with 429 rate-limit protection)...");
+  let page = 0;
+  let reachedEnd = false;
+  const BATCH = 10;
+
+  while (!reachedEnd && page <= 400) {
+    const pagesToFetch = Array.from({ length: BATCH }, (_, i) => page + i);
+    const results = await Promise.all(pagesToFetch.map(p => fetchPageWithRetry(p)));
+    for (const r of results) {
+      if (r.done) reachedEnd = true;
+      if (r.data && r.data.length) allRaw.push(...r.data);
+    }
+    if (page % 40 === 0) {
+      console.log(`  ...scanned up to page ${page + BATCH} (${allRaw.length} total raw shows downloaded)`);
+    }
+    page += BATCH;
+    await sleep(350);
+  }
+  try { fs.writeFileSync(CACHE_FILE, JSON.stringify(allRaw), "utf8"); } catch { /* ignore */ }
+}
+
+console.log(`Total raw TVMaze catalog loaded: ${allRaw.length} shows. Sorting & matching every show (NO CAPS)...`);
+
+// Sort by popularity weight + rating so the biggest shows on every service come first
 allRaw.sort((a, b) => ((b.weight || 0) + (b.rating?.average || 0) * 10) - ((a.weight || 0) + (a.rating?.average || 0) * 10));
 
 const byTitle = new Map();
@@ -101,14 +137,14 @@ allRaw.forEach(s => { if (s && s.name) byTitle.set(s.name.toLowerCase(), s); });
 const buckets = Object.fromEntries(PROVIDERS_META.map(p => [p.id, []]));
 const seenTitlesPerProv = Object.fromEntries(PROVIDERS_META.map(p => [p.id, new Set()]));
 
-function addShowToProv(prov, raw, customTitle = null) {
+function addShowToProv(prov, raw, customTitle = null, allMatchedNames = null) {
   if (!raw || !raw.summary || !raw.image || (!raw.image.original && !raw.image.medium)) return false;
   const displayTitle = customTitle || raw.name;
   const lower = displayTitle.toLowerCase();
   if (seenTitlesPerProv[prov.id].has(lower)) return false;
 
   const syn = stripHtml(raw.summary);
-  if (syn.length < 30) return false;
+  if (syn.length < 25) return false;
 
   const nextId = buckets[prov.id].length + 1;
   const genres = (raw.genres && raw.genres.length ? [...raw.genres] : ["Drama"]).slice(0, 3);
@@ -117,11 +153,12 @@ function addShowToProv(prov, raw, customTitle = null) {
   if (prov.id === "shudder" && !genres.includes("Horror")) genres.unshift("Horror");
 
   const year = raw.premiered ? Number(raw.premiered.slice(0, 4)) : 2021;
-  const score = raw.rating?.average ? Math.min(99, Math.max(70, Math.round(raw.rating.average * 10 + 6))) : 84;
-  const poster = (raw.image.original || raw.image.medium || "").replace(/^http:/, "https:");
-  const seasons = Math.max(1, Math.min(15, Math.round((raw.weight || 70) / 24)));
+  const score = raw.rating?.average ? Math.min(99, Math.max(68, Math.round(raw.rating.average * 10 + 6))) : 82;
+  const poster = (raw.image.medium || raw.image.original || "").replace(/^http:/, "https:");
+  const seasons = Math.max(1, Math.min(20, Math.round((raw.weight || 65) / 24)));
   const episodes = Math.max(6, seasons * 10);
   const colors = PALETTES[(nextId + prov.id.length) % PALETTES.length];
+  const platforms = allMatchedNames && allMatchedNames.length ? allMatchedNames : [prov.name];
 
   buckets[prov.id].push({
     id: nextId,
@@ -131,11 +168,10 @@ function addShowToProv(prov, raw, customTitle = null) {
     seasons,
     episodes,
     genres: genres.slice(0, 3),
-    genre: genres.slice(0, 3).join(" \u2022 "),
-    platforms: [prov.name],
+    platforms,
     colors,
     tagline: makeTagline(syn, genres, year, prov.name),
-    synopsis: syn.slice(0, 280),
+    synopsis: syn.slice(0, 240),
     posterUrl: poster,
   });
   seenTitlesPerProv[prov.id].add(lower);
@@ -143,7 +179,7 @@ function addShowToProv(prov, raw, customTitle = null) {
   return true;
 }
 
-// 1. Seed curated flagship shows at the top of each provider deck
+// 1. Seed curated flagship shows in slots 1..N so existing user progress stays intact
 for (const prov of PROVIDERS_META) {
   const list = CURATED[prov.id] || [];
   for (const t of list) {
@@ -153,72 +189,85 @@ for (const prov of PROVIDERS_META) {
   }
 }
 
-const MAX_PER_PROV = 500;
-
-// 2. Strictly match shows by real network/webChannel name and true genre/country
+// 2. Assign EVERY matching show across all 18 platforms with ZERO artificial caps
 for (const raw of allRaw) {
-  if (!raw || !raw.name || !raw.summary || !raw.image) continue;
+  if (!raw || !raw.name || !raw.summary || !raw.image || (!raw.image.medium && !raw.image.original)) continue;
+
   const wcName = (raw.webChannel?.name || "").toLowerCase();
   const netName = (raw.network?.name || "").toLowerCase();
   const country = raw.network?.country?.code || raw.webChannel?.country?.code || "";
   const genres = raw.genres || [];
-  const isAnime = raw.type === "Animation" && (raw.language === "Japanese" || genres.includes("Anime"));
+  const isAnime = raw.type === "Animation" && (raw.language === "Japanese" || genres.includes("Anime") || country === "JP");
   const isSports = raw.type === "Sports" || genres.includes("Sports");
   const isHorror = genres.includes("Horror");
+  const year = raw.premiered ? Number(raw.premiered.slice(0, 4)) : 2021;
 
-  let target = null;
+  const targets = new Set();
 
-  // Exact webChannel / network match first
+  // Direct network / streaming channel match (can match multiple if a network maps to multiple)
   for (const p of PROVIDERS_META) {
-    if (buckets[p.id].length >= MAX_PER_PROV) continue;
     if (p.match.some(m => wcName === m || netName === m || wcName.includes(m) || netName.includes(m))) {
-      target = p;
-      break;
+      targets.add(p);
     }
   }
 
-  // Category / Country true matches
-  if (!target) {
-    if (isAnime && buckets.crunchyroll.length < MAX_PER_PROV) {
-      target = PROVIDERS_META.find(p => p.id === "crunchyroll");
-    } else if (isSports && buckets.espn.length < MAX_PER_PROV) {
-      target = PROVIDERS_META.find(p => p.id === "espn");
-    } else if (isHorror && buckets.shudder.length < MAX_PER_PROV) {
-      target = PROVIDERS_META.find(p => p.id === "shudder");
-    } else if (country === "GB" && buckets.britbox.length < MAX_PER_PROV) {
-      target = PROVIDERS_META.find(p => p.id === "britbox");
-    } else if ((raw.type === "Reality" || raw.type === "Documentary" || genres.includes("Nature") || genres.includes("Food") || genres.includes("DIY")) && buckets.discovery.length < MAX_PER_PROV) {
-      target = PROVIDERS_META.find(p => p.id === "discovery");
-    } else if (raw.premiered && Number(raw.premiered.slice(0, 4)) < 2005) {
-      // Classic syndicated library shows -> Tubi or Pluto TV
-      if (buckets.tubi.length <= buckets.pluto.length && buckets.tubi.length < MAX_PER_PROV) {
-        target = PROVIDERS_META.find(p => p.id === "tubi");
-      } else if (buckets.pluto.length < MAX_PER_PROV) {
-        target = PROVIDERS_META.find(p => p.id === "pluto");
-      }
+  // Category / library rights matches
+  if (isAnime) targets.add(PROVIDERS_META.find(p => p.id === "crunchyroll"));
+  if (isSports) targets.add(PROVIDERS_META.find(p => p.id === "espn"));
+  if (isHorror && (raw.weight >= 50 || targets.size === 0)) targets.add(PROVIDERS_META.find(p => p.id === "shudder"));
+  if (country === "GB") targets.add(PROVIDERS_META.find(p => p.id === "britbox"));
+  if (raw.type === "Reality" || raw.type === "Documentary" || genres.includes("Nature") || genres.includes("Food") || genres.includes("DIY") || genres.includes("Travel")) {
+    if (targets.size === 0) targets.add(PROVIDERS_META.find(p => p.id === "discovery"));
+  }
+
+  // Classic & syndicated English series -> Free ad-supported platforms (Tubi, Pluto TV, Roku Channel)
+  if (targets.size === 0 && (raw.language === "English" || country === "US" || country === "CA" || country === "AU")) {
+    if (year < 2002) {
+      targets.add(PROVIDERS_META.find(p => p.id === "pluto"));
+    } else if (year < 2016) {
+      targets.add(PROVIDERS_META.find(p => p.id === "tubi"));
+    } else {
+      targets.add(PROVIDERS_META.find(p => p.id === "roku"));
     }
   }
 
-  if (target) {
-    addShowToProv(target, raw);
+  if (targets.size > 0) {
+    const matchedList = [...targets].filter(Boolean);
+    const platformNames = matchedList.map(p => p.name);
+    for (const p of matchedList) {
+      addShowToProv(p, raw, null, platformNames);
+    }
   }
 }
 
-const finalProviders = PROVIDERS_META.map(p => ({
-  id: p.id,
-  name: p.name,
-  brand: p.brand,
-  accent: p.accent,
-  shows: buckets[p.id],
-}));
+const totalShows = PROVIDERS_META.reduce((sum, p) => sum + buckets[p.id].length, 0);
+console.log(`\n=== UNCAPPED CATALOG COMPLETE: ${totalShows} TOTAL SHOWS ===`);
+PROVIDERS_META.forEach(p => {
+  console.log(`  - ${p.name.padEnd(14)}: ${String(buckets[p.id].length).padStart(5)} shows`);
+});
 
-const totalShows = finalProviders.reduce((sum, p) => sum + p.shows.length, 0);
-console.log(`Built ${totalShows} verified shows across ${finalProviders.length} streaming platforms:`);
-finalProviders.forEach(p => console.log(`  - ${p.name.padEnd(14)}: ${p.shows.length} shows (Top: ${p.shows.slice(0, 3).map(s => s.title).join(", ")})`));
+// Serialize using compact 1-line S(...) helper calls so 25,000+ shows stay compact & fast
+const providerBlocks = PROVIDERS_META.map(p => {
+  const lines = buckets[p.id].map(s =>
+    `S(${s.id},${JSON.stringify(s.title)},${s.year},${s.communityScore},${s.seasons},${s.episodes},${JSON.stringify(s.genres)},${JSON.stringify(s.platforms)},${JSON.stringify(s.colors[0])},${JSON.stringify(s.colors[1])},${JSON.stringify(s.tagline)},${JSON.stringify(s.synopsis)},${JSON.stringify(s.posterUrl)})`
+  );
+  return `  {\n    id: ${JSON.stringify(p.id)},\n    name: ${JSON.stringify(p.name)},\n    brand: ${JSON.stringify(p.brand)},\n    accent: ${JSON.stringify(p.accent)},\n    shows: [\n      ${lines.join(",\n      ")}\n    ]\n  }`;
+});
 
-const fileOut = `// data.js - Auto-generated ${totalShows}-show verified catalog across all 18 streaming services.
+const fileOut = `// data.js - Uncapped ${totalShows}-show catalog across all 18 streaming services.
+const S = (id, title, year, communityScore, seasons, episodes, genres, platforms, c1, c2, tagline, synopsis, posterUrl) => ({
+  id, title, year, communityScore, seasons, episodes, genres,
+  genre: genres.join(" \\u2022 "),
+  platforms,
+  colors: [c1, c2],
+  tagline,
+  synopsis,
+  posterUrl,
+});
 
-export const PROVIDERS = ${JSON.stringify(finalProviders, null, 2)};
+export const PROVIDERS = [
+${providerBlocks.join(",\n")}
+];
 
 export const ACTIONS = {
   seen: { label: "Seen it",       color: "var(--seen)", key: "\\u2192" },
@@ -313,4 +362,4 @@ export function applyRemoteCatalog(rows) {
 `;
 
 fs.writeFileSync("./data.js", fileOut, "utf8");
-console.log("Successfully wrote verified network-mapped catalog to data.js!");
+console.log("Wrote compact uncapped data.js!");

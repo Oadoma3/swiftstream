@@ -238,7 +238,7 @@ const S = (id, title, year, communityScore, seasons, episodes, genres, platforms
   id, title, year, communityScore, seasons, episodes, genres,
   genre: genres.join(" \\u2022 "),
   platforms,
-  colors: ["", c2],
+  colors: ["#4338ca", "#0f0a24"],
   tagline,
   synopsis,
   posterUrl,

@@ -457,7 +457,7 @@ export default function App() {
                     transition={{ duration: 0.18 }}
                   >
                     {tab === "discover" && (
-                      <div className="w-full max-w-2xl mx-auto">
+                      <div className="w-full max-w-4xl mx-auto">
                         <DiscoverDeck
                           provider={provider}
                           pid={pid}

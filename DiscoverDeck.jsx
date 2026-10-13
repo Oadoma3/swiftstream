@@ -608,10 +608,10 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
   }, [current]);
 
   return (
-    <div className="h-full flex flex-col max-w-xl md:max-w-none mx-auto w-full select-none">
+    <div className="h-full min-h-0 flex flex-col max-w-4xl mx-auto w-full select-none">
 
       {/* Mobile-First Compact Header */}
-      <header className="px-4 pt-2 pb-1 md:px-5 md:pt-5 md:pb-2 md:max-w-lg md:mx-auto md:w-full shrink-0">
+      <header className="px-4 pt-2 pb-1 md:px-5 md:pt-5 md:pb-2 md:w-full shrink-0">
         <div className="flex items-center justify-between gap-2">
           <div className="flex items-center gap-2 min-w-0">
             <button
@@ -703,12 +703,12 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
       </header>
 
       {/* Stage */}
-      <main className="flex-1 min-h-0 flex flex-col items-center justify-center px-4 gap-2.5 sm:gap-4">
+      <main className="flex-1 min-h-0 w-full flex flex-col items-center justify-center px-4 gap-2.5 sm:gap-4">
         {done ? (
           <Finish log={log} shows={shows} provider={provider} onRestart={restart} onHome={onHome} />
         ) : (
           <>
-            <div className="relative w-[min(86vw,340px)] h-[min(53dvh,470px)] md:w-auto md:h-[min(54vh,560px)] md:aspect-[2/3] max-w-full">
+            <div className="relative w-[min(86vw,340px)] h-[min(53dvh,470px)] md:w-auto md:h-[min(75vh,760px)] md:aspect-[2/3] max-w-full">
               {next && (
                 <div className="absolute inset-0 pointer-events-none" style={{ transform: "scale(0.94) translateY(14px)", opacity: 0.55, filter: "brightness(.7)" }}>
                   <PosterFace show={next} prominent={isMixed} />
@@ -901,9 +901,9 @@ export default function DiscoverDeck({
   }
 
   return (
-    <div className="h-full">
+    <div className="flex-1 flex flex-col items-center justify-center w-full min-h-[calc(100vh-2rem)] p-4 md:p-8">
       
-      <div className="h-full min-w-0 flex flex-col">
+      <div className="h-full min-h-0 min-w-0 flex flex-col w-full max-w-4xl">
         <div className={activeProvider ? "hidden lg:block" : "block"}>
           <ActionBar onMatch={onOpenMatch} onInvite={onOpenInvite} streak={streak} user={user} onSignOut={onSignOut} />
         </div>

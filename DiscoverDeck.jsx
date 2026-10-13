@@ -1,10 +1,14 @@
-// DiscoverDeck.jsx - Mobile-polished Discover tab: In-deck genre filter, 1-tap shuffle, poster preloading & fast progress.
-import { useState, useEffect, useCallback, useMemo, useRef } from "react";
+// DiscoverDeck.jsx - Zero-lag O(1) swipe queue, instant catalog quick-search, genre filter pills, and mobile haptics.
+import { useState, useEffect, useCallback, useMemo, useRef, useContext } from "react";
 import { motion, AnimatePresence, useAnimationControls } from "framer-motion";
 import { ACTIONS, ALL_SHOWS, PROVIDERS, RATINGS, RATING_CHOICES } from "./data";
-import { BookmarkIcon, CheckIcon, LinkIcon, ProviderIcon, UndoIcon, UsersIcon, XIcon } from "./ui";
-import { PosterFace, SwipeCard } from "./Card";
+import { BookmarkIcon, CheckIcon, LinkIcon, ProviderIcon, ToastCtx, UndoIcon, UsersIcon, XIcon } from "./ui";
+import { PosterFace, SwipeCard, launchStream } from "./Card";
 import { shuffle } from "./utils";
+
+const haptic = (ms = 12) => {
+  try { if (typeof navigator !== "undefined" && navigator.vibrate) navigator.vibrate(ms); } catch { /* ignore */ }
+};
 
 function RatingPicker({ onPick }) {
   const options = [
@@ -24,7 +28,7 @@ function RatingPicker({ onPick }) {
         {options.map((o, i) => (
           <motion.button
             key={o.key}
-            onClick={() => onPick(o.key)}
+            onClick={() => { haptic(15); onPick(o.key); }}
             aria-label={`${o.label} (key ${i + 1})`}
             whileHover={{ scale: 1.04, y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -147,6 +151,134 @@ function Finish({ log, shows, provider, onRestart, onHome }) {
   );
 }
 
+/* Instant Universal Quick-Search across all 18 platforms */
+function QuickCatalogSearch({ logs, onLog, onPick }) {
+  const [q, setQ] = useState("");
+  const showToast = useContext(ToastCtx);
+
+  const results = useMemo(() => {
+    const term = q.trim().toLowerCase();
+    if (term.length < 2) return [];
+    const out = [];
+    for (let i = 0; i < ALL_SHOWS.length; i++) {
+      const s = ALL_SHOWS[i];
+      if ((s.title || "").toLowerCase().includes(term)) {
+        out.push(s);
+        if (out.length >= 8) break;
+      }
+    }
+    return out;
+  }, [q]);
+
+  const getStatus = (show) => {
+    const list = logs[show.providerId] || [];
+    const entry = list.find(e => e.show.id === show.id);
+    return entry ? entry.action : null;
+  };
+
+  const quickMark = (show, action) => {
+    haptic(14);
+    onLog(show.providerId, (cur) => {
+      const filtered = cur.filter(e => e.show.id !== show.id);
+      return [...filtered, { show, action, rating: action === "seen" ? "seen" : undefined, t: Date.now() }];
+    });
+    showToast(action === "seen" ? `Marked "${show.title}" as Seen` : `Saved "${show.title}" to Watchlist`, show.network);
+  };
+
+  return (
+    <div className="mb-4 relative">
+      <div
+        className="flex items-center gap-2.5 rounded-2xl px-3.5 py-2.5"
+        style={{ background: "var(--surface)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,.1)" }}
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" style={{ color: "var(--muted)" }} aria-hidden="true">
+          <circle cx="11" cy="11" r="7" />
+          <path d="M20 20l-3.5-3.5" />
+        </svg>
+        <input
+          type="search"
+          value={q}
+          onChange={(e) => setQ(e.target.value)}
+          placeholder={`Quick-search ${ALL_SHOWS.length.toLocaleString()} shows across all apps...`}
+          aria-label="Quick search all shows"
+          className="flex-1 min-w-0 bg-transparent outline-none text-sm"
+          style={{ color: "var(--text)" }}
+        />
+        {q && (
+          <button
+            type="button"
+            onClick={() => setQ("")}
+            className="text-xs px-2 py-0.5 rounded-full font-bold"
+            style={{ background: "rgba(255,255,255,.1)", color: "var(--muted)" }}
+          >
+            {"\u2715"}
+          </button>
+        )}
+      </div>
+
+      <AnimatePresence>
+        {results.length > 0 && (
+          <motion.ul
+            initial={{ opacity: 0, y: -6 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -6 }}
+            className="mt-2 rounded-2xl p-2 space-y-1.5 max-h-72 overflow-y-auto no-scroll"
+            style={{ background: "rgba(24,20,44,.98)", boxShadow: "0 18px 40px -10px rgba(0,0,0,.85), inset 0 0 0 1px rgba(255,255,255,.14)" }}
+          >
+            {results.map(s => {
+              const st = getStatus(s);
+              return (
+                <li
+                  key={`${s.providerId}:${s.id}`}
+                  className="flex items-center justify-between gap-2 p-2 rounded-xl hover:bg-white/5"
+                >
+                  <button
+                    type="button"
+                    onClick={() => launchStream(s, s.network, showToast)}
+                    className="flex items-center gap-2.5 min-w-0 flex-1 text-left"
+                  >
+                    <ProviderIcon id={s.providerId} size={28} />
+                    <div className="min-w-0 flex-1">
+                      <p className="text-sm font-bold truncate">{s.title}</p>
+                      <p className="text-[11px] truncate" style={{ color: "var(--muted)" }}>
+                        {s.network} • {s.year} {s.communityScore ? `• \uD83C\uDF45 ${s.communityScore}%` : ""}
+                      </p>
+                    </div>
+                  </button>
+                  <div className="flex items-center gap-1.5 shrink-0">
+                    <button
+                      type="button"
+                      onClick={() => quickMark(s, "save")}
+                      className="px-2.5 py-1 rounded-full text-[11px] font-extrabold"
+                      style={{
+                        background: st === "save" ? "var(--save)" : "rgba(255,200,87,.14)",
+                        color: st === "save" ? "var(--bg)" : "var(--save)",
+                      }}
+                    >
+                      {st === "save" ? "\u2605 Saved" : "+ Save"}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => quickMark(s, "seen")}
+                      className="px-2.5 py-1 rounded-full text-[11px] font-extrabold"
+                      style={{
+                        background: st === "seen" ? "var(--seen)" : "rgba(92,225,196,.14)",
+                        color: st === "seen" ? "var(--bg)" : "var(--seen)",
+                      }}
+                    >
+                      {st === "seen" ? "\u2713 Seen" : "\u2713 Seen"}
+                    </button>
+                  </div>
+                </li>
+              );
+            })}
+          </motion.ul>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
 function ShuffleAllButton({ onClick, active, sorted }) {
   const total = ALL_SHOWS.length;
   return (
@@ -173,9 +305,10 @@ function ShuffleAllButton({ onClick, active, sorted }) {
   );
 }
 
-function ProviderList({ onPick, activeId, counts = {} }) {
+function ProviderList({ onPick, activeId, counts = {}, logs = {}, onLog }) {
   return (
     <div>
+      {onLog && <QuickCatalogSearch logs={logs} onLog={onLog} onPick={onPick} />}
       <ShuffleAllButton onClick={() => onPick("mixed")} active={activeId === "mixed"} sorted={counts.mixed || 0} />
       <ProviderGrid onPick={onPick} activeId={activeId} counts={counts} />
     </div>
@@ -225,7 +358,7 @@ function ProviderGrid({ onPick, activeId, counts = {} }) {
             </span>
             <span className="text-xs sm:text-sm font-bold text-center leading-tight truncate w-full">{p.name}</span>
             <span className="text-[10.5px] -mt-1 text-center" style={{ color: n > 0 ? "var(--seen)" : "var(--muted)" }}>
-              {n > 0 ? `${n} / ${p.shows.length}` : `${p.shows.length} shows`}
+              {n > 0 ? `${n.toLocaleString()} / ${p.shows.length.toLocaleString()}` : `${p.shows.length.toLocaleString()} shows`}
             </span>
           </motion.button>
         );
@@ -266,7 +399,7 @@ const heroItem = {
   show: { opacity: 1, y: 0, transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] } },
 };
 
-function Home({ onPick, counts }) {
+function Home({ onPick, counts, logs, onLog }) {
   useEffect(() => {
     document.documentElement.style.setProperty("--glow", "rgba(124,58,237,.28)");
   }, []);
@@ -283,11 +416,11 @@ function Home({ onPick, counts }) {
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
           <h1 className="display text-4xl leading-none" style={{ fontWeight: 800 }}>SwiftStream</h1>
           <p className="mt-1.5 text-sm" style={{ color: "var(--muted)" }}>
-            Pick a streaming app or shuffle all shows.
+            Pick a streaming app, quick-search, or shuffle all shows.
           </p>
         </motion.div>
-        <div className="mt-5">
-          <ProviderList onPick={onPick} counts={counts} />
+        <div className="mt-4">
+          <ProviderList onPick={onPick} counts={counts} logs={logs} onLog={onLog} />
         </div>
       </div>
 
@@ -336,18 +469,20 @@ function Home({ onPick, counts }) {
   );
 }
 
-/* ---------- Sorter (swipe queue with Genre Filter, 1-Tap Shuffle, and Poster Preloader) ---------- */
+/* ---------- Sorter: O(1) Locked Queue so swiping never re-filters or reshuffles mid-swipe ---------- */
 function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe }) {
   const [activeGenre, setActiveGenre] = useState(null);
   const [shuffleSeed, setShuffleSeed] = useState(0);
 
-  // Reset genre filter and shuffle when switching provider
   useEffect(() => {
     setActiveGenre(null);
     setShuffleSeed(0);
   }, [provider.id]);
 
-  const baseShows = useMemo(() => provider.shows.map(s => ({ ...s, network: s.network || provider.name })), [provider]);
+  const baseShows = useMemo(
+    () => provider.shows.map(s => ({ ...s, network: s.network || provider.name })),
+    [provider.id, provider.name, provider.shows]
+  );
 
   const genres = useMemo(() => {
     const counts = {};
@@ -358,11 +493,14 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
       .map(([g]) => g);
   }, [baseShows]);
 
-  const swipedIds = useMemo(() => new Set(log.map(e => `${e.show.providerId || provider.id}:${e.show.id}`)), [log, provider.id]);
+  const logRef = useRef(log);
+  logRef.current = log;
 
-  // Keep already-swiped shows in slots 0..log.length-1, and filter/shuffle the remaining unsorted queue
+  // Lock the deck order so swiping a card does NOT re-run filter/shuffle or change the preview card underneath!
   const shows = useMemo(() => {
-    const swipedList = log.map(e => ({ ...e.show, network: e.show.network || provider.name }));
+    const currentLog = logRef.current;
+    const swipedIds = new Set(currentLog.map(e => `${e.show.providerId || provider.id}:${e.show.id}`));
+    const swipedList = currentLog.map(e => ({ ...e.show, network: e.show.network || provider.name }));
     let remaining = baseShows.filter(s => !swipedIds.has(`${s.providerId || provider.id}:${s.id}`));
     if (activeGenre) {
       remaining = remaining.filter(s => (s.genres || []).includes(activeGenre));
@@ -371,7 +509,7 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
       remaining = shuffle(remaining);
     }
     return [...swipedList, ...remaining];
-  }, [baseShows, log, swipedIds, provider.id, provider.name, activeGenre, shuffleSeed]);
+  }, [baseShows, provider.id, provider.name, activeGenre, shuffleSeed]);
 
   const setLog = useCallback((u) => onLog(provider.id, u), [onLog, provider.id]);
   const isMixed = provider.id === "mixed";
@@ -384,7 +522,7 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
   const current = shows[index];
   const next = shows[index + 1];
 
-  // Preload the next 4 show posters in the background so fast mobile swiping never flashes blank
+  // Preload next 4 posters
   useEffect(() => {
     const upcoming = shows.slice(index + 1, index + 5);
     upcoming.forEach(s => {
@@ -408,6 +546,7 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
   const decide = useCallback((action, rating) => {
     const targetShow = currentRef.current;
     if (!targetShow) return;
+    haptic(14);
     setPending(false);
     setDir(action);
     setFlipped(false);
@@ -423,18 +562,26 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
   const requestAction = useCallback((action) => {
     if (pending) return;
     if (locked) { if (onGate) onGate(); return; }
-    if (action === "seen") setPending(true);
+    if (action === "seen") { haptic(10); setPending(true); }
     else decide(action);
   }, [pending, decide, locked, onGate]);
 
   const undo = useCallback(() => {
+    haptic(10);
     if (pending) { setPending(false); return; }
     setDir("undo");
     setFlipped(false);
     setLog(l => l.slice(0, -1));
   }, [pending, setLog]);
 
-  const restart = () => { setDir("undo"); setFlipped(false); setPending(false); setLog([]); };
+  const restart = () => {
+    haptic(18);
+    setDir("undo");
+    setFlipped(false);
+    setPending(false);
+    setLog([]);
+    setShuffleSeed(s => s + 1);
+  };
 
   useEffect(() => {
     const onKey = (e) => {
@@ -463,7 +610,7 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
   }, [current]);
 
   return (
-    <div className="h-full flex flex-col max-w-xl md:max-w-none mx-auto w-full">
+    <div className="h-full flex flex-col max-w-xl md:max-w-none mx-auto w-full select-none">
 
       {/* Mobile-First Compact Header */}
       <header className="px-4 pt-2 pb-1 md:px-5 md:pt-5 md:pb-2 md:max-w-lg md:mx-auto md:w-full shrink-0">
@@ -489,9 +636,9 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
               {streak >= 2 && <span style={{ color: "#ff8a3d" }}>{"\uD83D\uDD25"}{streak}</span>}
             </div>
             <button
-              onClick={() => setShuffleSeed(s => s + 1)}
+              onClick={() => { haptic(12); setFlipped(false); setShuffleSeed(s => s + 1); }}
               title="Shuffle remaining shows"
-              className="px-2.5 py-1.5 rounded-full text-xs font-bold"
+              className="px-2.5 py-1.5 rounded-full text-xs font-bold active:scale-90 transition-transform"
               style={{ background: "var(--surface)", color: "var(--text)" }}
             >
               {"\uD83D\uDD00"}
@@ -528,7 +675,7 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
         {genres.length > 1 && (
           <div className="flex items-center gap-1.5 overflow-x-auto no-scroll mt-2 pb-0.5 -mx-4 px-4 md:mx-0 md:px-0">
             <button
-              onClick={() => setActiveGenre(null)}
+              onClick={() => { haptic(8); setFlipped(false); setActiveGenre(null); }}
               className="shrink-0 px-2.5 py-1 rounded-full text-[11px] font-bold transition"
               style={{
                 background: activeGenre === null ? "var(--text)" : "var(--surface)",
@@ -542,7 +689,7 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
               return (
                 <button
                   key={g}
-                  onClick={() => setActiveGenre(on ? null : g)}
+                  onClick={() => { haptic(8); setFlipped(false); setActiveGenre(on ? null : g); }}
                   className="shrink-0 px-2.5 py-1 rounded-full text-[11px] font-bold transition"
                   style={{
                     background: on ? "var(--text)" : "var(--surface)",
@@ -565,7 +712,7 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
           <>
             <div className="relative w-[min(86vw,340px)] h-[min(53dvh,470px)] md:w-auto md:h-[min(54vh,560px)] md:aspect-[2/3] max-w-full">
               {next && (
-                <div className="absolute inset-0" style={{ transform: "scale(0.94) translateY(14px)", opacity: 0.55, filter: "brightness(.7)" }}>
+                <div className="absolute inset-0 pointer-events-none" style={{ transform: "scale(0.94) translateY(14px)", opacity: 0.55, filter: "brightness(.7)" }}>
                   <PosterFace show={next} prominent={isMixed} />
                 </div>
               )}
@@ -575,7 +722,7 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
                   show={current}
                   dir={dir}
                   flipped={flipped}
-                  onFlip={() => setFlipped(f => !f)}
+                  onFlip={() => { haptic(8); setFlipped(f => !f); }}
                   onDecide={requestAction}
                   mixed={isMixed}
                 />
@@ -755,8 +902,8 @@ export default function DiscoverDeck({
         style={{ borderRight: "1px solid rgba(255,255,255,.07)" }}
       >
         <h2 className="display text-xl" style={{ fontWeight: 800 }}>Streaming apps</h2>
-        <p className="text-xs mt-1 mb-5" style={{ color: "var(--muted)" }}>Pick one to start sorting</p>
-        <ProviderList onPick={onPick} activeId={pid} counts={counts} />
+        <p className="text-xs mt-1 mb-4" style={{ color: "var(--muted)" }}>Pick one or quick-search</p>
+        <ProviderList onPick={onPick} activeId={pid} counts={counts} logs={logs} onLog={onLog} />
       </aside>
       <div className="h-full lg:flex-1 min-w-0 flex flex-col">
         <div className={provider ? "hidden lg:block" : "block"}>
@@ -773,7 +920,7 @@ export default function DiscoverDeck({
           >
             {provider
               ? <Sorter provider={provider} log={logs[provider.id] || []} onLog={onLog} onHome={onHome} locked={locked} onGate={onGate} onSwipe={onSwipe} />
-              : <Home onPick={onPick} counts={counts} />}
+              : <Home onPick={onPick} counts={counts} logs={logs} onLog={onLog} />}
           </motion.div>
         </AnimatePresence>
       </div>

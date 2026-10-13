@@ -281,12 +281,8 @@ export default function App() {
   const mixedProvider = useMemo(() => ({ id: "mixed", name: "Mixed Mode", accent: "#ff5ccf", shows: mixedShows }), [mixedShows]);
   const provider = useMemo(() => {
     if (pid === "mixed") return mixedProvider;
-    const p = PROVIDERS.find(x => x.id === pid);
-    if (!p) return undefined;
-    const sorted = (logs[p.id] || []).map(e => p.shows.find(s => s.id === e.show.id) || e.show);
-    const sortedIds = new Set(sorted.map(s => s.id));
-    return { ...p, shows: [...sorted, ...p.shows.filter(s => !sortedIds.has(s.id))] };
-  }, [pid, logs, mixedProvider, catalogTick]);
+    return PROVIDERS.find(x => x.id === pid);
+  }, [pid, mixedProvider, catalogTick]);
 
   const allSortedEntries = useMemo(() => {
     const map = new Map();

@@ -260,7 +260,7 @@ export function Collection({ kind, items, onDiscover, onRate, onMoveToSeen, onRe
   const [filter, setFilter] = useState("all");
   const [view, setView] = useState("all");
   const [ratingFilter, setRatingFilter] = useState("all");
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(""); const [sortBy, setSortBy] = useState("recent"); const [visibleCount, setVisibleCount] = useState(36);
   const [pickedShow, setPickedShow] = useState(null);
   const sharedView = kind === "watchlist" && view === "shared";
 
@@ -284,7 +284,14 @@ export function Collection({ kind, items, onDiscover, onRate, onMoveToSeen, onRe
   const present = PROVIDERS.filter(p => base.some(i => matchesProvider(i, p)));
   const active = present.some(p => p.id === filter) ? filter : "all";
   const activeProv = PROVIDERS.find(p => p.id === active);
-  const shown = active === "all" ? base : base.filter(i => matchesProvider(i, activeProv));
+    const filteredByApp = active === "all" ? base : base.filter(i => matchesProvider(i, activeProv));
+  const shown = [...filteredByApp].sort((a, b) => {
+    if (sortBy === "score") return (b.communityScore || 0) - (a.communityScore || 0);
+    if (sortBy === "year") return (b.year || 0) - (a.year || 0);
+    if (sortBy === "az") return (a.title || "").localeCompare(b.title || "");
+    return (b.t || 0) - (a.t || 0);
+  });
+  const pagedShown = shown.slice(0, visibleCount);
 
   const spinTonightPick = () => {
     if (!shown.length) return;
@@ -330,7 +337,7 @@ export function Collection({ kind, items, onDiscover, onRate, onMoveToSeen, onRe
                 type="search"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search title, genre, app..."
+                placeholder="Search..."
                 aria-label="Search shows"
                 className="flex-1 min-w-0 bg-transparent outline-none text-sm"
                 style={{ color: "var(--text)" }}
@@ -347,6 +354,18 @@ export function Collection({ kind, items, onDiscover, onRate, onMoveToSeen, onRe
                 </button>
               )}
             </div>
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value)}
+              aria-label="Sort shows"
+              className="shrink-0 rounded-full px-3 py-2 text-xs font-bold outline-none cursor-pointer"
+              style={{ background: "var(--surface)", color: "var(--text)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,.1)" }}
+            >
+              <option value="recent">Recent</option>
+              <option value="score">{"\uD83C\uDF45"} Top Score</option>
+              <option value="year">Newest</option>
+              <option value="az">A–Z</option>
+            </select>
           </div>
         )}
       </header>
@@ -547,7 +566,7 @@ export function Collection({ kind, items, onDiscover, onRate, onMoveToSeen, onRe
               animate="show"
               variants={{ hidden: {}, show: { transition: { staggerChildren: 0.04 } } }}
             >
-              {shown.map(item => (
+              {pagedShown.map(item => (
                 <CollectionTile
                   key={item.providerId + "-" + item.id}
                   item={item}
@@ -558,6 +577,18 @@ export function Collection({ kind, items, onDiscover, onRate, onMoveToSeen, onRe
                 />
               ))}
             </motion.ul>
+            {shown.length > visibleCount && (
+              <div className="pt-4 flex justify-center">
+                <button
+                  type="button"
+                  onClick={() => setVisibleCount(c => c + 36)}
+                  className="px-6 py-2.5 rounded-full text-xs font-extrabold"
+                  style={{ background: "var(--surface)", color: "var(--text)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,.12)" }}
+                >
+                  Show More ({shown.length - visibleCount} remaining)
+                </button>
+              </div>
+            )}
           </>
         )}
       </div>

@@ -10,6 +10,20 @@ const haptic = (ms = 12) => {
   try { if (typeof navigator !== "undefined" && navigator.vibrate) navigator.vibrate(ms); } catch { /* ignore */ }
 };
 
+const TRENDING_SHOWS = (() => {
+  const titles = new Set();
+  return [...ALL_SHOWS]
+    .filter(show => show.posterUrl)
+    .sort((a, b) => (b.communityScore || 0) - (a.communityScore || 0))
+    .filter(show => {
+      const title = show.title.toLowerCase();
+      if (titles.has(title)) return false;
+      titles.add(title);
+      return true;
+    })
+    .slice(0, 30);
+})();
+
 
 
 function ActionButton({ action, onClick, size = 68, children }) {
@@ -398,6 +412,62 @@ function HeroMesh() {
   );
 }
 
+function TrendingRibbon({ logs, onPickShow }) {
+  const picks = useMemo(() => {
+    const viewed = new Set(
+      Object.values(logs).flatMap(entries =>
+        entries.map(entry => `${entry.show.providerId || ""}:${entry.show.id}`)
+      )
+    );
+    return TRENDING_SHOWS
+      .filter(show => !viewed.has(`${show.providerId}:${show.id}`))
+      .slice(0, 6);
+  }, [logs]);
+
+  if (!picks.length) return null;
+
+  return (
+    <section className="relative z-10 w-full shrink-0 px-5 pt-4 md:px-8 md:pt-5" aria-label="Trending shows">
+      <h2 className="mb-3 text-sm font-extrabold tracking-wide text-slate-100 sm:text-base">
+        {"\uD83D\uDD25"} Trending Across All Apps Right Now
+      </h2>
+      <div
+        className="flex gap-3 overflow-x-auto no-scroll pb-2"
+        style={{ WebkitOverflowScrolling: "touch", touchAction: "pan-x" }}
+      >
+        {picks.map(show => (
+          <motion.button
+            key={`${show.providerId}:${show.id}`}
+            type="button"
+            onClick={() => onPickShow(show)}
+            whileHover={{ scale: 1.05, y: -3 }}
+            whileTap={{ scale: 0.96 }}
+            className="group w-[76px] shrink-0 text-left sm:w-[88px] md:w-[96px]"
+            aria-label={`Swipe ${show.title} from ${show.network}`}
+          >
+            <span
+              className="relative block aspect-[2/3] overflow-hidden rounded-xl"
+              style={{ background: `linear-gradient(145deg, ${(show.colors || ["#4338ca", "#0f0a24"])[0]}, ${(show.colors || ["#4338ca", "#0f0a24"])[1]})`, boxShadow: "0 8px 22px rgba(0,0,0,.35)" }}
+            >
+              <img
+                src={show.posterUrl}
+                alt=""
+                loading="lazy"
+                decoding="async"
+                className="h-full w-full object-cover transition-transform duration-200 group-hover:scale-105"
+              />
+              <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 to-transparent px-1.5 pb-1.5 pt-5 text-[10px] font-bold leading-tight text-white">
+                {show.title}
+              </span>
+            </span>
+            <span className="mt-1 block truncate text-[10px] text-slate-400">{show.network}</span>
+          </motion.button>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 const heroContainer = { hidden: {}, show: { transition: { staggerChildren: 0.13, delayChildren: 0.15 } } };
 const heroItem = {
   hidden: { opacity: 0, y: 28 },
@@ -408,7 +478,7 @@ function CentralBrandHero({ compact = false }) {
   const gradientId = useId();
   return (
     <div className={`flex flex-col items-center text-center ${compact ? "gap-2" : "gap-4"}`}>
-      <div className={`relative ${compact ? "w-52 h-32" : "w-80 h-48 md:w-[26rem] md:h-60"}`}>
+      <div className={`relative ${compact ? "w-52 h-32" : "w-80 h-56 md:w-[34rem] md:h-80"}`}>
         <div
           className="absolute inset-x-12 inset-y-6 rounded-full blur-3xl"
           style={{ background: "linear-gradient(90deg, rgba(248,60,112,.35), rgba(124,58,237,.42), rgba(34,211,238,.38))" }}
@@ -499,7 +569,7 @@ function CentralBrandHero({ compact = false }) {
         </svg>
       </div>
       <h1
-        className={`${compact ? "text-4xl" : "text-5xl lg:text-6xl xl:text-8xl"} display font-black leading-none`}
+        className={`${compact ? "text-4xl" : "text-7xl md:text-[clamp(4.5rem,8vw,8rem)]"} display font-extrabold tracking-tight leading-none`}
         style={{
           backgroundImage: "linear-gradient(110deg, #67e8f9 0%, #a78bfa 50%, #e9d5ff 100%)",
           WebkitBackgroundClip: "text",
@@ -511,18 +581,18 @@ function CentralBrandHero({ compact = false }) {
         SwiftStream
       </h1>
       <div
-        className={`${compact ? "w-32 h-1" : "w-48 h-1.5"} -mt-1 rounded-full`}
+        className={`${compact ? "w-32 h-1" : "w-64 h-2"} -mt-1 rounded-full`}
         style={{ background: "linear-gradient(90deg, #fb7185 0%, #a78bfa 50%, #22d3ee 100%)", boxShadow: "0 0 18px rgba(124,58,237,.45)" }}
         aria-hidden="true"
       />
-      <p className={`${compact ? "text-sm" : "text-lg md:text-xl"} max-w-2xl`} style={{ color: "var(--muted)" }}>
+      <p className={`${compact ? "text-sm" : "mt-4 text-2xl font-medium text-slate-200 md:text-3xl"}`} style={{ color: "var(--muted)" }}>
         Pick a streaming app on the left, or hit Shuffle All to start swiping.
       </p>
     </div>
   );
 }
 
-function Home({ onPick, counts, logs, onLog }) {
+function Home({ onPick, onPickShow, counts, logs, onLog }) {
   useEffect(() => {
     document.documentElement.style.setProperty("--glow", "rgba(124,58,237,.28)");
   }, []);
@@ -532,10 +602,11 @@ function Home({ onPick, counts, logs, onLog }) {
     { c: "var(--save)", t: "Save to watch", d: "Send it to your Watchlist." },
   ];
   return (
-    <div className="relative min-h-full md:h-full overflow-visible md:overflow-hidden">
+    <div className="relative flex min-h-full flex-col overflow-visible md:h-full md:min-h-0 md:overflow-hidden">
       <HeroMesh />
 
-      <div className="md:hidden px-5 pt-3 pb-5 max-w-xl mx-auto w-full">
+      <div className="md:hidden w-full px-5 pt-3 pb-5">
+        <TrendingRibbon logs={logs} onPickShow={onPickShow} />
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
           <CentralBrandHero compact />
         </motion.div>
@@ -545,34 +616,37 @@ function Home({ onPick, counts, logs, onLog }) {
       </div>
 
       <motion.div
-        className="hidden md:flex relative z-10 min-h-[75vh] w-full flex-1 flex-col items-center justify-center p-8 text-center"
+        className="relative z-10 hidden min-h-[75vh] w-full flex-1 flex-col items-center justify-between p-6 text-center md:flex md:p-12"
         variants={heroContainer}
         initial="hidden"
         animate="show"
       >
+        <TrendingRibbon logs={logs} onPickShow={onPickShow} />
         <motion.div variants={heroItem}>
           <CentralBrandHero />
         </motion.div>
 
-        <motion.div variants={heroItem} className="mt-7 w-full max-w-2xl">
+        <motion.div variants={heroItem} className="mt-7 w-full">
           <QuickCatalogSearch logs={logs} onLog={onLog} />
         </motion.div>
 
-        <ul className="mt-7 grid gap-5 xl:grid-cols-3 w-full max-w-3xl">
+        <ul className="grid w-full grid-cols-1 gap-5 sm:grid-cols-3 xl:gap-10">
           {steps.map(s => (
-            <motion.li key={s.t} variants={heroItem} className="flex flex-col items-center text-center gap-2">
+            <motion.li key={s.t} variants={heroItem} className="flex flex-col items-center gap-3 text-center">
               <span
-                className="w-3.5 h-3.5 rounded-full"
-                style={{ background: s.c, boxShadow: `0 0 18px 2px ${s.c}` }}
+                className="flex h-10 w-10 items-center justify-center rounded-full text-3xl font-black"
+                style={{ color: s.c, background: "var(--surface)", boxShadow: `0 0 22px 2px ${s.c}` }}
                 aria-hidden="true"
-              />
-              <span className="display text-lg" style={{ fontWeight: 800 }}>{s.t}</span>
-              <span className="text-sm max-w-[16rem]" style={{ color: "var(--muted)" }}>{s.d}</span>
+              >
+                {s.t === "Seen it" ? "\u2713" : s.t === "Not seen" ? "\u00D7" : "\u2605"}
+              </span>
+              <span className="display text-lg font-bold md:text-xl">{s.t}</span>
+              <span className="text-sm" style={{ color: "var(--muted)" }}>{s.d}</span>
             </motion.li>
           ))}
         </ul>
 
-        <motion.p variants={heroItem} className="mt-6 text-sm" style={{ color: "var(--muted)" }}>
+        <motion.p variants={heroItem} className="text-sm" style={{ color: "var(--muted)" }}>
           Tap any card to flip it for the synopsis, trailer, and streaming links.
         </motion.p>
       </motion.div>
@@ -581,10 +655,15 @@ function Home({ onPick, counts, logs, onLog }) {
 }
 
 /* ---------- Sorter: O(1) Locked Queue so swiping never re-filters or reshuffles mid-swipe ---------- */
-function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe }) {
+function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe, initialShow, onInitialShowConsumed }) {
   const [activeGenre, setActiveGenre] = useState(null);
   const [activeApps, setActiveApps] = useState([]);
   const [shuffleSeed, setShuffleSeed] = useState(0);
+  const [focusedShow, setFocusedShow] = useState(initialShow || null);
+
+  useEffect(() => {
+    setFocusedShow(initialShow || null);
+  }, [initialShow]);
 
   useEffect(() => {
     setActiveGenre(null);
@@ -622,11 +701,15 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
     if (isMixed && activeApps.length > 0) {
       remaining = remaining.filter(s => activeApps.includes(s.providerId));
     }
+    const selectedIndex = focusedShow
+      ? remaining.findIndex(show => show.providerId === focusedShow.providerId && show.id === focusedShow.id)
+      : -1;
+    const selected = selectedIndex >= 0 ? remaining.splice(selectedIndex, 1)[0] : null;
     if (remaining.length > 0) {
-      remaining = shuffle(remaining).slice(0, 300); // Shuffle and cap at 300 to keep memory light
+      remaining = shuffle(remaining).slice(0, selected ? 299 : 300); // Shuffle and cap at 300 to keep memory light
     }
-    return [...swipedList, ...remaining];
-  }, [baseShows, provider.id, provider.name, activeGenre, activeApps, shuffleSeed, isMixed]);
+    return [...swipedList, ...(selected ? [selected] : []), ...remaining];
+  }, [baseShows, provider.id, provider.name, activeGenre, activeApps, shuffleSeed, isMixed, focusedShow]);
   const setLog = useCallback((u) => onLog(provider.id, u), [onLog, provider.id]);
   const [dir, setDir] = useState("seen");
   const [flipped, setFlipped] = useState(false);
@@ -661,6 +744,10 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
   const decide = useCallback((action, rating) => {
     const targetShow = currentRef.current;
     if (!targetShow) return;
+    if (focusedShow && focusedShow.id === targetShow.id && focusedShow.providerId === targetShow.providerId) {
+      setFocusedShow(null);
+      if (onInitialShowConsumed) onInitialShowConsumed();
+    }
     haptic(14);
     
     setDir(action);
@@ -672,7 +759,7 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
       t: Date.now(),
     }]);
     if (onSwipe) onSwipe();
-  }, [setLog, onSwipe]);
+  }, [focusedShow, onInitialShowConsumed, setLog, onSwipe]);
 
   const requestAction = useCallback((action) => {
     if (locked) { if (onGate) onGate(); return; }
@@ -822,23 +909,25 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
           <Finish log={log} shows={shows} provider={provider} onRestart={restart} onHome={onHome} />
         ) : (
           <>
-            <div className="relative w-[min(86vw,340px)] h-[min(53dvh,470px)] md:w-auto md:h-[min(75vh,760px)] md:aspect-[2/3] max-w-full">
-              {next && (
-                <div className="absolute inset-0 pointer-events-none" style={{ transform: "scale(0.94) translateY(14px)", opacity: 0.55, filter: "brightness(.7)" }}>
-                  <PosterFace show={next} prominent={isMixed} />
-                </div>
-              )}
-              <AnimatePresence custom={dir} initial={false}>
-                <SwipeCard
-                  key={`${current.providerId || provider.id}-${current.id}`}
-                  show={current}
-                  dir={dir}
-                  flipped={flipped}
-                  onFlip={() => { haptic(8); setFlipped(f => !f); }}
-                  onDecide={requestAction}
-                  mixed={isMixed}
-                />
-              </AnimatePresence>
+            <div className="relative flex h-[min(53dvh,470px)] w-full max-w-4xl items-center justify-center md:h-[78vh]">
+              <div className="relative h-full max-w-full aspect-[2/3]">
+                {next && (
+                  <div className="absolute inset-0 pointer-events-none" style={{ transform: "scale(0.94) translateY(14px)", opacity: 0.55, filter: "brightness(.7)" }}>
+                    <PosterFace show={next} prominent={isMixed} />
+                  </div>
+                )}
+                <AnimatePresence custom={dir} initial={false}>
+                  <SwipeCard
+                    key={`${current.providerId || provider.id}-${current.id}`}
+                    show={current}
+                    dir={dir}
+                    flipped={flipped}
+                    onFlip={() => { haptic(8); setFlipped(f => !f); }}
+                    onDecide={requestAction}
+                    mixed={isMixed}
+                  />
+                </AnimatePresence>
+              </div>
             </div>
 
             <div className="flex items-start justify-center w-full" style={{ minHeight: 86 }}>
@@ -992,7 +1081,7 @@ function StreakPill({ n }) {
 }
 
 export default function DiscoverDeck({
-  provider = null, pid = null, logs = {}, onLog, onPick, onHome, counts = {},
+  provider = null, pid = null, logs = {}, onLog, onPick, onPickShow, onHome, initialShow, onInitialShowConsumed, counts = {},
   locked, onGate, onSwipe, swipes, user, onSignOut, onOpenAuth, onOpenMatch, onOpenInvite,
 }) {
   const activeProvider = provider && typeof provider === "object" && typeof provider.id === "string"
@@ -1031,9 +1120,9 @@ export default function DiscoverDeck({
   }
 
   return (
-    <div className="flex-1 flex flex-col items-center justify-center w-full min-h-0">
+    <div className="flex-1 flex flex-col items-stretch w-full min-h-0">
       
-      <div className="h-full min-h-0 min-w-0 flex flex-col w-full max-w-4xl">
+      <div className="h-full min-h-0 min-w-0 flex flex-col w-full">
         <div>
           <ActionBar
             onMatch={onOpenMatch}
@@ -1054,8 +1143,8 @@ export default function DiscoverDeck({
             transition={{ duration: 0.2 }}
           >
             {activeProvider
-              ? <Sorter provider={activeProvider} log={Array.isArray(safeLogs[activeProvider.id]) ? safeLogs[activeProvider.id] : []} onLog={onLog} onHome={onHome} locked={locked} onGate={onGate} onSwipe={onSwipe} />
-              : <Home onPick={onPick} counts={safeCounts} logs={safeLogs} onLog={onLog} />}
+              ? <Sorter provider={activeProvider} log={Array.isArray(safeLogs[activeProvider.id]) ? safeLogs[activeProvider.id] : []} onLog={onLog} onHome={onHome} locked={locked} onGate={onGate} onSwipe={onSwipe} initialShow={initialShow} onInitialShowConsumed={onInitialShowConsumed} />
+              : <Home onPick={onPick} onPickShow={onPickShow} counts={safeCounts} logs={safeLogs} onLog={onLog} />}
           </motion.div>
         </AnimatePresence>
       </div>

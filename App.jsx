@@ -80,6 +80,7 @@ export default function App() {
   const [swipes, setSwipes] = useState(guest0.swipes || 0);
   const [lockedUntil, setLockedUntil] = useState(guest0.lockedUntil || null);
   const [mixedShows, setMixedShows] = useState([]);
+  const [initialDeckShow, setInitialDeckShow] = useState(null);
   const [authReason, setAuthReason] = useState("gate");
   const [urlMatchCode, setUrlMatchCode] = useState(consumeInitialRoomCode);
   const [modal, setModal] = useState(() => (urlMatchCode ? "match" : null));
@@ -117,6 +118,7 @@ export default function App() {
     setLogs({});
     setSwipes(0);
     setMixedShows([]);
+    setInitialDeckShow(null);
     setMatches([]);
     setPid(null);
     syncedRef.current = new Map();
@@ -381,7 +383,15 @@ export default function App() {
     return [...map.values()];
   }, [logs]);
 
-  const pickProvider = (id) => setPid(id);
+  const pickProvider = (id) => {
+    setInitialDeckShow(null);
+    setPid(id);
+  };
+  const pickTrendingShow = (show) => {
+    setTab("discover");
+    setPid("mixed");
+    setInitialDeckShow(show);
+  };
 
   const sortedCounts = useMemo(() => {
     const c = Object.fromEntries(Object.entries(logs || {}).map(([k, v]) => [k, Array.isArray(v) ? v.length : 0]));
@@ -465,14 +475,17 @@ export default function App() {
                     transition={{ duration: 0.18 }}
                   >
                     {tab === "discover" && (
-                      <div className="w-full max-w-4xl mx-auto">
+                      <div className="w-full min-w-0 flex-1 flex flex-col">
                         <DiscoverDeck
                           provider={provider}
                           pid={pid}
                           logs={logs}
                           onLog={setLog}
                           onPick={pickProvider}
-                          onHome={() => setPid(null)}
+                          onPickShow={pickTrendingShow}
+                          onHome={() => { setInitialDeckShow(null); setPid(null); }}
+                          initialShow={initialDeckShow}
+                          onInitialShowConsumed={() => setInitialDeckShow(null)}
                           counts={sortedCounts}
                           locked={locked}
                           onGate={openGate}

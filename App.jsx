@@ -57,7 +57,12 @@ function consumeInitialRoomCode() {
 }
 
 export default function App() {
-  const [booting, setBooting] = useState(false);
+  const [showLogoFade, setShowLogoFade] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => setShowLogoFade(false), 1200);
+    return () => clearTimeout(timer);
+  }, []);
+
   const [guest0] = useState(() => {
     const saved = loadGuest() || {};
     const savedSwipes = Number(saved.swipes);
@@ -388,10 +393,35 @@ export default function App() {
   return (
     <MotionConfig reducedMotion="user">
       <ToastCtx.Provider value={showToast}>
+        <AnimatePresence>
+          {showLogoFade && (
+            <motion.div
+              key="logo-fade"
+              initial={{ opacity: 1 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.6, ease: "easeInOut" }}
+              className="fixed inset-0 z-50 flex items-center justify-center bg-[#080610]"
+            >
+              <motion.div
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 1.05, opacity: 0 }}
+                transition={{ duration: 0.4 }}
+                className="flex items-center space-x-3"
+              >
+                <div className="w-4 h-4 rounded-full bg-indigo-500 animate-pulse" />
+                <span className="text-2xl font-extrabold tracking-wider text-white">
+                  SwiftStream
+                </span>
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
         <div className="ambient" />
 
-        {!booting && (
-          <div className="relative z-10 min-h-screen flex flex-col md:flex-row bg-[#080610] text-slate-100 overflow-hidden">
+        <div className="relative z-10 min-h-screen flex flex-col md:flex-row bg-[#080610] text-slate-100 overflow-hidden">
             
             {/* Desktop Sidebar Navigation */}
             <aside className="hidden md:flex flex-shrink-0 w-72 border-r border-white/10 bg-[#080610] flex-col">
@@ -470,8 +500,7 @@ export default function App() {
               </div>
             </div>
 
-          </div>
-        )}
+        </div>
 
         <AnimatePresence>
           {modal === "match" && (

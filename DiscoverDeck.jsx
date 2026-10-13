@@ -291,7 +291,7 @@ function Home({ onPick, counts }) {
       <HeroMesh />
 
       {/* Phones and tablets: title + app tiles (unchanged layout) */}
-      <div className="lg:hidden h-full flex flex-col justify-center px-5 py-6 max-w-xl md:max-w-2xl mx-auto w-full overflow-y-auto no-scroll">
+      <div className="lg:hidden h-full overflow-y-auto no-scroll px-5 pt-4 pb-24 max-w-xl md:max-w-2xl mx-auto w-full">
         <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
           <h1 className="display text-5xl leading-none" style={{ fontWeight: 800 }}>SwiftStream</h1>
           <p className="mt-3 text-base" style={{ color: "var(--muted)" }}>
@@ -462,16 +462,33 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
             <UndoIcon /> Undo
           </button>
         </div>
-        <div className={`flex ${shows.length > 12 ? "gap-0.5" : "gap-1.5"} mt-3`} role="progressbar" aria-valuemin={0} aria-valuemax={shows.length} aria-valuenow={Math.min(index, shows.length)}>
-          {shows.map((s, i) => (
-            <motion.div
-              key={i}
-              className="h-1.5 flex-1 rounded-full"
-              animate={{ backgroundColor: segColor(i) }}
-              transition={{ duration: 0.25 }}
-            />
-          ))}
-        </div>
+        {shows.length <= 25 ? (
+          <div className={`flex ${shows.length > 12 ? "gap-0.5" : "gap-1.5"} mt-3`} role="progressbar" aria-valuemin={0} aria-valuemax={shows.length} aria-valuenow={Math.min(index, shows.length)}>
+            {shows.map((s, i) => (
+              <motion.div
+                key={i}
+                className="h-1.5 flex-1 rounded-full"
+                animate={{ backgroundColor: segColor(i) }}
+                transition={{ duration: 0.25 }}
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="mt-3 flex items-center gap-3" role="progressbar" aria-valuemin={0} aria-valuemax={shows.length} aria-valuenow={Math.min(index, shows.length)}>
+            <div className="h-1.5 flex-1 rounded-full overflow-hidden" style={{ background: "rgba(255,255,255,.14)" }}>
+              <motion.div
+                className="h-full rounded-full"
+                style={{ background: "var(--seen)" }}
+                initial={false}
+                animate={{ width: `${Math.min(100, Math.round((index / shows.length) * 100))}%` }}
+                transition={{ duration: 0.25 }}
+              />
+            </div>
+            <span className="text-[11px] font-bold shrink-0" style={{ color: "var(--muted)" }}>
+              {Math.min(index + 1, shows.length)} / {shows.length}
+            </span>
+          </div>
+        )}
       </header>
 
       {/* Stage */}
@@ -665,7 +682,7 @@ export default function DiscoverDeck({
   return (
     <div className="h-full lg:flex">
       <aside
-        className="hidden lg:flex flex-col w-72 xl:w-80 shrink-0 h-full px-5 py-8 overflow-y-auto no-scroll"
+        className="hidden lg:flex flex-col w-72 xl:w-80 shrink-0 h-full px-5 pt-6 pb-16 overflow-y-auto no-scroll"
         style={{ borderRight: "1px solid rgba(255,255,255,.07)" }}
       >
         <h2 className="display text-xl" style={{ fontWeight: 800 }}>Streaming apps</h2>

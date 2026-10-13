@@ -452,10 +452,10 @@ export default function App() {
 
             {/* Main Content Viewport */}
             <main
-              className="flex flex-1 flex-col items-center justify-center min-w-0 p-4 pb-[calc(6rem+env(safe-area-inset-bottom))] md:h-screen md:min-h-0 md:p-12 md:overflow-y-auto"
+              className="flex h-full w-full min-w-0 flex-1 flex-col justify-between overflow-y-auto bg-[#080610] p-2 pb-[calc(6rem+env(safe-area-inset-bottom))] md:h-screen md:min-h-0 md:p-4"
               style={{ WebkitOverflowScrolling: "touch", touchAction: "pan-y" }}
             >
-              <div className="w-full min-h-full flex flex-col">
+              <div className="flex h-full min-h-0 w-full flex-1 flex-col">
               <div className={tab === "discover" ? "hidden" : "block"}>
                 <AuthBar
                   user={user}
@@ -464,18 +464,18 @@ export default function App() {
                 />
               </div>
 
-              <div className="w-full flex-1 min-h-0 flex flex-col">
+              <div className="flex w-full min-w-0 flex-1 flex-col">
                 <AnimatePresence mode="wait" initial={false}>
                   <motion.div
                     key={tab}
-                    className="w-full h-full flex flex-col"
+                    className="flex h-full w-full min-w-0 flex-col"
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.18 }}
                   >
                     {tab === "discover" && (
-                      <div className="w-full min-w-0 flex-1 flex flex-col">
+                      <div className="flex w-full min-w-0 flex-1 flex-col">
                         <DiscoverDeck
                           provider={provider}
                           pid={pid}

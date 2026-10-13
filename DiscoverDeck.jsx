@@ -427,7 +427,7 @@ function TrendingRibbon({ logs, onPickShow }) {
   if (!picks.length) return null;
 
   return (
-    <section className="relative z-10 w-full shrink-0 px-5 pt-4 md:px-8 md:pt-5" aria-label="Trending shows">
+    <section className="relative z-10 w-full shrink-0 px-2 pt-3 md:px-4 md:pt-4" aria-label="Trending shows">
       <h2 className="mb-3 text-sm font-extrabold tracking-wide text-slate-100 sm:text-base">
         {"\uD83D\uDD25"} Trending Across All Apps Right Now
       </h2>
@@ -442,7 +442,7 @@ function TrendingRibbon({ logs, onPickShow }) {
             onClick={() => onPickShow(show)}
             whileHover={{ scale: 1.05, y: -3 }}
             whileTap={{ scale: 0.96 }}
-            className="group w-[76px] shrink-0 text-left sm:w-[88px] md:w-[96px]"
+            className="group w-28 shrink-0 text-left md:w-32"
             aria-label={`Swipe ${show.title} from ${show.network}`}
           >
             <span
@@ -478,9 +478,9 @@ function CentralBrandHero({ compact = false }) {
   const gradientId = useId();
   return (
     <div className={`flex flex-col items-center text-center ${compact ? "gap-2" : "gap-4"}`}>
-      <div className={`relative ${compact ? "w-52 h-32" : "w-80 h-56 md:w-[34rem] md:h-80"}`}>
+      <div className={`relative ${compact ? "w-52 h-32" : "w-[min(92vw,52rem)] h-64 md:h-[26rem] shadow-2xl shadow-indigo-500/30"}`}>
         <div
-          className="absolute inset-x-12 inset-y-6 rounded-full blur-3xl"
+          className="absolute inset-x-4 inset-y-4 rounded-full blur-3xl shadow-2xl shadow-indigo-500/30"
           style={{ background: "linear-gradient(90deg, rgba(248,60,112,.35), rgba(124,58,237,.42), rgba(34,211,238,.38))" }}
           aria-hidden="true"
         />
@@ -569,7 +569,7 @@ function CentralBrandHero({ compact = false }) {
         </svg>
       </div>
       <h1
-        className={`${compact ? "text-4xl" : "text-7xl md:text-[clamp(4.5rem,8vw,8rem)]"} display font-extrabold tracking-tight leading-none`}
+        className={`${compact ? "text-4xl" : "text-[clamp(3.5rem,12vw,8rem)] md:text-[clamp(8rem,11vw,10rem)]"} display font-extrabold tracking-tight leading-none`}
         style={{
           backgroundImage: "linear-gradient(110deg, #67e8f9 0%, #a78bfa 50%, #e9d5ff 100%)",
           WebkitBackgroundClip: "text",
@@ -806,7 +806,7 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe,
   }, [current]);
 
   return (
-    <div className="h-full min-h-0 flex flex-col max-w-4xl mx-auto w-full select-none">
+    <div className="h-full min-h-0 flex w-full flex-col select-none">
 
       {/* Mobile-First Compact Header */}
       <header className="px-4 pt-2 pb-1 md:px-5 md:pt-5 md:pb-2 md:w-full shrink-0">
@@ -909,7 +909,7 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe,
           <Finish log={log} shows={shows} provider={provider} onRestart={restart} onHome={onHome} />
         ) : (
           <>
-            <div className="relative flex h-[min(53dvh,470px)] w-full max-w-4xl items-center justify-center md:h-[78vh]">
+            <div className="relative flex h-[82vh] w-full items-center justify-center">
               <div className="relative h-full max-w-full aspect-[2/3]">
                 {next && (
                   <div className="absolute inset-0 pointer-events-none" style={{ transform: "scale(0.94) translateY(14px)", opacity: 0.55, filter: "brightness(.7)" }}>
@@ -1011,7 +1011,7 @@ function AccountMenu({ user, onSignOut }) {
 
 function ActionBar({ onMatch, onInvite, onOpenAuth, streak = 0, user = null, onSignOut }) {
   return (
-    <div className="shrink-0 flex flex-wrap items-center justify-end gap-2 px-3 pt-3 sm:px-5 md:px-10 md:pt-5">
+    <div className="flex w-full shrink-0 flex-wrap items-center justify-between gap-2 px-4 pt-2">
       <StreakPill n={streak} />
       <ActionPill icon={<UsersIcon />} label="Watch Match" onClick={onMatch} color="var(--save)" />
       <ActionPill icon={<LinkIcon />} label="Invite" onClick={onInvite} color="var(--seen)" />
@@ -1048,7 +1048,7 @@ function StreakPill({ n }) {
   return (
     <motion.div
       animate={pulse}
-      className="relative mr-auto flex items-center gap-2 pl-3 pr-3.5 py-2 rounded-full text-sm font-bold"
+      className="relative flex items-center gap-2 pl-3 pr-3.5 py-2 rounded-full text-sm font-bold"
       style={{ background: "var(--surface)", boxShadow: n > 0 ? "inset 0 0 0 1px rgba(255,138,61,.55)" : "inset 0 0 0 1px rgba(255,255,255,.1)" }}
       role="status"
       aria-label={`Swipe streak: ${n}`}

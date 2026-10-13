@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OG Image Generator</title>
+  <style>
+    body { background: #111; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .card { width: 1200px; height: 630px; background: #080610; position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+    .mesh { position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle at 50% 50%, rgba(143,91,255,0.15), transparent 40%), radial-gradient(circle at 30% 60%, rgba(92,225,196,0.1), transparent 30%); z-index: 1; }
+    .content { z-index: 10; display: flex; flex-direction: column; align-items: center; text-align: center; }
+    .logo { width: 240px; height: 240px; margin-bottom: 20px; }
+    h1 { font-size: 88px; font-weight: 900; margin: 0; background: linear-gradient(120deg, #ffffff 25%, #cdbdff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -1px; }
+    p { font-size: 38px; font-weight: 500; color: #a19bb8; margin-top: 15px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="mesh"></div>
+    <div class="content">
+      <svg class="logo" viewBox="0 0 512 512">
+        <defs>
+          <linearGradient id="gL" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ff6b7a"/><stop offset="100%" stop-color="#a1001b"/></linearGradient>
+          <linearGradient id="gR" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5ce1c4"/><stop offset="100%" stop-color="#076963"/></linearGradient>
+          <linearGradient id="gC" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#8f5bff"/><stop offset="100%" stop-color="#5c16c5"/></linearGradient>
+        </defs>
+        <g transform="rotate(-22, 256, 256) translate(-50, 15)"><rect x="156" y="116" width="200" height="280" rx="28" fill="url(#gL)" /></g>
+        <g transform="rotate(22, 256, 256) translate(50, 15)"><rect x="156" y="116" width="200" height="280" rx="28" fill="url(#gR)" /></g>
+        <g><rect x="156" y="106" width="200" height="300" rx="32" fill="url(#gC)" /><polygon points="236,224 294,256 236,288" fill="#ffffff" /></g>
+      </svg>
+      <h1>SwiftStream</h1>
+      <p>What are we watching tonight?</p>
+    </div>
+  </div>
+</body>
+</html>

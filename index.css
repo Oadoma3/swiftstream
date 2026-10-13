@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---- SwiftStream global styles ---- */
+  :root {
+    --bg: #0f0c1b;
+    --surface: #1a1630;
+    --surface-2: #241f42;
+    --text: #f3efff;
+    --muted: #9690b3;
+    --seen: #5ce1c4;
+    --skip: #ff6b7a;
+    --save: #ffc857;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    color-scheme: dark;
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  html, body, #root { height: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+  .display { font-family: "Bricolage Grotesque", "DM Sans", system-ui, sans-serif; letter-spacing: -0.02em; }
+  .ambient {
+    position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background:
+      radial-gradient(60% 40% at 50% 38%, var(--glow, rgba(124,58,237,.22)), transparent 70%),
+      var(--bg);
+    transition: background 0.6s ease;
+  }
+  button:focus-visible, [role="button"]:focus-visible { outline: 3px solid #fff; outline-offset: 3px; border-radius: 28px; }
+  .no-scroll::-webkit-scrollbar { display: none; }

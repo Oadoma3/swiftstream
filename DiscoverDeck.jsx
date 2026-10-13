@@ -1,5 +1,5 @@
 // DiscoverDeck.jsx - Zero-lag O(1) swipe queue, instant catalog quick-search, genre filter pills, and mobile haptics.
-import { useState, useEffect, useCallback, useMemo, useRef, useContext, useDeferredValue } from "react";
+import { useState, useEffect, useCallback, useMemo, useRef, useContext, useDeferredValue, useId } from "react";
 import { motion, AnimatePresence, useAnimationControls } from "framer-motion";
 import { ACTIONS, ALL_SHOWS, PROVIDERS } from "./data";
 import { BookmarkIcon, CheckIcon, LinkIcon, ProviderIcon, Toast, ToastCtx, UndoIcon, UsersIcon, XIcon } from "./ui";
@@ -406,6 +406,54 @@ const heroItem = {
   show: { opacity: 1, y: 0, transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] } },
 };
 
+function CentralBrandHero({ compact = false }) {
+  const gradientId = useId();
+  return (
+    <div className={`flex flex-col items-center text-center ${compact ? "gap-2" : "gap-4"}`}>
+      <div className={`relative ${compact ? "w-12 h-12" : "w-20 h-20 md:w-28 md:h-28"}`}>
+        <div
+          className="absolute inset-0 rounded-full blur-2xl"
+          style={{ background: "rgba(34,211,238,.5)", transform: "scale(1.5)" }}
+          aria-hidden="true"
+        />
+        <svg className="relative h-full w-full drop-shadow-[0_0_22px_rgba(34,211,238,.55)]" viewBox="0 0 96 96" fill="none" role="img" aria-label="SwiftStream flame">
+          <defs>
+            <linearGradient id={gradientId} x1="16" y1="8" x2="82" y2="88" gradientUnits="userSpaceOnUse">
+              <stop stopColor="#67E8F9" />
+              <stop offset=".48" stopColor="#22D3EE" />
+              <stop offset="1" stopColor="#8B5CF6" />
+            </linearGradient>
+          </defs>
+          <path
+            d="M52 7c4 18-5 23-12 33-5 7-8 13-5 21 2-7 7-11 13-15 0 11 10 15 11 25 1 7-4 13-11 14-12 2-23-7-23-20 0-11 7-19 13-27C48 26 56 19 52 7Z"
+            fill={`url(#${gradientId})`}
+          />
+          <path
+            d="M66 34c1 10 9 14 12 23 5 14-4 29-20 31 6-5 8-11 5-17-2-5-7-8-9-14 8-4 12-11 12-23Z"
+            fill={`url(#${gradientId})`}
+            opacity=".78"
+          />
+        </svg>
+      </div>
+      <h1
+        className={`${compact ? "text-4xl" : "text-5xl lg:text-6xl xl:text-8xl"} display font-black leading-none`}
+        style={{
+          backgroundImage: "linear-gradient(110deg, #67e8f9 0%, #a78bfa 50%, #e9d5ff 100%)",
+          WebkitBackgroundClip: "text",
+          backgroundClip: "text",
+          color: "transparent",
+          filter: "drop-shadow(0 0 24px rgba(124,58,237,.22))",
+        }}
+      >
+        SwiftStream
+      </h1>
+      <p className={`${compact ? "text-sm" : "text-lg md:text-xl"} max-w-2xl`} style={{ color: "var(--muted)" }}>
+        Pick a streaming app on the left, or hit Shuffle All to start swiping.
+      </p>
+    </div>
+  );
+}
+
 function Home({ onPick, counts, logs, onLog }) {
   useEffect(() => {
     document.documentElement.style.setProperty("--glow", "rgba(124,58,237,.28)");
@@ -419,40 +467,24 @@ function Home({ onPick, counts, logs, onLog }) {
     <div className="relative min-h-full md:h-full overflow-visible md:overflow-hidden">
       <HeroMesh />
 
-      <div className="md:hidden px-5 pt-3 pb-5 max-w-xl mx-auto w-full">
+      <div className="lg:hidden px-5 pt-3 pb-5 max-w-xl mx-auto w-full">
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
-          <h1 className="display text-4xl leading-none" style={{ fontWeight: 800 }}>SwiftStream</h1>
-          <p className="mt-1.5 text-sm" style={{ color: "var(--muted)" }}>
-            Pick a streaming app, quick-search, or shuffle all shows.
-          </p>
+          <CentralBrandHero compact />
         </motion.div>
-        <div className="mt-4">
+        <div className="md:hidden mt-4">
           <ProviderList onPick={onPick} counts={counts} logs={logs} onLog={onLog} />
         </div>
       </div>
 
       <motion.div
-        className="hidden lg:flex relative z-10 h-full flex-col items-center justify-center px-10 pb-[60px] text-center"
+        className="hidden md:flex relative z-10 h-full flex-col items-center justify-center px-4 lg:px-10 pb-[60px] text-center"
         variants={heroContainer}
         initial="hidden"
         animate="show"
       >
-        <motion.h1
-          variants={heroItem}
-          className="display text-6xl xl:text-7xl leading-none"
-          style={{
-            fontWeight: 800,
-            backgroundImage: "linear-gradient(120deg, #ffffff 25%, #cdbdff 100%)",
-            WebkitBackgroundClip: "text",
-            backgroundClip: "text",
-            color: "transparent",
-          }}
-        >
-          SwiftStream
-        </motion.h1>
-        <motion.p variants={heroItem} className="mt-4 text-lg max-w-md" style={{ color: "var(--muted)" }}>
-          Pick a streaming app on the left, or hit Shuffle All, then swipe through its shows.
-        </motion.p>
+        <motion.div variants={heroItem}>
+          <CentralBrandHero />
+        </motion.div>
 
         <ul className="mt-10 grid gap-8 xl:grid-cols-3 w-full max-w-3xl">
           {steps.map(s => (
@@ -784,14 +816,17 @@ function AccountMenu({ user, onSignOut }) {
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen(o => !o)}
-        className="w-9 h-9 rounded-full flex items-center justify-center text-sm font-extrabold"
+        className="flex max-w-56 items-center gap-2 rounded-xl px-2.5 py-2 text-sm font-semibold"
         style={{ background: "var(--seen)", color: "var(--bg)" }}
-        title={user.email}
-        aria-label={`Signed in as ${user.email}`}
+        title={user.email || user.name}
+        aria-label={`Account: ${user.email || user.name}`}
         aria-haspopup="menu"
         aria-expanded={open}
       >
-        {(user.name || user.email)[0].toUpperCase()}
+        <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-black/10 font-extrabold">
+          {(user.name || user.email || "U")[0].toUpperCase()}
+        </span>
+        <span className="truncate">{user.name || user.email}</span>
       </button>
       {open && (
         <div
@@ -813,13 +848,26 @@ function AccountMenu({ user, onSignOut }) {
   );
 }
 
-function ActionBar({ onMatch, onInvite, streak = 0, user = null, onSignOut }) {
+function ActionBar({ onMatch, onInvite, onOpenAuth, streak = 0, user = null, onSignOut }) {
   return (
-    <div className="shrink-0 flex flex-wrap items-center justify-end gap-2 px-5 pt-3 md:px-10 md:pt-5">
+    <div className="shrink-0 flex flex-wrap items-center justify-end gap-2 px-3 pt-3 sm:px-5 md:px-10 md:pt-5">
       <StreakPill n={streak} />
       <ActionPill icon={<UsersIcon />} label="Watch Match" onClick={onMatch} color="var(--save)" />
       <ActionPill icon={<LinkIcon />} label="Invite" onClick={onInvite} color="var(--seen)" />
-      {user && <AccountMenu user={user} onSignOut={onSignOut} />}
+      {user ? (
+        <AccountMenu user={user} onSignOut={onSignOut} />
+      ) : (
+        <motion.button
+          type="button"
+          onClick={onOpenAuth}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.96 }}
+          className="flex items-center gap-2 rounded-xl bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-lg transition hover:bg-indigo-500"
+        >
+          <UsersIcon />
+          <span>Sign In</span>
+        </motion.button>
+      )}
     </div>
   );
 }
@@ -873,7 +921,7 @@ function StreakPill({ n }) {
 
 export default function DiscoverDeck({
   provider = null, pid = null, logs = {}, onLog, onPick, onHome, counts = {},
-  locked, onGate, onSwipe, swipes, user, onSignOut, onOpenMatch, onOpenInvite,
+  locked, onGate, onSwipe, swipes, user, onSignOut, onOpenAuth, onOpenMatch, onOpenInvite,
 }) {
   const activeProvider = provider && typeof provider === "object" && typeof provider.id === "string"
     ? provider
@@ -914,8 +962,15 @@ export default function DiscoverDeck({
     <div className="flex-1 flex flex-col items-center justify-center w-full min-h-0">
       
       <div className="h-full min-h-0 min-w-0 flex flex-col w-full max-w-4xl">
-        <div className={activeProvider ? "hidden lg:block" : "block"}>
-          <ActionBar onMatch={onOpenMatch} onInvite={onOpenInvite} streak={streak} user={user} onSignOut={onSignOut} />
+        <div>
+          <ActionBar
+            onMatch={onOpenMatch}
+            onInvite={onOpenInvite}
+            onOpenAuth={onOpenAuth}
+            streak={streak}
+            user={user}
+            onSignOut={onSignOut}
+          />
         </div>
         <AnimatePresence mode="wait" initial={false}>
           <motion.div

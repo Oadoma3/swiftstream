@@ -448,8 +448,12 @@ export default function App() {
               style={{ WebkitOverflowScrolling: "touch", touchAction: "pan-y" }}
             >
               <div className="w-full min-h-full flex flex-col">
-              <div className={tab === "discover" && pid ? "hidden md:block" : "block"}>
-                <AuthBar user={user} onSignedOut={handleSignOut} />
+              <div className={tab === "discover" ? "hidden" : "block"}>
+                <AuthBar
+                  user={user}
+                  onSignedOut={handleSignOut}
+                  onSignIn={() => openAuth("banner")}
+                />
               </div>
 
               <div className="w-full flex-1 min-h-0 flex flex-col">
@@ -476,7 +480,9 @@ export default function App() {
                           onGate={openGate}
                           onSwipe={countSwipe}
                           swipes={swipes}
-                          user={null}
+                          user={user}
+                          onSignOut={handleSignOut}
+                          onOpenAuth={() => openAuth("banner")}
                           onOpenMatch={() => setModal("match")}
                           onOpenInvite={() => setModal("invite")}
                         />

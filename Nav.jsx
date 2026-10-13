@@ -168,10 +168,9 @@ function useSupabaseSession() {
 }
 
 // `user` is the app's own account state (also covers local demo-mode accounts); `onSignedOut` resets app state.
-export function AuthBar({ user, onSignedOut }) {
+export function AuthBar({ user, onSignedOut, onSignIn }) {
   const { session, clear } = useSupabaseSession();
   const email = (session && session.user && session.user.email) || (user && user.email);
-  if (!email) return null;
 
   const signOut = async () => {
     if (isSupabaseConfigured && hasStoredSession()) {
@@ -183,21 +182,39 @@ export function AuthBar({ user, onSignedOut }) {
 
   return (
     <div
-      className="shrink-0 flex items-center justify-between gap-3 px-5 py-2 md:px-10"
+      className="shrink-0 flex items-center justify-end gap-3 px-5 py-2 md:px-10"
       style={{ background: "rgba(15,12,27,.7)", borderBottom: "1px solid rgba(255,255,255,.07)" }}
     >
-      <p className="text-xs truncate min-w-0" style={{ color: "var(--muted)" }}>
-        Signed in as <span className="font-bold" style={{ color: "var(--text)" }}>{email}</span>
-      </p>
-      <motion.button
-        onClick={signOut}
-        whileHover={{ scale: 1.04 }}
-        whileTap={{ scale: 0.94 }}
-        className="shrink-0 rounded-full px-4 py-1.5 text-sm font-bold"
-        style={{ background: "var(--surface-2)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,.16)" }}
-      >
-        Sign Out
-      </motion.button>
+      {email ? (
+        <>
+          <p className="text-xs truncate min-w-0" style={{ color: "var(--muted)" }}>
+            Signed in as <span className="font-bold" style={{ color: "var(--text)" }}>{email}</span>
+          </p>
+          <motion.button
+            onClick={signOut}
+            whileHover={{ scale: 1.04 }}
+            whileTap={{ scale: 0.94 }}
+            className="shrink-0 rounded-full px-4 py-1.5 text-sm font-bold"
+            style={{ background: "var(--surface-2)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,.16)" }}
+          >
+            Sign Out
+          </motion.button>
+        </>
+      ) : (
+        <motion.button
+          type="button"
+          onClick={onSignIn}
+          whileHover={{ scale: 1.04 }}
+          whileTap={{ scale: 0.96 }}
+          className="flex items-center gap-2 rounded-xl bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-lg transition hover:bg-indigo-500"
+        >
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <circle cx="12" cy="8" r="4" />
+            <path d="M5 21a7 7 0 0 1 14 0" />
+          </svg>
+          <span>Sign In</span>
+        </motion.button>
+      )}
     </div>
   );
 }

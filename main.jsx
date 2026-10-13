@@ -1,1 +1,10 @@
-import React from 'react';\nimport ReactDOM from 'react-dom/client';\nimport App from './App.jsx';\nimport './index.css';\n\ntry {\n  ReactDOM.createRoot(document.getElementById('root')).render(\n    <React.StrictMode>\n      <App />\n    </React.StrictMode>\n  );\n} catch (err) {\n  document.getElementById('root').innerHTML = '<div style="padding: 40px; color: white; background: #990000; font-family: monospace;"><h3>Runtime Render Crash:</h3><pre>' + err.message + '<br/>' + err.stack + '</pre></div>';\n}\n
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
+import './index.css';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);

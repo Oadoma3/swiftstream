@@ -1,5 +1,5 @@
 // DiscoverDeck.jsx - Zero-lag O(1) swipe queue, instant catalog quick-search, genre filter pills, and mobile haptics.
-import { useState, useEffect, useCallback, useMemo, useRef, useContext } from "react";
+import { useState, useEffect, useCallback, useMemo, useRef, useContext, useDeferredValue } from "react";
 import { motion, AnimatePresence, useAnimationControls } from "framer-motion";
 import { ACTIONS, ALL_SHOWS, PROVIDERS, RATINGS, RATING_CHOICES } from "./data";
 import { BookmarkIcon, CheckIcon, LinkIcon, ProviderIcon, ToastCtx, UndoIcon, UsersIcon, XIcon } from "./ui";
@@ -120,10 +120,12 @@ function Finish({ log, shows, provider, onRestart, onHome }) {
 /* Instant Universal Quick-Search across all 18 platforms */
 function QuickCatalogSearch({ logs, onLog, onPick }) {
   const [q, setQ] = useState("");
+  const deferredQ = useDeferredValue(q);
   const showToast = useContext(ToastCtx);
 
+  // useDeferredValue ensures typing stays at 60fps without the 16,000-item filter blocking the main thread
   const results = useMemo(() => {
-    const term = q.trim().toLowerCase();
+    const term = deferredQ.trim().toLowerCase();
     if (term.length < 2) return [];
     const out = [];
     for (let i = 0; i < ALL_SHOWS.length; i++) {
@@ -134,7 +136,7 @@ function QuickCatalogSearch({ logs, onLog, onPick }) {
       }
     }
     return out;
-  }, [q]);
+  }, [deferredQ]);
 
   const getStatus = (show) => {
     const list = logs[show.providerId] || [];

@@ -40,20 +40,9 @@ export function launchTrailer(show, showToast) {
   }
 }
 
-const POSTER_STORAGE_KEY = "swiftstream-posters-v1";
+// Runtime memory map prevents duplicate API calls. Native browser HTTP cache handles the actual images.
 const posterMemory = new Map();
 const posterPending = new Map();
-
-try {
-  const raw = typeof window !== "undefined" ? window.localStorage.getItem(POSTER_STORAGE_KEY) : null;
-  if (raw) Object.entries(JSON.parse(raw)).forEach(([k, v]) => posterMemory.set(k, v));
-} catch { /* ignore */ }
-
-function savePosterCache() {
-  try {
-    window.localStorage.setItem(POSTER_STORAGE_KEY, JSON.stringify(Object.fromEntries(posterMemory.entries())));
-  } catch { /* ignore */ }
-}
 
 export function useShowPoster(title) {
   const cleanTitle = (title || "").replace(/\s*\(.*?\)\s*/g, "").trim();
@@ -72,7 +61,6 @@ export function useShowPoster(title) {
         .then(d => {
           const img = (d && d.image && (d.image.original || d.image.medium)) ? (d.image.original || d.image.medium).replace(/^http:/, "https:") : "";
           posterMemory.set(cleanTitle, img);
-          savePosterCache();
           return img;
         })
         .catch(() => "")

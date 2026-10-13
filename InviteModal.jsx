@@ -7,7 +7,7 @@ import { copyText } from "./utils";
 /* Referral sheet with Web Share + copy fallback */
 export function InviteModal({ onClose, invite, onInvite }) {
   const showToast = useContext(ToastCtx);
-  const link = "swipestream.app/join/@mycatalog";
+  const link = "swiftstream-seven.vercel.app";
   const full = "https://" + link;
 
   const doCopy = async () => {

@@ -370,9 +370,7 @@ export default function App() {
       <ToastCtx.Provider value={showToast}>
         <div className="ambient" />
 
-        <AnimatePresence>
-          {booting && }
-        </AnimatePresence>
+        
 
         {!booting && (
           <>

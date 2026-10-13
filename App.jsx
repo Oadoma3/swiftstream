@@ -49,7 +49,7 @@ export default function App() {
 
   const [session, setSession] = useState(null);
   const [hydrated, setHydrated] = useState(false);
-  const [retryTick, setRetryTick] = useState(0);
+  const [retryTick, setRetryTick] = useState(0); const [catalogTick, setCatalogTick] = useState(0); useEffect(() => { api.syncRollingCatalog().then(changed => { if (changed) setCatalogTick(n => n + 1); }); }, []);
   const syncedRef = useRef(new Map());
   const guestClearedRef = useRef(false);
   const sessionRef = useRef(null);
@@ -264,7 +264,7 @@ export default function App() {
     const sorted = (logs[p.id] || []).map(e => p.shows.find(s => s.id === e.show.id) || e.show);
     const sortedIds = new Set(sorted.map(s => s.id));
     return { ...p, shows: [...sorted, ...p.shows.filter(s => !sortedIds.has(s.id))] };
-  }, [pid, logs, mixedProvider]);
+  }, [pid, logs, mixedProvider, catalogTick]);
 
   const pickProvider = (id) => {
     if (id === "mixed") {

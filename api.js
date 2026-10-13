@@ -1,6 +1,6 @@
 // api.js - Auth + library persistence. Every Supabase call in the app lives in this file.
 import { getSupabase, isSupabaseConfigured, hasStoredSession, urlHasAuthParams } from "./supabase";
-import { findShow } from "./data";
+import { PROVIDERS, findShow, applyRemoteCatalog } from "./data";
 
 /* ---------------------------------------------------------------- auth */
 
@@ -176,4 +176,43 @@ export async function pushLibrary(userId, upserts, deletes) {
     if (error) return { error };
   }
   return {};
+}
+/* ------------------------------------------------------------- rolling catalog */
+export async function syncRollingCatalog() {
+  if (!isSupabaseConfigured) return false;
+  const sb = getSupabase();
+  if (!sb) return false;
+  try {
+    const { data, error } = await sb
+      .from("catalog_shows")
+      .select("*")
+      .order("show_id", { ascending: true });
+    if (error) return false;
+
+    if (!data || data.length === 0) {
+      const seedRows = PROVIDERS.flatMap(p =>
+        p.shows.map(s => ({
+          provider_id: p.id,
+          show_id: s.id,
+          title: s.title,
+          year: s.year,
+          community_score: s.communityScore,
+          seasons: s.seasons,
+          episodes: s.episodes,
+          genres: s.genres,
+          platforms: s.platforms,
+          colors: s.colors,
+          tagline: s.tagline || "",
+          synopsis: s.synopsis || "",
+          is_active: true,
+        }))
+      );
+      await sb.from("catalog_shows").upsert(seedRows, { onConflict: "provider_id,show_id" });
+      return false;
+    }
+
+    return applyRemoteCatalog(data);
+  } catch {
+    return false;
+  }
 }

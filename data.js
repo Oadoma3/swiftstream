@@ -172,3 +172,71 @@ export const GUEST_LIMIT = 10;
 
 const CATALOG = new Map(ALL_SHOWS.map(s => [`${s.providerId}:${s.id}`, s]));
 export const findShow = (providerId, showId) => CATALOG.get(`${providerId}:${showId}`) || null;
+export function applyRemoteCatalog(rows) {
+  if (!Array.isArray(rows) || rows.length === 0) return false;
+  const byProv = new Map();
+  const hidden = new Set();
+
+  rows.forEach(r => {
+    const key = `${r.provider_id}:${r.show_id}`;
+    if (r.is_active === false) {
+      hidden.add(key);
+      return;
+    }
+    const prov = PROVIDERS.find(p => p.id === r.provider_id);
+    if (!prov) return;
+    const showObj = {
+      id: Number(r.show_id),
+      title: r.title,
+      year: Number(r.year) || 2024,
+      communityScore: r.community_score ?? 90,
+      seasons: Number(r.seasons) || 1,
+      episodes: Number(r.episodes) || 10,
+      genres: Array.isArray(r.genres) && r.genres.length ? r.genres : ["Drama"],
+      genre: (Array.isArray(r.genres) && r.genres.length ? r.genres : ["Drama"]).join(" \u2022 "),
+      platforms: Array.isArray(r.platforms) && r.platforms.length ? r.platforms : [prov.name],
+      colors: Array.isArray(r.colors) && r.colors.length >= 2 ? r.colors : [prov.brand || "#4338ca", "#0f0a24"],
+      tagline: r.tagline || "",
+      synopsis: r.synopsis || "",
+      posterUrl: r.poster_url || null,
+    };
+    if (!byProv.has(r.provider_id)) byProv.set(r.provider_id, new Map());
+    byProv.get(r.provider_id).set(showObj.id, showObj);
+  });
+
+  PROVIDERS.forEach(p => {
+    const remoteMap = byProv.get(p.id) || new Map();
+    const merged = [];
+    const seenIds = new Set();
+
+    p.shows.forEach(s => {
+      const k = `${p.id}:${s.id}`;
+      if (hidden.has(k)) return;
+      if (remoteMap.has(s.id)) {
+        merged.push({ ...s, ...remoteMap.get(s.id) });
+      } else {
+        merged.push(s);
+      }
+      seenIds.add(s.id);
+    });
+
+    remoteMap.forEach((s, id) => {
+      if (!seenIds.has(id) && !hidden.has(`${p.id}:${id}`)) {
+        merged.push(s);
+      }
+    });
+
+    p.shows = merged;
+  });
+
+  ALL_SHOWS.length = 0;
+  PROVIDERS.forEach(p => {
+    p.shows.forEach(s => {
+      ALL_SHOWS.push({ ...s, network: p.name, providerId: p.id });
+    });
+  });
+
+  CATALOG.clear();
+  ALL_SHOWS.forEach(s => CATALOG.set(`${s.providerId}:${s.id}`, s));
+  return true;
+}

@@ -492,12 +492,12 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
       </header>
 
       {/* Stage */}
-      <main className="flex-1 min-h-0 flex flex-col items-center justify-center px-5 gap-5">
+      <main className="flex-1 min-h-0 flex flex-col items-center justify-center px-4 gap-3 sm:gap-5">
         {done ? (
           <Finish log={log} shows={shows} provider={provider} onRestart={restart} onHome={onHome} />
         ) : (
           <>
-            <div className="relative h-[min(46vh,480px)] md:h-[min(56vh,600px)] aspect-[2/3] max-w-full">
+            <div className="relative h-[min(50vh,460px)] md:h-[min(56vh,600px)] aspect-[2/3] max-w-full">
               {next && (
                 <div className="absolute inset-0" style={{ transform: "scale(0.94) translateY(16px)", opacity: 0.55, filter: "brightness(.7)" }}>
                   <PosterFace show={next} prominent={isMixed} />
@@ -690,7 +690,7 @@ export default function DiscoverDeck({
         <ProviderList onPick={onPick} activeId={pid} counts={counts} />
       </aside>
       <div className="h-full lg:flex-1 min-w-0 flex flex-col">
-        <ActionBar onMatch={onOpenMatch} onInvite={onOpenInvite} streak={swipes} user={user} onSignOut={onSignOut} />
+        <div className={provider ? "hidden lg:block" : "block"}><ActionBar onMatch={onOpenMatch} onInvite={onOpenInvite} streak={swipes} user={user} onSignOut={onSignOut} /></div>
         <AnimatePresence mode="wait" initial={false}>
           <motion.div
             key={pid || "home"}

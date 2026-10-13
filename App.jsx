@@ -292,7 +292,7 @@ export default function App() {
             <div className="relative z-10 h-full flex flex-col md:flex-row">
               <SideNav tab={tab} onTab={setTab} counts={navCounts} />
               <div className="flex-1 min-h-0 min-w-0 flex flex-col">
-                <AuthBar user={user} onSignedOut={handleSignOut} />
+                <div className={tab === "discover" && pid ? "hidden md:block" : "block"}><AuthBar user={user} onSignedOut={handleSignOut} /></div>
                 <div className="flex-1 min-h-0">
                 <AnimatePresence mode="wait" initial={false}>
                   <motion.div

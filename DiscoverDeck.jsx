@@ -440,27 +440,40 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
   return (
     <div className="h-full flex flex-col max-w-xl md:max-w-none mx-auto w-full">
 
-      {/* Header */}
-      <header className="px-5 pt-4 pb-2 md:pt-8 md:max-w-lg md:mx-auto md:w-full">
-        <div className="flex items-end justify-between gap-3">
-          <div className="min-w-0">
-            <button onClick={onHome} className="text-xs font-medium rounded-md lg:hidden" style={{ color: "var(--muted)" }}>
-              ‹ All apps
+      {/* Mobile-First Compact Header */}
+      <header className="px-4 pt-2.5 pb-1.5 md:px-5 md:pt-6 md:pb-2 md:max-w-lg md:mx-auto md:w-full shrink-0">
+        <div className="flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2 min-w-0">
+            <button
+              onClick={onHome}
+              className="lg:hidden shrink-0 px-2.5 py-1.5 rounded-full text-xs font-bold"
+              style={{ background: "var(--surface)", color: "var(--text)" }}
+            >
+              ‹ Apps
             </button>
-            <h1 className="display text-2xl leading-tight flex items-center gap-2.5" style={{ fontWeight: 800 }}>
-              <ProviderIcon id={provider.id} size={30} />
-              <span className="truncate">Sorting: {provider.name}</span>
+            <h1 className="display text-lg sm:text-2xl leading-tight flex items-center gap-2 min-w-0" style={{ fontWeight: 800 }}>
+              <ProviderIcon id={provider.id} size={26} />
+              <span className="truncate">{provider.name}</span>
             </h1>
           </div>
-          <button
-            onClick={undo}
-            disabled={log.length === 0}
-            className="flex items-center gap-1.5 text-xs font-medium px-3 py-2 rounded-full transition-opacity"
-            style={{ background: "var(--surface)", color: "var(--text)", opacity: log.length === 0 ? 0.35 : 1 }}
-            aria-label="Undo last choice"
-          >
-            <UndoIcon /> Undo
-          </button>
+
+          <div className="flex items-center gap-1.5 shrink-0">
+            {/* Compact Mobile Score Pills (replaces bulky bottom scoreboard on phones) */}
+            <div className="flex md:hidden items-center gap-2 px-2.5 py-1 rounded-full text-xs font-extrabold" style={{ background: "var(--surface)" }}>
+              <span style={{ color: "var(--seen)" }}>{"\u2713"} {seenCount}</span>
+              <span style={{ color: "var(--save)" }}>{"\u2605"} {savedCount}</span>
+              {streak >= 2 && <span style={{ color: "#ff8a3d" }}>{"\uD83D\uDD25"}{streak}</span>}
+            </div>
+            <button
+              onClick={undo}
+              disabled={log.length === 0}
+              className="flex items-center gap-1 text-xs font-bold px-3 py-1.5 rounded-full transition-opacity"
+              style={{ background: "var(--surface)", color: "var(--text)", opacity: log.length === 0 ? 0.35 : 1 }}
+              aria-label="Undo last choice"
+            >
+              <UndoIcon /> <span className="hidden sm:inline">Undo</span>
+            </button>
+          </div>
         </div>
         {shows.length <= 25 ? (
           <div className={`flex ${shows.length > 12 ? "gap-0.5" : "gap-1.5"} mt-3`} role="progressbar" aria-valuemin={0} aria-valuemax={shows.length} aria-valuenow={Math.min(index, shows.length)}>
@@ -497,7 +510,7 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
           <Finish log={log} shows={shows} provider={provider} onRestart={restart} onHome={onHome} />
         ) : (
           <>
-            <div className="relative h-[min(50vh,460px)] md:h-[min(56vh,600px)] aspect-[2/3] max-w-full">
+            <div className="relative w-[min(88vw,350px)] h-[min(57dvh,490px)] md:w-auto md:h-[min(56vh,580px)] md:aspect-[2/3] max-w-full">
               {next && (
                 <div className="absolute inset-0" style={{ transform: "scale(0.94) translateY(16px)", opacity: 0.55, filter: "brightness(.7)" }}>
                   <PosterFace show={next} prominent={isMixed} />
@@ -527,7 +540,7 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
       </main>
 
       {/* Sticky scoreboard */}
-      <footer className="sticky bottom-0 px-5 pb-3 pt-2 md:pb-6 md:max-w-lg md:mx-auto md:w-full">
+      <footer className="hidden md:block sticky bottom-0 px-5 pb-6 pt-2 md:max-w-lg md:mx-auto md:w-full">
         <div
           className="flex items-center justify-between rounded-3xl px-5 py-3"
           style={{ background: "rgba(26,22,48,.88)", backdropFilter: "blur(12px)", boxShadow: "0 -8px 30px -12px rgba(0,0,0,.6), inset 0 0 0 1px rgba(255,255,255,.07)" }}

@@ -266,20 +266,18 @@ export default function App() {
 
   const { seen: seenItems, saved: savedItems } = useMemo(() => deriveItems(logs), [logs]);
 
-  // Subway-Proofing: Persist authenticated logs locally so a dead battery/force-close offline doesn't lose swipes
   useEffect(() => {
     if (uid) {
       try { window.localStorage.setItem(`swiftstream-auth-${uid}`, JSON.stringify(logs)); } catch { /* ignore */ }
     }
   }, [logs, uid]);
 
-  // Network-Aware Sync Engine
   useEffect(() => {
     if (!uid || !hydrated) return;
     const desired = api.itemsToRows(seenItems, savedItems);
     
     const trySync = async () => {
-      if (typeof navigator !== "undefined" && !navigator.onLine) return; // Suspend network calls if offline
+      if (typeof navigator !== "undefined" && !navigator.onLine) return;
       
       const synced = syncedRef.current;
       const upserts = [];
@@ -303,9 +301,8 @@ export default function App() {
 
     const timer = setTimeout(trySync, 700);
     return () => clearTimeout(timer);
-  }, [logs, hydrated, uid, retryTick]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [logs, hydrated, uid, retryTick]);
 
-  // Auto-trigger database sync the exact millisecond cellular/wifi reconnects
   useEffect(() => {
     const onOnline = () => setRetryTick(n => n + 1);
     window.addEventListener("online", onOnline);
@@ -349,7 +346,7 @@ export default function App() {
         map.set(key, { ...e, show: { ...e.show, providerId: e.show.providerId || k } });
       });
     });
-    (logs.mixed || []).forEach(e => {
+    logs.mixed?.forEach(e => {
       const key = showKey(e.show);
       if (!map.has(key)) map.set(key, e);
     });
@@ -370,18 +367,31 @@ export default function App() {
       <ToastCtx.Provider value={showToast}>
         <div className="ambient" />
 
-        
-
         {!booting && (
-          <>
-            <div className="relative z-10 h-full flex flex-col max-w-[480px] mx-auto w-full bg-[#080610] sm:border-x sm:border-white/10 shadow-2xl overflow-hidden">
-              <div className="flex-1 min-h-0 min-w-0 flex flex-col">
-                <div className={tab === "discover" && pid ? "hidden md:block" : "block"}><AuthBar user={user} onSignedOut={handleSignOut} /></div>
-                <div className="flex-1 min-h-0">
+          <div className="relative z-10 min-h-screen flex flex-col md:flex-row bg-[#080610] text-slate-100 overflow-hidden">
+            
+            {/* Desktop Sidebar Navigation */}
+            <aside className="hidden md:flex flex-shrink-0 w-72 border-r border-white/10 bg-[#080610] flex-col">
+              <SideNav 
+                tab={tab} 
+                onTab={setTab} 
+                pid={pid} 
+                onPick={pickProvider} 
+                counts={{ ...sortedCounts, ...navCounts }} 
+              />
+            </aside>
+
+            {/* Main Content Viewport */}
+            <div className="flex-1 flex flex-col min-h-0 min-w-0 max-w-[720px] mx-auto w-full sm:border-x sm:border-white/10">
+              <div className={tab === "discover" && pid ? "hidden md:block" : "block"}>
+                <AuthBar user={user} onSignedOut={handleSignOut} />
+              </div>
+
+              <div className="flex-1 min-h-0 overflow-hidden flex flex-col">
                 <AnimatePresence mode="wait" initial={false}>
                   <motion.div
                     key={tab}
-                    className="h-full"
+                    className="h-full flex flex-col"
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
@@ -422,7 +432,6 @@ export default function App() {
                         kind="library"
                         items={seenItems}
                         onDiscover={() => setTab("discover")}
-                        
                         onRemove={removeFromCollection}
                         guest={!user}
                         onAuth={() => openAuth("banner")}
@@ -430,29 +439,32 @@ export default function App() {
                     )}
                   </motion.div>
                 </AnimatePresence>
-                </div>
               </div>
 
-              <BottomNav tab={tab} onTab={setTab} counts={navCounts} />
+              {/* Mobile Bottom Navigation Bar */}
+              <div className="md:hidden">
+                <BottomNav tab={tab} onTab={setTab} counts={navCounts} />
+              </div>
             </div>
 
-            <AnimatePresence>
-              {modal === "match" && (
-                <MatchModal
-                  key="match"
-                  initialCode={urlMatchCode}
-                  onClearCode={() => setUrlMatchCode("")}
-                  onClose={closeModal}
-                  onMatches={addMatches}
-                />
-              )}
-              {modal === "auth" && (
-                <AuthModal key="auth" reason={authReason} swipes={swipes} onClose={closeModal} onDemoAuth={handleDemoAuth} onMagicLinkSent={handleMagicLinkSent} />
-              )}
-              {modal === "invite" && <InviteModal key="invite" onClose={closeModal} invite={invite} onInvite={(patch) => setInvite(v => ({ ...v, ...patch }))} />}
-            </AnimatePresence>
-          </>
+          </div>
         )}
+
+        <AnimatePresence>
+          {modal === "match" && (
+            <MatchModal
+              key="match"
+              initialCode={urlMatchCode}
+              onClearCode={() => setUrlMatchCode("")}
+              onClose={closeModal}
+              onMatches={addMatches}
+            />
+          )}
+          {modal === "auth" && (
+            <AuthModal key="auth" reason={authReason} swipes={swipes} onClose={closeModal} onDemoAuth={handleDemoAuth} onMagicLinkSent={handleMagicLinkSent} />
+          )}
+          {modal === "invite" && <InviteModal key="invite" onClose={closeModal} invite={invite} onInvite={(patch) => setInvite(v => ({ ...v, ...patch }))} />}
+        </AnimatePresence>
 
         <Toast toast={toast} />
       </ToastCtx.Provider>

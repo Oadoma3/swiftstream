@@ -176,6 +176,8 @@ export function Sheet({ title, subtitle, onClose, onKey, children }) {
           background: "var(--bg)",
           boxShadow: "0 -20px 60px -10px rgba(0,0,0,.7), inset 0 0 0 1px rgba(255,255,255,.1)",
           paddingBottom: "env(safe-area-inset-bottom, 0px)",
+          WebkitOverflowScrolling: "touch",
+          touchAction: "pan-y",
         }}
         initial={{ y: 90, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

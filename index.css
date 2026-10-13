@@ -18,13 +18,16 @@
     color-scheme: dark;
   }
   html { scroll-padding-top: env(safe-area-inset-top, 0px); }
-  html, body, #root { height: 100%; }
+  html, body { min-height: 100%; }
+  #root { min-height: 100%; }
   body {
     margin: 0;
     background: var(--bg);
     color: var(--text);
     font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     -webkit-tap-highlight-color: transparent;
     user-select: none;
   }

@@ -401,7 +401,7 @@ export default function App() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.6, ease: "easeInOut" }}
-              className="fixed inset-0 z-50 flex items-center justify-center bg-[#080610]"
+              className="pointer-events-none fixed inset-0 z-50 flex items-center justify-center bg-[#080610]"
             >
               <motion.div
                 initial={{ scale: 0.9, opacity: 0 }}
@@ -421,10 +421,13 @@ export default function App() {
 
         <div className="ambient" />
 
-        <div className="relative z-10 flex flex-col md:flex-row min-h-screen bg-[#080610] text-slate-100 overflow-x-hidden">
+        <div className="relative z-10 flex flex-col md:flex-row min-h-screen md:h-screen bg-[#080610] text-slate-100 overflow-x-hidden">
             
             {/* Desktop navigation and provider dashboard */}
-            <aside className="hidden md:flex w-full md:w-96 flex-shrink-0 flex-col bg-[#0b0816] md:sticky md:top-0 md:h-screen md:overflow-y-auto">
+            <aside
+              className="hidden md:flex w-full md:w-96 flex-shrink-0 flex-col bg-[#0b0816] md:sticky md:top-0 md:h-screen md:overflow-y-auto"
+              style={{ WebkitOverflowScrolling: "touch", touchAction: "pan-y" }}
+            >
               <SideNav 
                 tab={tab} 
                 onTab={setTab} 
@@ -440,8 +443,11 @@ export default function App() {
             </aside>
 
             {/* Main Content Viewport */}
-            <main className="flex-1 flex flex-col items-center justify-center min-w-0 p-6 md:p-12 overflow-y-auto">
-              <div className="w-full">
+            <main
+              className="flex flex-1 flex-col items-center justify-center min-w-0 p-4 pb-[calc(6rem+env(safe-area-inset-bottom))] md:h-screen md:min-h-0 md:p-12 md:overflow-y-auto"
+              style={{ WebkitOverflowScrolling: "touch", touchAction: "pan-y" }}
+            >
+              <div className="w-full min-h-full flex flex-col">
               <div className={tab === "discover" && pid ? "hidden md:block" : "block"}>
                 <AuthBar user={user} onSignedOut={handleSignOut} />
               </div>

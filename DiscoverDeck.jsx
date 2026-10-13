@@ -209,7 +209,13 @@ function QuickCatalogSearch({ logs, onLog }) {
             exit={{ opacity: 0, y: -6 }}
             transition={{ duration: 0.14 }}
             className="absolute left-0 right-0 top-full mt-2 rounded-2xl p-2 space-y-1.5 max-h-72 overflow-y-auto no-scroll"
-            style={{ background: "rgba(20,16,38,.98)", backdropFilter: "blur(16px)", boxShadow: "0 22px 48px -8px rgba(0,0,0,.9), inset 0 0 0 1px rgba(255,255,255,.16)" }}
+            style={{
+              background: "rgba(20,16,38,.98)",
+              backdropFilter: "blur(16px)",
+              boxShadow: "0 22px 48px -8px rgba(0,0,0,.9), inset 0 0 0 1px rgba(255,255,255,.16)",
+              WebkitOverflowScrolling: "touch",
+              touchAction: "pan-y",
+            }}
           >
             {results.map(s => {
               const st = getStatus(s);
@@ -291,12 +297,12 @@ function ShuffleAllButton({ onClick, active, sorted }) {
   );
 }
 
-function ProviderList({ onPick, activeId, counts = {}, logs = {}, onLog }) {
+function ProviderList({ onPick, activeId, counts = {}, logs = {}, onLog, sidebar = false }) {
   return (
     <div>
       {onLog && <QuickCatalogSearch logs={logs} onLog={onLog} onPick={onPick} />}
       <ShuffleAllButton onClick={() => onPick("mixed")} active={activeId === "mixed"} sorted={counts.mixed || 0} />
-      <ProviderGrid onPick={onPick} activeId={activeId} counts={counts} />
+      <ProviderGrid onPick={onPick} activeId={activeId} counts={counts} sidebar={sidebar} />
     </div>
   );
 }
@@ -310,15 +316,16 @@ export function ProviderSidebar({ onPick, activeId, counts, logs, onLog }) {
         counts={counts}
         logs={logs}
         onLog={onLog}
+        sidebar
       />
     </div>
   );
 }
 
-function ProviderGrid({ onPick, activeId, counts = {} }) {
+function ProviderGrid({ onPick, activeId, counts = {}, sidebar = false }) {
   return (
     <motion.div
-      className="grid grid-cols-2 gap-x-4 gap-y-5"
+      className={`grid ${sidebar ? "grid-cols-2 gap-x-4 gap-y-5" : "grid-cols-3 sm:grid-cols-4 gap-x-3 gap-y-5"}`}
       initial="hidden"
       animate="show"
       variants={{ hidden: {}, show: { transition: { staggerChildren: 0.03, delayChildren: 0.05 } } }}
@@ -336,9 +343,9 @@ function ProviderGrid({ onPick, activeId, counts = {} }) {
             variants={{ hidden: { opacity: 0, scale: 0.88, y: 10 }, show: { opacity: 1, scale: 1, y: 0, transition: { type: "spring", stiffness: 320, damping: 24 } } }}
             whileHover={{ scale: 1.06, y: -3 }}
             whileTap={{ scale: 0.94 }}
-            className="flex flex-col items-center gap-2 rounded-3xl p-3"
+            className={`flex flex-col items-center gap-2 rounded-3xl ${sidebar ? "p-3" : "p-2"}`}
           >
-            <span className="relative block w-full max-w-[112px] mx-auto">
+            <span className={`relative block w-full mx-auto ${sidebar ? "max-w-[112px]" : "max-w-[82px]"}`}>
               {on && (
                 <span
                   className="absolute -inset-1.5 pointer-events-none"
@@ -356,8 +363,8 @@ function ProviderGrid({ onPick, activeId, counts = {} }) {
                 </span>
               )}
             </span>
-            <span className="text-sm font-bold text-center leading-tight truncate w-full">{p.name}</span>
-            <span className="text-xs -mt-1 text-center" style={{ color: n > 0 ? "var(--seen)" : "var(--muted)" }}>
+            <span className={`${sidebar ? "text-sm" : "text-xs sm:text-sm"} font-bold text-center leading-tight truncate w-full`}>{p.name}</span>
+            <span className={`${sidebar ? "text-xs" : "text-[10.5px]"} -mt-1 text-center`} style={{ color: n > 0 ? "var(--seen)" : "var(--muted)" }}>
               {n > 0 ? `${n.toLocaleString()} / ${p.shows.length.toLocaleString()}` : `${p.shows.length.toLocaleString()} shows`}
             </span>
           </motion.button>
@@ -409,10 +416,10 @@ function Home({ onPick, counts, logs, onLog }) {
     { c: "var(--save)", t: "Save to watch", d: "Send it to your Watchlist." },
   ];
   return (
-    <div className="relative h-full overflow-hidden">
+    <div className="relative min-h-full md:h-full overflow-visible md:overflow-hidden">
       <HeroMesh />
 
-      <div className="md:hidden h-full overflow-y-auto no-scroll px-5 pt-3 pb-24 max-w-xl mx-auto w-full">
+      <div className="md:hidden px-5 pt-3 pb-5 max-w-xl mx-auto w-full">
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
           <h1 className="display text-4xl leading-none" style={{ fontWeight: 800 }}>SwiftStream</h1>
           <p className="mt-1.5 text-sm" style={{ color: "var(--muted)" }}>
@@ -671,7 +678,10 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
 
         {/* Thumb-scrollable Genre Filter Bar */}
         {genres.length > 1 && (
-          <div className="flex items-center gap-1.5 overflow-x-auto no-scroll mt-2 pb-0.5 -mx-4 px-4 md:mx-0 md:px-0">
+          <div
+            className="flex items-center gap-1.5 overflow-x-auto no-scroll mt-2 pb-0.5 -mx-4 px-4 md:mx-0 md:px-0"
+            style={{ WebkitOverflowScrolling: "touch", touchAction: "pan-x" }}
+          >
             <button
               onClick={() => { haptic(8); setFlipped(false); setActiveGenre(null); }}
               className="shrink-0 px-2.5 py-1 rounded-full text-[11px] font-bold transition"

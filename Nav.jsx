@@ -24,8 +24,15 @@ export function BottomNav({ tab, onTab, counts }) {
   return (
     <nav
       aria-label="Main"
-      className="relative z-20 shrink-0 md:hidden"
-      style={{ background: "rgba(15,12,27,.94)", backdropFilter: "blur(14px)", borderTop: "1px solid rgba(255,255,255,.08)" }}
+      className="fixed inset-x-0 bottom-0 z-40 md:hidden"
+      style={{
+        background: "rgba(15,12,27,.94)",
+        backdropFilter: "blur(14px)",
+        borderTop: "1px solid rgba(255,255,255,.08)",
+        paddingBottom: "env(safe-area-inset-bottom, 0px)",
+        WebkitOverflowScrolling: "touch",
+        touchAction: "pan-y",
+      }}
     >
       <div className="max-w-xl mx-auto grid grid-cols-3 px-3 py-1.5">
         {NAV_TABS.map(t => {
@@ -80,7 +87,7 @@ export function SideNav({ tab, onTab, counts }) {
     <nav
       aria-label="Main"
       className="hidden md:flex flex-col shrink-0 h-auto w-full px-3 py-6"
-      style={{ background: "rgba(15,12,27,.94)" }}
+      style={{ background: "rgba(15,12,27,.94)", WebkitOverflowScrolling: "touch", touchAction: "pan-y" }}
     >
       <div className="px-3 pb-7">
         <p className="display text-2xl leading-none" style={{ fontWeight: 800 }}>SwiftStream</p>

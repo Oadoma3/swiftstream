@@ -302,7 +302,7 @@ export function Collection({ kind, items, onDiscover, onRate, onMoveToSeen, onRe
   };
 
   return (
-    <div className="h-full flex flex-col max-w-xl md:max-w-none mx-auto w-full">
+    <div className="min-h-full md:h-full flex flex-col max-w-xl md:max-w-none mx-auto w-full">
       <header className="px-5 pt-5 pb-3 md:px-8 md:pt-8 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
         <div>
           <h1 className="display text-4xl leading-none" style={{ fontWeight: 800, color: meta.color }}>{meta.title}</h1>
@@ -371,7 +371,10 @@ export function Collection({ kind, items, onDiscover, onRate, onMoveToSeen, onRe
         )}
       </header>
 
-      <div className="flex-1 min-h-0 overflow-y-auto no-scroll px-5 pb-6 space-y-5 md:px-8 md:pb-10">
+      <div
+        className="flex-1 min-h-0 overflow-y-auto no-scroll px-5 pb-6 space-y-5 md:px-8 md:pb-10"
+        style={{ WebkitOverflowScrolling: "touch", touchAction: "pan-y" }}
+      >
         {/* Tonight's Random Pick Spotlight Banner */}
         <AnimatePresence>
           {pickedShow && (
@@ -484,7 +487,12 @@ export function Collection({ kind, items, onDiscover, onRate, onMoveToSeen, onRe
         )}
 
         {kind === "library" && items.length > 0 && (
-          <div className="flex gap-2 overflow-x-auto no-scroll -mx-5 px-5 md:mx-0 md:px-0" role="group" aria-label="Filter by rating">
+          <div
+            className="flex gap-2 overflow-x-auto no-scroll -mx-5 px-5 md:mx-0 md:px-0"
+            role="group"
+            aria-label="Filter by rating"
+            style={{ WebkitOverflowScrolling: "touch", touchAction: "pan-x" }}
+          >
             {[
               { id: "all", label: "All Seen", emoji: null },
               ...RATING_CHOICES.map(k => ({ id: k, label: RATINGS[k].label, emoji: RATINGS[k].emoji })),
@@ -510,7 +518,12 @@ export function Collection({ kind, items, onDiscover, onRate, onMoveToSeen, onRe
         )}
 
         {present.length > 0 && (
-          <div className="flex gap-2 overflow-x-auto no-scroll -mx-5 px-5 md:mx-0 md:px-0 md:flex-wrap md:overflow-visible" role="tablist" aria-label="Filter by streaming app">
+          <div
+            className="flex gap-2 overflow-x-auto no-scroll -mx-5 px-5 md:mx-0 md:px-0 md:flex-wrap md:overflow-visible"
+            role="tablist"
+            aria-label="Filter by streaming app"
+            style={{ WebkitOverflowScrolling: "touch", touchAction: "pan-x" }}
+          >
             {[{ id: "all", name: "All Apps", count: base.length, accent: null }, ...present.map(p => ({ ...p, count: base.filter(i => matchesProvider(i, p)).length }))].map(p => {
               const on = active === p.id;
               return (
@@ -562,7 +575,7 @@ export function Collection({ kind, items, onDiscover, onRate, onMoveToSeen, onRe
             </p>
             <motion.ul
               key={active + "-" + ratingFilter}
-              className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-3 md:gap-4"
+              className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-3 p-1 md:gap-4 md:p-0"
               initial="hidden"
               animate="show"
               variants={{ hidden: {}, show: { transition: { staggerChildren: 0.04 } } }}

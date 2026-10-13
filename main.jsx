@@ -1,9 +1,1 @@
-window.onerror = function(msg, url, line) {
-  document.body.innerHTML = <div style="background:#111;color:#ff5555;padding:20px;font-family:monospace;height:100vh;"><h3>Runtime Crash:</h3><p>\</p><p>\:\</p></div>;
-};
-import './index.css'
-import { createRoot } from "react-dom/client";
-import "./index.css";
-import App from "./App.jsx";
-
-createRoot(document.getElementById("root")).render(<App />);
+import React from 'react';\nimport ReactDOM from 'react-dom/client';\nimport App from './App.jsx';\nimport './index.css';\n\ntry {\n  ReactDOM.createRoot(document.getElementById('root')).render(\n    <React.StrictMode>\n      <App />\n    </React.StrictMode>\n  );\n} catch (err) {\n  document.getElementById('root').innerHTML = '<div style="padding: 40px; color: white; background: #990000; font-family: monospace;"><h3>Runtime Render Crash:</h3><pre>' + err.message + '<br/>' + err.stack + '</pre></div>';\n}\n

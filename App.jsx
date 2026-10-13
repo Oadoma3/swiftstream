@@ -32,6 +32,7 @@ export default function App() {
   const [pid, setPid] = useState(null);
   const [logs, setLogs] = useState(guest0.logs);
   const [swipes, setSwipes] = useState(guest0.swipes);
+  const [lockedUntil, setLockedUntil] = useState(guest0.lockedUntil);
   const [mixedShows, setMixedShows] = useState([]);
   const [authReason, setAuthReason] = useState("gate");
   const [urlMatchCode] = useState(() => new URLSearchParams(window.location.search).get("match") || "");
@@ -58,7 +59,7 @@ export default function App() {
   logsRef.current = logs;
   const user = useMemo(() => api.toAppUser(session), [session]);
   const uid = session && !session.mock ? session.user.id : null;
-  const locked = !user && swipes >= GUEST_LIMIT;
+  const locked = !user && (swipes >= GUEST_LIMIT || lockedUntil !== null);
 
   const resetToGuest = useCallback(() => {
     setSession(null);
@@ -92,8 +93,20 @@ export default function App() {
 
   useEffect(() => {
     if (uid) return;
-    saveGuest(logs, swipes);
-  }, [logs, swipes, uid]);
+    saveGuest(logs, swipes, lockedUntil);
+  }, [logs, swipes, lockedUntil, uid]);
+
+  // Handle setting and resetting the 6-hour swipe lock
+  useEffect(() => {
+    if (uid) return;
+    if (swipes >= GUEST_LIMIT && !lockedUntil) {
+      setLockedUntil(Date.now() + 6 * 60 * 60 * 1000); // Lock for 6 hours
+    }
+    if (lockedUntil && Date.now() >= lockedUntil) {
+      setSwipes(0); // Cooldown expired, reset swipes!
+      setLockedUntil(null);
+    }
+  }, [swipes, lockedUntil, uid]);
 
   const handleDemoAuth = async (email) => {
     const res = await api.signIn({ email, password: "" });

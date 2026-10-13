@@ -10,50 +10,7 @@ const haptic = (ms = 12) => {
   try { if (typeof navigator !== "undefined" && navigator.vibrate) navigator.vibrate(ms); } catch { /* ignore */ }
 };
 
-function RatingPicker({ onPick, onCancel }) {
-  const options = [
-    ...RATING_CHOICES.map(k => ({ key: k, emoji: RATINGS[k].emoji, label: RATINGS[k].label, color: RATINGS[k].color })),
-    { key: "seen", emoji: "\u2713", label: "Just Seen", color: RATINGS.seen.color },
-  ];
-  return (
-    <motion.div
-      className="w-full max-w-[380px] flex flex-col gap-2"
-      role="group"
-      aria-label="Rate this show"
-      initial={{ opacity: 0, y: 8 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.12 }}
-    >
-      <div className="flex w-full items-stretch justify-center gap-2">
-        {options.map((o, i) => (
-          <motion.button
-            key={o.key}
-            onClick={() => { haptic(15); onPick(o.key); }}
-            aria-label={`${o.label} (key ${i + 1})`}
-            whileHover={{ scale: 1.04, y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ type: "spring", stiffness: 500, damping: 18 }}
-            className="flex-1 min-w-0 flex flex-col items-center justify-center gap-1 rounded-2xl px-1"
-            style={{ height: 68, background: "var(--surface)", border: `2px solid ${o.color}`, boxShadow: `0 10px 24px -12px ${o.color}` }}
-          >
-            <span className={`leading-none ${o.key === "seen" ? "text-xl font-extrabold" : "text-2xl"}`} style={o.key === "seen" ? { color: o.color } : undefined}>{o.emoji}</span>
-            <span className="text-[11px] font-bold leading-tight text-center" style={{ color: o.color }}>{o.label}</span>
-          </motion.button>
-        ))}
-      </div>
-      <div className="flex items-center justify-between px-2">
-        <p className="text-[10.5px]" style={{ color: "var(--muted)" }}>Tap to rate</p>
-        <button 
-          onClick={() => { haptic(10); onCancel(); }}
-          className="text-[10.5px] font-extrabold px-3 py-1 rounded-full uppercase transition-transform active:scale-90"
-          style={{ background: "rgba(255,255,255,.14)", color: "var(--text)" }}
-        >
-          {"\u2715"} Cancel
-        </button>
-      </div>
-    </motion.div>
-  );
-}
+
 
 function ActionButton({ action, onClick, size = 68, children }) {
   const a = ACTIONS[action];
@@ -556,7 +513,7 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
     const targetShow = currentRef.current;
     if (!targetShow) return;
     haptic(14);
-    setPending(false);
+    
     setDir(action);
     setFlipped(false);
     setLog(l => [...l, {
@@ -570,17 +527,13 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
 
   const requestAction = useCallback((action) => {
     if (locked) { if (onGate) onGate(); return; }
-    if (action === "seen") {
-      if (!pending) { haptic(10); setPending(true); }
-    } else {
-      setPending(false);
-      decide(action);
-    }
-  }, [pending, decide, locked, onGate]);
+    haptic(10);
+    decide(action);
+  }, [decide, locked, onGate]);
 
   const undo = useCallback(() => {
     haptic(10);
-    if (pending) { setPending(false); return; }
+    
     setDir("undo");
     setFlipped(false);
     setLog(l => l.slice(0, -1));
@@ -590,7 +543,7 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
     haptic(18);
     setDir("undo");
     setFlipped(false);
-    setPending(false);
+    
     setLog([]);
     setShuffleSeed(s => s + 1);
   };
@@ -599,11 +552,6 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
     const onKey = (e) => {
       if (e.metaKey || e.ctrlKey || e.altKey) return;
       if (e.target && /input|textarea/i.test(e.target.tagName)) return;
-      if (pending) {
-        const r = { "1": "loved", "2": "mid", "3": "hated", "4": "seen" }[e.key];
-        if (r) { decide("seen", r); e.preventDefault(); return; }
-        if (e.key === "Escape") { setPending(false); e.preventDefault(); return; }
-      }
       if (e.key === "ArrowRight" || e.key.toLowerCase() === "d") requestAction("seen");
       else if (e.key === "ArrowLeft" || e.key.toLowerCase() === "a") requestAction("skip");
       else if (e.key === "ArrowUp" || e.key.toLowerCase() === "w") requestAction("save");
@@ -614,7 +562,7 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [decide, undo, requestAction, pending]);
+  }, [decide, undo, requestAction]);
 
   useEffect(() => {
     const glow = current && current.colors ? current.colors[0] + "40" : "rgba(92,225,196,.2)";
@@ -657,9 +605,9 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
             </button>
             <button
               onClick={undo}
-              disabled={log.length === 0 && !pending}
+              disabled={log.length === 0}
               className="flex items-center gap-1 text-xs font-bold px-2.5 py-1.5 rounded-full transition-opacity"
-              style={{ background: "var(--surface)", color: "var(--text)", opacity: (log.length === 0 && !pending) ? 0.35 : 1 }}
+              style={{ background: "var(--surface)", color: "var(--text)", opacity: log.length === 0 ? 0.35 : 1 }}
               aria-label="Undo last choice"
             >
               <UndoIcon /> <span className="hidden sm:inline">Undo</span>
@@ -742,15 +690,11 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
             </div>
 
             <div className="flex items-start justify-center w-full" style={{ minHeight: 86 }}>
-              {pending ? (
-                <RatingPicker onPick={(r) => decide("seen", r)} onCancel={() => setPending(false)} />
-              ) : (
-                <div className="flex items-start justify-center gap-6">
-                  <ActionButton action="skip" onClick={() => requestAction("skip")}><XIcon /></ActionButton>
-                  <ActionButton action="save" onClick={() => requestAction("save")} size={56}><BookmarkIcon /></ActionButton>
-                  <ActionButton action="seen" onClick={() => requestAction("seen")}><CheckIcon /></ActionButton>
-                </div>
-              )}
+              <div className="flex items-start justify-center gap-6">
+                <ActionButton action="skip" onClick={() => requestAction("skip")}><XIcon /></ActionButton>
+                <ActionButton action="save" onClick={() => requestAction("save")} size={56}><BookmarkIcon /></ActionButton>
+                <ActionButton action="seen" onClick={() => requestAction("seen")}><CheckIcon /></ActionButton>
+              </div>
             </div>
           </>
         )}

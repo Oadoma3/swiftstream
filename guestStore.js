@@ -1,47 +1,25 @@
-// guestStore.js - Keeps a guest's swipes in localStorage ONLY (never sent anywhere).
-// This means a refresh does not reset the 10-swipe limit, and an email-confirmation
-// round trip does not lose the guest's progress. It is merged into Supabase after sign-up.
-import { findShow } from "./data";
-
-const KEY = "swiftstream-guest-v1";
-
 export function loadGuest() {
-  const empty = { logs: {}, swipes: 0 };
   try {
-    const raw = window.localStorage.getItem(KEY);
-    if (!raw) return empty;
-    const data = JSON.parse(raw);
-    const logs = {};
-    Object.entries(data.logs || {}).forEach(([k, list]) => {
-      logs[k] = list
-        .map(e => {
-          const show = findShow(e.p || k, e.i);
-          return show ? { show, action: e.a, rating: e.r, t: e.t } : null;
-        })
-        .filter(Boolean);
-    });
-    return { logs, swipes: Number(data.swipes) || 0 };
-  } catch {
-    return empty;
-  }
+    const raw = typeof window !== "undefined" ? window.localStorage.getItem("swiftstream-guest-v2") : null;
+    if (raw) {
+      const data = JSON.parse(raw);
+      if (data.lockedUntil && Date.now() >= data.lockedUntil) {
+        return { logs: data.logs || {}, swipes: 0, lockedUntil: null };
+      }
+      return { logs: data.logs || {}, swipes: data.swipes || 0, lockedUntil: data.lockedUntil || null };
+    }
+  } catch { /* ignore */ }
+  return { logs: {}, swipes: 0, lockedUntil: null };
 }
 
-export function saveGuest(logs, swipes) {
+export function saveGuest(logs, swipes, lockedUntil = null) {
   try {
-    const slim = {};
-    Object.entries(logs).forEach(([k, list]) => {
-      slim[k] = list.map(e => ({ p: e.show.providerId || k, i: e.show.id, a: e.action, r: e.rating, t: e.t }));
-    });
-    window.localStorage.setItem(KEY, JSON.stringify({ logs: slim, swipes }));
-  } catch {
-    /* storage unavailable: guest progress just won't survive a refresh */
-  }
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("swiftstream-guest-v2", JSON.stringify({ logs, swipes, lockedUntil }));
+    }
+  } catch { /* ignore */ }
 }
 
 export function clearGuest() {
-  try {
-    window.localStorage.removeItem(KEY);
-  } catch {
-    /* ignore */
-  }
+  try { if (typeof window !== "undefined") window.localStorage.removeItem("swiftstream-guest-v2"); } catch { /* ignore */ }
 }

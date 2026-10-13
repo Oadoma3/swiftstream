@@ -371,14 +371,14 @@ export function SwipeCard({ show, dir, flipped, onFlip, onDecide, mixed = false,
 
   return (
     <motion.div
-      className="absolute inset-0 cursor-grab active:cursor-grabbing touch-none"
-      style={{ x, y, rotate }}
+      className="absolute inset-0 cursor-grab active:cursor-grabbing"
+      style={{ x, y, rotate, touchAction: "pan-y" }}
       custom={dir}
       variants={cardVariants}
       initial="enter"
       animate="center"
       exit="exit"
-      drag={true}
+      drag="x"
       dragSnapToOrigin
       dragElastic={0.9}
       dragConstraints={{ left: 0, right: 0 }}

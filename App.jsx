@@ -424,7 +424,7 @@ export default function App() {
         <div className="relative z-10 flex flex-col md:flex-row min-h-screen bg-[#080610] text-slate-100 overflow-x-hidden">
             
             {/* Desktop navigation and provider dashboard */}
-            <aside className="hidden md:flex w-full md:w-80 flex-shrink-0 flex-col border-r border-white/5 bg-[#0b0816] md:sticky md:top-0 md:h-screen">
+            <aside className="hidden md:flex w-full md:w-96 flex-shrink-0 flex-col bg-[#0b0816] md:sticky md:top-0 md:h-screen md:overflow-y-auto">
               <SideNav 
                 tab={tab} 
                 onTab={setTab} 
@@ -440,7 +440,7 @@ export default function App() {
             </aside>
 
             {/* Main Content Viewport */}
-            <main className="flex-1 flex flex-col items-center justify-start min-w-0 p-4 md:p-8 overflow-y-auto">
+            <main className="flex-1 flex flex-col items-center justify-center min-w-0 p-6 md:p-12 overflow-y-auto">
               <div className="w-full">
               <div className={tab === "discover" && pid ? "hidden md:block" : "block"}>
                 <AuthBar user={user} onSignedOut={handleSignOut} />

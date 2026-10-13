@@ -303,7 +303,7 @@ function ProviderList({ onPick, activeId, counts = {}, logs = {}, onLog }) {
 
 export function ProviderSidebar({ onPick, activeId, counts, logs, onLog }) {
   return (
-    <div className="min-h-0 flex-1 overflow-y-auto px-4 pb-5 pt-3">
+    <div className="px-5 pb-6 pt-3">
       <ProviderList
         onPick={onPick}
         activeId={activeId}
@@ -318,7 +318,7 @@ export function ProviderSidebar({ onPick, activeId, counts, logs, onLog }) {
 function ProviderGrid({ onPick, activeId, counts = {} }) {
   return (
     <motion.div
-      className="grid grid-cols-3 gap-x-3 gap-y-5"
+      className="grid grid-cols-2 gap-x-4 gap-y-5"
       initial="hidden"
       animate="show"
       variants={{ hidden: {}, show: { transition: { staggerChildren: 0.03, delayChildren: 0.05 } } }}
@@ -336,9 +336,9 @@ function ProviderGrid({ onPick, activeId, counts = {} }) {
             variants={{ hidden: { opacity: 0, scale: 0.88, y: 10 }, show: { opacity: 1, scale: 1, y: 0, transition: { type: "spring", stiffness: 320, damping: 24 } } }}
             whileHover={{ scale: 1.06, y: -3 }}
             whileTap={{ scale: 0.94 }}
-            className="flex flex-col items-center gap-1.5 rounded-3xl p-1"
+            className="flex flex-col items-center gap-2 rounded-3xl p-3"
           >
-            <span className="relative block w-full max-w-[82px] mx-auto">
+            <span className="relative block w-full max-w-[112px] mx-auto">
               {on && (
                 <span
                   className="absolute -inset-1.5 pointer-events-none"
@@ -356,8 +356,8 @@ function ProviderGrid({ onPick, activeId, counts = {} }) {
                 </span>
               )}
             </span>
-            <span className="text-xs sm:text-sm font-bold text-center leading-tight truncate w-full">{p.name}</span>
-            <span className="text-[10.5px] -mt-1 text-center" style={{ color: n > 0 ? "var(--seen)" : "var(--muted)" }}>
+            <span className="text-sm font-bold text-center leading-tight truncate w-full">{p.name}</span>
+            <span className="text-xs -mt-1 text-center" style={{ color: n > 0 ? "var(--seen)" : "var(--muted)" }}>
               {n > 0 ? `${n.toLocaleString()} / ${p.shows.length.toLocaleString()}` : `${p.shows.length.toLocaleString()} shows`}
             </span>
           </motion.button>
@@ -901,7 +901,7 @@ export default function DiscoverDeck({
   }
 
   return (
-    <div className="flex-1 flex flex-col items-center justify-center w-full min-h-[calc(100vh-2rem)] p-4 md:p-8">
+    <div className="flex-1 flex flex-col items-center justify-center w-full min-h-0">
       
       <div className="h-full min-h-0 min-w-0 flex flex-col w-full max-w-4xl">
         <div className={activeProvider ? "hidden lg:block" : "block"}>

@@ -46,7 +46,7 @@ export default function App() {
   const [swipes, setSwipes] = useState(guest0.swipes);  // every card sorted in Discover; never goes down
   const [mixedShows, setMixedShows] = useState([]);     // shuffled deck for Mixed Mode
   const [authReason, setAuthReason] = useState("gate");
-  const [modal, setModal] = useState(null);             // null | "match" | "invite" | "auth"
+  const [urlMatchCode] = useState(() => new URLSearchParams(window.location.search).get("match") || ""); const [modal, setModal] = useState(() => new URLSearchParams(window.location.search).get("match") ? "match" : null);             // null | "match" | "invite" | "auth"
   const [matches, setMatches] = useState([]);           // shows both players said yes to
   const [invite, setInvite] = useState({ sent: false, joined: false });
 
@@ -334,7 +334,7 @@ export default function App() {
             </div>
 
             <AnimatePresence>
-              {modal === "match" && <MatchModal key="match" onClose={closeModal} onMatches={addMatches} />}
+              {modal === "match" && <MatchModal key="match" initialCode={urlMatchCode} onClose={closeModal} onMatches={addMatches} />}
               {modal === "auth" && (
                 <AuthModal key="auth" reason={authReason} swipes={swipes} onClose={closeModal} onDemoAuth={handleDemoAuth} onMagicLinkSent={handleMagicLinkSent} />
               )}

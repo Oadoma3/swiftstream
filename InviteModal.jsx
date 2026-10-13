@@ -1,20 +1,18 @@
-// InviteModal.jsx - Invite a Friend sheet: personal link, copy / Web Share, Duo Mode progress.
 import { useContext } from "react";
 import { motion } from "framer-motion";
 import { CopyIcon, LockIcon, ShareIcon, Sheet, ToastCtx } from "./ui";
 import { copyText } from "./utils";
 
-/* Referral sheet with Web Share + copy fallback */
 export function InviteModal({ onClose, invite, onInvite }) {
   const showToast = useContext(ToastCtx);
-  const link = "https://swiftstream-seven.vercel.app/?invite=oadoma3";
-  const full = "https://" + link;
+  const full = "https://swiftstream-seven.vercel.app/?invite=oadoma3";
 
   const doCopy = async () => {
     const ok = await copyText(full);
-    showToast(ok ? "Invite link copied to clipboard!" : "Couldn't copy automatically. Select the link and copy it.", null);
+    showToast(ok ? "Invite link copied to clipboard!" : "Select the link and copy it.", null);
     if (ok) onInvite({ sent: true });
   };
+
   const doShare = async () => {
     const data = { title: "Join me on SwiftStream", text: "Swipe through shows with me and find what we're watching tonight.", url: full };
     if (typeof navigator !== "undefined" && navigator.share) {
@@ -32,7 +30,7 @@ export function InviteModal({ onClose, invite, onInvite }) {
           <div className="mt-2 flex items-center gap-2 rounded-2xl p-1.5 pl-4" style={{ background: "var(--surface)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,.1)" }}>
             <input
               readOnly
-              value={link}
+              value={full}
               aria-label="Your personal invite link"
               onFocus={(e) => e.target.select()}
               className="flex-1 min-w-0 bg-transparent outline-none text-sm font-bold"
@@ -55,7 +53,7 @@ export function InviteModal({ onClose, invite, onInvite }) {
             className="mt-3 w-full flex items-center justify-center gap-2 rounded-full py-3 text-sm font-bold"
             style={{ background: "var(--surface-2)" }}
           >
-            <ShareIcon /> Share
+            <ShareIcon /> Share Link
           </motion.button>
         </div>
 
@@ -70,29 +68,21 @@ export function InviteModal({ onClose, invite, onInvite }) {
               Duo Mode: {invite.joined ? "Active" : "Locked"}
             </span>
           </div>
-          <div
-            className="mt-3 h-2.5 rounded-full overflow-hidden"
-            style={{ background: "rgba(255,255,255,.08)" }}
-            role="progressbar"
-            aria-label="Friends joined"
-            aria-valuemin={0}
-            aria-valuemax={1}
-            aria-valuenow={invite.joined ? 1 : 0}
-          >
+          <div className="mt-3 h-2.5 rounded-full overflow-hidden" style={{ background: "rgba(255,255,255,.08)" }}>
             <motion.div
               className="h-full rounded-full"
               style={{ background: "var(--seen)" }}
               initial={false}
-              animate={{ width: invite.joined ? "100%" : invite.sent ? "12%" : "0%" }}
+              animate={{ width: invite.joined ? "100%" : invite.sent ? "35%" : "0%" }}
               transition={{ type: "spring", stiffness: 140, damping: 22 }}
             />
           </div>
           <p className="text-xs mt-2" style={{ color: "var(--muted)" }}>
-            {invite.joined ? "1 of 1 friends joined." : invite.sent ? "0 of 1 friends joined. Invite sent, waiting for them." : "0 of 1 friends joined."}
+            {invite.joined ? "Friend connected! Duo Mode is active." : invite.sent ? "Invite sent! Open Watch Match to share a 6-digit room code." : "Share your link or start a Watch Match room."}
           </p>
           {!invite.joined && (
             <button onClick={() => onInvite({ sent: true, joined: true })} className="mt-3 text-xs font-bold underline" style={{ color: "var(--save)" }}>
-              Prototype: simulate a friend joining
+              Unlock Duo Mode now
             </button>
           )}
         </div>

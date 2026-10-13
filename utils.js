@@ -35,17 +35,11 @@ export function dedupeByShow(list) {
   const seen = new Set();
   return list.filter(i => { const k = showKey(i); if (seen.has(k)) return false; seen.add(k); return true; });
 }
-// Add to the bottom of utils.js
 export const RATINGS = {
-  LOVE: 3,
-  LIKE: 2,
-  MEH: 1,
-  SKIP: 0
+  seen: { label: "Seen", emoji: "\u2713", color: "var(--seen)" },
+  love: { label: "Love", emoji: "\u2764\uFE0F", color: "#ff5c8a" },
+  like: { label: "Like", emoji: "\uD83D\uDC4D", color: "var(--seen)" },
+  meh: { label: "Meh", emoji: "\uD83D\uDE10", color: "#f5c842" },
 };
 
-export const RATING_CHOICES = [
-  { id: 3, label: "Love", emoji: "❤️" },
-  { id: 2, label: "Like", emoji: "👍" },
-  { id: 1, label: "Meh", emoji: "😐" },
-  { id: 0, label: "Skip", emoji: "👎" }
-];
+export const RATING_CHOICES = ["seen", "love", "like", "meh"];

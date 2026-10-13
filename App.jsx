@@ -14,9 +14,23 @@ import MatchModal from "./MatchModal";
 import InviteModal from "./InviteModal";
 import AuthModal from "./AuthModal";
 
-function deriveItems(logsObj) {
+function normalizeLogs(value) {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return {};
+  return Object.fromEntries(
+    Object.entries(value)
+      .filter(([, entries]) => Array.isArray(entries))
+      .map(([id, entries]) => [
+        id,
+        entries.filter(entry => entry && typeof entry === "object" && entry.show && typeof entry.show === "object"),
+      ])
+  );
+}
+
+function deriveItems(logsObj = {}) {
   const entries = Object.entries(logsObj)
-    .flatMap(([id, l]) => l.map(e => ({ ...e.show, providerId: e.show.providerId || id, action: e.action, t: e.t })))
+    .flatMap(([id, list]) => (Array.isArray(list) ? list : [])
+      .filter(e => e && e.show && typeof e.show === "object")
+      .map(e => ({ ...e.show, providerId: e.show.providerId || id, action: e.action, t: e.t })))
     .sort((a, b) => b.t - a.t);
   return {
     seen: dedupeByShow(entries.filter(e => e.action === "seen")),
@@ -44,13 +58,22 @@ function consumeInitialRoomCode() {
 
 export default function App() {
   const [booting, setBooting] = useState(false);
-  const [guest0] = useState(loadGuest);
+  const [guest0] = useState(() => {
+    const saved = loadGuest() || {};
+    const savedSwipes = Number(saved.swipes);
+    const savedLock = Number(saved.lockedUntil);
+    return {
+      logs: normalizeLogs(saved.logs),
+      swipes: Number.isFinite(savedSwipes) && savedSwipes > 0 ? Math.floor(savedSwipes) : 0,
+      lockedUntil: Number.isFinite(savedLock) && savedLock > 0 ? savedLock : null,
+    };
+  });
 
   const [tab, setTab] = useState("discover");
   const [pid, setPid] = useState(null);
-  const [logs, setLogs] = useState(guest0.logs);
-  const [swipes, setSwipes] = useState(guest0.swipes);
-  const [lockedUntil, setLockedUntil] = useState(guest0.lockedUntil);
+  const [logs, setLogs] = useState(guest0.logs || {});
+  const [swipes, setSwipes] = useState(guest0.swipes || 0);
+  const [lockedUntil, setLockedUntil] = useState(guest0.lockedUntil || null);
   const [mixedShows, setMixedShows] = useState([]);
   const [authReason, setAuthReason] = useState("gate");
   const [urlMatchCode, setUrlMatchCode] = useState(consumeInitialRoomCode);
@@ -80,7 +103,7 @@ export default function App() {
   const logsRef = useRef(logs);
   logsRef.current = logs;
   const user = useMemo(() => api.toAppUser(session), [session]);
-  const uid = session && !session.mock ? session.user.id : null;
+  const uid = session && !session.mock ? session.user?.id ?? null : null;
   const locked = !user && (swipes >= GUEST_LIMIT || lockedUntil !== null);
 
   const resetToGuest = useCallback(() => {
@@ -334,7 +357,7 @@ export default function App() {
   const mixedProvider = useMemo(() => ({ id: "mixed", name: "Mixed Mode", accent: "#ff5ccf", shows: ALL_SHOWS }), []);
   const provider = useMemo(() => {
     if (pid === "mixed") return mixedProvider;
-    return PROVIDERS.find(x => x.id === pid);
+    return PROVIDERS.find(x => x.id === pid) || null;
   }, [pid, mixedProvider, catalogTick]);
 
   const allSortedEntries = useMemo(() => {
@@ -356,7 +379,7 @@ export default function App() {
   const pickProvider = (id) => setPid(id);
 
   const sortedCounts = useMemo(() => {
-    const c = Object.fromEntries(Object.entries(logs).map(([k, v]) => [k, v.length]));
+    const c = Object.fromEntries(Object.entries(logs || {}).map(([k, v]) => [k, Array.isArray(v) ? v.length : 0]));
     c.mixed = allSortedEntries.length;
     return c;
   }, [logs, allSortedEntries]);

@@ -2,7 +2,7 @@
 import { useState, useEffect, useCallback, useMemo, useRef, useContext, useDeferredValue } from "react";
 import { motion, AnimatePresence, useAnimationControls } from "framer-motion";
 import { ACTIONS, ALL_SHOWS, PROVIDERS } from "./data";
-import { BookmarkIcon, CheckIcon, LinkIcon, ProviderIcon, Toast } from "./ui";
+import { BookmarkIcon, CheckIcon, LinkIcon, ProviderIcon, Toast, ToastCtx, UndoIcon, UsersIcon, XIcon } from "./ui";
 import { PosterFace, SwipeCard, launchStream } from "./Card";
 import { RATINGS, RATING_CHOICES, shuffle } from "./utils";
 
@@ -483,6 +483,7 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
 
   const logRef = useRef(log);
   logRef.current = log;
+  const isMixed = provider.id === "mixed";
 
   // Lock the deck order so swiping a card does NOT re-run filter/shuffle or change the preview card underneath!
   const shows = useMemo(() => {
@@ -501,9 +502,7 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
     }
     return [...swipedList, ...remaining];
   }, [baseShows, provider.id, provider.name, activeGenre, activeApps, shuffleSeed, isMixed]);
-
   const setLog = useCallback((u) => onLog(provider.id, u), [onLog, provider.id]);
-  const isMixed = provider.id === "mixed";
   const [dir, setDir] = useState("seen");
   const [flipped, setFlipped] = useState(false);
   const [pending, setPending] = useState(false);
@@ -849,15 +848,50 @@ function StreakPill({ n }) {
 }
 
 export default function DiscoverDeck({
-  provider, pid, logs, onLog, onPick, onHome, counts,
+  provider = null, pid = null, logs = {}, onLog, onPick, onHome, counts = {},
   locked, onGate, onSwipe, swipes, user, onSignOut, onOpenMatch, onOpenInvite,
 }) {
+  const activeProvider = provider && typeof provider === "object" && typeof provider.id === "string"
+    ? provider
+    : null;
+  const safeLogs = logs && typeof logs === "object" && !Array.isArray(logs)
+    ? Object.fromEntries(Object.entries(logs).map(([id, entries]) => [
+      id,
+      Array.isArray(entries)
+        ? entries.filter(entry => entry && typeof entry === "object" && entry.show && typeof entry.show === "object")
+        : [],
+    ]))
+    : {};
+  const safeCounts = counts && typeof counts === "object" && !Array.isArray(counts) ? counts : {};
+  const streak = Number.isFinite(swipes) ? swipes : 0;
+
+  if (activeProvider && (!Array.isArray(activeProvider.shows) || activeProvider.shows.length === 0)) {
+    return (
+      <div className="flex h-full min-h-0 items-center justify-center px-6 text-center">
+        <div className="max-w-sm">
+          <p className="display text-2xl font-extrabold">{activeProvider.name || "Provider"} has no shows available</p>
+          <p className="mt-2 text-sm" style={{ color: "var(--muted)" }}>
+            Choose another provider or return to the catalog.
+          </p>
+          <button
+            type="button"
+            onClick={onHome}
+            className="mt-5 rounded-full px-5 py-2.5 text-sm font-bold"
+            style={{ background: "var(--text)", color: "var(--bg)" }}
+          >
+            All Apps
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="h-full">
       
       <div className="h-full min-w-0 flex flex-col">
-        <div className={provider ? "hidden lg:block" : "block"}>
-          <ActionBar onMatch={onOpenMatch} onInvite={onOpenInvite} streak={swipes} user={user} onSignOut={onSignOut} />
+        <div className={activeProvider ? "hidden lg:block" : "block"}>
+          <ActionBar onMatch={onOpenMatch} onInvite={onOpenInvite} streak={streak} user={user} onSignOut={onSignOut} />
         </div>
         <AnimatePresence mode="wait" initial={false}>
           <motion.div
@@ -868,9 +902,9 @@ export default function DiscoverDeck({
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.2 }}
           >
-            {provider
-              ? <Sorter provider={provider} log={logs[provider.id] || []} onLog={onLog} onHome={onHome} locked={locked} onGate={onGate} onSwipe={onSwipe} />
-              : <Home onPick={onPick} counts={counts} logs={logs} onLog={onLog} />}
+            {activeProvider
+              ? <Sorter provider={activeProvider} log={Array.isArray(safeLogs[activeProvider.id]) ? safeLogs[activeProvider.id] : []} onLog={onLog} onHome={onHome} locked={locked} onGate={onGate} onSwipe={onSwipe} />
+              : <Home onPick={onPick} counts={safeCounts} logs={safeLogs} onLog={onLog} />}
           </motion.div>
         </AnimatePresence>
       </div>

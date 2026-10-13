@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { PROVIDERS } from "./data";
 import { ProviderIcon, ToastCtx } from "./ui";
 import { BackFace, FlipCard, PosterFace, launchStream, launchTrailer } from "./Card";
+import { RATINGS, RATING_CHOICES } from "./utils";
 
 const COLLECTION_META = {
   watchlist: {

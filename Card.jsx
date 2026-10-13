@@ -1,29 +1,38 @@
-// Card.jsx - Show cards: poster front, details back, 3D tap-to-flip wrapper, and the draggable swipe card.
+// Card.jsx - Show cards: poster front, clean scrollable details back, direct streaming launchers, and 3D swipe card.
 import { useRef, useContext } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import { RATINGS } from "./data";
 import { initials } from "./utils";
 import { FlipIcon, InfoIcon, ProviderIcon, ToastCtx } from "./ui";
 
-/* Rating badge (emoji, or a check for a plain "seen") */
-function RatingBadge({ rating, size = 40 }) {
-  const r = RATINGS[rating] || RATINGS.seen;
-  return (
-    <span
-      className="flex items-center justify-center rounded-full shrink-0"
-      title={r.label}
-      aria-label={r.label}
-      style={{ width: size, height: size, background: "rgba(8,6,16,.8)", border: `2px solid ${r.color}`, color: r.color, fontSize: size * 0.5, fontWeight: 800, lineHeight: 1 }}
-    >
-      {r.emoji}
-    </span>
-  );
+const STREAM_URLS = {
+  "Netflix": (q) => `https://www.netflix.com/search?q=${encodeURIComponent(q)}`,
+  "Hulu": (q) => `https://www.hulu.com/search?q=${encodeURIComponent(q)}`,
+  "Prime Video": (q) => `https://www.amazon.com/s?k=${encodeURIComponent(q)}&i=instant-video`,
+  "Peacock": (q) => `https://www.peacocktv.com/watch/search?q=${encodeURIComponent(q)}`,
+  "Paramount+": (q) => `https://www.paramountplus.com/search/?q=${encodeURIComponent(q)}`,
+  "Disney+": (q) => `https://www.disneyplus.com/search?q=${encodeURIComponent(q)}`,
+  "Max": (q) => `https://play.max.com/search?q=${encodeURIComponent(q)}`,
+  "Apple TV+": (q) => `https://tv.apple.com/search?term=${encodeURIComponent(q)}`,
+  "Tubi": (q) => `https://tubitv.com/search/${encodeURIComponent(q)}`,
+  "Crunchyroll": (q) => `https://www.crunchyroll.com/search?q=${encodeURIComponent(q)}`,
+};
+
+export function launchStream(show, targetNetwork, showToast) {
+  const net = targetNetwork || (show && show.network) || "Netflix";
+  const title = (show && show.title) || "";
+  if (showToast) showToast(`Opening ${title} on ${net}...`, net);
+  const direct = !targetNetwork && (show?.watchUrl || show?.url || show?.link);
+  const url = direct || (STREAM_URLS[net] ? STREAM_URLS[net](title) : `https://www.google.com/search?q=${encodeURIComponent("Watch " + title + " on " + net)}`);
+  if (typeof window !== "undefined") {
+    window.open(url, "_blank", "noopener,noreferrer");
+  }
 }
 
 /* Front face. `compact` is the small grid version; `badge` replaces the info hint. */
 export function PosterFace({ show, compact = false, badge = null, prominent = false }) {
-  const [c1, c2] = show.colors;
-  const genres = compact ? show.genres.slice(0, 2) : show.genres;
+  const [c1, c2] = show.colors || ["#4338ca", "#0f0a24"];
+  const genres = compact ? (show.genres || []).slice(0, 2) : (show.genres || []);
   const pill = { background: "rgba(8,6,16,.62)", border: "1px solid rgba(255,255,255,.14)" };
   const pillSize = compact ? "px-2 py-0.5 text-[10px]" : "px-3 py-1 text-xs";
   return (
@@ -85,10 +94,12 @@ export function PosterFace({ show, compact = false, badge = null, prominent = fa
   );
 }
 
-/* Back face */
+/* Back face: clean layout, scroll-safe synopsis, and clickable multi-platform launchers */
 export function BackFace({ show, compact = false }) {
-  const [c1, c2] = show.colors;
+  const [c1, c2] = show.colors || ["#4338ca", "#0f0a24"];
   const showToast = useContext(ToastCtx);
+  const platforms = show.platforms && show.platforms.length ? show.platforms : [show.network];
+
   return (
     <div
       className={`absolute inset-0 overflow-hidden flex flex-col ${compact ? "rounded-[20px]" : "rounded-[28px]"}`}
@@ -100,63 +111,92 @@ export function BackFace({ show, compact = false }) {
       <div className="h-1.5 shrink-0" style={{ background: `linear-gradient(90deg, ${c1}, transparent)` }} />
       <div className={`flex-1 min-h-0 flex flex-col ${compact ? "p-3" : "p-4"}`}>
         {!compact && (
-          <div className="flex items-center justify-between text-[11px]" style={{ color: "rgba(255,255,255,.6)" }}>
-            <span>{show.year}, {show.genres.join(", ")}</span>
-            <span className="flex items-center gap-1"><FlipIcon /> Tap to flip back</span>
+          <div className="flex items-center justify-between text-[11px] shrink-0" style={{ color: "rgba(255,255,255,.6)" }}>
+            <span className="truncate pr-2">{show.year} • {(show.genres || []).join(", ")}</span>
+            <span className="flex items-center gap-1 shrink-0"><FlipIcon /> Flip</span>
           </div>
         )}
-        <h2 className={`display leading-tight text-white ${compact ? "text-[0.95rem]" : "text-xl mt-2"}`} style={{ fontWeight: 800 }}>{show.title}</h2>
+        <h2 className={`display leading-tight text-white shrink-0 ${compact ? "text-[0.95rem] line-clamp-1" : "text-xl mt-1.5"}`} style={{ fontWeight: 800 }}>
+          {show.title}
+        </h2>
+        {!compact && show.tagline && (
+          <p className="text-[11px] font-medium mt-0.5 line-clamp-1 shrink-0" style={{ color: "rgba(255,255,255,.62)" }}>
+            {show.tagline}
+          </p>
+        )}
 
-        <p
-          className={`leading-snug flex-1 min-h-0 overflow-hidden ${compact ? "text-[11px] mt-1.5" : "text-[13px] mt-2"}`}
-          style={{ color: "rgba(255,255,255,.82)" }}
+        <div
+          className={`flex-1 min-h-0 overflow-y-auto no-scroll pr-0.5 ${compact ? "mt-1.5" : "mt-2"}`}
+          onPointerDown={(e) => e.stopPropagation()}
         >
-          {show.synopsis}
-        </p>
+          <p
+            className={`leading-snug ${compact ? "text-[11px]" : "text-[13px]"}`}
+            style={{ color: "rgba(255,255,255,.85)" }}
+          >
+            {show.synopsis}
+          </p>
+        </div>
 
-        {/* Affiliate CTA, directly beneath the synopsis */}
+        {/* Direct Streaming CTA */}
         <motion.button
-          onClick={(e) => { e.stopPropagation(); showToast("Redirecting to affiliate link...", show.network); }}
+          onClick={(e) => { e.stopPropagation(); launchStream(show, show.network, showToast); }}
           onKeyDown={(e) => e.stopPropagation()}
-          whileHover={{ scale: 1.03 }}
+          whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.95 }}
           aria-label={`Watch ${show.title} on ${show.network}`}
-          className={`w-full rounded-full font-extrabold shrink-0 flex items-center justify-center gap-2 text-white ${compact ? "mt-2 py-2 text-[11px]" : "mt-3 py-3 text-base"}`}
+          className={`w-full rounded-full font-extrabold shrink-0 flex items-center justify-center gap-2 text-white ${compact ? "mt-2 py-1.5 text-[11px]" : "mt-2.5 py-2.5 text-sm"}`}
           style={{
             background: "linear-gradient(120deg, #0b7a73 0%, #6d28d9 100%)",
-            boxShadow: "0 12px 30px -8px rgba(109,40,217,.8), 0 0 0 2px rgba(255,255,255,.28)",
+            boxShadow: "0 12px 26px -8px rgba(109,40,217,.8), 0 0 0 1.5px rgba(255,255,255,.26)",
             textShadow: "0 1px 2px rgba(0,0,0,.35)",
           }}
         >
-          <svg width={compact ? 10 : 14} height={compact ? 10 : 14} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4l14 8-14 8z" /></svg>
-          <span>Watch on {show.network}</span>
+          <svg width={compact ? 10 : 13} height={compact ? 10 : 13} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4l14 8-14 8z" /></svg>
+          <span className="truncate">Watch on {show.network}</span>
         </motion.button>
 
-        <div className={`grid grid-cols-3 ${compact ? "gap-1 mt-1.5" : "gap-2 mt-2"}`}>
+        {/* Clean 3-column metadata bar */}
+        <div className={`grid grid-cols-3 shrink-0 ${compact ? "gap-1 mt-1.5" : "gap-2 mt-2"}`}>
           {[
-            { v: show.seasons, l: show.seasons === 1 ? "season" : "seasons" },
-            { v: show.episodes, l: "episodes" },
-            { v: show.communityScore != null ? (<><span className={compact ? "text-[11px]" : "text-sm"}>🍅</span> {show.communityScore}%</>) : "n/a", l: "score" },
+            { v: show.seasons || 1, l: (show.seasons || 1) === 1 ? "season" : "seasons" },
+            { v: show.episodes || "—", l: "episodes" },
+            { v: show.communityScore != null ? (<><span className={compact ? "text-[10px]" : "text-xs"}>{"\uD83C\uDF45"}</span> {show.communityScore}%</>) : "n/a", l: "score" },
           ].map(st => (
             <div
               key={st.l}
               className={`rounded-xl text-center ${compact ? "px-1 py-1" : "px-1.5 py-1.5"}`}
               style={{ background: "rgba(255,255,255,.08)" }}
             >
-              <div className={`display leading-none whitespace-nowrap ${compact ? "text-[13px]" : "text-base"}`} style={{ fontWeight: 800 }}>{st.v}</div>
-              <div className={`mt-0.5 ${compact ? "text-[9px]" : "text-[11px]"}`} style={{ color: "rgba(255,255,255,.6)" }}>{st.l}</div>
+              <div className={`display leading-none whitespace-nowrap ${compact ? "text-[12px]" : "text-sm"}`} style={{ fontWeight: 800 }}>{st.v}</div>
+              <div className={`mt-0.5 ${compact ? "text-[9px]" : "text-[10px]"}`} style={{ color: "rgba(255,255,255,.6)" }}>{st.l}</div>
             </div>
           ))}
         </div>
 
-        <p className={`text-[11px] ${compact ? "mt-1.5" : "mt-2.5"}`} style={{ color: "rgba(255,255,255,.6)" }}>Available on</p>
-        <div className={`flex flex-wrap ${compact ? "gap-1.5 mt-1" : "gap-3 mt-1.5"}`}>
-          {show.platforms.map(pl => (
-            <div key={pl} className="flex flex-col items-center gap-0.5">
-              <ProviderIcon name={pl} size={compact ? 28 : 36} shadow />
-              {!compact && <span className="text-[10px] font-medium" style={{ color: "rgba(255,255,255,.75)" }}>{pl}</span>}
-            </div>
-          ))}
+        {/* Clickable platform launchers */}
+        <div className={`shrink-0 ${compact ? "mt-1.5" : "mt-2"}`}>
+          <p className="text-[10px] font-medium" style={{ color: "rgba(255,255,255,.58)" }}>
+            {compact ? "Stream on" : "Available on (tap icon to open)"}
+          </p>
+          <div className={`flex flex-wrap items-center ${compact ? "gap-1.5 mt-1" : "gap-2.5 mt-1"}`}>
+            {platforms.map(pl => (
+              <motion.button
+                key={pl}
+                type="button"
+                onClick={(e) => { e.stopPropagation(); launchStream(show, pl, showToast); }}
+                onKeyDown={(e) => e.stopPropagation()}
+                whileHover={{ scale: 1.08 }}
+                whileTap={{ scale: 0.92 }}
+                title={`Watch ${show.title} on ${pl}`}
+                aria-label={`Watch ${show.title} on ${pl}`}
+                className="flex items-center gap-1.5 rounded-full pr-2 pl-0.5 py-0.5 transition"
+                style={{ background: "rgba(255,255,255,.08)", border: "1px solid rgba(255,255,255,.12)" }}
+              >
+                <ProviderIcon name={pl} size={compact ? 20 : 24} shadow />
+                <span className={`${compact ? "text-[9px]" : "text-[11px]"} font-bold`} style={{ color: "rgba(255,255,255,.88)" }}>{pl}</span>
+              </motion.button>
+            ))}
+          </div>
         </div>
       </div>
     </div>

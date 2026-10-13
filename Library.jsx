@@ -1,4 +1,4 @@
-// Library.jsx - Library and Watchlist screens (flippable grid, Streaming DNA, Top Genres, rating editing).
+// Library.jsx - Library and Watchlist screens (search, multi-platform app filters, rating filters, Streaming DNA, Top Genres).
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { PROVIDERS, RATINGS, RATING_CHOICES } from "./data";
@@ -21,6 +21,11 @@ const COLLECTION_META = {
   },
 };
 
+function matchesProvider(item, prov) {
+  if (!prov) return false;
+  return item.providerId === prov.id || item.network === prov.name || (item.platforms || []).includes(prov.name);
+}
+
 /* Genre stats from the global Seen list: frequency of every genre tag, ranked. */
 function aggregateGenres(items) {
   const counts = {};
@@ -38,8 +43,9 @@ function StreamingDNA({ items }) {
       <p className="text-xs mt-0.5" style={{ color: "var(--muted)" }}>How much of each app's catalog you've explored</p>
       <div className="mt-4 space-y-3.5">
         {PROVIDERS.map(p => {
+          const total = Math.max(1, p.shows.length);
           const seen = items.filter(i => i.providerId === p.id).length;
-          const pct = Math.round((seen / p.shows.length) * 100);
+          const pct = Math.min(100, Math.round((seen / total) * 100));
           return (
             <div key={p.id}>
               <div className="flex items-center justify-between text-sm">
@@ -124,7 +130,7 @@ function MatchBadge() {
       aria-label="Shared match"
       style={{ width: 32, height: 32, background: "var(--save)", boxShadow: "0 4px 12px -4px rgba(0,0,0,.6)" }}
     >
-      👥
+      {"\uD83D\uDC65"}
     </span>
   );
 }
@@ -154,7 +160,7 @@ function RatingButton({ rating, open, onOpen }) {
   );
 }
 
-/* One flippable show in the Library / Watchlist grid. No action buttons here: these are already sorted. */
+/* One flippable show in the Library / Watchlist grid. */
 function CollectionTile({ item, kind, onRate }) {
   const [flipped, setFlipped] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -197,7 +203,7 @@ function CollectionTile({ item, kind, onRate }) {
         back={<BackFace show={item} compact />}
         flipped={flipped}
         onTap={() => { setMenuOpen(false); setFlipped(f => !f); }}
-        label={`${item.title}${isLibrary ? `, rated ${RATINGS[current].label}` : ""}. Activate to ${flipped ? "show the poster" : "see details"}.`}
+        label={`${item.title}${isLibrary ? `, rated ${(RATINGS[current] || RATINGS.seen).label}` : ""}. Activate to ${flipped ? "show the poster" : "see details"}.`}
       />
 
       <AnimatePresence>
@@ -231,7 +237,7 @@ function CollectionTile({ item, kind, onRate }) {
                 >
                   <span className="text-lg leading-none" aria-hidden="true">{r.emoji}</span>
                   <span className="flex-1">{r.label}</span>
-                  {on && <span style={{ color: r.color }} aria-hidden="true">✓</span>}
+                  {on && <span style={{ color: r.color }} aria-hidden="true">{"\u2713"}</span>}
                 </button>
               );
             })}
@@ -243,9 +249,9 @@ function CollectionTile({ item, kind, onRate }) {
               className="flex items-center gap-2.5 w-full px-2.5 py-2 rounded-xl text-sm font-bold text-left hover:bg-white/10"
               style={{ background: current === "seen" ? "rgba(255,255,255,.12)" : "transparent", color: "var(--muted)" }}
             >
-              <span className="text-lg leading-none w-[1.1em] text-center" aria-hidden="true">✕</span>
+              <span className="text-lg leading-none w-[1.1em] text-center" aria-hidden="true">{"\u2715"}</span>
               <span className="flex-1">Remove rating</span>
-              {current === "seen" && <span style={{ color: RATINGS.seen.color }} aria-hidden="true">✓</span>}
+              {current === "seen" && <span style={{ color: RATINGS.seen.color }} aria-hidden="true">{"\u2713"}</span>}
             </button>
           </motion.div>
         )}
@@ -257,25 +263,74 @@ function CollectionTile({ item, kind, onRate }) {
 export function Collection({ kind, items, onDiscover, onRate, onOpenMatch, guest = false, onAuth }) {
   const meta = COLLECTION_META[kind];
   const [filter, setFilter] = useState("all");
-  const [view, setView] = useState("all");   // watchlist only: "all" | "shared"
+  const [view, setView] = useState("all");         // watchlist: "all" | "shared"
+  const [ratingFilter, setRatingFilter] = useState("all"); // library: "all" | "loved" | "mid" | "hated"
+  const [query, setQuery] = useState("");
   const sharedView = kind === "watchlist" && view === "shared";
 
   useEffect(() => {
     document.documentElement.style.setProperty("--glow", "rgba(124,58,237,.18)");
   }, []);
 
-  const base = sharedView ? items.filter(i => i.shared) : items;
-  const present = PROVIDERS.filter(p => base.some(i => i.providerId === p.id));
+  const base = items.filter(i => {
+    if (sharedView && !i.shared) return false;
+    if (kind === "library" && ratingFilter !== "all" && (i.rating || "seen") !== ratingFilter) return false;
+    if (query.trim()) {
+      const q = query.trim().toLowerCase();
+      const inTitle = (i.title || "").toLowerCase().includes(q);
+      const inGenre = (i.genres || []).some(g => g.toLowerCase().includes(q));
+      const inNet = (i.network || "").toLowerCase().includes(q);
+      if (!inTitle && !inGenre && !inNet) return false;
+    }
+    return true;
+  });
+
+  const present = PROVIDERS.filter(p => base.some(i => matchesProvider(i, p)));
   const active = present.some(p => p.id === filter) ? filter : "all";
-  const shown = active === "all" ? base : base.filter(i => i.providerId === active);
+  const activeProv = PROVIDERS.find(p => p.id === active);
+  const shown = active === "all" ? base : base.filter(i => matchesProvider(i, activeProv));
 
   return (
     <div className="h-full flex flex-col max-w-xl md:max-w-none mx-auto w-full">
-      <header className="px-5 pt-5 pb-3 md:px-8 md:pt-8">
-        <h1 className="display text-4xl leading-none" style={{ fontWeight: 800, color: meta.color }}>{meta.title}</h1>
-        <p className="mt-2 text-sm" style={{ color: "var(--muted)" }}>
-          {meta.blurb}: {items.length} {items.length === 1 ? "show" : "shows"}
-        </p>
+      <header className="px-5 pt-5 pb-3 md:px-8 md:pt-8 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
+        <div>
+          <h1 className="display text-4xl leading-none" style={{ fontWeight: 800, color: meta.color }}>{meta.title}</h1>
+          <p className="mt-2 text-sm" style={{ color: "var(--muted)" }}>
+            {meta.blurb}: {items.length} {items.length === 1 ? "show" : "shows"}
+          </p>
+        </div>
+
+        {items.length > 0 && (
+          <div
+            className="flex items-center gap-2 rounded-full px-3.5 py-2 w-full sm:w-64"
+            style={{ background: "var(--surface)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,.1)" }}
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" style={{ color: "var(--muted)" }} aria-hidden="true">
+              <circle cx="11" cy="11" r="7" />
+              <path d="M20 20l-3.5-3.5" />
+            </svg>
+            <input
+              type="search"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Search title, genre, app..."
+              aria-label="Search shows"
+              className="flex-1 min-w-0 bg-transparent outline-none text-sm"
+              style={{ color: "var(--text)" }}
+            />
+            {query && (
+              <button
+                type="button"
+                onClick={() => setQuery("")}
+                aria-label="Clear search"
+                className="text-xs px-1.5 py-0.5 rounded-full"
+                style={{ color: "var(--muted)", background: "rgba(255,255,255,.08)" }}
+              >
+                {"\u2715"}
+              </button>
+            )}
+          </div>
+        )}
       </header>
 
       <div className="flex-1 min-h-0 overflow-y-auto no-scroll px-5 pb-6 space-y-5 md:px-8 md:pb-10">
@@ -325,55 +380,88 @@ export function Collection({ kind, items, onDiscover, onRate, onOpenMatch, guest
           </div>
         )}
 
-        {present.length > 1 && (
+        {kind === "library" && items.length > 0 && (
+          <div className="flex gap-2 overflow-x-auto no-scroll -mx-5 px-5 md:mx-0 md:px-0" role="group" aria-label="Filter by rating">
+            {[
+              { id: "all", label: "All Seen", emoji: null },
+              ...RATING_CHOICES.map(k => ({ id: k, label: RATINGS[k].label, emoji: RATINGS[k].emoji })),
+            ].map(r => {
+              const on = ratingFilter === r.id;
+              return (
+                <button
+                  key={r.id}
+                  onClick={() => setRatingFilter(r.id)}
+                  aria-pressed={on}
+                  className="shrink-0 flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold transition"
+                  style={{
+                    background: on ? "var(--seen)" : "var(--surface)",
+                    color: on ? "var(--bg)" : "var(--text)",
+                  }}
+                >
+                  {r.emoji && <span>{r.emoji}</span>}
+                  <span>{r.label}</span>
+                </button>
+              );
+            })}
+          </div>
+        )}
+
+        {present.length > 0 && (
           <div className="flex gap-2 overflow-x-auto no-scroll -mx-5 px-5 md:mx-0 md:px-0 md:flex-wrap md:overflow-visible" role="tablist" aria-label="Filter by streaming app">
-            {[{ id: "all", name: "All", accent: null }, ...present].map(p => {
+            {[{ id: "all", name: "All Apps", count: base.length, accent: null }, ...present.map(p => ({ ...p, count: base.filter(i => matchesProvider(i, p)).length }))].map(p => {
               const on = active === p.id;
               return (
                 <motion.button
                   key={p.id}
                   onClick={() => setFilter(p.id)}
                   whileTap={{ scale: 0.92 }}
-                  className="shrink-0 flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-full"
+                  className="shrink-0 flex items-center gap-2 text-sm font-medium px-3.5 py-1.5 rounded-full"
                   style={{ background: on ? "var(--text)" : "var(--surface)", color: on ? "var(--bg)" : "var(--text)" }}
                 >
                   {p.accent && <ProviderIcon id={p.id} size={20} />}
-                  {p.name}
+                  <span>{p.name}</span>
+                  <span className="text-xs opacity-70">({p.count})</span>
                 </motion.button>
               );
             })}
           </div>
         )}
 
-        {base.length === 0 ? (
+        {shown.length === 0 ? (
           <motion.div
             className="flex flex-col items-center text-center gap-5 px-6 py-10"
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <p className="text-base max-w-xs" style={{ color: "var(--muted)" }}>{sharedView ? "No shared matches yet. Start a Watch Match with a friend and the shows you both say yes to land here." : meta.empty}</p>
+            <p className="text-base max-w-xs" style={{ color: "var(--muted)" }}>
+              {query.trim()
+                ? `No shows matching "${query}" in your ${kind === "library" ? "library" : "watchlist"}.`
+                : sharedView
+                ? "No shared matches yet. Start a Watch Match with a friend and the shows you both say yes to land here."
+                : meta.empty}
+            </p>
             <motion.button
-              onClick={sharedView ? onOpenMatch : onDiscover}
+              onClick={query.trim() ? () => setQuery("") : sharedView ? onOpenMatch : onDiscover}
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.94 }}
               className="px-7 py-3 rounded-full display text-lg"
               style={{ background: "var(--text)", color: "var(--bg)", fontWeight: 800 }}
             >
-              {sharedView ? "Start a Watch Match" : "Go to Discover"}
+              {query.trim() ? "Clear Search" : sharedView ? "Start a Watch Match" : "Go to Discover"}
             </motion.button>
           </motion.div>
         ) : (
           <>
-            <p className="text-xs -mb-2" style={{ color: "var(--muted)" }}>{kind === "library" ? "Tap a show to flip it for details. Tap its rating to change it." : "Tap a show to flip it for details."}</p>
+            <p className="text-xs -mb-2" style={{ color: "var(--muted)" }}>{kind === "library" ? "Tap a show to flip it for details or launch its streaming app. Tap its rating badge to change it." : "Tap a show to flip it for details or launch its streaming app."}</p>
             <motion.ul
-              key={active}
+              key={active + "-" + ratingFilter}
               className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-3 md:gap-4"
               initial="hidden"
               animate="show"
               variants={{ hidden: {}, show: { transition: { staggerChildren: 0.04 } } }}
             >
               {shown.map(item => (
-                <CollectionTile key={item.providerId + item.id} item={item} kind={kind} onRate={onRate} />
+                <CollectionTile key={item.providerId + "-" + item.id} item={item} kind={kind} onRate={onRate} />
               ))}
             </motion.ul>
           </>

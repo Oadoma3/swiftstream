@@ -43,7 +43,7 @@ function consumeInitialRoomCode() {
 }
 
 export default function App() {
-  const [booting, setBooting] = useState(true);
+  const [booting, setBooting] = useState(false);
   const [guest0] = useState(loadGuest);
 
   const [tab, setTab] = useState("discover");

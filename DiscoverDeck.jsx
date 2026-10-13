@@ -458,10 +458,12 @@ function Home({ onPick, counts, logs, onLog }) {
 /* ---------- Sorter: O(1) Locked Queue so swiping never re-filters or reshuffles mid-swipe ---------- */
 function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe }) {
   const [activeGenre, setActiveGenre] = useState(null);
+  const [activeApps, setActiveApps] = useState([]);
   const [shuffleSeed, setShuffleSeed] = useState(0);
 
   useEffect(() => {
     setActiveGenre(null);
+    setActiveApps([]);
     setShuffleSeed(0);
   }, [provider.id]);
 
@@ -491,11 +493,14 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
     if (activeGenre) {
       remaining = remaining.filter(s => (s.genres || []).includes(activeGenre));
     }
-    if (shuffleSeed > 0) {
-      remaining = shuffle(remaining);
+    if (isMixed && activeApps.length > 0) {
+      remaining = remaining.filter(s => activeApps.includes(s.providerId));
+    }
+    if (remaining.length > 0) {
+      remaining = shuffle(remaining).slice(0, 300); // Shuffle and cap at 300 to keep memory light
     }
     return [...swipedList, ...remaining];
-  }, [baseShows, provider.id, provider.name, activeGenre, shuffleSeed]);
+  }, [baseShows, provider.id, provider.name, activeGenre, activeApps, shuffleSeed, isMixed]);
 
   const setLog = useCallback((u) => onLog(provider.id, u), [onLog, provider.id]);
   const isMixed = provider.id === "mixed";
@@ -711,9 +716,9 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
 
             <div className="flex items-start justify-center w-full" style={{ minHeight: 86 }}>
               <div className="flex items-center justify-center gap-6 pb-2">
-                <div className="mt-8"><ActionButton action="skip" onClick={() => requestAction("skip")}><XIcon /></ActionButton></div>
-                <div className="mb-8"><ActionButton action="save" onClick={() => requestAction("save")} size={58}><BookmarkIcon /></ActionButton></div>
-                <div className="mt-8"><ActionButton action="seen" onClick={() => requestAction("seen")}><CheckIcon /></ActionButton></div>
+                <ActionButton action="skip" onClick={() => requestAction("skip")}><XIcon /></ActionButton>
+                <ActionButton action="save" onClick={() => requestAction("save")} size={72}><BookmarkIcon /></ActionButton>
+                <ActionButton action="seen" onClick={() => requestAction("seen")}><CheckIcon /></ActionButton>
               </div>
             </div>
           </>

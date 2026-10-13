@@ -334,7 +334,7 @@ export default function App() {
     return [...map.values()].sort((a, b) => (b.shared ? 1 : 0) - (a.shared ? 1 : 0) || b.t - a.t);
   }, [savedItems, matches]);
 
-  const mixedProvider = useMemo(() => ({ id: "mixed", name: "Mixed Mode", accent: "#ff5ccf", shows: mixedShows }), [mixedShows]);
+  const mixedProvider = useMemo(() => ({ id: "mixed", name: "Mixed Mode", accent: "#ff5ccf", shows: ALL_SHOWS }), []);
   const provider = useMemo(() => {
     if (pid === "mixed") return mixedProvider;
     return PROVIDERS.find(x => x.id === pid);
@@ -356,15 +356,7 @@ export default function App() {
     return [...map.values()];
   }, [logs]);
 
-  const pickProvider = (id) => {
-    if (id === "mixed") {
-      const done = (logs.mixed || []).map(e => e.show);
-      const allDoneKeys = new Set(allSortedEntries.map(e => showKey(e.show)));
-      const unsortedPool = shuffle(ALL_SHOWS.filter(x => !allDoneKeys.has(showKey(x)))).slice(0, 300);
-      setMixedShows([...done, ...unsortedPool]);
-    }
-    setPid(id);
-  };
+  const pickProvider = (id) => setPid(id);
 
   const sortedCounts = useMemo(() => {
     const c = Object.fromEntries(Object.entries(logs).map(([k, v]) => [k, v.length]));

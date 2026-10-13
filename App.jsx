@@ -266,10 +266,21 @@ export default function App() {
 
   const { seen: seenItems, saved: savedItems } = useMemo(() => deriveItems(logs), [logs]);
 
+  // Subway-Proofing: Persist authenticated logs locally so a dead battery/force-close offline doesn't lose swipes
+  useEffect(() => {
+    if (uid) {
+      try { window.localStorage.setItem(`swiftstream-auth-${uid}`, JSON.stringify(logs)); } catch { /* ignore */ }
+    }
+  }, [logs, uid]);
+
+  // Network-Aware Sync Engine
   useEffect(() => {
     if (!uid || !hydrated) return;
     const desired = api.itemsToRows(seenItems, savedItems);
-    const timer = setTimeout(async () => {
+    
+    const trySync = async () => {
+      if (typeof navigator !== "undefined" && !navigator.onLine) return; // Suspend network calls if offline
+      
       const synced = syncedRef.current;
       const upserts = [];
       const deletes = [];
@@ -277,20 +288,29 @@ export default function App() {
       synced.forEach((_, k) => {
         if (!desired.has(k)) { const [provider_id, show_id, status] = k.split(":"); deletes.push({ provider_id, show_id: Number(show_id), status }); }
       });
+      
       if (upserts.length || deletes.length) {
         const res = await api.pushLibrary(uid, upserts, deletes);
         if (res.error) {
-          showToast("Couldn't save your library. Retrying...", null);
-          setTimeout(() => setRetryTick(n => n + 1), 4000);
+          setTimeout(() => setRetryTick(n => n + 1), 5000);
           return;
         }
         upserts.forEach(r => synced.set(api.rowKey(r), r.rating));
         deletes.forEach(d => synced.delete(`${d.provider_id}:${d.show_id}:${d.status}`));
       }
       if (!guestClearedRef.current) { clearGuest(); guestClearedRef.current = true; }
-    }, 700);
+    };
+
+    const timer = setTimeout(trySync, 700);
     return () => clearTimeout(timer);
   }, [logs, hydrated, uid, retryTick]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Auto-trigger database sync the exact millisecond cellular/wifi reconnects
+  useEffect(() => {
+    const onOnline = () => setRetryTick(n => n + 1);
+    window.addEventListener("online", onOnline);
+    return () => window.removeEventListener("online", onOnline);
+  }, []);
 
   const closeModal = useCallback(() => {
     setModal(null);

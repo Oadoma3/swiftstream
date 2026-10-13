@@ -358,7 +358,7 @@ export function Collection({ kind, items, onDiscover, onRate, onMoveToSeen, onRe
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
               aria-label="Sort shows"
-              className="shrink-0 rounded-full px-3 py-2 text-xs font-bold outline-none cursor-pointer"
+              className="shrink-0 rounded-full px-3 py-2 text-base sm:text-xs font-bold outline-none cursor-pointer"
               style={{ background: "var(--surface)", color: "var(--text)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,.1)" }}
             >
               <option value="recent">Recent</option>

@@ -110,10 +110,12 @@ export function PosterFace({ show, compact = false, badge = null, prominent = fa
         <img
           src={posterUrl}
           alt=""
-          loading="lazy"
+          loading={compact ? "lazy" : "eager"}
+          decoding="async"
           draggable={false}
           onLoad={() => setImgLoaded(true)}
-          className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none transition-opacity duration-500"
+          onError={() => setImgLoaded(false)}
+          className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none transition-opacity duration-300"
           style={{ opacity: imgLoaded ? 1 : 0 }}
         />
       )}
@@ -316,8 +318,8 @@ export function FlipCard({ front, back, flipped, onTap, ignoreTap, label, classN
         animate={{ rotateY: flipped ? 180 : 0 }}
         transition={{ type: "spring", stiffness: 190, damping: 22 }}
       >
-        <div className="absolute inset-0" style={face}>{front}</div>
-        <div className="absolute inset-0" style={{ ...face, transform: "rotateY(180deg)" }}>{back}</div>
+        <div className="absolute inset-0" style={{ ...face, pointerEvents: flipped ? "none" : "auto" }}>{front}</div>
+        <div className="absolute inset-0" style={{ ...face, transform: "rotateY(180deg)", pointerEvents: flipped ? "auto" : "none" }}>{back}</div>
       </motion.div>
     </div>
   );
@@ -348,9 +350,14 @@ export function SwipeCard({ show, dir, flipped, onFlip, onDecide, mixed = false,
   const handleDragEnd = (_, info) => {
     setTimeout(() => { dragging.current = false; }, 60);
     const { x: dx, y: dy } = info.offset;
-    if (dy < -100 && Math.abs(dy) > Math.abs(dx)) onDecide("save");
-    else if (dx > 100) onDecide("seen");
-    else if (dx < -100) onDecide("skip");
+    const { x: vx, y: vy } = info.velocity;
+    const flickUp = (dy < -95 || (dy < -40 && vy < -480)) && Math.abs(dy) > Math.abs(dx);
+    const flickRight = dx > 95 || (dx > 40 && vx > 450);
+    const flickLeft = dx < -95 || (dx < -40 && vx < -450);
+
+    if (flickUp) onDecide("save");
+    else if (flickRight) onDecide("seen");
+    else if (flickLeft) onDecide("skip");
   };
 
   const Stamp = ({ opacity, text, color, rot, pos }) => (

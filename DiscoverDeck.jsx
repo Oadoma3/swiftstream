@@ -118,24 +118,39 @@ function Finish({ log, shows, provider, onRestart, onHome }) {
 }
 
 /* Instant Universal Quick-Search across all 18 platforms */
-function QuickCatalogSearch({ logs, onLog, onPick }) {
+function QuickCatalogSearch({ logs, onLog }) {
   const [q, setQ] = useState("");
+  const [focused, setFocused] = useState(false);
   const deferredQ = useDeferredValue(q);
+  const wrapRef = useRef(null);
   const showToast = useContext(ToastCtx);
 
-  // useDeferredValue ensures typing stays at 60fps without the 16,000-item filter blocking the main thread
+  useEffect(() => {
+    if (!focused) return;
+    const onDown = (e) => {
+      if (wrapRef.current && !wrapRef.current.contains(e.target)) setFocused(false);
+    };
+    document.addEventListener("pointerdown", onDown);
+    return () => document.removeEventListener("pointerdown", onDown);
+  }, [focused]);
+
+  // Rank exact & prefix matches first, then substring matches, without blocking the main thread
   const results = useMemo(() => {
     const term = deferredQ.trim().toLowerCase();
     if (term.length < 2) return [];
-    const out = [];
+    const prefix = [];
+    const sub = [];
     for (let i = 0; i < ALL_SHOWS.length; i++) {
       const s = ALL_SHOWS[i];
-      if ((s.title || "").toLowerCase().includes(term)) {
-        out.push(s);
-        if (out.length >= 8) break;
+      const t = (s.title || "").toLowerCase();
+      if (t.startsWith(term)) {
+        prefix.push(s);
+        if (prefix.length >= 8) break;
+      } else if (sub.length < 8 && t.includes(term)) {
+        sub.push(s);
       }
     }
-    return out;
+    return [...prefix, ...sub].slice(0, 8);
   }, [deferredQ]);
 
   const getStatus = (show) => {
@@ -154,7 +169,7 @@ function QuickCatalogSearch({ logs, onLog, onPick }) {
   };
 
   return (
-    <div className="mb-4 relative">
+    <div ref={wrapRef} className="mb-4 relative z-30">
       <div
         className="flex items-center gap-2.5 rounded-2xl px-3.5 py-2.5"
         style={{ background: "var(--surface)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,.1)" }}
@@ -166,16 +181,18 @@ function QuickCatalogSearch({ logs, onLog, onPick }) {
         <input
           type="search"
           value={q}
-          onChange={(e) => setQ(e.target.value)}
-          placeholder={`Quick-search ${ALL_SHOWS.length.toLocaleString()} shows across all apps...`}
+          onFocus={() => setFocused(true)}
+          onChange={(e) => { setQ(e.target.value); setFocused(true); }}
+          onKeyDown={(e) => { if (e.key === "Escape") { setFocused(false); e.currentTarget.blur(); } }}
+          placeholder={`Search ${ALL_SHOWS.length.toLocaleString()} shows across all apps...`}
           aria-label="Quick search all shows"
-          className="flex-1 min-w-0 bg-transparent outline-none text-sm"
+          className="flex-1 min-w-0 bg-transparent outline-none text-base sm:text-sm"
           style={{ color: "var(--text)" }}
         />
         {q && (
           <button
             type="button"
-            onClick={() => setQ("")}
+            onClick={() => { setQ(""); setFocused(false); }}
             className="text-xs px-2 py-0.5 rounded-full font-bold"
             style={{ background: "rgba(255,255,255,.1)", color: "var(--muted)" }}
           >
@@ -185,13 +202,14 @@ function QuickCatalogSearch({ logs, onLog, onPick }) {
       </div>
 
       <AnimatePresence>
-        {results.length > 0 && (
+        {focused && results.length > 0 && (
           <motion.ul
             initial={{ opacity: 0, y: -6 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -6 }}
-            className="mt-2 rounded-2xl p-2 space-y-1.5 max-h-72 overflow-y-auto no-scroll"
-            style={{ background: "rgba(24,20,44,.98)", boxShadow: "0 18px 40px -10px rgba(0,0,0,.85), inset 0 0 0 1px rgba(255,255,255,.14)" }}
+            transition={{ duration: 0.14 }}
+            className="absolute left-0 right-0 top-full mt-2 rounded-2xl p-2 space-y-1.5 max-h-72 overflow-y-auto no-scroll"
+            style={{ background: "rgba(20,16,38,.98)", backdropFilter: "blur(16px)", boxShadow: "0 22px 48px -8px rgba(0,0,0,.9), inset 0 0 0 1px rgba(255,255,255,.16)" }}
           >
             {results.map(s => {
               const st = getStatus(s);

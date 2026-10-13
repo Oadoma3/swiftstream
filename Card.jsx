@@ -16,13 +16,7 @@ const STREAM_URLS = {
   "Tubi": (q) => `https://tubitv.com/search/${encodeURIComponent(q)}`,
   "Crunchyroll": (q) => `https://www.crunchyroll.com/search?q=${encodeURIComponent(q)}`,
   "Starz": (q) => `https://www.starz.com/us/en/search?q=${encodeURIComponent(q)}`,
-  "AMC+": (q) => `https://www.amcplus.com/search?q=${encodeURIComponent(q)}`,
-  "Discovery+": (q) => `https://www.discoveryplus.com/search?q=${encodeURIComponent(q)}`,
-  "Pluto TV": (q) => `https://pluto.tv/us/search/details/${encodeURIComponent(q)}`,
-  "Roku Channel": (q) => `https://therokuchannel.roku.com/search/${encodeURIComponent(q)}`,
-  "Shudder": (q) => `https://www.shudder.com/search?q=${encodeURIComponent(q)}`,
   "ESPN+": (q) => `https://plus.espn.com/search?q=${encodeURIComponent(q)}`,
-  "BritBox": (q) => `https://www.britbox.com/us/search?q=${encodeURIComponent(q)}`,
 };
 
 export function launchStream(show, targetNetwork, showToast) {

@@ -22,13 +22,7 @@ const PROVIDERS_META = [
   { id: "tubi",        name: "Tubi",         brand: "#FA382F", accent: "#ff6a5f", match: ["tubi", "upn", "syndication", "ion", "crackle", "shout! factory", "filmrise", "cwtv"] },
   { id: "crunchyroll", name: "Crunchyroll",  brand: "#F47521", accent: "#ff8a3d", match: ["crunchyroll", "funimation", "tv tokyo", "tokyo mx", "mbs", "fuji tv", "tv asahi", "nhk", "bs11", "at-x", "wowow", "animax", "nippon tv", "cbc", "bilbili"] },
   { id: "starz",       name: "Starz",        brand: "#000000", accent: "#e5e5ea", match: ["starz", "encore", "lionsgate", "black family channel"] },
-  { id: "amc",         name: "AMC+",         brand: "#FF6600", accent: "#ff8833", match: ["amc", "bbc america", "ifc", "sundance", "we tv", "allblk", "acorn tv", "rlje"] },
-  { id: "discovery",   name: "Discovery+",   brand: "#00FFFF", accent: "#33ffff", match: ["discovery", "tlc", "hgtv", "food network", "investigation discovery", "animal planet", "history", "a&e", "lifetime", "travel channel", "science", "own", "motor trend", "magnolia", "destination america", "ahc", "cooking channel", "diy network", "fyi", "viceland"] },
-  { id: "pluto",       name: "Pluto TV",     brand: "#111111", accent: "#00d2ff", match: ["pluto", "cbsn", "game show network", "gsn", "buzzr", "bounce tv", "grit", "metv", "antennatv"] },
-  { id: "roku",        name: "Roku Channel", brand: "#662d91", accent: "#9b51e0", match: ["roku", "quibi", "redbox", "ovation", "reelz", "axs tv", "fuse", "el rey", "fullscreen", "youtube premium", "youtube red", "facebook watch", "go90"] },
-  { id: "shudder",     name: "Shudder",      brand: "#880000", accent: "#ff3333", match: ["shudder", "fearnet", "screambox", "crypt tv", "alter"] },
   { id: "espn",        name: "ESPN+",        brand: "#CC0000", accent: "#ff3333", match: ["espn", "nfl network", "nba tv", "mlb network", "nhl network", "fox sports", "fs1", "fs2", "nbcsn", "cbs sports", "dazn", "sec network", "big ten network", "acc network", "golf channel", "tennis channel", "wwe network", "ufc"] },
-  { id: "britbox",     name: "BritBox",      brand: "#1b2a4a", accent: "#4a7fc1", match: ["britbox", "bbc", "itv", "channel 4", "channel 5", "sky", "e4", "more4", "dave", "uktv", "alibi", "gold", "drama", "cbeebies", "cbbc", "s4c", "stv", "rte"] },
 ];
 
 const CURATED = {
@@ -43,13 +37,7 @@ const CURATED = {
   tubi: ["Cheers", "Columbo", "Mission: Impossible", "Broadchurch", "Luther", "Peep Show", "Kitchen Nightmares", "Stargate SG-1", "Farscape", "Midsomer Murders", "21 Jump Street", "The Prisoner"],
   crunchyroll: ["Attack on Titan", "Demon Slayer: Kimetsu no Yaiba", "Jujutsu Kaisen", "Solo Leveling", "One Piece", "Chainsaw Man", "Frieren: Beyond Journey's End", "Spy x Family", "Kaiju No. 8", "Vinland Saga", "My Hero Academia", "Hunter x Hunter", "Naruto: Shippuden", "Bleach", "Fullmetal Alchemist: Brotherhood", "Death Note", "Mob Psycho 100", "Haikyu!!", "Black Clover", "Dr. Stone"],
   starz: ["Power", "Outlander", "BMF", "P-Valley", "Spartacus", "Black Sails", "Power Book II: Ghost", "Power Book III: Raising Kanan", "Power Book IV: Force", "Party Down", "Ash vs Evil Dead", "Counterpart", "The Serpent Queen", "Minx", "Hightown", "Heels", "American Gods", "The White Queen"],
-  amc: ["The Walking Dead", "Mad Men", "Interview with the Vampire", "Dark Winds", "Halt and Catch Fire", "Killing Eve", "The Walking Dead: Daryl Dixon", "The Walking Dead: Dead City", "The Terror", "Preacher", "Into the Badlands", "Hell on Wheels", "Kevin Can F**k Himself", "A Discovery of Witches", "Gangs of London", "TURN: Washington's Spies", "Orphan Black"],
-  discovery: ["Deadliest Catch", "MythBusters", "Gold Rush", "90 Day Fiance", "Diners, Drive-Ins and Dives", "Ghost Adventures", "Naked and Afraid", "Fixer Upper", "Chopped", "Pawn Stars", "Alone", "The First 48", "River Monsters", "BattleBots", "House Hunters", "Dirty Jobs", "How It's Made", "Shark Week"],
-  pluto: ["CSI: Crime Scene Investigation", "NCIS", "Star Trek: The Next Generation", "Baywatch", "The Price Is Right", "Survivor", "Top Gear", "Unsolved Mysteries", "Forensic Files", "The Love Boat", "Three's Company", "Perry Mason", "Gunsmoke", "Rawhide", "Matlock", "MacGyver"],
-  roku: ["Weird: The Al Yankovic Story", "Die Hart", "The Great American Baking Show", "Most Dangerous Game", "Reno 911!", "The Spiderwick Chronicles", "Cypher", "Flipped", "Dummy", "Zoey's Extraordinary Playlist", "Sanctuary", "Warehouse 13", "Leverage: Redemption", "Heartland"],
-  shudder: ["Creepshow", "Channel Zero", "Slasher", "The Boulet Brothers' Dragula", "Eli Roth's History of Horror", "The Last Drive-In with Joe Bob Briggs", "Cursed Films", "Hannibal", "The Exorcist", "Penny Dreadful", "The Strain", "Salem", "Bates Motel", "From"],
   espn: ["The Last Dance", "30 for 30", "Hard Knocks", "Formula 1: Drive to Survive", "Welcome to Wrexham", "Quarterback", "Receiver", "Full Swing", "Man in the Arena: Tom Brady", "The Captain", "O.J.: Made in America", "Peyton's Places", "Detail", "Dana White's Contender Series", "The Ultimate Fighter", "College GameDay"],
-  britbox: ["Sherlock", "Doctor Who", "Line of Duty", "Happy Valley", "Luther", "Broadchurch", "Peaky Blinders", "Downton Abbey", "Blackadder", "Mr. Bean", "Fawlty Towers", "Poirot", "Marple", "Vera", "Shetland", "Endeavour", "Inspector Morse", "Father Brown", "Death in Paradise", "Gavin & Stacey", "The IT Crowd", "The Inbetweeners"],
 };
 
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));

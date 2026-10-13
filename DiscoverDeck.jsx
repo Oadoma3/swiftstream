@@ -10,14 +10,14 @@ const haptic = (ms = 12) => {
   try { if (typeof navigator !== "undefined" && navigator.vibrate) navigator.vibrate(ms); } catch { /* ignore */ }
 };
 
-function RatingPicker({ onPick }) {
+function RatingPicker({ onPick, onCancel }) {
   const options = [
     ...RATING_CHOICES.map(k => ({ key: k, emoji: RATINGS[k].emoji, label: RATINGS[k].label, color: RATINGS[k].color })),
     { key: "seen", emoji: "\u2713", label: "Just Seen", color: RATINGS.seen.color },
   ];
   return (
     <motion.div
-      className="w-full max-w-[380px] flex flex-col items-center gap-1.5"
+      className="w-full max-w-[380px] flex flex-col gap-2"
       role="group"
       aria-label="Rate this show"
       initial={{ opacity: 0, y: 8 }}
@@ -41,7 +41,16 @@ function RatingPicker({ onPick }) {
           </motion.button>
         ))}
       </div>
-      <p className="text-[10.5px]" style={{ color: "var(--muted)" }}>Tap to rate • Undo cancels</p>
+      <div className="flex items-center justify-between px-2">
+        <p className="text-[10.5px]" style={{ color: "var(--muted)" }}>Tap to rate</p>
+        <button 
+          onClick={() => { haptic(10); onCancel(); }}
+          className="text-[10.5px] font-extrabold px-3 py-1 rounded-full uppercase transition-transform active:scale-90"
+          style={{ background: "rgba(255,255,255,.14)", color: "var(--text)" }}
+        >
+          {"\u2715"} Cancel
+        </button>
+      </div>
     </motion.div>
   );
 }
@@ -560,10 +569,13 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
   }, [setLog, onSwipe]);
 
   const requestAction = useCallback((action) => {
-    if (pending) return;
     if (locked) { if (onGate) onGate(); return; }
-    if (action === "seen") { haptic(10); setPending(true); }
-    else decide(action);
+    if (action === "seen") {
+      if (!pending) { haptic(10); setPending(true); }
+    } else {
+      setPending(false);
+      decide(action);
+    }
   }, [pending, decide, locked, onGate]);
 
   const undo = useCallback(() => {
@@ -731,7 +743,7 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
 
             <div className="flex items-start justify-center w-full" style={{ minHeight: 86 }}>
               {pending ? (
-                <RatingPicker onPick={(r) => decide("seen", r)} />
+                <RatingPicker onPick={(r) => decide("seen", r)} onCancel={() => setPending(false)} />
               ) : (
                 <div className="flex items-start justify-center gap-6">
                   <ActionButton action="skip" onClick={() => requestAction("skip")}><XIcon /></ActionButton>

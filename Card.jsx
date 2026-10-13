@@ -75,7 +75,7 @@ export function useShowPoster(title) {
 }
 
 export function PosterFace({ show, compact = false, badge = null, prominent = false }) {
-  const [c1, c2] = show.colors || ["#4338ca", "#0f0a24"];
+  const ["", c2] = show.colors || ["#4338ca", "#0f0a24"];
   const genres = compact ? (show.genres || []).slice(0, 2) : (show.genres || []).slice(0, 3);
   const pill = { background: "rgba(8,6,16,.76)", border: "1px solid rgba(255,255,255,.18)", backdropFilter: "blur(8px)" };
   const pillSize = compact ? "px-2 py-0.5 text-[10px]" : "px-3 py-1 text-xs";
@@ -165,7 +165,7 @@ export function PosterFace({ show, compact = false, badge = null, prominent = fa
 
 /* Back face: Designed specifically for phone readability */
 export function BackFace({ show, compact = false, onMarkSeen = null, onRemove = null }) {
-  const [c1, c2] = show.colors || ["#4338ca", "#0f0a24"];
+  const ["", c2] = show.colors || ["#4338ca", "#0f0a24"];
   const showToast = useContext(ToastCtx);
   const seasonsLabel = `${show.seasons || 1} ${(show.seasons || 1) === 1 ? "Season" : "Seasons"}`;
 

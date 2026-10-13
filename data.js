@@ -3,7 +3,7 @@ const S = (id, title, year, communityScore, seasons, episodes, genres, platforms
   id, title, year, communityScore, seasons, episodes, genres,
   genre: genres.join(" \u2022 "),
   platforms,
-  colors: [c1, c2],
+  colors: ["", c2],
   tagline,
   synopsis,
   posterUrl,

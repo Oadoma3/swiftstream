@@ -1,12 +1,4 @@
 // App.jsx - Root component: global state, splash gate, Play-First guest mode + Supabase sync, tabs, modals.
-//
-// PLAY-FIRST FLOW
-//   1. A new visitor is a guest. Swipes live in React state (+ localStorage via guestStore). Supabase is never
-//      imported into the network path: no client, no auth call, no database row.
-//   2. After GUEST_LIMIT (10) swipes, the 11th swipe is blocked and the account modal opens.
-//   3. Only when the guest submits sign-up / log-in does Supabase get used: auth -> profile row -> the guest's
-//      seen/saved shows are merged with the account's library and uploaded in one batched request.
-//   4. From then on, library changes are diffed and synced (debounced) so the database mirrors the UI.
 import { useState, useEffect, useCallback, useMemo, useRef } from "react";
 import { motion, AnimatePresence, MotionConfig } from "framer-motion";
 import { PROVIDERS, ALL_SHOWS, GUEST_LIMIT } from "./data";
@@ -22,7 +14,6 @@ import MatchModal from "./MatchModal";
 import InviteModal from "./InviteModal";
 import AuthModal from "./AuthModal";
 
-// logs -> flat, newest-first entries plus the deduped Seen / Saved lists (shared by the UI and the guest migration)
 function deriveItems(logsObj) {
   const entries = Object.entries(logsObj)
     .flatMap(([id, l]) => l.map(e => ({ ...e.show, providerId: e.show.providerId || id, action: e.action, rating: e.rating, t: e.t })))
@@ -34,23 +25,20 @@ function deriveItems(logsObj) {
 }
 
 export default function App() {
-  // Splash: true on first mount, flips to false once the splash finishes (or is skipped).
   const [booting, setBooting] = useState(true);
-
-  // A returning guest keeps their swipes (and their place in the 10-swipe limit) across refreshes.
   const [guest0] = useState(loadGuest);
 
   const [tab, setTab] = useState("discover");
-  const [pid, setPid] = useState(null);                 // chosen provider in Discover
-  const [logs, setLogs] = useState(guest0.logs);        // providerId -> [{ show, action, rating, t }]
-  const [swipes, setSwipes] = useState(guest0.swipes);  // every card sorted in Discover; never goes down
-  const [mixedShows, setMixedShows] = useState([]);     // shuffled deck for Mixed Mode
+  const [pid, setPid] = useState(null);
+  const [logs, setLogs] = useState(guest0.logs);
+  const [swipes, setSwipes] = useState(guest0.swipes);
+  const [mixedShows, setMixedShows] = useState([]);
   const [authReason, setAuthReason] = useState("gate");
-  const [urlMatchCode] = useState(() => new URLSearchParams(window.location.search).get("match") || ""); const [modal, setModal] = useState(() => new URLSearchParams(window.location.search).get("match") ? "match" : null);             // null | "match" | "invite" | "auth"
-  const [matches, setMatches] = useState([]);           // shows both players said yes to
+  const [urlMatchCode] = useState(() => new URLSearchParams(window.location.search).get("match") || "");
+  const [modal, setModal] = useState(() => new URLSearchParams(window.location.search).get("match") ? "match" : null);
+  const [matches, setMatches] = useState([]);
   const [invite, setInvite] = useState({ sent: false, joined: false });
 
-  // ---- toast -------------------------------------------------------------
   const [toast, setToast] = useState(null);
   const showToast = useCallback((message, name) => setToast({ id: Date.now(), message, name }), []);
   useEffect(() => {
@@ -59,18 +47,17 @@ export default function App() {
     return () => clearTimeout(id);
   }, [toast]);
 
-  // ---- account / session -------------------------------------------------
-  const [session, setSession] = useState(null);         // null = guest
-  const [hydrated, setHydrated] = useState(false);      // account library loaded + merged
+  const [session, setSession] = useState(null);
+  const [hydrated, setHydrated] = useState(false);
   const [retryTick, setRetryTick] = useState(0);
-  const syncedRef = useRef(new Map());                  // rowKey -> rating the database currently holds
+  const syncedRef = useRef(new Map());
   const guestClearedRef = useRef(false);
   const sessionRef = useRef(null);
   sessionRef.current = session;
   const logsRef = useRef(logs);
   logsRef.current = logs;
   const user = useMemo(() => api.toAppUser(session), [session]);
-  const uid = session && !session.mock ? session.user.id : null;   // real Supabase account only
+  const uid = session && !session.mock ? session.user.id : null;
   const locked = !user && swipes >= GUEST_LIMIT;
 
   const resetToGuest = useCallback(() => {
@@ -86,13 +73,11 @@ export default function App() {
     clearGuest();
   }, []);
 
-  // Session changes that happen outside our forms (token refresh, signed out in another tab).
   const handleExternalAuth = useCallback((s) => {
     if (s) setSession(s);
     else if (sessionRef.current && !sessionRef.current.mock) resetToGuest();
   }, [resetToGuest]);
 
-  // On load: only a RETURNING user (stored session / confirmation link) ever touches Supabase.
   useEffect(() => {
     let alive = true;
     api.restoreSession()
@@ -105,13 +90,11 @@ export default function App() {
     return () => { alive = false; };
   }, [handleExternalAuth]);
 
-  // Guest progress is saved locally only. (Demo-mode accounts keep using it too.)
   useEffect(() => {
     if (uid) return;
-    saveGuest(logs, swipes);   // local only; immediate so a refresh can never reset the free-swipe count
+    saveGuest(logs, swipes);
   }, [logs, swipes, uid]);
 
-  // Demo mode only (no Supabase keys): a local-only session so the whole flow can be tried.
   const handleDemoAuth = async (email) => {
     const res = await api.signIn({ email, password: "" });
     if (res.session) {
@@ -122,10 +105,8 @@ export default function App() {
     return res;
   };
 
-  // The magic link may be opened in another tab: listen so this tab logs in too.
   const handleMagicLinkSent = useCallback(() => { api.watchAuth(handleExternalAuth); }, [handleExternalAuth]);
 
-  // Once a session exists (Google redirect, magic link, or another tab), the auth modal has done its job.
   useEffect(() => {
     if (session && modal === "auth") setModal(null);
   }, [session, modal]);
@@ -136,8 +117,6 @@ export default function App() {
     showToast("Signed out.", null);
   };
 
-  // After login: load the account's library, merge the guest's swipes into it, and INSERT those guest swipes
-  // into user_libraries right away (one upsert) instead of waiting for the debounced sync.
   useEffect(() => {
     if (!uid) return;
     let cancelled = false;
@@ -149,9 +128,6 @@ export default function App() {
         const dbLogs = api.rowsToLogs(rows);
         const synced = new Map(rows.map(r => [api.rowKey(r), r.rating ?? null]));
 
-        // GUEST MIGRATION: the guest's local swipes array (logsRef = the in-memory copy of what guestStore saved) is
-        // upserted into user_libraries the moment a session exists, so the first 10 swipes are never lost.
-        // Account data wins on conflicts; only shows the database doesn't have yet are written.
         const { seen, saved } = deriveItems(api.mergeLogs(dbLogs, logsRef.current));
         const toInsert = [...api.itemsToRows(seen, saved)]
           .filter(([k, r]) => !synced.has(k) || synced.get(k) !== r.rating)
@@ -161,11 +137,11 @@ export default function App() {
           if (cancelled) return;
           if (res.error) {
             showToast("Couldn't save your guest swipes yet. Retrying...", null);
-            setTimeout(() => setRetryTick(n => n + 1), 4000);   // the diff-sync below will pick them up
+            setTimeout(() => setRetryTick(n => n + 1), 4000);
           } else {
             toInsert.forEach(r => synced.set(api.rowKey(r), r.rating));
             guestClearedRef.current = true;
-            clearGuest();                                         // guest copy is now in the account
+            clearGuest();
             showToast(`Saved ${toInsert.length} ${toInsert.length === 1 ? "show" : "shows"} from your guest session to your account.`, null);
           }
         }
@@ -180,7 +156,6 @@ export default function App() {
     return () => { cancelled = true; };
   }, [uid, showToast]);
 
-  // ---- library state -------------------------------------------------------
   const setLog = useCallback((id, updater) => {
     setLogs(prev => {
       const cur = prev[id] || [];
@@ -188,7 +163,6 @@ export default function App() {
     });
   }, []);
 
-  // Change (or clear) the rating of a show already in the Library. Updates global state immediately.
   const rateShow = useCallback((providerId, showId, rating) => {
     setLogs(prev => {
       const next = {};
@@ -199,10 +173,44 @@ export default function App() {
     });
   }, []);
 
+  const moveToSeen = useCallback((item) => {
+    const provId = item.providerId;
+    setLogs(prev => {
+      const next = {};
+      let found = false;
+      Object.entries(prev).forEach(([k, l]) => {
+        next[k] = l.map(e => {
+          if (e.show.id === item.id && (e.show.providerId || k) === provId) {
+            found = true;
+            return { ...e, action: "seen", rating: "seen", t: Date.now() };
+          }
+          return e;
+        });
+      });
+      if (!found) {
+        next[provId] = [...(next[provId] || []), { show: item, action: "seen", rating: "seen", t: Date.now() }];
+      }
+      return next;
+    });
+    setMatches(prev => prev.filter(m => showKey(m) !== showKey(item)));
+    showToast(`Moved "${item.title}" to your Seen Library!`, null);
+  }, [showToast]);
+
+  const removeFromCollection = useCallback((item) => {
+    const provId = item.providerId;
+    setLogs(prev => {
+      const next = {};
+      Object.entries(prev).forEach(([k, l]) => {
+        next[k] = l.filter(e => !(e.show.id === item.id && (e.show.providerId || k) === provId));
+      });
+      return next;
+    });
+    setMatches(prev => prev.filter(m => showKey(m) !== showKey(item)));
+    showToast(`Removed "${item.title}".`, null);
+  }, [showToast]);
+
   const { seen: seenItems, saved: savedItems } = useMemo(() => deriveItems(logs), [logs]);
 
-  // Keep the database equal to the UI: diff what we want vs what the server has, push only the changes.
-  // Debounced, so a burst of swipes becomes one request. Undo / rating edits / "Sort again" are covered too.
   useEffect(() => {
     if (!uid || !hydrated) return;
     const desired = api.itemsToRows(seenItems, savedItems);
@@ -224,12 +232,11 @@ export default function App() {
         upserts.forEach(r => synced.set(api.rowKey(r), r.rating));
         deletes.forEach(d => synced.delete(`${d.provider_id}:${d.show_id}:${d.status}`));
       }
-      if (!guestClearedRef.current) { clearGuest(); guestClearedRef.current = true; }   // guest data is now safely in the account
+      if (!guestClearedRef.current) { clearGuest(); guestClearedRef.current = true; }
     }, 700);
     return () => clearTimeout(timer);
-  }, [logs, hydrated, uid, retryTick]);   // eslint-disable-line react-hooks/exhaustive-deps
+  }, [logs, hydrated, uid, retryTick]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // ---- navigation / modals -------------------------------------------------
   const closeModal = useCallback(() => setModal(null), []);
   const openAuth = useCallback((reason) => { setAuthReason(reason); setModal("auth"); }, []);
   const openGate = useCallback(() => openAuth("gate"), [openAuth]);
@@ -241,7 +248,7 @@ export default function App() {
       return [...map.values()];
     });
   }, []);
-  // Watchlist = saved shows plus Watch Match results; shared matches are pinned to the top.
+
   const watchItems = useMemo(() => {
     const map = new Map();
     savedItems.forEach(i => map.set(showKey(i), { ...i }));
@@ -250,8 +257,6 @@ export default function App() {
   }, [savedItems, matches]);
 
   const mixedProvider = useMemo(() => ({ id: "mixed", name: "Mixed Mode", accent: "#ff5ccf", shows: mixedShows }), [mixedShows]);
-  // The deck for a provider = shows already in its log (in log order) followed by the unsorted rest.
-  // That keeps "log entry i <-> deck card i" true even when the log was rebuilt from the database.
   const provider = useMemo(() => {
     if (pid === "mixed") return mixedProvider;
     const p = PROVIDERS.find(x => x.id === pid);
@@ -261,8 +266,6 @@ export default function App() {
     return { ...p, shows: [...sorted, ...p.shows.filter(s => !sortedIds.has(s.id))] };
   }, [pid, logs, mixedProvider]);
 
-  // Mixed Mode: flatten every provider's shows into one array and shuffle it.
-  // Shows already sorted in Mixed Mode keep their place; only the rest are reshuffled.
   const pickProvider = (id) => {
     if (id === "mixed") {
       const done = (logs.mixed || []).map(e => e.show);
@@ -280,7 +283,6 @@ export default function App() {
       <ToastCtx.Provider value={showToast}>
         <div className="ambient" />
 
-        {/* Splash shows first; the main UI only mounts once it finishes. */}
         <AnimatePresence>
           {booting && <SplashScreen key="splash" onDone={() => setBooting(false)} />}
         </AnimatePresence>
@@ -314,16 +316,33 @@ export default function App() {
                         onGate={openGate}
                         onSwipe={countSwipe}
                         swipes={swipes}
-                        user={null}   /* signed-in state now lives in <AuthBar/> (Sign Out button), not the action-bar menu */
+                        user={null}
                         onOpenMatch={() => setModal("match")}
                         onOpenInvite={() => setModal("invite")}
                       />
                     )}
                     {tab === "watchlist" && (
-                      <Library kind="watchlist" items={watchItems} onDiscover={() => setTab("discover")} onOpenMatch={() => setModal("match")} guest={!user} onAuth={() => openAuth("banner")} />
+                      <Library
+                        kind="watchlist"
+                        items={watchItems}
+                        onDiscover={() => setTab("discover")}
+                        onMoveToSeen={moveToSeen}
+                        onRemove={removeFromCollection}
+                        onOpenMatch={() => setModal("match")}
+                        guest={!user}
+                        onAuth={() => openAuth("banner")}
+                      />
                     )}
                     {tab === "library" && (
-                      <Library kind="library" items={seenItems} onDiscover={() => setTab("discover")} onRate={rateShow} guest={!user} onAuth={() => openAuth("banner")} />
+                      <Library
+                        kind="library"
+                        items={seenItems}
+                        onDiscover={() => setTab("discover")}
+                        onRate={rateShow}
+                        onRemove={removeFromCollection}
+                        guest={!user}
+                        onAuth={() => openAuth("banner")}
+                      />
                     )}
                   </motion.div>
                 </AnimatePresence>

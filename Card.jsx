@@ -1,5 +1,5 @@
-// Card.jsx - Show cards: poster front, clean scrollable details back, direct streaming launchers, and 3D swipe card.
-import { useRef, useContext } from "react";
+// Card.jsx - Real TVMaze poster art + gradient fallback, trailer button, streaming launchers, and collection actions.
+import { useState, useEffect, useRef, useContext } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import { RATINGS } from "./data";
 import { initials } from "./utils";
@@ -29,12 +29,77 @@ export function launchStream(show, targetNetwork, showToast) {
   }
 }
 
-/* Front face. `compact` is the small grid version; `badge` replaces the info hint. */
+export function launchTrailer(show, showToast) {
+  const title = (show && show.title) || "";
+  const year = (show && show.year) || "";
+  if (showToast) showToast(`Opening ${title} trailer...`, "YouTube");
+  const url = `https://www.youtube.com/results?search_query=${encodeURIComponent(`${title} ${year} official trailer`)}`;
+  if (typeof window !== "undefined") {
+    window.open(url, "_blank", "noopener,noreferrer");
+  }
+}
+
+/* ---------- Live Poster Cache (TVMaze public API, zero key required) ---------- */
+const POSTER_STORAGE_KEY = "swiftstream-posters-v1";
+const posterMemory = new Map();
+const posterPending = new Map();
+
+try {
+  const raw = typeof window !== "undefined" ? window.localStorage.getItem(POSTER_STORAGE_KEY) : null;
+  if (raw) {
+    Object.entries(JSON.parse(raw)).forEach(([k, v]) => posterMemory.set(k, v));
+  }
+} catch { /* ignore */ }
+
+function savePosterCache() {
+  try {
+    const obj = Object.fromEntries(posterMemory.entries());
+    window.localStorage.setItem(POSTER_STORAGE_KEY, JSON.stringify(obj));
+  } catch { /* ignore */ }
+}
+
+export function useShowPoster(title) {
+  const cleanTitle = (title || "").replace(/\s*\(.*?\)\s*/g, "").trim();
+  const [url, setUrl] = useState(() => (cleanTitle && posterMemory.get(cleanTitle)) || null);
+
+  useEffect(() => {
+    if (!cleanTitle) return;
+    if (posterMemory.has(cleanTitle)) {
+      setUrl(posterMemory.get(cleanTitle));
+      return;
+    }
+    let alive = true;
+    if (!posterPending.has(cleanTitle)) {
+      const p = fetch(`https://api.tvmaze.com/singlesearch/shows?q=${encodeURIComponent(cleanTitle)}`)
+        .then(r => (r.ok ? r.json() : null))
+        .then(d => {
+          const img = (d && d.image && (d.image.original || d.image.medium)) ? (d.image.original || d.image.medium).replace(/^http:/, "https:") : "";
+          posterMemory.set(cleanTitle, img);
+          savePosterCache();
+          return img;
+        })
+        .catch(() => "")
+        .finally(() => posterPending.delete(cleanTitle));
+      posterPending.set(cleanTitle, p);
+    }
+    posterPending.get(cleanTitle).then(img => {
+      if (alive && img) setUrl(img);
+    });
+    return () => { alive = false; };
+  }, [cleanTitle]);
+
+  return url;
+}
+
+/* Front face: official poster art with smooth fade-in over custom gradient fallback */
 export function PosterFace({ show, compact = false, badge = null, prominent = false }) {
   const [c1, c2] = show.colors || ["#4338ca", "#0f0a24"];
   const genres = compact ? (show.genres || []).slice(0, 2) : (show.genres || []);
-  const pill = { background: "rgba(8,6,16,.62)", border: "1px solid rgba(255,255,255,.14)" };
+  const pill = { background: "rgba(8,6,16,.72)", border: "1px solid rgba(255,255,255,.16)", backdropFilter: "blur(8px)" };
   const pillSize = compact ? "px-2 py-0.5 text-[10px]" : "px-3 py-1 text-xs";
+  const posterUrl = useShowPoster(show.title);
+  const [imgLoaded, setImgLoaded] = useState(false);
+
   return (
     <div
       className={`absolute inset-0 overflow-hidden ${compact ? "rounded-[20px]" : "rounded-[28px]"}`}
@@ -50,36 +115,62 @@ export function PosterFace({ show, compact = false, badge = null, prominent = fa
         <rect x="-40" y="290" width="380" height="6" transform="rotate(-12 150 293)" fill="rgba(255,255,255,.06)" />
       </svg>
       <div
-        className="display absolute left-0 right-0 text-center select-none"
-        style={{ top: compact ? "20%" : "14%", fontSize: compact ? "5rem" : "9.5rem", fontWeight: 800, lineHeight: 1, color: "rgba(255,255,255,.2)" }}
+        className="display absolute left-0 right-0 text-center select-none transition-opacity duration-300"
+        style={{
+          top: compact ? "20%" : "14%",
+          fontSize: compact ? "5rem" : "9.5rem",
+          fontWeight: 800,
+          lineHeight: 1,
+          color: "rgba(255,255,255,.2)",
+          opacity: imgLoaded ? 0 : 1,
+        }}
         aria-hidden="true"
       >
         {initials(show.title)}
       </div>
 
+      {posterUrl && (
+        <img
+          src={posterUrl}
+          alt=""
+          loading="lazy"
+          draggable={false}
+          onLoad={() => setImgLoaded(true)}
+          className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none transition-opacity duration-500"
+          style={{ opacity: imgLoaded ? 1 : 0 }}
+        />
+      )}
+
+      {/* Top & bottom legibility vignette */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: imgLoaded
+            ? "linear-gradient(to bottom, rgba(8,6,16,.65) 0%, rgba(8,6,16,.08) 28%, rgba(8,6,16,.25) 55%, rgba(8,6,16,.96) 92%)"
+            : "linear-gradient(to top, rgba(8,6,16,.95), rgba(8,6,16,.6) 55%, transparent)",
+        }}
+      />
+
       <div className={`absolute flex items-start justify-between gap-2 font-bold ${compact ? "top-2.5 left-2.5 right-2.5" : "top-4 left-4 right-4"}`}>
         <span
           className={`flex items-center gap-1.5 rounded-full ${compact ? "pl-0.5 pr-2 py-0.5 text-[10px]" : prominent ? "pl-1 pr-3.5 py-1 text-sm" : "p-0.5"}`}
-          style={prominent ? { ...pill, background: "rgba(8,6,16,.8)", boxShadow: "0 6px 20px -6px rgba(0,0,0,.7)" } : pill}
+          style={prominent ? { ...pill, background: "rgba(8,6,16,.84)", boxShadow: "0 6px 20px -6px rgba(0,0,0,.7)" } : pill}
           title={show.network}
         >
           <ProviderIcon name={show.network} size={compact ? 20 : prominent ? 44 : 30} shadow={prominent} />
           {(compact || prominent) && show.network}
         </span>
         {badge ? badge : (
-          <span className={`flex items-center gap-1.5 rounded-full font-medium ${compact ? "p-1.5" : "px-2.5 py-1 text-xs"}`} style={{ ...pill, color: "rgba(255,255,255,.85)" }}>
+          <span className={`flex items-center gap-1.5 rounded-full font-medium ${compact ? "p-1.5" : "px-2.5 py-1 text-xs"}`} style={{ ...pill, color: "rgba(255,255,255,.9)" }}>
             <InfoIcon /> {!compact && !prominent && "Tap for info"}
           </span>
         )}
       </div>
 
-      <div
-        className={`absolute inset-x-0 bottom-0 ${compact ? "p-3 pt-16" : "p-5 pt-28"}`}
-        style={{ background: "linear-gradient(to top, rgba(8,6,16,.95), rgba(8,6,16,.6) 55%, transparent)" }}
-      >
+      <div className={`absolute inset-x-0 bottom-0 ${compact ? "p-3 pt-12" : "p-5 pt-20"}`}>
         <h2
-          className={`display leading-[1.02] text-white ${compact ? "text-[1.05rem]" : "text-[2.15rem]"}`}
-          style={{ fontWeight: 800, textShadow: "0 2px 12px rgba(0,0,0,.5)" }}
+          className={`display leading-[1.02] text-white ${compact ? "text-[1.05rem] line-clamp-2" : "text-[2.1rem]"}`}
+          style={{ fontWeight: 800, textShadow: "0 2px 14px rgba(0,0,0,.85)" }}
         >
           {show.title}
         </h2>
@@ -94,8 +185,8 @@ export function PosterFace({ show, compact = false, badge = null, prominent = fa
   );
 }
 
-/* Back face: clean layout, scroll-safe synopsis, and clickable multi-platform launchers */
-export function BackFace({ show, compact = false }) {
+/* Back face: clean layout, Watch + Trailer bar, multi-platform launchers, and optional Watchlist/Library actions */
+export function BackFace({ show, compact = false, onMarkSeen = null, onRemove = null }) {
   const [c1, c2] = show.colors || ["#4338ca", "#0f0a24"];
   const showToast = useContext(ToastCtx);
   const platforms = show.platforms && show.platforms.length ? show.platforms : [show.network];
@@ -116,7 +207,7 @@ export function BackFace({ show, compact = false }) {
             <span className="flex items-center gap-1 shrink-0"><FlipIcon /> Flip</span>
           </div>
         )}
-        <h2 className={`display leading-tight text-white shrink-0 ${compact ? "text-[0.95rem] line-clamp-1" : "text-xl mt-1.5"}`} style={{ fontWeight: 800 }}>
+        <h2 className={`display leading-tight text-white shrink-0 ${compact ? "text-[0.92rem] line-clamp-1" : "text-xl mt-1.5"}`} style={{ fontWeight: 800 }}>
           {show.title}
         </h2>
         {!compact && show.tagline && (
@@ -126,34 +217,46 @@ export function BackFace({ show, compact = false }) {
         )}
 
         <div
-          className={`flex-1 min-h-0 overflow-y-auto no-scroll pr-0.5 ${compact ? "mt-1.5" : "mt-2"}`}
+          className={`flex-1 min-h-0 overflow-y-auto no-scroll pr-0.5 ${compact ? "mt-1" : "mt-2"}`}
           onPointerDown={(e) => e.stopPropagation()}
         >
-          <p
-            className={`leading-snug ${compact ? "text-[11px]" : "text-[13px]"}`}
-            style={{ color: "rgba(255,255,255,.85)" }}
-          >
+          <p className={`leading-snug ${compact ? "text-[10.5px]" : "text-[13px]"}`} style={{ color: "rgba(255,255,255,.85)" }}>
             {show.synopsis}
           </p>
         </div>
 
-        {/* Direct Streaming CTA */}
-        <motion.button
-          onClick={(e) => { e.stopPropagation(); launchStream(show, show.network, showToast); }}
-          onKeyDown={(e) => e.stopPropagation()}
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.95 }}
-          aria-label={`Watch ${show.title} on ${show.network}`}
-          className={`w-full rounded-full font-extrabold shrink-0 flex items-center justify-center gap-2 text-white ${compact ? "mt-2 py-1.5 text-[11px]" : "mt-2.5 py-2.5 text-sm"}`}
-          style={{
-            background: "linear-gradient(120deg, #0b7a73 0%, #6d28d9 100%)",
-            boxShadow: "0 12px 26px -8px rgba(109,40,217,.8), 0 0 0 1.5px rgba(255,255,255,.26)",
-            textShadow: "0 1px 2px rgba(0,0,0,.35)",
-          }}
-        >
-          <svg width={compact ? 10 : 13} height={compact ? 10 : 13} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4l14 8-14 8z" /></svg>
-          <span className="truncate">Watch on {show.network}</span>
-        </motion.button>
+        {/* Watch + Trailer CTA Row */}
+        <div className={`flex items-center gap-1.5 shrink-0 ${compact ? "mt-1.5" : "mt-2.5"}`}>
+          <motion.button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); launchStream(show, show.network, showToast); }}
+            onKeyDown={(e) => e.stopPropagation()}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.95 }}
+            className={`flex-1 min-w-0 rounded-full font-extrabold flex items-center justify-center gap-1.5 text-white ${compact ? "py-1.5 px-2 text-[10.5px]" : "py-2.5 px-3 text-sm"}`}
+            style={{
+              background: "linear-gradient(120deg, #0b7a73 0%, #6d28d9 100%)",
+              boxShadow: "0 10px 22px -8px rgba(109,40,217,.8), 0 0 0 1px rgba(255,255,255,.24)",
+            }}
+          >
+            <svg width={compact ? 9 : 12} height={compact ? 9 : 12} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4l14 8-14 8z" /></svg>
+            <span className="truncate">{compact ? show.network : `Watch on ${show.network}`}</span>
+          </motion.button>
+
+          <motion.button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); launchTrailer(show, showToast); }}
+            onKeyDown={(e) => e.stopPropagation()}
+            whileHover={{ scale: 1.04 }}
+            whileTap={{ scale: 0.94 }}
+            title={`Watch ${show.title} Trailer on YouTube`}
+            className={`shrink-0 rounded-full font-bold flex items-center justify-center gap-1 ${compact ? "py-1.5 px-2 text-[10px]" : "py-2.5 px-3 text-xs"}`}
+            style={{ background: "rgba(255,255,255,.12)", color: "#fff", border: "1px solid rgba(255,255,255,.18)" }}
+          >
+            <span>{"\uD83C\uDFAC"}</span>
+            <span>{compact ? "" : "Trailer"}</span>
+          </motion.button>
+        </div>
 
         {/* Clean 3-column metadata bar */}
         <div className={`grid grid-cols-3 shrink-0 ${compact ? "gap-1 mt-1.5" : "gap-2 mt-2"}`}>
@@ -164,46 +267,69 @@ export function BackFace({ show, compact = false }) {
           ].map(st => (
             <div
               key={st.l}
-              className={`rounded-xl text-center ${compact ? "px-1 py-1" : "px-1.5 py-1.5"}`}
+              className={`rounded-xl text-center ${compact ? "px-1 py-0.5" : "px-1.5 py-1.5"}`}
               style={{ background: "rgba(255,255,255,.08)" }}
             >
-              <div className={`display leading-none whitespace-nowrap ${compact ? "text-[12px]" : "text-sm"}`} style={{ fontWeight: 800 }}>{st.v}</div>
-              <div className={`mt-0.5 ${compact ? "text-[9px]" : "text-[10px]"}`} style={{ color: "rgba(255,255,255,.6)" }}>{st.l}</div>
+              <div className={`display leading-none whitespace-nowrap ${compact ? "text-[11px]" : "text-sm"}`} style={{ fontWeight: 800 }}>{st.v}</div>
+              <div className={`mt-0.5 ${compact ? "text-[8.5px]" : "text-[10px]"}`} style={{ color: "rgba(255,255,255,.6)" }}>{st.l}</div>
             </div>
           ))}
         </div>
 
         {/* Clickable platform launchers */}
-        <div className={`shrink-0 ${compact ? "mt-1.5" : "mt-2"}`}>
-          <p className="text-[10px] font-medium" style={{ color: "rgba(255,255,255,.58)" }}>
-            {compact ? "Stream on" : "Available on (tap icon to open)"}
-          </p>
-          <div className={`flex flex-wrap items-center ${compact ? "gap-1.5 mt-1" : "gap-2.5 mt-1"}`}>
-            {platforms.map(pl => (
-              <motion.button
-                key={pl}
-                type="button"
-                onClick={(e) => { e.stopPropagation(); launchStream(show, pl, showToast); }}
-                onKeyDown={(e) => e.stopPropagation()}
-                whileHover={{ scale: 1.08 }}
-                whileTap={{ scale: 0.92 }}
-                title={`Watch ${show.title} on ${pl}`}
-                aria-label={`Watch ${show.title} on ${pl}`}
-                className="flex items-center gap-1.5 rounded-full pr-2 pl-0.5 py-0.5 transition"
-                style={{ background: "rgba(255,255,255,.08)", border: "1px solid rgba(255,255,255,.12)" }}
-              >
-                <ProviderIcon name={pl} size={compact ? 20 : 24} shadow />
-                <span className={`${compact ? "text-[9px]" : "text-[11px]"} font-bold`} style={{ color: "rgba(255,255,255,.88)" }}>{pl}</span>
-              </motion.button>
-            ))}
+        {!onMarkSeen && !onRemove ? (
+          <div className={`shrink-0 ${compact ? "mt-1.5" : "mt-2"}`}>
+            <p className="text-[10px] font-medium" style={{ color: "rgba(255,255,255,.58)" }}>
+              {compact ? "Stream on" : "Available on (tap icon to open)"}
+            </p>
+            <div className={`flex flex-wrap items-center ${compact ? "gap-1 mt-0.5" : "gap-2 mt-1"}`}>
+              {platforms.map(pl => (
+                <motion.button
+                  key={pl}
+                  type="button"
+                  onClick={(e) => { e.stopPropagation(); launchStream(show, pl, showToast); }}
+                  onKeyDown={(e) => e.stopPropagation()}
+                  whileHover={{ scale: 1.08 }}
+                  whileTap={{ scale: 0.92 }}
+                  className="flex items-center gap-1.5 rounded-full pr-2 pl-0.5 py-0.5"
+                  style={{ background: "rgba(255,255,255,.08)", border: "1px solid rgba(255,255,255,.12)" }}
+                >
+                  <ProviderIcon name={pl} size={compact ? 18 : 22} shadow />
+                  <span className={`${compact ? "text-[9px]" : "text-[11px]"} font-bold`} style={{ color: "rgba(255,255,255,.88)" }}>{pl}</span>
+                </motion.button>
+              ))}
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className="flex items-center gap-1.5 mt-1.5 shrink-0">
+            {onMarkSeen && (
+              <button
+                type="button"
+                onClick={(e) => { e.stopPropagation(); onMarkSeen(); }}
+                className="flex-1 rounded-full py-1 px-2 text-[10px] font-extrabold truncate"
+                style={{ background: "rgba(92,225,196,.18)", color: "var(--seen)", border: "1px solid rgba(92,225,196,.4)" }}
+              >
+                {"\u2713"} Mark Seen
+              </button>
+            )}
+            {onRemove && (
+              <button
+                type="button"
+                onClick={(e) => { e.stopPropagation(); onRemove(); }}
+                className="rounded-full py-1 px-2.5 text-[10px] font-bold"
+                style={{ background: "rgba(255,107,122,.15)", color: "var(--skip)", border: "1px solid rgba(255,107,122,.35)" }}
+              >
+                {"\u2715"} Remove
+              </button>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );
 }
 
-/* Reusable 3D tap-to-flip wrapper (used by the swipe deck, Library and Watchlist) */
+/* Reusable 3D tap-to-flip wrapper */
 export function FlipCard({ front, back, flipped, onTap, ignoreTap, label, className = "absolute inset-0" }) {
   const face = { backfaceVisibility: "hidden", WebkitBackfaceVisibility: "hidden" };
   const tap = () => {
@@ -235,7 +361,6 @@ export function FlipCard({ front, back, flipped, onTap, ignoreTap, label, classN
   );
 }
 
-/* ---------- Swipeable top card ---------- */
 const cardVariants = {
   enter: { scale: 0.92, y: 28, opacity: 0 },
   center: { scale: 1, y: 0, opacity: 1, transition: { type: "spring", stiffness: 420, damping: 30 } },

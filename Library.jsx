@@ -1,11 +1,10 @@
-// Library.jsx - Library and Watchlist screens (search, multi-platform app filters, rating filters, Streaming DNA, Top Genres).
-import { useState, useEffect, useRef } from "react";
+// Library.jsx - Watchlist & Library with "Pick Tonight's Show" roulette, Mark Seen / Remove actions, search, and filters.
+import { useState, useEffect, useRef, useContext } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { PROVIDERS, RATINGS, RATING_CHOICES } from "./data";
-import { ProviderIcon } from "./ui";
-import { BackFace, FlipCard, PosterFace } from "./Card";
+import { ProviderIcon, ToastCtx } from "./ui";
+import { BackFace, FlipCard, PosterFace, launchStream, launchTrailer } from "./Card";
 
-/* ---------- Collection screens (Watchlist / My Library) ---------- */
 const COLLECTION_META = {
   watchlist: {
     title: "Watchlist",
@@ -26,7 +25,6 @@ function matchesProvider(item, prov) {
   return item.providerId === prov.id || item.network === prov.name || (item.platforms || []).includes(prov.name);
 }
 
-/* Genre stats from the global Seen list: frequency of every genre tag, ranked. */
 function aggregateGenres(items) {
   const counts = {};
   items.forEach(i => (i.genres || []).forEach(g => { counts[g] = (counts[g] || 0) + 1; }));
@@ -60,15 +58,7 @@ function StreamingDNA({ items }) {
                   <span className="font-bold" style={{ color: pct > 0 ? p.accent : "var(--muted)" }}>{pct}%</span> Explored
                 </span>
               </div>
-              <div
-                className="mt-1.5 h-2.5 rounded-full overflow-hidden"
-                style={{ background: "rgba(255,255,255,.08)" }}
-                role="progressbar"
-                aria-label={`${p.name} explored`}
-                aria-valuemin={0}
-                aria-valuemax={100}
-                aria-valuenow={pct}
-              >
+              <div className="mt-1.5 h-2.5 rounded-full overflow-hidden" style={{ background: "rgba(255,255,255,.08)" }}>
                 <motion.div
                   className="h-full rounded-full"
                   style={{ background: p.accent }}
@@ -121,7 +111,6 @@ function TopGenres({ items }) {
   );
 }
 
-/* Small badge for shows both players said yes to */
 function MatchBadge() {
   return (
     <span
@@ -135,7 +124,6 @@ function MatchBadge() {
   );
 }
 
-/* Tappable rating badge on a Library card (opens the change-rating menu) */
 function RatingButton({ rating, open, onOpen }) {
   const r = RATINGS[rating] || RATINGS.seen;
   return (
@@ -160,8 +148,7 @@ function RatingButton({ rating, open, onOpen }) {
   );
 }
 
-/* One flippable show in the Library / Watchlist grid. */
-function CollectionTile({ item, kind, onRate }) {
+function CollectionTile({ item, kind, onRate, onMoveToSeen, onRemove }) {
   const [flipped, setFlipped] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const liRef = useRef(null);
@@ -200,7 +187,14 @@ function CollectionTile({ item, kind, onRate }) {
       <FlipCard
         className="absolute inset-0 cursor-pointer"
         front={<PosterFace show={item} compact badge={badge} />}
-        back={<BackFace show={item} compact />}
+        back={
+          <BackFace
+            show={item}
+            compact
+            onMarkSeen={!isLibrary && onMoveToSeen ? () => onMoveToSeen(item) : null}
+            onRemove={onRemove ? () => onRemove(item) : null}
+          />
+        }
         flipped={flipped}
         onTap={() => { setMenuOpen(false); setFlipped(f => !f); }}
         label={`${item.title}${isLibrary ? `, rated ${(RATINGS[current] || RATINGS.seen).label}` : ""}. Activate to ${flipped ? "show the poster" : "see details"}.`}
@@ -260,12 +254,14 @@ function CollectionTile({ item, kind, onRate }) {
   );
 }
 
-export function Collection({ kind, items, onDiscover, onRate, onOpenMatch, guest = false, onAuth }) {
+export function Collection({ kind, items, onDiscover, onRate, onMoveToSeen, onRemove, onOpenMatch, guest = false, onAuth }) {
+  const showToast = useContext(ToastCtx);
   const meta = COLLECTION_META[kind];
   const [filter, setFilter] = useState("all");
-  const [view, setView] = useState("all");         // watchlist: "all" | "shared"
-  const [ratingFilter, setRatingFilter] = useState("all"); // library: "all" | "loved" | "mid" | "hated"
+  const [view, setView] = useState("all");
+  const [ratingFilter, setRatingFilter] = useState("all");
   const [query, setQuery] = useState("");
+  const [pickedShow, setPickedShow] = useState(null);
   const sharedView = kind === "watchlist" && view === "shared";
 
   useEffect(() => {
@@ -290,6 +286,13 @@ export function Collection({ kind, items, onDiscover, onRate, onOpenMatch, guest
   const activeProv = PROVIDERS.find(p => p.id === active);
   const shown = active === "all" ? base : base.filter(i => matchesProvider(i, activeProv));
 
+  const spinTonightPick = () => {
+    if (!shown.length) return;
+    const pool = shown.length > 1 && pickedShow ? shown.filter(s => s.id !== pickedShow.id || s.providerId !== pickedShow.providerId) : shown;
+    const winner = pool[Math.floor(Math.random() * pool.length)];
+    setPickedShow(winner);
+  };
+
   return (
     <div className="h-full flex flex-col max-w-xl md:max-w-none mx-auto w-full">
       <header className="px-5 pt-5 pb-3 md:px-8 md:pt-8 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
@@ -301,39 +304,119 @@ export function Collection({ kind, items, onDiscover, onRate, onOpenMatch, guest
         </div>
 
         {items.length > 0 && (
-          <div
-            className="flex items-center gap-2 rounded-full px-3.5 py-2 w-full sm:w-64"
-            style={{ background: "var(--surface)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,.1)" }}
-          >
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" style={{ color: "var(--muted)" }} aria-hidden="true">
-              <circle cx="11" cy="11" r="7" />
-              <path d="M20 20l-3.5-3.5" />
-            </svg>
-            <input
-              type="search"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search title, genre, app..."
-              aria-label="Search shows"
-              className="flex-1 min-w-0 bg-transparent outline-none text-sm"
-              style={{ color: "var(--text)" }}
-            />
-            {query && (
-              <button
+          <div className="flex items-center gap-2 w-full sm:w-auto">
+            {kind === "watchlist" && shown.length > 0 && (
+              <motion.button
                 type="button"
-                onClick={() => setQuery("")}
-                aria-label="Clear search"
-                className="text-xs px-1.5 py-0.5 rounded-full"
-                style={{ color: "var(--muted)", background: "rgba(255,255,255,.08)" }}
+                onClick={spinTonightPick}
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.94 }}
+                className="shrink-0 flex items-center gap-1.5 rounded-full px-4 py-2 text-xs font-extrabold"
+                style={{ background: "var(--save)", color: "var(--bg)", boxShadow: "0 8px 20px -6px rgba(255,200,87,.5)" }}
               >
-                {"\u2715"}
-              </button>
+                <span>{"\uD83C\uDFB2"}</span>
+                <span>Pick For Me</span>
+              </motion.button>
             )}
+            <div
+              className="flex items-center gap-2 rounded-full px-3.5 py-2 flex-1 sm:w-60"
+              style={{ background: "var(--surface)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,.1)" }}
+            >
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" style={{ color: "var(--muted)" }} aria-hidden="true">
+                <circle cx="11" cy="11" r="7" />
+                <path d="M20 20l-3.5-3.5" />
+              </svg>
+              <input
+                type="search"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Search title, genre, app..."
+                aria-label="Search shows"
+                className="flex-1 min-w-0 bg-transparent outline-none text-sm"
+                style={{ color: "var(--text)" }}
+              />
+              {query && (
+                <button
+                  type="button"
+                  onClick={() => setQuery("")}
+                  aria-label="Clear search"
+                  className="text-xs px-1.5 py-0.5 rounded-full"
+                  style={{ color: "var(--muted)", background: "rgba(255,255,255,.08)" }}
+                >
+                  {"\u2715"}
+                </button>
+              )}
+            </div>
           </div>
         )}
       </header>
 
       <div className="flex-1 min-h-0 overflow-y-auto no-scroll px-5 pb-6 space-y-5 md:px-8 md:pb-10">
+        {/* Tonight's Random Pick Spotlight Banner */}
+        <AnimatePresence>
+          {pickedShow && (
+            <motion.div
+              initial={{ opacity: 0, y: -10, scale: 0.96 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -8, scale: 0.96 }}
+              className="rounded-3xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
+              style={{
+                background: `linear-gradient(135deg, ${(pickedShow.colors && pickedShow.colors[0]) || "#6d28d9"}44, rgba(20,16,42,.95))`,
+                boxShadow: "0 18px 40px -15px rgba(0,0,0,.7), inset 0 0 0 1.5px var(--save)",
+              }}
+            >
+              <div className="flex items-center gap-3.5 min-w-0">
+                <ProviderIcon name={pickedShow.network} size={44} shadow />
+                <div className="min-w-0">
+                  <p className="text-[11px] font-extrabold uppercase tracking-wider" style={{ color: "var(--save)" }}>
+                    {"\uD83C\uDFB2"} Tonight's Winner
+                  </p>
+                  <h3 className="display text-xl truncate" style={{ fontWeight: 800 }}>{pickedShow.title}</h3>
+                  <p className="text-xs truncate" style={{ color: "var(--muted)" }}>
+                    {pickedShow.year} • {(pickedShow.genres || []).join(", ")} • {pickedShow.seasons} {pickedShow.seasons === 1 ? "season" : "seasons"}
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2 w-full sm:w-auto shrink-0">
+                <button
+                  type="button"
+                  onClick={() => launchStream(pickedShow, pickedShow.network, showToast)}
+                  className="flex-1 sm:flex-initial rounded-full px-4 py-2 text-xs font-extrabold"
+                  style={{ background: "var(--seen)", color: "var(--bg)" }}
+                >
+                  Watch on {pickedShow.network}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => launchTrailer(pickedShow, showToast)}
+                  className="rounded-full px-3.5 py-2 text-xs font-bold"
+                  style={{ background: "rgba(255,255,255,.12)" }}
+                >
+                  {"\uD83C\uDFAC"} Trailer
+                </button>
+                <button
+                  type="button"
+                  onClick={spinTonightPick}
+                  title="Spin again"
+                  className="rounded-full px-3 py-2 text-xs font-bold"
+                  style={{ background: "rgba(255,255,255,.08)" }}
+                >
+                  {"\uD83C\uDFB2"}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPickedShow(null)}
+                  aria-label="Close spotlight"
+                  className="rounded-full px-2.5 py-2 text-xs"
+                  style={{ color: "var(--muted)" }}
+                >
+                  {"\u2715"}
+                </button>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
         {guest && items.length > 0 && (
           <div className="flex items-center justify-between gap-3 rounded-2xl px-4 py-3" style={{ background: "rgba(255,200,87,.1)", boxShadow: "inset 0 0 0 1px rgba(255,200,87,.3)" }}>
             <p className="text-sm">You're browsing as a guest. Create a free account to keep your {kind === "library" ? "library" : "watchlist"}.</p>
@@ -452,7 +535,11 @@ export function Collection({ kind, items, onDiscover, onRate, onOpenMatch, guest
           </motion.div>
         ) : (
           <>
-            <p className="text-xs -mb-2" style={{ color: "var(--muted)" }}>{kind === "library" ? "Tap a show to flip it for details or launch its streaming app. Tap its rating badge to change it." : "Tap a show to flip it for details or launch its streaming app."}</p>
+            <p className="text-xs -mb-2" style={{ color: "var(--muted)" }}>
+              {kind === "library"
+                ? "Tap any poster to flip for synopsis, trailer & streaming links. Tap the rating badge to change it."
+                : "Tap any poster to flip for synopsis, trailer, streaming links, or to mark it as seen."}
+            </p>
             <motion.ul
               key={active + "-" + ratingFilter}
               className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-3 md:gap-4"
@@ -461,7 +548,14 @@ export function Collection({ kind, items, onDiscover, onRate, onOpenMatch, guest
               variants={{ hidden: {}, show: { transition: { staggerChildren: 0.04 } } }}
             >
               {shown.map(item => (
-                <CollectionTile key={item.providerId + "-" + item.id} item={item} kind={kind} onRate={onRate} />
+                <CollectionTile
+                  key={item.providerId + "-" + item.id}
+                  item={item}
+                  kind={kind}
+                  onRate={onRate}
+                  onMoveToSeen={onMoveToSeen}
+                  onRemove={onRemove}
+                />
               ))}
             </motion.ul>
           </>

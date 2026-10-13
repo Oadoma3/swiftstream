@@ -285,7 +285,6 @@ export function applyRemoteCatalog(rows) {
       genres: Array.isArray(r.genres) && r.genres.length ? r.genres : ["Drama"],
       genre: (Array.isArray(r.genres) && r.genres.length ? r.genres : ["Drama"]).join(" \\u2022 "),
       platforms: Array.isArray(r.platforms) && r.platforms.length ? r.platforms : [prov.name],
-      "#0f0a24"],
       tagline: r.tagline || "",
       synopsis: r.synopsis || "",
       posterUrl: r.poster_url || null,

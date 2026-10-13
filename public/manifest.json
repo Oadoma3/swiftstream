@@ -1,0 +1,12 @@
+{
+  "name": "SwiftStream",
+  "short_name": "SwiftStream",
+  "description": "Swipe, discover, and match streaming shows with friends.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080610",
+  "theme_color": "#080610",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "192x192 512x512", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

@@ -1,7 +1,7 @@
 // Library.jsx - Watchlist & Library with "Pick Tonight's Show" roulette, Mark Seen / Remove actions, search, and filters.
 import { useState, useEffect, useRef, useContext } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { PROVIDERS, RATINGS, RATING_CHOICES } from "./data";
+import { PROVIDERS } from "./data";
 import { ProviderIcon, ToastCtx } from "./ui";
 import { BackFace, FlipCard, PosterFace, launchStream, launchTrailer } from "./Card";
 

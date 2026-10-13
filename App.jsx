@@ -8,7 +8,7 @@ import * as api from "./api";
 import { loadGuest, saveGuest, clearGuest } from "./guestStore";
 import { BottomNav, SideNav, AuthBar } from "./Nav";
 import SplashScreen from "./SplashScreen";
-import DiscoverDeck from "./DiscoverDeck";
+import DiscoverDeck, { ProviderSidebar } from "./DiscoverDeck";
 import Library from "./Library";
 import MatchModal from "./MatchModal";
 import InviteModal from "./InviteModal";
@@ -421,52 +421,60 @@ export default function App() {
 
         <div className="ambient" />
 
-        <div className="relative z-10 min-h-screen flex flex-col md:flex-row bg-[#080610] text-slate-100 overflow-hidden">
+        <div className="relative z-10 flex flex-col md:flex-row min-h-screen bg-[#080610] text-slate-100 overflow-x-hidden">
             
-            {/* Desktop Sidebar Navigation */}
-            <aside className="hidden md:flex flex-shrink-0 w-72 border-r border-white/10 bg-[#080610] flex-col">
+            {/* Desktop navigation and provider dashboard */}
+            <aside className="hidden md:flex w-full md:w-80 flex-shrink-0 flex-col border-r border-white/5 bg-[#0b0816] md:sticky md:top-0 md:h-screen">
               <SideNav 
                 tab={tab} 
                 onTab={setTab} 
-                pid={pid} 
-                onPick={pickProvider} 
-                counts={{ ...sortedCounts, ...navCounts }} 
+                counts={{ ...sortedCounts, ...navCounts }}
+              />
+              <ProviderSidebar
+                onPick={pickProvider}
+                activeId={pid}
+                counts={sortedCounts}
+                logs={logs}
+                onLog={setLog}
               />
             </aside>
 
             {/* Main Content Viewport */}
-            <div className="flex-1 flex flex-col min-h-0 min-w-0 max-w-[720px] mx-auto w-full sm:border-x sm:border-white/10">
+            <main className="flex-1 flex flex-col items-center justify-start min-w-0 p-4 md:p-8 overflow-y-auto">
+              <div className="w-full">
               <div className={tab === "discover" && pid ? "hidden md:block" : "block"}>
                 <AuthBar user={user} onSignedOut={handleSignOut} />
               </div>
 
-              <div className="flex-1 min-h-0 overflow-hidden flex flex-col">
+              <div className="w-full flex-1 min-h-0 flex flex-col">
                 <AnimatePresence mode="wait" initial={false}>
                   <motion.div
                     key={tab}
-                    className="h-full flex flex-col"
+                    className="w-full h-full flex flex-col"
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.18 }}
                   >
                     {tab === "discover" && (
-                      <DiscoverDeck
-                        provider={provider}
-                        pid={pid}
-                        logs={logs}
-                        onLog={setLog}
-                        onPick={pickProvider}
-                        onHome={() => setPid(null)}
-                        counts={sortedCounts}
-                        locked={locked}
-                        onGate={openGate}
-                        onSwipe={countSwipe}
-                        swipes={swipes}
-                        user={null}
-                        onOpenMatch={() => setModal("match")}
-                        onOpenInvite={() => setModal("invite")}
-                      />
+                      <div className="w-full max-w-2xl mx-auto">
+                        <DiscoverDeck
+                          provider={provider}
+                          pid={pid}
+                          logs={logs}
+                          onLog={setLog}
+                          onPick={pickProvider}
+                          onHome={() => setPid(null)}
+                          counts={sortedCounts}
+                          locked={locked}
+                          onGate={openGate}
+                          onSwipe={countSwipe}
+                          swipes={swipes}
+                          user={null}
+                          onOpenMatch={() => setModal("match")}
+                          onOpenInvite={() => setModal("invite")}
+                        />
+                      </div>
                     )}
                     {tab === "watchlist" && (
                       <Library
@@ -498,7 +506,8 @@ export default function App() {
               <div className="md:hidden">
                 <BottomNav tab={tab} onTab={setTab} counts={navCounts} />
               </div>
-            </div>
+              </div>
+            </main>
 
         </div>
 

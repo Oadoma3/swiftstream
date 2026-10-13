@@ -79,8 +79,8 @@ export function SideNav({ tab, onTab, counts }) {
   return (
     <nav
       aria-label="Main"
-      className="hidden md:flex flex-col shrink-0 h-full w-52 lg:w-60 px-3 py-6"
-      style={{ background: "rgba(15,12,27,.94)", borderRight: "1px solid rgba(255,255,255,.08)" }}
+      className="hidden md:flex flex-col shrink-0 h-auto w-full px-3 py-6"
+      style={{ background: "rgba(15,12,27,.94)" }}
     >
       <div className="px-3 pb-7">
         <p className="display text-2xl leading-none" style={{ fontWeight: 800 }}>SwiftStream</p>

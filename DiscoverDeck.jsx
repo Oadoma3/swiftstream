@@ -301,10 +301,24 @@ function ProviderList({ onPick, activeId, counts = {}, logs = {}, onLog }) {
   );
 }
 
+export function ProviderSidebar({ onPick, activeId, counts, logs, onLog }) {
+  return (
+    <div className="min-h-0 flex-1 overflow-y-auto px-4 pb-5 pt-3">
+      <ProviderList
+        onPick={onPick}
+        activeId={activeId}
+        counts={counts}
+        logs={logs}
+        onLog={onLog}
+      />
+    </div>
+  );
+}
+
 function ProviderGrid({ onPick, activeId, counts = {} }) {
   return (
     <motion.div
-      className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-3 gap-x-3 gap-y-5"
+      className="grid grid-cols-3 gap-x-3 gap-y-5"
       initial="hidden"
       animate="show"
       variants={{ hidden: {}, show: { transition: { staggerChildren: 0.03, delayChildren: 0.05 } } }}
@@ -398,7 +412,7 @@ function Home({ onPick, counts, logs, onLog }) {
     <div className="relative h-full overflow-hidden">
       <HeroMesh />
 
-      <div className="lg:hidden h-full overflow-y-auto no-scroll px-5 pt-3 pb-24 max-w-xl md:max-w-2xl mx-auto w-full">
+      <div className="md:hidden h-full overflow-y-auto no-scroll px-5 pt-3 pb-24 max-w-xl mx-auto w-full">
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
           <h1 className="display text-4xl leading-none" style={{ fontWeight: 800 }}>SwiftStream</h1>
           <p className="mt-1.5 text-sm" style={{ color: "var(--muted)" }}>
@@ -896,7 +910,7 @@ export default function DiscoverDeck({
         <AnimatePresence mode="wait" initial={false}>
           <motion.div
             key={pid || "home"}
-            className="flex-1 min-h-0"
+            className="w-full flex-1 min-h-0"
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}

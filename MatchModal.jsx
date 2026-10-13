@@ -6,6 +6,8 @@ import { copyText, initials, readableText, showKey } from "./utils";
 import { PosterFace, SwipeCard, launchStream } from "./Card";
 import { getSupabase } from "./supabase";
 
+const randomCode = () => String(Math.floor(100000 + Math.random() * 900000));
+
 function seededShuffle(list, seedStr) {
   const arr = [...list];
   let h = 2166136261 >>> 0;
@@ -61,7 +63,7 @@ function Confetti() {
 
 function Segments({ n, color }) {
   return (
-    <div className="flex gap-1.5 mt-1.5">
+    <div className="flex gap-1.5 mt-1">
       {Array.from({ length: n }, (_, i) => (
         <motion.div key={i} className="h-1.5 flex-1 rounded-full" animate={{ backgroundColor: color(i) }} transition={{ duration: 0.25 }} />
       ))}
@@ -69,10 +71,10 @@ function Segments({ n, color }) {
   );
 }
 
-export function WatchMatchModal({ onClose, onMatches, initialCode = "" }) {
+export function WatchMatchModal({ onClose, onMatches, initialCode = "", onClearCode }) {
   const showToast = useContext(ToastCtx);
   const [clientId] = useState(() => Math.random().toString(36).slice(2, 10));
-  const [code, setCode] = useState(() => initialCode || String(Math.floor(100000 + Math.random() * 900000)));
+  const [code, setCode] = useState(() => initialCode || randomCode());
   const [joinInput, setJoinInput] = useState("");
   const [friendConnected, setFriendConnected] = useState(Boolean(initialCode));
   const [simulate, setSimulate] = useState(!initialCode);
@@ -97,6 +99,34 @@ export function WatchMatchModal({ onClose, onMatches, initialCode = "" }) {
   const pool = useMemo(() => scope.filter(s => !effGenre || s.genres.includes(effGenre)), [scope, effGenre]);
   const deckSize = Math.min(5, pool.length);
 
+  const broadcast = useCallback((data) => {
+    if (chanRef.current) {
+      chanRef.current.send({ type: "broadcast", event: "sync", payload: { sender: clientId, ...data } });
+    }
+  }, [clientId]);
+
+  const startRoundWith = useCallback((targetProvId, targetGenre, targetRound, isSim) => {
+    const subScope = ALL_SHOWS.filter(s => !targetProvId || s.providerId === targetProvId);
+    const subPool = subScope.filter(s => !targetGenre || s.genres.includes(targetGenre));
+    const size = Math.min(5, subPool.length);
+    const seed = `${code}-${targetProvId || "any"}-${targetGenre || "any"}-${targetRound}`;
+    const next = seededShuffle(subPool, seed).slice(0, size);
+    if (isSim) {
+      const fv = next.map(() => Math.random() < 0.6);
+      if (!fv.some(Boolean) && next.length) fv[0] = true;
+      setFriendVotes(fv);
+      setFriendProgress(0);
+    } else {
+      setFriendVotes([]);
+      setFriendProgress(0);
+    }
+    setDeck(next);
+    setVotes([]);
+    setFlipped(false);
+    setDir("seen");
+    setStep("swipe");
+  }, [code]);
+
   // Live Supabase room sync for two phones
   useEffect(() => {
     const sb = getSupabase();
@@ -107,15 +137,40 @@ export function WatchMatchModal({ onClose, onMatches, initialCode = "" }) {
       if (payload.type === "join") {
         setFriendConnected(true);
         setSimulate(false);
-        showToast("Friend connected to Room #" + code + "!", null);
+        showToast(`Friend connected to Room #${code}!`, null);
+        ch.send({ type: "broadcast", event: "sync", payload: { sender: clientId, type: "join-ack" } });
+      } else if (payload.type === "join-ack") {
+        setFriendConnected(true);
+        setSimulate(false);
       } else if (payload.type === "filter") {
         setProvId(payload.provId ?? null);
         setGenre(payload.genre ?? null);
+      } else if (payload.type === "start") {
+        const p = payload.provId ?? null;
+        const g = payload.genre ?? null;
+        const r = payload.round || 1;
+        setFriendConnected(true);
+        setSimulate(false);
+        setProvId(p);
+        setGenre(g);
+        setRound(r);
+        startRoundWith(p, g, r, false);
       } else if (payload.type === "vote") {
         setFriendConnected(true);
         setSimulate(false);
         setFriendVotes(payload.votes || []);
         setFriendProgress((payload.votes || []).length);
+      } else if (payload.type === "disband") {
+        setFriendConnected(false);
+        setSimulate(true);
+        setStep("setup");
+        setDeck([]);
+        setVotes([]);
+        setFriendVotes([]);
+        setFriendProgress(0);
+        setCode(randomCode());
+        if (onClearCode) onClearCode();
+        showToast("Room was disbanded by your friend.", null);
       }
     }).subscribe((status) => {
       if (status === "SUBSCRIBED") {
@@ -124,13 +179,28 @@ export function WatchMatchModal({ onClose, onMatches, initialCode = "" }) {
     });
     chanRef.current = ch;
     return () => { sb.removeChannel(ch); chanRef.current = null; };
-  }, [code, clientId, showToast]);
+  }, [code, clientId, showToast, startRoundWith, onClearCode]);
 
-  const broadcast = useCallback((data) => {
-    if (chanRef.current) {
-      chanRef.current.send({ type: "broadcast", event: "sync", payload: { sender: clientId, ...data } });
+  // Disconnect / Disband Room action
+  const disbandRoom = useCallback((closeAfter = false) => {
+    broadcast({ type: "disband" });
+    const sb = getSupabase();
+    if (sb && chanRef.current) {
+      try { sb.removeChannel(chanRef.current); } catch { /* ignore */ }
+      chanRef.current = null;
     }
-  }, [clientId]);
+    if (onClearCode) onClearCode();
+    setFriendConnected(false);
+    setSimulate(true);
+    setStep("setup");
+    setDeck([]);
+    setVotes([]);
+    setFriendVotes([]);
+    setFriendProgress(0);
+    setCode(randomCode());
+    showToast("Disconnected from room.", null);
+    if (closeAfter && onClose) onClose();
+  }, [broadcast, onClearCode, onClose, showToast]);
 
   const handleJoinCode = (e) => {
     e.preventDefault();
@@ -146,23 +216,11 @@ export function WatchMatchModal({ onClose, onMatches, initialCode = "" }) {
     showToast(`Joined Room #MATCH-${cleaned}!`, null);
   };
 
-  const begin = () => {
-    const seed = `${code}-${provId || "any"}-${effGenre || "any"}-${round}`;
-    const next = seededShuffle(pool, seed).slice(0, deckSize);
-    if (simulate) {
-      const fv = next.map(() => Math.random() < 0.6);
-      if (!fv.some(Boolean) && next.length) fv[0] = true;
-      setFriendVotes(fv);
-      setFriendProgress(0);
-    } else {
-      setFriendVotes([]);
-      setFriendProgress(0);
+  const begin = (customRound = round) => {
+    if (!simulate) {
+      broadcast({ type: "start", provId, genre: effGenre, round: customRound });
     }
-    setDeck(next);
-    setVotes([]);
-    setFlipped(false);
-    setDir("seen");
-    setStep("swipe");
+    startRoundWith(provId, effGenre, customRound, simulate);
   };
 
   const vote = useCallback((action) => {
@@ -189,7 +247,7 @@ export function WatchMatchModal({ onClose, onMatches, initialCode = "" }) {
 
   useEffect(() => {
     if (step !== "wait" || friendProgress < deck.length) return;
-    const id = setTimeout(() => setStep("result"), 700);
+    const id = setTimeout(() => setStep("result"), 600);
     return () => clearTimeout(id);
   }, [step, friendProgress, deck.length]);
 
@@ -222,14 +280,28 @@ export function WatchMatchModal({ onClose, onMatches, initialCode = "" }) {
       {step === "setup" && (
         <div className="px-5 pb-6 space-y-5">
           <div className="rounded-3xl p-4" style={{ background: "var(--surface)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,.08)" }}>
-            <div className="flex items-center justify-between">
+            <div className="flex items-start justify-between gap-2">
               <div>
                 <p className="text-xs" style={{ color: "var(--muted)" }}>Your Room Code</p>
                 <p className="display text-3xl mt-0.5 tracking-wide" style={{ fontWeight: 800, color: "var(--save)" }}>#MATCH-{code}</p>
               </div>
-              <span className="text-xs font-bold px-3 py-1 rounded-full" style={{ background: friendConnected ? "rgba(92,225,196,.18)" : "rgba(255,255,255,.08)", color: friendConnected ? "var(--seen)" : "var(--muted)" }}>
-                {friendConnected ? "Friend Connected" : simulate ? "Solo / Sim Mode" : "Waiting for friend..."}
-              </span>
+              <div className="flex flex-col items-end gap-1.5">
+                <span className="text-xs font-bold px-3 py-1 rounded-full" style={{ background: friendConnected ? "rgba(92,225,196,.18)" : "rgba(255,255,255,.08)", color: friendConnected ? "var(--seen)" : "var(--muted)" }}>
+                  {friendConnected ? "\u25CF Friend Connected" : simulate ? "Solo / Sim Mode" : "Waiting for friend..."}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => disbandRoom(false)}
+                  className="text-[11px] font-extrabold px-2.5 py-1 rounded-full transition active:scale-95"
+                  style={{
+                    background: friendConnected || !simulate ? "rgba(255,107,122,.18)" : "rgba(255,255,255,.07)",
+                    color: friendConnected || !simulate ? "var(--skip)" : "var(--muted)",
+                    border: friendConnected || !simulate ? "1px solid rgba(255,107,122,.35)" : "none",
+                  }}
+                >
+                  {friendConnected || !simulate ? "\u2715 Disband / Leave Room" : "\u21BB New Room Code"}
+                </button>
+              </div>
             </div>
 
             <div className="flex gap-2 mt-3.5">
@@ -249,7 +321,7 @@ export function WatchMatchModal({ onClose, onMatches, initialCode = "" }) {
                 value={joinInput}
                 onChange={(e) => setJoinInput(e.target.value)}
                 placeholder="Have a friend's 6-digit code?"
-                className="flex-1 min-w-0 rounded-full px-4 py-2 text-sm font-bold outline-none"
+                className="flex-1 min-w-0 rounded-full px-4 py-2 text-base sm:text-sm font-bold outline-none"
                 style={{ background: "rgba(255,255,255,.06)", color: "var(--text)", border: "1px solid rgba(255,255,255,.12)" }}
               />
               <button type="submit" className="shrink-0 rounded-full px-4 py-2 text-sm font-extrabold" style={{ background: "var(--save)", color: "var(--bg)" }}>
@@ -278,7 +350,7 @@ export function WatchMatchModal({ onClose, onMatches, initialCode = "" }) {
 
           <div>
             <p className="text-sm font-bold">Genre</p>
-            <div className="flex flex-wrap gap-2 mt-2">
+            <div className="flex flex-wrap gap-2 mt-2 max-h-28 overflow-y-auto no-scroll">
               {[null, ...genreOptions].map(g => {
                 const on = effGenre === g;
                 return (
@@ -286,7 +358,7 @@ export function WatchMatchModal({ onClose, onMatches, initialCode = "" }) {
                     key={g || "any"}
                     onClick={() => { setGenre(g); broadcast({ type: "filter", provId, genre: g }); }}
                     whileTap={{ scale: 0.93 }}
-                    className="text-sm font-medium px-3.5 py-1.5 rounded-full"
+                    className="text-xs sm:text-sm font-medium px-3.5 py-1.5 rounded-full"
                     style={{ background: on ? "var(--text)" : "var(--surface)", color: on ? "var(--bg)" : "var(--text)" }}
                   >
                     {g || "Any genre"}
@@ -313,7 +385,7 @@ export function WatchMatchModal({ onClose, onMatches, initialCode = "" }) {
           </div>
 
           <motion.button
-            onClick={begin}
+            onClick={() => begin(round)}
             disabled={pool.length === 0}
             whileHover={{ scale: pool.length ? 1.02 : 1 }}
             whileTap={{ scale: pool.length ? 0.96 : 1 }}
@@ -327,20 +399,45 @@ export function WatchMatchModal({ onClose, onMatches, initialCode = "" }) {
 
       {(step === "swipe" || step === "wait") && (
         <div className="px-5 pb-6">
-          <div className="flex items-center justify-between text-xs font-bold">
-            <span>You</span>
-            <span style={{ color: "var(--muted)" }}>{Math.min(votes.length + (step === "swipe" ? 1 : 0), deck.length)} of {deck.length}</span>
+          <div className="flex items-center justify-between gap-2 mb-2.5">
+            <button
+              type="button"
+              onClick={reset}
+              className="text-xs font-bold px-3 py-1 rounded-full"
+              style={{ background: "var(--surface)", color: "var(--muted)" }}
+            >
+              ‹ Setup
+            </button>
+            <button
+              type="button"
+              onClick={() => disbandRoom(false)}
+              className="text-xs font-extrabold px-3 py-1 rounded-full"
+              style={{ background: "rgba(255,107,122,.16)", color: "var(--skip)", border: "1px solid rgba(255,107,122,.35)" }}
+            >
+              {"\u2715"} Leave Room
+            </button>
           </div>
-          <Segments n={deck.length} color={(i) => votes[i] === undefined ? (i === votes.length ? "rgba(255,255,255,.7)" : "rgba(255,255,255,.14)") : votes[i] ? "var(--seen)" : "var(--skip)"} />
-          <div className="flex items-center justify-between text-xs font-bold mt-3">
-            <span style={{ color: "var(--muted)" }}>Friend ({simulate ? "Simulated" : `Room #${code}`})</span>
-            <span style={{ color: "var(--muted)" }}>{friendProgress} of {deck.length}</span>
-          </div>
-          <Segments n={deck.length} color={(i) => (i < friendProgress ? "var(--save)" : "rgba(255,255,255,.14)")} />
 
-          <div className="relative mx-auto my-5 h-[min(40vh,390px)] aspect-[2/3] max-w-full">
+          <div className="grid grid-cols-2 gap-3">
+            <div>
+              <div className="flex items-center justify-between text-xs font-bold">
+                <span>You</span>
+                <span style={{ color: "var(--muted)" }}>{Math.min(votes.length + (step === "swipe" ? 1 : 0), deck.length)}/{deck.length}</span>
+              </div>
+              <Segments n={deck.length} color={(i) => votes[i] === undefined ? (i === votes.length ? "rgba(255,255,255,.7)" : "rgba(255,255,255,.14)") : votes[i] ? "var(--seen)" : "var(--skip)"} />
+            </div>
+            <div>
+              <div className="flex items-center justify-between text-xs font-bold">
+                <span className="truncate" style={{ color: "var(--muted)" }}>{simulate ? "Friend (Sim)" : `Friend (#${code})`}</span>
+                <span style={{ color: "var(--muted)" }}>{friendProgress}/{deck.length}</span>
+              </div>
+              <Segments n={deck.length} color={(i) => (i < friendProgress ? "var(--save)" : "rgba(255,255,255,.14)")} />
+            </div>
+          </div>
+
+          <div className="relative mx-auto my-4 h-[min(44vh,410px)] aspect-[2/3] max-w-full">
             {next && (
-              <div className="absolute inset-0" style={{ transform: "scale(0.94) translateY(14px)", opacity: 0.55, filter: "brightness(.7)" }}>
+              <div className="absolute inset-0 pointer-events-none" style={{ transform: "scale(0.94) translateY(14px)", opacity: 0.55, filter: "brightness(.7)" }}>
                 <PosterFace show={next} />
               </div>
             )}
@@ -380,7 +477,7 @@ export function WatchMatchModal({ onClose, onMatches, initialCode = "" }) {
       {step === "result" && (
         <div className="relative px-5 pb-6 text-center">
           {matched.length > 0 && <Confetti />}
-          <h3 className="display text-4xl leading-tight pt-4" style={{ fontWeight: 800 }}>
+          <h3 className="display text-4xl leading-tight pt-2" style={{ fontWeight: 800 }}>
             {matched.length > 0 ? "It's a Match! \uD83C\uDF89" : "No match this round \uD83D\uDE05"}
           </h3>
           <p className="text-sm mt-2" style={{ color: "var(--muted)" }}>
@@ -391,8 +488,12 @@ export function WatchMatchModal({ onClose, onMatches, initialCode = "" }) {
             <ul className="mt-5 space-y-3 text-left">
               {matched.map(m => (
                 <li key={showKey(m)} className="flex gap-3 rounded-2xl p-3" style={{ background: "var(--surface)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,.08)" }}>
-                  <div className="shrink-0 rounded-xl flex items-center justify-center display text-2xl" style={{ width: 64, height: 96, fontWeight: 800, color: "rgba(255,255,255,.35)", background: `linear-gradient(160deg, ${m.colors[0]}, ${m.colors[1]})` }}>
-                    {initials(m.title)}
+                  <div className="relative overflow-hidden shrink-0 rounded-xl flex items-center justify-center display text-2xl" style={{ width: 64, height: 96, fontWeight: 800, color: "rgba(255,255,255,.35)", background: `linear-gradient(160deg, ${m.colors[0]}, ${m.colors[1]})` }}>
+                    {m.posterUrl ? (
+                      <img src={m.posterUrl} alt="" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+                    ) : (
+                      initials(m.title)
+                    )}
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="display text-lg leading-tight" style={{ fontWeight: 800 }}>{m.title}</p>
@@ -404,12 +505,25 @@ export function WatchMatchModal({ onClose, onMatches, initialCode = "" }) {
             </ul>
           )}
 
-          <div className="flex gap-3 mt-6">
-            <motion.button onClick={() => { setRound(r => r + 1); setTimeout(begin, 20); }} whileTap={{ scale: 0.95 }} className="flex-1 rounded-full py-3 display text-base" style={{ background: "var(--text)", color: "var(--bg)", fontWeight: 800 }}>
+          <div className="flex flex-wrap gap-2.5 mt-6">
+            <motion.button
+              onClick={() => { const nextR = round + 1; setRound(nextR); setTimeout(() => begin(nextR), 20); }}
+              whileTap={{ scale: 0.95 }}
+              className="flex-1 rounded-full py-3 display text-base"
+              style={{ background: "var(--text)", color: "var(--bg)", fontWeight: 800 }}
+            >
               Next 5 Shows
             </motion.button>
-            <motion.button onClick={reset} whileTap={{ scale: 0.95 }} className="flex-1 rounded-full py-3 text-base font-bold" style={{ background: "var(--surface-2)" }}>
-              Room Setup
+            <motion.button onClick={reset} whileTap={{ scale: 0.95 }} className="rounded-full px-4 py-3 text-sm font-bold" style={{ background: "var(--surface-2)" }}>
+              Setup
+            </motion.button>
+            <motion.button
+              onClick={() => disbandRoom(true)}
+              whileTap={{ scale: 0.95 }}
+              className="rounded-full px-4 py-3 text-sm font-extrabold"
+              style={{ background: "rgba(255,107,122,.16)", color: "var(--skip)", border: "1px solid rgba(255,107,122,.35)" }}
+            >
+              Disband
             </motion.button>
           </div>
         </div>

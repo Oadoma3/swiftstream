@@ -24,6 +24,24 @@ function deriveItems(logsObj) {
   };
 }
 
+// Read ?room= once and immediately scrub URL bar so mobile Safari never caches or reloads into MatchModal
+function consumeInitialRoomCode() {
+  if (typeof window === "undefined") return "";
+  try {
+    const url = new URL(window.location.href);
+    const roomParam = (url.searchParams.get("room") || "").replace(/\D/g, "").slice(0, 6);
+    if (url.searchParams.has("match") || url.searchParams.has("room")) {
+      url.searchParams.delete("match");
+      url.searchParams.delete("room");
+      const cleanUrl = url.pathname + (url.search ? url.search : "") + (url.hash ? url.hash : "");
+      window.history.replaceState({}, document.title, cleanUrl);
+    }
+    return roomParam.length >= 4 ? roomParam : "";
+  } catch {
+    return "";
+  }
+}
+
 export default function App() {
   const [booting, setBooting] = useState(true);
   const [guest0] = useState(loadGuest);
@@ -35,8 +53,8 @@ export default function App() {
   const [lockedUntil, setLockedUntil] = useState(guest0.lockedUntil);
   const [mixedShows, setMixedShows] = useState([]);
   const [authReason, setAuthReason] = useState("gate");
-  const [urlMatchCode] = useState(() => new URLSearchParams(window.location.search).get("match") || "");
-  const [modal, setModal] = useState(() => new URLSearchParams(window.location.search).get("match") ? "match" : null);
+  const [urlMatchCode, setUrlMatchCode] = useState(consumeInitialRoomCode);
+  const [modal, setModal] = useState(() => (urlMatchCode ? "match" : null));
   const [matches, setMatches] = useState([]);
   const [invite, setInvite] = useState({ sent: false, joined: false });
 
@@ -50,7 +68,11 @@ export default function App() {
 
   const [session, setSession] = useState(null);
   const [hydrated, setHydrated] = useState(false);
-  const [retryTick, setRetryTick] = useState(0); const [catalogTick, setCatalogTick] = useState(0); useEffect(() => { api.syncRollingCatalog().then(changed => { if (changed) setCatalogTick(n => n + 1); }); }, []);
+  const [retryTick, setRetryTick] = useState(0);
+  const [catalogTick, setCatalogTick] = useState(0);
+  useEffect(() => {
+    api.syncRollingCatalog().then(changed => { if (changed) setCatalogTick(n => n + 1); });
+  }, []);
   const syncedRef = useRef(new Map());
   const guestClearedRef = useRef(false);
   const sessionRef = useRef(null);
@@ -96,14 +118,13 @@ export default function App() {
     saveGuest(logs, swipes, lockedUntil);
   }, [logs, swipes, lockedUntil, uid]);
 
-  // Handle setting and resetting the 6-hour swipe lock
   useEffect(() => {
     if (uid) return;
     if (swipes >= GUEST_LIMIT && !lockedUntil) {
-      setLockedUntil(Date.now() + 6 * 60 * 60 * 1000); // Lock for 6 hours
+      setLockedUntil(Date.now() + 6 * 60 * 60 * 1000);
     }
     if (lockedUntil && Date.now() >= lockedUntil) {
-      setSwipes(0); // Cooldown expired, reset swipes!
+      setSwipes(0);
       setLockedUntil(null);
     }
   }, [swipes, lockedUntil, uid]);
@@ -162,7 +183,7 @@ export default function App() {
         syncedRef.current = synced;
         setLogs(prev => api.mergeLogs(dbLogs, prev));
         setHydrated(true);
-      } catch (e) {
+      } catch {
         if (!cancelled) showToast("Couldn't load your library. Check your connection and reload.", null);
       }
     })();
@@ -175,7 +196,6 @@ export default function App() {
       const updated = typeof updater === "function" ? updater(cur) : updater;
       const next = { ...prev, [id]: updated };
 
-      // If swiping in Mixed Mode, mirror new swipes (or undos) into the show's home provider deck automatically
       if (id === "mixed") {
         if (updated.length > cur.length) {
           const added = updated[updated.length - 1];
@@ -272,7 +292,10 @@ export default function App() {
     return () => clearTimeout(timer);
   }, [logs, hydrated, uid, retryTick]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const closeModal = useCallback(() => setModal(null), []);
+  const closeModal = useCallback(() => {
+    setModal(null);
+    setUrlMatchCode("");
+  }, []);
   const openAuth = useCallback((reason) => { setAuthReason(reason); setModal("auth"); }, []);
   const openGate = useCallback(() => openAuth("gate"), [openAuth]);
   const countSwipe = useCallback(() => setSwipes(n => n + 1), []);
@@ -405,7 +428,15 @@ export default function App() {
             </div>
 
             <AnimatePresence>
-              {modal === "match" && <MatchModal key="match" initialCode={urlMatchCode} onClose={closeModal} onMatches={addMatches} />}
+              {modal === "match" && (
+                <MatchModal
+                  key="match"
+                  initialCode={urlMatchCode}
+                  onClearCode={() => setUrlMatchCode("")}
+                  onClose={closeModal}
+                  onMatches={addMatches}
+                />
+              )}
               {modal === "auth" && (
                 <AuthModal key="auth" reason={authReason} swipes={swipes} onClose={closeModal} onDemoAuth={handleDemoAuth} onMagicLinkSent={handleMagicLinkSent} />
               )}

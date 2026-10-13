@@ -159,7 +159,29 @@ export default function App() {
   const setLog = useCallback((id, updater) => {
     setLogs(prev => {
       const cur = prev[id] || [];
-      return { ...prev, [id]: typeof updater === "function" ? updater(cur) : updater };
+      const updated = typeof updater === "function" ? updater(cur) : updater;
+      const next = { ...prev, [id]: updated };
+
+      // If swiping in Mixed Mode, mirror new swipes (or undos) into the show's home provider deck automatically
+      if (id === "mixed") {
+        if (updated.length > cur.length) {
+          const added = updated[updated.length - 1];
+          const pId = added?.show?.providerId;
+          if (pId && pId !== "mixed") {
+            const pLog = next[pId] || [];
+            if (!pLog.some(e => e.show.id === added.show.id)) {
+              next[pId] = [...pLog, added];
+            }
+          }
+        } else if (updated.length < cur.length) {
+          const removed = cur[cur.length - 1];
+          const pId = removed?.show?.providerId;
+          if (pId && pId !== "mixed" && next[pId]) {
+            next[pId] = next[pId].filter(e => !(e.show.id === removed.show.id && e.t === removed.t));
+          }
+        }
+      }
+      return next;
     });
   }, []);
 
@@ -266,16 +288,37 @@ export default function App() {
     return { ...p, shows: [...sorted, ...p.shows.filter(s => !sortedIds.has(s.id))] };
   }, [pid, logs, mixedProvider, catalogTick]);
 
+  const allSortedEntries = useMemo(() => {
+    const map = new Map();
+    Object.entries(logs).forEach(([k, arr]) => {
+      if (k === "mixed") return;
+      (arr || []).forEach(e => {
+        const key = showKey({ ...e.show, providerId: e.show.providerId || k });
+        map.set(key, { ...e, show: { ...e.show, providerId: e.show.providerId || k } });
+      });
+    });
+    (logs.mixed || []).forEach(e => {
+      const key = showKey(e.show);
+      if (!map.has(key)) map.set(key, e);
+    });
+    return [...map.values()];
+  }, [logs]);
+
   const pickProvider = (id) => {
     if (id === "mixed") {
       const done = (logs.mixed || []).map(e => e.show);
-      const doneKeys = new Set(done.map(showKey));
-      setMixedShows([...done, ...shuffle(ALL_SHOWS.filter(x => !doneKeys.has(showKey(x))))]);
+      const allDoneKeys = new Set(allSortedEntries.map(e => showKey(e.show)));
+      const unsortedPool = shuffle(ALL_SHOWS.filter(x => !allDoneKeys.has(showKey(x)))).slice(0, 300);
+      setMixedShows([...done, ...unsortedPool]);
     }
     setPid(id);
   };
 
-  const sortedCounts = Object.fromEntries(Object.entries(logs).map(([k, v]) => [k, v.length]));
+  const sortedCounts = useMemo(() => {
+    const c = Object.fromEntries(Object.entries(logs).map(([k, v]) => [k, v.length]));
+    c.mixed = allSortedEntries.length;
+    return c;
+  }, [logs, allSortedEntries]);
   const navCounts = { watchlist: watchItems.length, library: seenItems.length };
 
   return (

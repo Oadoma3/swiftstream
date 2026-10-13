@@ -186,35 +186,8 @@ export async function syncRollingCatalog() {
     const { data, error } = await sb
       .from("catalog_shows")
       .select("*")
-      .order("show_id", { ascending: true });
-    if (error) return false;
-
-    const localCount = PROVIDERS.reduce((n, p) => n + p.shows.length, 0);
-    if (!data || data.length < localCount) {
-      const seedRows = PROVIDERS.flatMap(p =>
-        p.shows.map(s => ({
-          provider_id: p.id,
-          show_id: s.id,
-          title: s.title,
-          year: s.year,
-          community_score: s.communityScore,
-          seasons: s.seasons,
-          episodes: s.episodes,
-          genres: s.genres,
-          platforms: s.platforms,
-          colors: s.colors,
-          tagline: s.tagline || "",
-          synopsis: s.synopsis || "",
-          poster_url: s.posterUrl || null,
-          is_active: true,
-        }))
-      );
-      for (let i = 0; i < seedRows.length; i += 250) {
-        await sb.from("catalog_shows").upsert(seedRows.slice(i, i + 250), { onConflict: "provider_id,show_id" });
-      }
-      if (!data || data.length === 0) return false;
-    }
-
+      .limit(500);
+    if (error || !data || data.length === 0) return false;
     return applyRemoteCatalog(data);
   } catch {
     return false;

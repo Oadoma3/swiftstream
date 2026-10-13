@@ -21,6 +21,14 @@ const PROVIDERS_META = [
   { id: "apple",       name: "Apple TV+",   brand: "#000000", accent: "#e5e5ea", webIds: [310],     netIds: [] },
   { id: "tubi",        name: "Tubi",        brand: "#FA382F", accent: "#ff6a5f", webIds: [223, 26], netIds: [5, 7, 12, 20, 65] },
   { id: "crunchyroll", name: "Crunchyroll", brand: "#F47521", accent: "#ff8a3d", webIds: [20],      netIds: [] },
+  { id: "starz",       name: "Starz",       brand: "#000000", accent: "#e5e5ea", webIds: [50],      netIds: [] },
+  { id: "amc",         name: "AMC+",        brand: "#FF6600", accent: "#ff8833", webIds: [115],     netIds: [20] },
+  { id: "discovery",   name: "Discovery+",  brand: "#00FFFF", accent: "#33ffff", webIds: [367],     netIds: [] },
+  { id: "pluto",       name: "Pluto TV",    brand: "#111111", accent: "#00d2ff", webIds: [380],     netIds: [] },
+  { id: "roku",        name: "Roku Channel",brand: "#662d91", accent: "#9b51e0", webIds: [300],     netIds: [] },
+  { id: "shudder",     name: "Shudder",     brand: "#880000", accent: "#ff3333", webIds: [250],     netIds: [] },
+  { id: "espn",        name: "ESPN+",       brand: "#CC0000", accent: "#ff3333", webIds: [150],     netIds: [] },
+  { id: "britbox",     name: "BritBox",     brand: "#1b2a4a", accent: "#4a7fc1", webIds: [315],     netIds: [] },
 ];
 
 // Preserved starter IDs (1..12) so existing user_libraries in Supabase never break

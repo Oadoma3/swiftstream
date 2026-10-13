@@ -1,4 +1,4 @@
-// data.js - Auto-generated 916-show catalog across all 10 streaming services + Supabase live sync.
+// data.js - Auto-generated 1715-show catalog across all 10 streaming services + Supabase live sync.
 
 export const PROVIDERS = [
   {
@@ -2128,30 +2128,6 @@ export const PROVIDERS = [
       },
       {
         "id": 91,
-        "title": "Gold Rush",
-        "year": 2010,
-        "communityScore": 88,
-        "seasons": 4,
-        "episodes": 40,
-        "genres": [
-          "Action",
-          "Adventure",
-          "Nature"
-        ],
-        "genre": "Action • Adventure • Nature",
-        "platforms": [
-          "Netflix"
-        ],
-        "colors": [
-          "#d97706",
-          "#2a1305"
-        ],
-        "tagline": "2010 Action & Adventure streaming on Netflix.",
-        "synopsis": "Gold Rush follows six men who, in the face of an economic meltdown, risk everything - their families, their dignity, and in some cases, their lives - to strike it rich mining for gold in the wilds of Alaska. Inspired by his father Jack, Todd Hoffman of Sandy, Oregon, leads a grou",
-        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/644/1610104.jpg"
-      },
-      {
-        "id": 92,
         "title": "Doc Martin",
         "year": 2004,
         "communityScore": 88,
@@ -2167,15 +2143,15 @@ export const PROVIDERS = [
           "Netflix"
         ],
         "colors": [
-          "#0f766e",
-          "#0a1a24"
+          "#d97706",
+          "#2a1305"
         ],
         "tagline": "2004 Drama & Comedy streaming on Netflix.",
         "synopsis": "Successful surgeon Dr Martin Ellingham relocates to the seaside village of Portwenn in Cornwall; but his gruff demeanour and poor bedside manner bring him into conflict with the locals as he begins his new life as a GP.",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/423/1058629.jpg"
       },
       {
-        "id": 93,
+        "id": 92,
         "title": "Taskmaster",
         "year": 2015,
         "communityScore": 88,
@@ -2189,15 +2165,15 @@ export const PROVIDERS = [
           "Netflix"
         ],
         "colors": [
-          "#ca8a04",
-          "#181109"
+          "#0f766e",
+          "#0a1a24"
         ],
         "tagline": "2015 Comedy streaming on Netflix.",
         "synopsis": "Greg Davies is the Taskmaster who, with the help of his right-hand man, Alex, sets out to test the wiles, wit and wisdom of five hyper competitive comedians through a series of ingenious challenges. With the chance to be crowned show champion, rivalry amongst the comedians is enc",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/639/1599040.jpg"
       },
       {
-        "id": 94,
+        "id": 93,
         "title": "Better Off Ted",
         "year": 2009,
         "communityScore": 89,
@@ -2211,15 +2187,15 @@ export const PROVIDERS = [
           "Netflix"
         ],
         "colors": [
-          "#dc2626",
-          "#0f172a"
+          "#ca8a04",
+          "#181109"
         ],
         "tagline": "2009 Comedy streaming on Netflix.",
         "synopsis": "Better Off Ted is a satirical office comedy about successful good guy, Ted Crisp, who runs research and development at Veridian Dynamics, a company with a morally questionable approach to its employees. Whether it's standing by a memo with a typo that encourages employees to now ",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15323.jpg"
       },
       {
-        "id": 95,
+        "id": 94,
         "title": "Agatha Christie Poirot",
         "year": 1989,
         "communityScore": 89,
@@ -2235,39 +2211,15 @@ export const PROVIDERS = [
           "Netflix"
         ],
         "colors": [
-          "#f59e0b",
-          "#701a75"
+          "#dc2626",
+          "#0f172a"
         ],
         "tagline": "1989 Drama & Crime streaming on Netflix.",
         "synopsis": "Whether he's on holiday abroad, taking a countryside break or simply going about his business near his central London home, Poirot finds himself exercising his \"little grey cells\" by helping police investigate crimes and murders, whether they ask for his help or not. He's often a",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/17471.jpg"
       },
       {
-        "id": 96,
-        "title": "The Walking Dead",
-        "year": 2010,
-        "communityScore": 86,
-        "seasons": 4,
-        "episodes": 40,
-        "genres": [
-          "Drama",
-          "Action",
-          "Horror"
-        ],
-        "genre": "Drama • Action • Horror",
-        "platforms": [
-          "Netflix"
-        ],
-        "colors": [
-          "#2563eb",
-          "#0f172a"
-        ],
-        "tagline": "The Walking Dead tells the story of the months and years that follow after a zombie apocalypse.",
-        "synopsis": "The Walking Dead tells the story of the months and years that follow after a zombie apocalypse. It follows a group of survivors, led by former police officer Rick Grimes, who travel in search of a safe and secure home. As the world overrun by the dead takes its toll on the surviv",
-        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/424/1061900.jpg"
-      },
-      {
-        "id": 97,
+        "id": 95,
         "title": "Marvel's Agents of S.H.I.E.L.D.",
         "year": 2013,
         "communityScore": 87,
@@ -2283,15 +2235,15 @@ export const PROVIDERS = [
           "Netflix"
         ],
         "colors": [
-          "#16a34a",
-          "#052e2b"
+          "#f59e0b",
+          "#701a75"
         ],
         "tagline": "2013 Action & Adventure streaming on Netflix.",
         "synopsis": "Phil Coulson heads an elite team of fellow agents with the worldwide law-enforcement organization known as S.H.I.E.L.D. (Strategic Homeland Intervention Enforcement and Logistics Division), as they investigate strange occurrences around the globe. Its members -- each of whom brin",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/486/1215694.jpg"
       },
       {
-        "id": 98,
+        "id": 96,
         "title": "Fawlty Towers",
         "year": 1975,
         "communityScore": 92,
@@ -2305,15 +2257,15 @@ export const PROVIDERS = [
           "Netflix"
         ],
         "colors": [
-          "#991b1b",
-          "#090d16"
+          "#2563eb",
+          "#0f172a"
         ],
         "tagline": "Fawlty Towers is set in a fictional hotel in the seaside town of Torquay.",
         "synopsis": "Fawlty Towers is set in a fictional hotel in the seaside town of Torquay. The plots centre on tense, rude and put-upon owner Basil Fawlty, his bossy wife Sybil, comparatively normal chambermaid Polly, who is often the peacemaker and voice of reason, and hapless Spanish waiter Man",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/4/11842.jpg"
       },
       {
-        "id": 99,
+        "id": 97,
         "title": "How the Universe Works",
         "year": 2010,
         "communityScore": 92,
@@ -2327,15 +2279,15 @@ export const PROVIDERS = [
           "Netflix"
         ],
         "colors": [
-          "#475569",
-          "#0f172a"
+          "#16a34a",
+          "#052e2b"
         ],
         "tagline": "How the Universe Works is the greatest story ever told, the creation of everything us.",
         "synopsis": "How the Universe Works is the greatest story ever told, the creation of everything us. The programme investigates how the Universe came into existence out of nothing, and how it grew from a miniscule point, smaller than an atomic particle, to the vast cosmos we see today.",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/450/1127097.jpg"
       },
       {
-        "id": 100,
+        "id": 98,
         "title": "The Great British Bake Off",
         "year": 2010,
         "communityScore": 87,
@@ -2349,12 +2301,59 @@ export const PROVIDERS = [
           "Netflix"
         ],
         "colors": [
-          "#ea580c",
-          "#1c1917"
+          "#991b1b",
+          "#090d16"
         ],
         "tagline": "2010 Food streaming on Netflix.",
         "synopsis": "Over 10 weeks, 12 of the best amateur bakers in Britain will whisk, knead, ice, beat and bake their way through classic British cakes, perfect patisserie, Italian delights, sticky caramel constructions and elaborate layered puddings. All 12 will be hoping to impress with their sk",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/642/1606557.jpg"
+      },
+      {
+        "id": 99,
+        "title": "Vera",
+        "year": 2011,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "Netflix"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "2011 Drama & Crime streaming on Netflix.",
+        "synopsis": "Set around Newcastle and the stunning Northumberland countryside, Vera features complex and intriguing cases, atmospherically-shot landscapes and captivating performances, led by Brenda Blethyn who plays the unorthodox but brilliant DCI Vera Stanhope.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/550/1376455.jpg"
+      },
+      {
+        "id": 100,
+        "title": "Unforgotten",
+        "year": 2015,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "Netflix"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "Unforgotten focuses on ‘cold' murder cases.",
+        "synopsis": "Unforgotten focuses on ‘cold' murder cases. Each series deals with a new case, introducing seemingly unconnected characters who are gradually revealed to have some relationship with the victim. As the murder mystery unfolds, the emotional ramifications of the crime on the lives o",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/555/1388259.jpg"
       }
     ]
   },
@@ -4307,8 +4306,8 @@ export const PROVIDERS = [
       },
       {
         "id": 85,
-        "title": "Vera",
-        "year": 2011,
+        "title": "The Brokenwood Mysteries",
+        "year": 2014,
         "communityScore": 87,
         "seasons": 4,
         "episodes": 40,
@@ -4325,59 +4324,12 @@ export const PROVIDERS = [
           "#ea580c",
           "#1c1917"
         ],
-        "tagline": "2011 Drama & Crime streaming on Hulu.",
-        "synopsis": "Set around Newcastle and the stunning Northumberland countryside, Vera features complex and intriguing cases, atmospherically-shot landscapes and captivating performances, led by Brenda Blethyn who plays the unorthodox but brilliant DCI Vera Stanhope.",
-        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/550/1376455.jpg"
-      },
-      {
-        "id": 86,
-        "title": "Unforgotten",
-        "year": 2015,
-        "communityScore": 87,
-        "seasons": 4,
-        "episodes": 40,
-        "genres": [
-          "Drama",
-          "Crime"
-        ],
-        "genre": "Drama • Crime",
-        "platforms": [
-          "Hulu"
-        ],
-        "colors": [
-          "#b91c1c",
-          "#1a0a1f"
-        ],
-        "tagline": "Unforgotten focuses on ‘cold' murder cases.",
-        "synopsis": "Unforgotten focuses on ‘cold' murder cases. Each series deals with a new case, introducing seemingly unconnected characters who are gradually revealed to have some relationship with the victim. As the murder mystery unfolds, the emotional ramifications of the crime on the lives o",
-        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/555/1388259.jpg"
-      },
-      {
-        "id": 87,
-        "title": "The Brokenwood Mysteries",
-        "year": 2014,
-        "communityScore": 87,
-        "seasons": 4,
-        "episodes": 40,
-        "genres": [
-          "Drama",
-          "Crime",
-          "Mystery"
-        ],
-        "genre": "Drama • Crime • Mystery",
-        "platforms": [
-          "Hulu"
-        ],
-        "colors": [
-          "#1d4ed8",
-          "#0b1230"
-        ],
         "tagline": "2014 Drama & Crime streaming on Hulu.",
         "synopsis": "The Brokenwood Mysteries is set in a seemingly quiet New Zealand country town where the town's newest resident, Detective Inspector Mike Shepherd, finds that murder lurks in even the most homely location. Premiered in 2014 on Prime Television New Zealand. Moved to TVNZ 1 and Acor",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/392/981553.jpg"
       },
       {
-        "id": 88,
+        "id": 86,
         "title": "Looney Tunes",
         "year": 1929,
         "communityScore": 92,
@@ -4392,15 +4344,15 @@ export const PROVIDERS = [
           "Hulu"
         ],
         "colors": [
-          "#db2777",
-          "#1f0a24"
+          "#b91c1c",
+          "#1a0a1f"
         ],
         "tagline": "They're the cartoons you grew up with and the ones your own kids will come to know and love.",
         "synopsis": "They're the cartoons you grew up with and the ones your own kids will come to know and love. Welcome back to the wonderful, wacky world of Warner Bros. Looney Tunes , starring Bugs Bunny, Daffy Duck, Porky Pig, Road Runner and all their zany friends. Brought to life by the creati",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/629/1573702.jpg"
       },
       {
-        "id": 89,
+        "id": 87,
         "title": "Forever",
         "year": 2014,
         "communityScore": 88,
@@ -4416,15 +4368,15 @@ export const PROVIDERS = [
           "Hulu"
         ],
         "colors": [
-          "#4338ca",
-          "#0f0a24"
+          "#1d4ed8",
+          "#0b1230"
         ],
         "tagline": "Doctor Henry Morgan, New York City's star medical examiner, has a secret.",
         "synopsis": "Doctor Henry Morgan, New York City's star medical examiner, has a secret. He doesn't just study the dead to solve criminal cases, he does it to solve the mystery that has eluded him for 200 years - the answer to his own inexplicable immortality. This long life has given Henry rem",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/0/383.jpg"
       },
       {
-        "id": 90,
+        "id": 88,
         "title": "The Middle",
         "year": 2009,
         "communityScore": 88,
@@ -4439,15 +4391,15 @@ export const PROVIDERS = [
           "Hulu"
         ],
         "colors": [
-          "#0ea5e9",
-          "#3b0764"
+          "#db2777",
+          "#1f0a24"
         ],
         "tagline": "Forget about athletes, movie stars and politicians.",
         "synopsis": "Forget about athletes, movie stars and politicians. Parents are the real heroes - but we think Frankie Heck, must be some kind of superhero. A loving wife and mother of three, she's middle class in the middle of the country and is rapidly approaching middle age. Frankie and her h",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/605/1514143.jpg"
       },
       {
-        "id": 91,
+        "id": 89,
         "title": "Teen Wolf",
         "year": 2011,
         "communityScore": 88,
@@ -4463,15 +4415,15 @@ export const PROVIDERS = [
           "Hulu"
         ],
         "colors": [
-          "#15803d",
-          "#0c1a0e"
+          "#4338ca",
+          "#0f0a24"
         ],
         "tagline": "2011 Drama & Romance streaming on Hulu.",
         "synopsis": "Always an outsider and often unnoticed, Scott McCall yearns to be recognized in some small way that takes him out of his typical state of high school anonymity. When his best friend, Stiles, convinces him to go into the woods one night to join a police search for a dead body, Sco",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/30/75365.jpg"
       },
       {
-        "id": 92,
+        "id": 90,
         "title": "Star Trek: Enterprise",
         "year": 2001,
         "communityScore": 89,
@@ -4487,15 +4439,15 @@ export const PROVIDERS = [
           "Hulu"
         ],
         "colors": [
-          "#0369a1",
-          "#081420"
+          "#0ea5e9",
+          "#3b0764"
         ],
         "tagline": "2001 Action & Adventure streaming on Hulu.",
         "synopsis": "Star Trek: Enterprise (ENT) focuses on the 22nd century adventures of Captain Jonathan Archer aboard the Enterprise NX-01 during the early days of interstellar travel. The NX designation indicates that this Enterprise is an experimental prototype; Unlike the starships of the four",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/458/1145937.jpg"
       },
       {
-        "id": 93,
+        "id": 91,
         "title": "Scandal",
         "year": 2012,
         "communityScore": 86,
@@ -4510,15 +4462,15 @@ export const PROVIDERS = [
           "Hulu"
         ],
         "colors": [
-          "#7e22ce",
-          "#0f172a"
+          "#15803d",
+          "#0c1a0e"
         ],
         "tagline": "2012 Drama & Thriller streaming on Hulu.",
         "synopsis": "Everyone has secrets… and Olivia Pope has dedicated her life to protecting and defending the public images of the nation's elite by keeping those secrets under wraps. Pope's team are at the top of their game when it comes to getting the job done for their clients, but it becomes ",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/303/758518.jpg"
       },
       {
-        "id": 94,
+        "id": 92,
         "title": "The Legend of Korra",
         "year": 2012,
         "communityScore": 86,
@@ -4534,15 +4486,15 @@ export const PROVIDERS = [
           "Hulu"
         ],
         "colors": [
-          "#d97706",
-          "#2a1305"
+          "#0369a1",
+          "#081420"
         ],
         "tagline": "2012 Action & Adventure streaming on Hulu.",
         "synopsis": "Avatar Korra fights to keep Republic City safe from the evil forces of both the physical and spiritual worlds.",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/260/650489.jpg"
       },
       {
-        "id": 95,
+        "id": 93,
         "title": "Alone",
         "year": 2015,
         "communityScore": 86,
@@ -4557,15 +4509,15 @@ export const PROVIDERS = [
           "Hulu"
         ],
         "colors": [
-          "#0f766e",
-          "#0a1a24"
+          "#7e22ce",
+          "#0f172a"
         ],
         "tagline": "2015 Adventure & Nature streaming on Hulu.",
         "synopsis": "Alone places ten hardcore survivalists alone in the wilderness - no camera crew, no teams, no producers - on a single mission to stay alive. At stake is $500,000 awarded to the person who can last the longest. They will face extreme isolation and psychological distress as they pl",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/628/1570951.jpg"
       },
       {
-        "id": 96,
+        "id": 94,
         "title": "Continuum",
         "year": 2012,
         "communityScore": 87,
@@ -4581,15 +4533,15 @@ export const PROVIDERS = [
           "Hulu"
         ],
         "colors": [
-          "#ca8a04",
-          "#181109"
+          "#d97706",
+          "#2a1305"
         ],
         "tagline": "2012 Drama & Crime streaming on Hulu.",
         "synopsis": "Continuum centers on the conflict between a group of rebels from the year 2077 who time-travel to Vancouver, BC, in 2012, and a police officer who accidentally accompanies them. In spite of being many years early, the rebel group decides to continue its violent campaign to stop c",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/0/184.jpg"
       },
       {
-        "id": 97,
+        "id": 95,
         "title": "Haven",
         "year": 2010,
         "communityScore": 87,
@@ -4605,15 +4557,15 @@ export const PROVIDERS = [
           "Hulu"
         ],
         "colors": [
-          "#dc2626",
-          "#0f172a"
+          "#0f766e",
+          "#0a1a24"
         ],
         "tagline": "2010 Drama & Crime streaming on Hulu.",
         "synopsis": "When FBI Special Agent Audrey Parker is dispatched to the small town of Haven , Maine, on a routine case, she soon finds herself increasingly involved in the return of \"The Troubles\", a plague of supernatural afflictions that have occurred in the town at least twice before. With ",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/0/672.jpg"
       },
       {
-        "id": 98,
+        "id": 96,
         "title": "Bates Motel",
         "year": 2013,
         "communityScore": 87,
@@ -4629,15 +4581,15 @@ export const PROVIDERS = [
           "Hulu"
         ],
         "colors": [
-          "#f59e0b",
-          "#701a75"
+          "#ca8a04",
+          "#181109"
         ],
         "tagline": "2013 Drama & Horror streaming on Hulu.",
         "synopsis": "Bates Motel is a contemporary prequel to the genre-defining film Psycho, and gives viewers an intimate portrayal of how Norman Bates' psyche unravels through his teenage years. Following the tragic death of her husband, Norma Bates buys a motel on the outskirts of the idyllic coa",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/542/1356518.jpg"
       },
       {
-        "id": 99,
+        "id": 97,
         "title": "Da Vinci's Demons",
         "year": 2013,
         "communityScore": 87,
@@ -4652,7 +4604,7 @@ export const PROVIDERS = [
           "Hulu"
         ],
         "colors": [
-          "#2563eb",
+          "#dc2626",
           "#0f172a"
         ],
         "tagline": "In a world where thought and faith are controlled, one man fights to set knowledge free.",
@@ -4660,7 +4612,7 @@ export const PROVIDERS = [
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/2892.jpg"
       },
       {
-        "id": 100,
+        "id": 98,
         "title": "Rectify",
         "year": 2013,
         "communityScore": 87,
@@ -4675,12 +4627,60 @@ export const PROVIDERS = [
           "Hulu"
         ],
         "colors": [
-          "#16a34a",
-          "#052e2b"
+          "#f59e0b",
+          "#701a75"
         ],
         "tagline": "2013 Drama & Crime streaming on Hulu.",
         "synopsis": "Rectify is a haunting story of a man released from prison after spending nearly two decades on death row.",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/3655.jpg"
+      },
+      {
+        "id": 99,
+        "title": "Alias",
+        "year": 2001,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Espionage"
+        ],
+        "genre": "Drama • Action • Espionage",
+        "platforms": [
+          "Hulu"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "Sydney Bristow is not exactly your average grad student.",
+        "synopsis": "Sydney Bristow is not exactly your average grad student. Her life might appear normal, but she's hiding a secret life working as a spy for the CIA. Sydney's world is turned upside down when she learns she may work for the very enemy she thought she was fighting. Now she's entangl",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/4/11627.jpg"
+      },
+      {
+        "id": 100,
+        "title": "Boston Legal",
+        "year": 2004,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Legal"
+        ],
+        "genre": "Drama • Comedy • Legal",
+        "platforms": [
+          "Hulu"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2004 Drama & Comedy streaming on Hulu.",
+        "synopsis": "Sometimes irreverent and funny, sometimes intense and moving, Boston Legal prides itself on being at the forefront of issue-oriented television, often addressing issues that are underreported by the media. Fast-paced and wildly comedic, the series confronts social and moral issue",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/4/12026.jpg"
       }
     ]
   },
@@ -5600,54 +5600,6 @@ export const PROVIDERS = [
       },
       {
         "id": 40,
-        "title": "Alias",
-        "year": 2001,
-        "communityScore": 87,
-        "seasons": 4,
-        "episodes": 40,
-        "genres": [
-          "Drama",
-          "Action",
-          "Espionage"
-        ],
-        "genre": "Drama • Action • Espionage",
-        "platforms": [
-          "Prime Video"
-        ],
-        "colors": [
-          "#0f766e",
-          "#0a1a24"
-        ],
-        "tagline": "Sydney Bristow is not exactly your average grad student.",
-        "synopsis": "Sydney Bristow is not exactly your average grad student. Her life might appear normal, but she's hiding a secret life working as a spy for the CIA. Sydney's world is turned upside down when she learns she may work for the very enemy she thought she was fighting. Now she's entangl",
-        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/4/11627.jpg"
-      },
-      {
-        "id": 41,
-        "title": "Boston Legal",
-        "year": 2004,
-        "communityScore": 87,
-        "seasons": 4,
-        "episodes": 40,
-        "genres": [
-          "Drama",
-          "Comedy",
-          "Legal"
-        ],
-        "genre": "Drama • Comedy • Legal",
-        "platforms": [
-          "Prime Video"
-        ],
-        "colors": [
-          "#ca8a04",
-          "#181109"
-        ],
-        "tagline": "2004 Drama & Comedy streaming on Prime Video.",
-        "synopsis": "Sometimes irreverent and funny, sometimes intense and moving, Boston Legal prides itself on being at the forefront of issue-oriented television, often addressing issues that are underreported by the media. Fast-paced and wildly comedic, the series confronts social and moral issue",
-        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/4/12026.jpg"
-      },
-      {
-        "id": 42,
         "title": "SpongeBob SquarePants",
         "year": 1999,
         "communityScore": 87,
@@ -5663,15 +5615,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#dc2626",
-          "#0f172a"
+          "#0f766e",
+          "#0a1a24"
         ],
         "tagline": "Come follow the adventures of the world's most lovable sponge and his starfish sidekick!",
         "synopsis": "Come follow the adventures of the world's most lovable sponge and his starfish sidekick! Though they have the best intentions, SpongeBob and Patrick are always causing trouble… and plenty of laughs! When he's not at the Krusty Krab grilling up some epic Krabby Patties, SpongeBob ",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/594/1486607.jpg"
       },
       {
-        "id": 43,
+        "id": 41,
         "title": "Good Witch",
         "year": 2008,
         "communityScore": 87,
@@ -5687,15 +5639,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#f59e0b",
-          "#701a75"
+          "#ca8a04",
+          "#181109"
         ],
         "tagline": "2008 Family & Romance streaming on Prime Video.",
         "synopsis": "Cassie Nightingale, Middleton's favorite enchantress, and her young-teenage daughter Grace, who shares that same special intuition as her mom, welcome Dr. Sam Radford and his son to town. When the New York transplants move in next to the Grey House, they are immediately spellboun",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/486/1215693.jpg"
       },
       {
-        "id": 44,
+        "id": 42,
         "title": "Grand Designs",
         "year": 1999,
         "communityScore": 87,
@@ -5709,7 +5661,7 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#2563eb",
+          "#dc2626",
           "#0f172a"
         ],
         "tagline": "Kevin McCloud follows intrepid individuals trying to design and build their dream home.",
@@ -5717,30 +5669,7 @@ export const PROVIDERS = [
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/591/1478756.jpg"
       },
       {
-        "id": 45,
-        "title": "Billions",
-        "year": 2016,
-        "communityScore": 87,
-        "seasons": 4,
-        "episodes": 40,
-        "genres": [
-          "Drama",
-          "Crime"
-        ],
-        "genre": "Drama • Crime",
-        "platforms": [
-          "Prime Video"
-        ],
-        "colors": [
-          "#16a34a",
-          "#052e2b"
-        ],
-        "tagline": "Billions is a complex drama about power politics in the world of New York high finance.",
-        "synopsis": "Billions is a complex drama about power politics in the world of New York high finance. Shrewd, savvy U.S. Attorney Chuck Rhoades and the brilliant, ambitious hedge fund king Bobby \"Axe\" Axelrod are on an explosive collision course, with each using all of his considerable smarts,",
-        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/471/1179691.jpg"
-      },
-      {
-        "id": 46,
+        "id": 43,
         "title": "MacGyver",
         "year": 1985,
         "communityScore": 88,
@@ -5755,15 +5684,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#991b1b",
-          "#090d16"
+          "#f59e0b",
+          "#701a75"
         ],
         "tagline": "1985 Action & Adventure streaming on Prime Video.",
         "synopsis": "MacGyver follows the adventures of the laid-back, extremely resourceful secret agent Angus MacGyver. He prefers non-violent conflict resolution whenever possible and refuses to carry or use a gun. MacGyver works as a problem solver for the Phoenix Foundation in Los Angeles. Utili",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/237/592622.jpg"
       },
       {
-        "id": 47,
+        "id": 44,
         "title": "The Doctor Blake Mysteries",
         "year": 2013,
         "communityScore": 88,
@@ -5779,7 +5708,7 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#475569",
+          "#2563eb",
           "#0f172a"
         ],
         "tagline": "2013 Drama & Crime streaming on Prime Video.",
@@ -5787,7 +5716,7 @@ export const PROVIDERS = [
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/113/284395.jpg"
       },
       {
-        "id": 48,
+        "id": 45,
         "title": "Pushing Daisies",
         "year": 2007,
         "communityScore": 89,
@@ -5803,15 +5732,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#ea580c",
-          "#1c1917"
+          "#16a34a",
+          "#052e2b"
         ],
         "tagline": "2007 Drama & Mystery streaming on Prime Video.",
         "synopsis": "As a young boy Ned discovers that he can return the dead briefly back to life with just one touch. But his random gift isn't without deadly consequences, as he soon finds out. Grown up Ned puts his talent to good use by touching dead fruit and making it ripe with everlasting flav",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16104.jpg"
       },
       {
-        "id": 49,
+        "id": 46,
         "title": "Modern Family",
         "year": 2009,
         "communityScore": 85,
@@ -5826,15 +5755,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#b91c1c",
-          "#1a0a1f"
+          "#991b1b",
+          "#090d16"
         ],
         "tagline": "2009 Comedy & Family streaming on Prime Video.",
         "synopsis": "Modern Family revolves around three different types of families (nuclear, step- and same-sex) living in the Los Angeles area, who are interrelated through Jay Pritchett and his children, Claire Dunphy (née Pritchett) and Mitchell Pritchett. Patriarch Jay is remarried to a much yo",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/359/898320.jpg"
       },
       {
-        "id": 50,
+        "id": 47,
         "title": "Lost Girl",
         "year": 2010,
         "communityScore": 86,
@@ -5850,15 +5779,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#1d4ed8",
-          "#0b1230"
+          "#475569",
+          "#0f172a"
         ],
         "tagline": "2010 Drama & Fantasy streaming on Prime Video.",
         "synopsis": "Lost Girl follows supernatural seductress Bo, a Succubus who feeds on the sexual energy of humans. Growing up with human parents, Bo had no reason to believe she was anything other than the girl next door — until she drained her boyfriend to death in their first sexual encounter.",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/0/137.jpg"
       },
       {
-        "id": 51,
+        "id": 48,
         "title": "Utopia",
         "year": 2013,
         "communityScore": 91,
@@ -5874,15 +5803,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#db2777",
-          "#1f0a24"
+          "#ea580c",
+          "#1c1917"
         ],
         "tagline": "2013 Drama & Science-Fiction streaming on Prime Video.",
         "synopsis": "Utopia based initially around a small group of people who find a rare manuscript of the same name. This leads the group to be targeted by a large organisation with little knowledge of the manuscript's relevance or importance.",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/275/688620.jpg"
       },
       {
-        "id": 52,
+        "id": 49,
         "title": "Red Dwarf",
         "year": 1988,
         "communityScore": 86,
@@ -5897,15 +5826,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#4338ca",
-          "#0f0a24"
+          "#b91c1c",
+          "#1a0a1f"
         ],
         "tagline": "Lost in space and light years away from earth is the Jupiter Mining Ship Red Dwarf .",
         "synopsis": "Lost in space and light years away from earth is the Jupiter Mining Ship Red Dwarf . In the late 22nd century, an on-board radiation leak kills all of the crew except for low-ranking technician Dave Lister, who is in suspended animation at the time, and his pregnant cat, Frankens",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/2/5497.jpg"
       },
       {
-        "id": 53,
+        "id": 50,
         "title": "Legend of the Seeker",
         "year": 2008,
         "communityScore": 86,
@@ -5921,15 +5850,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#0ea5e9",
-          "#3b0764"
+          "#1d4ed8",
+          "#0b1230"
         ],
         "tagline": "2008 Action & Adventure streaming on Prime Video.",
         "synopsis": "In a mythical land, one man, Richard Cypher, discovers his true destiny as he, a mysterious young woman, a wise old wizard and a magical sword are all that stand between the evil tyrant Darken Rahl and his quest for total domination. Based on The Sword of Truth series of books by",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/3/9195.jpg"
       },
       {
-        "id": 54,
+        "id": 51,
         "title": "8 Out of 10 Cats Does Countdown",
         "year": 2012,
         "communityScore": 86,
@@ -5943,15 +5872,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#15803d",
-          "#0c1a0e"
+          "#db2777",
+          "#1f0a24"
         ],
         "tagline": "Jimmy Carr hosts as Sean Lock and Jon Richardson play the words and numbers game.",
         "synopsis": "Jimmy Carr hosts as Sean Lock and Jon Richardson play the words and numbers game.",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/608/1522321.jpg"
       },
       {
-        "id": 55,
+        "id": 52,
         "title": "The Dresden Files",
         "year": 2007,
         "communityScore": 86,
@@ -5967,15 +5896,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#0369a1",
-          "#081420"
+          "#4338ca",
+          "#0f0a24"
         ],
         "tagline": "The Dresden Files chronicles the cases of no ordinary detective.",
         "synopsis": "The Dresden Files chronicles the cases of no ordinary detective. Harry Dresden is a wizard, the only one listed in the Chicago phone book. He's got a handle on the crimes that can't be solved by anyone else. Paranormal? No problem. Dresden deals in all matters of supernatural thr",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16314.jpg"
       },
       {
-        "id": 56,
+        "id": 53,
         "title": "When Calls the Heart",
         "year": 2013,
         "communityScore": 86,
@@ -5990,15 +5919,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#7e22ce",
-          "#0f172a"
+          "#0ea5e9",
+          "#3b0764"
         ],
         "tagline": "2013 Drama & Romance streaming on Prime Video.",
         "synopsis": "When Calls the Heart is inspired by Janette Oke's bestselling book series about the Canadian West, the series tells the captivating story of Elizabeth Thatcher, a young teacher accustomed to her high society life, who receives her first classroom assignment in Coal Valley, a smal",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/549/1373564.jpg"
       },
       {
-        "id": 57,
+        "id": 54,
         "title": "Mountain Men",
         "year": 2012,
         "communityScore": 86,
@@ -6014,39 +5943,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#d97706",
-          "#2a1305"
+          "#15803d",
+          "#0c1a0e"
         ],
         "tagline": "Have you ever wondered what it would be like to live your life off the grid?",
         "synopsis": "Have you ever wondered what it would be like to live your life off the grid? Have you wished you could shed the complications of modern society and live in the wilderness, using only the things nature has provided? Meet Eustace Conway, Tom Oar and Marty Meierotto of the new Histo",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/642/1606598.jpg"
       },
       {
-        "id": 58,
-        "title": "Bering Sea Gold",
-        "year": 2012,
-        "communityScore": 86,
-        "seasons": 4,
-        "episodes": 40,
-        "genres": [
-          "Drama",
-          "Action",
-          "Adventure"
-        ],
-        "genre": "Drama • Action • Adventure",
-        "platforms": [
-          "Prime Video"
-        ],
-        "colors": [
-          "#0f766e",
-          "#0a1a24"
-        ],
-        "tagline": "In the frontier town of Nome, Alaska, there's a gold rush on.",
-        "synopsis": "In the frontier town of Nome, Alaska, there's a gold rush on. But you've never seen gold mining like this before -- here, the precious metal isn't found in the ground. It's sitting in the most unlikely of places: the bottom of the frigid, unpredictable Bering Sea. And there are a",
-        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/544/1362349.jpg"
-      },
-      {
-        "id": 59,
+        "id": 55,
         "title": "Ideal",
         "year": 2005,
         "communityScore": 91,
@@ -6060,15 +5965,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#ca8a04",
-          "#181109"
+          "#0369a1",
+          "#081420"
         ],
         "tagline": "Sitcom about a small-time dope dealer and his strange collection of acquaintances.",
         "synopsis": "Sitcom about a small-time dope dealer and his strange collection of acquaintances.",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/19/49248.jpg"
       },
       {
-        "id": 60,
+        "id": 56,
         "title": "Sanctuary",
         "year": 2008,
         "communityScore": 87,
@@ -6084,7 +5989,7 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#dc2626",
+          "#7e22ce",
           "#0f172a"
         ],
         "tagline": "Sanctuary follows the adventures of the beautiful, enigmatic and always surprising Dr.",
@@ -6092,7 +5997,7 @@ export const PROVIDERS = [
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/0/2119.jpg"
       },
       {
-        "id": 61,
+        "id": 57,
         "title": "The Fall",
         "year": 2013,
         "communityScore": 87,
@@ -6108,15 +6013,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#f59e0b",
-          "#701a75"
+          "#d97706",
+          "#2a1305"
         ],
         "tagline": "2013 Drama & Crime streaming on Prime Video.",
         "synopsis": "This gripping psychological thriller forensically examines the lives of two hunters; one a serial killer that stalks his victims at random, and the other a high-powered detective superintendent brought in to catch him.",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/75/188991.jpg"
       },
       {
-        "id": 62,
+        "id": 58,
         "title": "Ripper Street",
         "year": 2012,
         "communityScore": 87,
@@ -6132,15 +6037,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#2563eb",
-          "#0f172a"
+          "#0f766e",
+          "#0a1a24"
         ],
         "tagline": "2012 Drama & Crime streaming on Prime Video.",
         "synopsis": "The Whitechapel police fight to bring law to the lawless in the wake of Jack the Ripper's reign of terror.",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/2/5461.jpg"
       },
       {
-        "id": 63,
+        "id": 59,
         "title": "Inside No. 9",
         "year": 2014,
         "communityScore": 87,
@@ -6156,15 +6061,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#16a34a",
-          "#052e2b"
+          "#ca8a04",
+          "#181109"
         ],
         "tagline": "2014 Comedy & Thriller streaming on Prime Video.",
         "synopsis": "An anthology of darkly comic twisted tales by Steve Pemberton and Reece Shearsmith, each one taking place behind a door marked 'number 9'.",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/62/156641.jpg"
       },
       {
-        "id": 64,
+        "id": 60,
         "title": "Spaced",
         "year": 1999,
         "communityScore": 87,
@@ -6178,15 +6083,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#991b1b",
-          "#090d16"
+          "#dc2626",
+          "#0f172a"
         ],
         "tagline": "1999 Comedy streaming on Prime Video.",
         "synopsis": "Surreal cult sitcom starring Simon Pegg and Jessica Stevenson, with more pop culture references than you can shake a light sabre at.",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/17057.jpg"
       },
       {
-        "id": 65,
+        "id": 61,
         "title": "Fresh Meat",
         "year": 2011,
         "communityScore": 87,
@@ -6201,15 +6106,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#475569",
-          "#0f172a"
+          "#f59e0b",
+          "#701a75"
         ],
         "tagline": "A comedy drama series about the hilarious and painful truths of being a student.",
         "synopsis": "A comedy drama series about the hilarious and painful truths of being a student. The latest creation from Sam Bain and Jesse Armstrong, Fresh Meat follows a group of six students about to embark on the most exciting period of their lives so far - university.",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/22888.jpg"
       },
       {
-        "id": 66,
+        "id": 62,
         "title": "Wentworth",
         "year": 2013,
         "communityScore": 87,
@@ -6224,15 +6129,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#ea580c",
-          "#1c1917"
+          "#2563eb",
+          "#0f172a"
         ],
         "tagline": "2013 Drama & Crime streaming on Prime Video.",
         "synopsis": "Fans of the iconic Prisoner series which pushed boundaries over three decades ago and still today boasts a loyal following worldwide, will remember Bea Smith as gutsy and fearless, ruling Wentworth Correctional Center with an iron fist. But who was Bea Smith before prison? How di",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/158/396176.jpg"
       },
       {
-        "id": 67,
+        "id": 63,
         "title": "The Hollow Crown",
         "year": 2012,
         "communityScore": 87,
@@ -6247,15 +6152,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#b91c1c",
-          "#1a0a1f"
+          "#16a34a",
+          "#052e2b"
         ],
         "tagline": "2012 Drama & History streaming on Prime Video.",
         "synopsis": "The Hollow Crown brings together four filmed adaptations of Shakespeare's History Plays - Richard II, Henry IV parts 1 and 2, and Henry V. Starting in the year 1399, this continuous story of monarchy follows events during sixteen years of dynastic and political power play. Kings,",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/15/39857.jpg"
       },
       {
-        "id": 68,
+        "id": 64,
         "title": "The Code",
         "year": 2014,
         "communityScore": 87,
@@ -6270,15 +6175,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#1d4ed8",
-          "#0b1230"
+          "#991b1b",
+          "#090d16"
         ],
         "tagline": "2014 Drama & Thriller streaming on Prime Video.",
         "synopsis": "Stretching from the spectacular red desert of Australia's outback to the cool corridors of power in Canberra, The Code tells the story of two very different brothers who are handed information those in the highest political echelons will kill to keep secret.",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/17/44018.jpg"
       },
       {
-        "id": 69,
+        "id": 65,
         "title": "Grey's Anatomy",
         "year": 2005,
         "communityScore": 83,
@@ -6294,15 +6199,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#db2777",
-          "#1f0a24"
+          "#475569",
+          "#0f172a"
         ],
         "tagline": "2005 Drama & Romance streaming on Prime Video.",
         "synopsis": "The doctors of Grey Sloan Memorial Hospital deal with life-or-death consequences on a daily basis -- it's in one another that they find comfort, friendship and, at times, more than friendship. Together they're discovering that neither medicine nor relationships can be defined in ",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/644/1611931.jpg"
       },
       {
-        "id": 70,
+        "id": 66,
         "title": "Angel",
         "year": 1999,
         "communityScore": 88,
@@ -6318,15 +6223,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#4338ca",
-          "#0f0a24"
+          "#ea580c",
+          "#1c1917"
         ],
         "tagline": "\"If you need help, then look no further.",
         "synopsis": "\"If you need help, then look no further. Angel Investigations is the best. Our rates are low but our standards are high. When the chips are down, and you're at the end of your rope you need someone that you can count on. And that's what you'll find here, someone that will go all ",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/3/7507.jpg"
       },
       {
-        "id": 71,
+        "id": 67,
         "title": "Being Human",
         "year": 2009,
         "communityScore": 88,
@@ -6342,15 +6247,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#0ea5e9",
-          "#3b0764"
+          "#b91c1c",
+          "#1a0a1f"
         ],
         "tagline": "2009 Drama & Comedy streaming on Prime Video.",
         "synopsis": "Comedy-drama series about three twenty-something housemates trying to live normal lives, despite struggling with unusual afflictions - one is a werewolf, one is a vampire and the other is a ghost.",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15636.jpg"
       },
       {
-        "id": 72,
+        "id": 68,
         "title": "Primeval",
         "year": 2007,
         "communityScore": 88,
@@ -6366,39 +6271,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#15803d",
-          "#0c1a0e"
+          "#1d4ed8",
+          "#0b1230"
         ],
         "tagline": "2007 Drama & Adventure streaming on Prime Video.",
         "synopsis": "When rips in time called anomalies started opening across the UK, dangerous creatures from the past and future began appearing in the most unexpected places, endangering lives and placing the whole of humanity at risk. A crack team of specialists were appointed by the government ",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16152.jpg"
       },
       {
-        "id": 73,
-        "title": "See No Evil",
-        "year": 2015,
-        "communityScore": 88,
-        "seasons": 4,
-        "episodes": 40,
-        "genres": [
-          "Drama",
-          "Crime",
-          "Mystery"
-        ],
-        "genre": "Drama • Crime • Mystery",
-        "platforms": [
-          "Prime Video"
-        ],
-        "colors": [
-          "#0369a1",
-          "#081420"
-        ],
-        "tagline": "2015 Drama & Crime streaming on Prime Video.",
-        "synopsis": "See No Evil pieces together the truth when shocking surveillance footage reveals breakthrough clues to solve a murder.",
-        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/499/1248505.jpg"
-      },
-      {
-        "id": 74,
+        "id": 69,
         "title": "Taken",
         "year": 2002,
         "communityScore": 88,
@@ -6412,15 +6293,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#7e22ce",
-          "#0f172a"
+          "#db2777",
+          "#1f0a24"
         ],
         "tagline": "2002 Science-Fiction streaming on Prime Video.",
         "synopsis": "Covering a period from 1947 to the present, Taken focused on three different families, each of whom was profoundly affected by extraterrestrial visitation. The Keys family was headed by WWII bomber pilot Russell Keys, who spent virtually his entire adult life haunted by his \"clos",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/27603.jpg"
       },
       {
-        "id": 75,
+        "id": 70,
         "title": "12 Monkeys",
         "year": 2015,
         "communityScore": 84,
@@ -6436,15 +6317,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#d97706",
-          "#2a1305"
+          "#4338ca",
+          "#0f0a24"
         ],
         "tagline": "2015 Drama & Adventure streaming on Prime Video.",
         "synopsis": "Inspired by the classic blockbuster film, which commemorated its 20th anniversary in 2015, 12 Monkeys explores the provocative story of a time traveler from a decimated future in a high-stakes race against the clock. Utilizing a dangerous and untested method of time travel, he jo",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/155/389213.jpg"
       },
       {
-        "id": 76,
+        "id": 71,
         "title": "Ascension",
         "year": 2014,
         "communityScore": 84,
@@ -6459,15 +6340,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#0f766e",
-          "#0a1a24"
+          "#0ea5e9",
+          "#3b0764"
         ],
         "tagline": "2014 Drama & Science-Fiction streaming on Prime Video.",
         "synopsis": "In 1963 the American government begins a covert mission sending hundreds of people on a century long journey aboard the starship Ascension. Its goal: to populate a new world. Nearly 50 years into the trip, the murder of a young woman -- as Ascension approaches the point of no ret",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/79/197837.jpg"
       },
       {
-        "id": 77,
+        "id": 72,
         "title": "North and South",
         "year": 1985,
         "communityScore": 89,
@@ -6483,15 +6364,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#ca8a04",
-          "#181109"
+          "#15803d",
+          "#0c1a0e"
         ],
         "tagline": "1985 Drama & War streaming on Prime Video.",
         "synopsis": "Patrick Swayze, Kirstie Alley and Lesley-Anne Down star in a 1985 miniseries based on John Jakes' novel about the Civil War and its effect on two families.",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/17403.jpg"
       },
       {
-        "id": 78,
+        "id": 73,
         "title": "Heartland",
         "year": 2007,
         "communityScore": 84,
@@ -6506,15 +6387,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#dc2626",
-          "#0f172a"
+          "#0369a1",
+          "#081420"
         ],
         "tagline": "2007 Drama & Family streaming on Prime Video.",
         "synopsis": "Life is hard on the Flemings' ranch in the Alberta foothills where abused or neglected horses find refuge with a kind, hard-working family. Debts abound and the bank is about to foreclose. Can they keep the ranch running?",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/644/1610561.jpg"
       },
       {
-        "id": 79,
+        "id": 74,
         "title": "Revenge",
         "year": 2011,
         "communityScore": 85,
@@ -6530,15 +6411,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#f59e0b",
-          "#701a75"
+          "#7e22ce",
+          "#0f172a"
         ],
         "tagline": "This is not a story about forgiveness; Revenge is a show about retribution.",
         "synopsis": "This is not a story about forgiveness; Revenge is a show about retribution. Meet Emily Thorne, the newest resident of The Hamptons. When she was a little girl (and known as Amanda Clarke) her father, David Clarke, was framed for a horrific crime and subsequently sent to prison. W",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/82/206879.jpg"
       },
       {
-        "id": 80,
+        "id": 75,
         "title": "Batman",
         "year": 1966,
         "communityScore": 85,
@@ -6554,15 +6435,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#2563eb",
-          "#0f172a"
+          "#d97706",
+          "#2a1305"
         ],
         "tagline": "1966 Comedy & Action streaming on Prime Video.",
         "synopsis": "Wealthy entrepreneur Bruce Wayne and his ward Dick Grayson lead a double life: they are actually crime fighting duo Batman and Robin. A secret Batpole in the Wayne mansion leads to the Batcave, where Police Commissioner Gordon often calls with the latest emergency threatening Got",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16463.jpg"
       },
       {
-        "id": 81,
+        "id": 76,
         "title": "Grantchester",
         "year": 2014,
         "communityScore": 85,
@@ -6578,15 +6459,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#16a34a",
-          "#052e2b"
+          "#0f766e",
+          "#0a1a24"
         ],
         "tagline": "2014 Drama & Crime streaming on Prime Video.",
         "synopsis": "Eavesdropping on the life of Sidney Chambers, a charismatic, charming, crime-fighting clergyman, and his partner in crime Police Inspector Geordie Keating, became a highlight for the audience who revelled in their on screen partnership. Geordie's plain-speaking, down to earth app",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/572/1431930.jpg"
       },
       {
-        "id": 82,
+        "id": 77,
         "title": "Highlander",
         "year": 1992,
         "communityScore": 85,
@@ -6602,15 +6483,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#991b1b",
-          "#090d16"
+          "#ca8a04",
+          "#181109"
         ],
         "tagline": "\"I am Duncan Macleod, born 400 years ago in the Highlands of Scotland.",
         "synopsis": "\"I am Duncan Macleod, born 400 years ago in the Highlands of Scotland. I am Immortal, and I am not alone. For centuries we have waited for the time of the Gathering, when the stroke of a sword and the fall of a head will release the power of the Quickening. In the end, there can ",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/27706.jpg"
       },
       {
-        "id": 83,
+        "id": 78,
         "title": "The Tunnel",
         "year": 2013,
         "communityScore": 85,
@@ -6626,7 +6507,7 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#475569",
+          "#dc2626",
           "#0f172a"
         ],
         "tagline": "2013 Drama & Crime streaming on Prime Video.",
@@ -6634,7 +6515,7 @@ export const PROVIDERS = [
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/55/137619.jpg"
       },
       {
-        "id": 84,
+        "id": 79,
         "title": "The Magicians",
         "year": 2015,
         "communityScore": 85,
@@ -6650,15 +6531,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#ea580c",
-          "#1c1917"
+          "#f59e0b",
+          "#701a75"
         ],
         "tagline": "2015 Drama & Adventure streaming on Prime Video.",
         "synopsis": "Based upon Lev Grossman's best-selling books, The Magicians centers around Brakebills University, a secret institution specializing in magic. There, amidst an unorthdox education of spellcasting, a group of twenty-something friends soon discover that a magical fantasy world they ",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/229/573329.jpg"
       },
       {
-        "id": 85,
+        "id": 80,
         "title": "Houdini & Doyle",
         "year": 2016,
         "communityScore": 85,
@@ -6674,15 +6555,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#b91c1c",
-          "#1a0a1f"
+          "#2563eb",
+          "#0f172a"
         ],
         "tagline": "2016 Drama & Crime streaming on Prime Video.",
         "synopsis": "Inspired by true events, the series follows two great men of the 20th Century and real-life friends - Harry Houdini, master magician, escape artist and paranormal debunker; and Arthur Cohen Doyle prolific writer, creator of \"Sherlock Holmes\" and paranormal aficionado. They grudgi",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/57/142605.jpg"
       },
       {
-        "id": 86,
+        "id": 81,
         "title": "Kingdom",
         "year": 2014,
         "communityScore": 86,
@@ -6698,15 +6579,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#1d4ed8",
-          "#0b1230"
+          "#16a34a",
+          "#052e2b"
         ],
         "tagline": "2014 Drama & Family streaming on Prime Video.",
         "synopsis": "Kingdom is a raw family drama set against the world of Mixed Martial Arts (MMA) in Venice, California. Alvey Kulina owns Navy St. MMA with the help of his girlfriend Lisa Prince. He is willing to go through extraordinary means to make sure his fighters are taken care of, but all ",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/116/291395.jpg"
       },
       {
-        "id": 87,
+        "id": 82,
         "title": "Signed, Sealed, Delivered",
         "year": 2013,
         "communityScore": 86,
@@ -6721,15 +6602,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#db2777",
-          "#1f0a24"
+          "#991b1b",
+          "#090d16"
         ],
         "tagline": "2013 Romance & Mystery streaming on Prime Video.",
         "synopsis": "Signed, Sealed, Delivered is a wonderful combination of romance, comedy and drama that follows the lives of four postal detectives who transform themselves into a team of detectives to track down intended recipients of undeliverable mail. Their missions take them out of the offic",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/179/448532.jpg"
       },
       {
-        "id": 88,
+        "id": 83,
         "title": "Whitechapel",
         "year": 2009,
         "communityScore": 86,
@@ -6745,15 +6626,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#4338ca",
-          "#0f0a24"
+          "#475569",
+          "#0f172a"
         ],
         "tagline": "2009 Drama & Crime streaming on Prime Video.",
         "synopsis": "Set against the contrasting facades of Whitechapel, London, a series of bloody, tragic and impossible crimes are carried out. A fast-tracked inspector, a hardened detective sergeant, and an expert in historical homicides investigate modern crimes with connections to the past in t",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16936.jpg"
       },
       {
-        "id": 89,
+        "id": 84,
         "title": "The Outer Limits",
         "year": 1995,
         "communityScore": 86,
@@ -6769,15 +6650,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#0ea5e9",
-          "#3b0764"
+          "#ea580c",
+          "#1c1917"
         ],
         "tagline": "1995 Drama & Horror streaming on Prime Video.",
         "synopsis": "Like the classic 1960's series of the same name, each episode is an imaginative exploration of humanity's greatest hopes and darkest fears and include special guest appearances by Alyssa Milano, Ryan Reynolds, Rae Dawn Chong, Beau Bridges, Rebecca De Mornay and Robert Patrick. Wi",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/12/31574.jpg"
       },
       {
-        "id": 90,
+        "id": 85,
         "title": "Secrets of the Dead",
         "year": 2000,
         "communityScore": 86,
@@ -6793,15 +6674,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#15803d",
-          "#0c1a0e"
+          "#b91c1c",
+          "#1a0a1f"
         ],
         "tagline": "2000 Drama & Mystery streaming on Prime Video.",
         "synopsis": "Secrets of the Dead is part detective story, part true-life drama that unearths evidence from around the world, challenging prevailing ideas and throwing fresh light on unexplained events.",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/614/1537386.jpg"
       },
       {
-        "id": 91,
+        "id": 86,
         "title": "Halloween Baking Championship",
         "year": 2015,
         "communityScore": 86,
@@ -6815,15 +6696,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#0369a1",
-          "#081420"
+          "#1d4ed8",
+          "#0b1230"
         ],
         "tagline": "2015 Food streaming on Prime Video.",
         "synopsis": "Making everything from spider cupcakes to mummy macarons, seven of the country's top bakers will compete to create Halloween's spookiest confections on Halloween Baking Championship , premiering Monday, Oct. 5 at 9|8c. To survive this haunted competition, hosted by Richard Blais,",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/593/1483643.jpg"
       },
       {
-        "id": 92,
+        "id": 87,
         "title": "Vicious",
         "year": 2013,
         "communityScore": 87,
@@ -6837,15 +6718,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#7e22ce",
-          "#0f172a"
+          "#db2777",
+          "#1f0a24"
         ],
         "tagline": "2013 Comedy streaming on Prime Video.",
         "synopsis": "Vicious tells the story of partners Freddie and Stuart, who have lived together in a small central London flat for nearly 50 years. Constantly picking each other apart and holding on to petty slights for decades, Freddie and Stuart are always at each other s throats, cracking sni",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/2/5128.jpg"
       },
       {
-        "id": 93,
+        "id": 88,
         "title": "Marvel's Agent Carter",
         "year": 2015,
         "communityScore": 87,
@@ -6861,15 +6742,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#d97706",
-          "#2a1305"
+          "#4338ca",
+          "#0f0a24"
         ],
         "tagline": "2015 Action & Adventure streaming on Prime Video.",
         "synopsis": "Marvel's Agent Carter , starring Captain America's Hayley Atwell, follows the story of Peggy Carter. It's 1946, and peace has dealt Peggy Carter a serious blow as she finds herself marginalized when the men return home from fighting abroad. Working for the covert SSR (Strategic S",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/143/357815.jpg"
       },
       {
-        "id": 94,
+        "id": 89,
         "title": "Mythbusters",
         "year": 2003,
         "communityScore": 87,
@@ -6885,15 +6766,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#0f766e",
-          "#0a1a24"
+          "#0ea5e9",
+          "#3b0764"
         ],
         "tagline": "2003 Adventure & Nature streaming on Prime Video.",
         "synopsis": "Hosted by Jamie Hyneman and Adam Savage, with Tory Belleci, Kari Byron and Grant Imahara, the Mythbusters mix scientific method with gleeful curiosity and plain old-fashioned ingenuity to create their own signature style of explosive experimentation. The team's combined backgroun",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/544/1362285.jpg"
       },
       {
-        "id": 95,
+        "id": 90,
         "title": "Army Wives",
         "year": 2007,
         "communityScore": 87,
@@ -6909,15 +6790,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#ca8a04",
-          "#181109"
+          "#15803d",
+          "#0c1a0e"
         ],
         "tagline": "2007 Drama & Family streaming on Prime Video.",
         "synopsis": "Army Wives follows the struggles, dreams and friendships of a diverse group of women—and one man—living with their spouses and families on an active Army post.",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/78/197347.jpg"
       },
       {
-        "id": 96,
+        "id": 91,
         "title": "Samurai Jack",
         "year": 2001,
         "communityScore": 87,
@@ -6932,15 +6813,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#dc2626",
-          "#0f172a"
+          "#0369a1",
+          "#081420"
         ],
         "tagline": "2001 Action & Adventure streaming on Prime Video.",
         "synopsis": "Samurai Jack is a brave and honorable samurai from the distant past trapped in a nightmarish future. He is terrorized by his sworn enemy, the evil shapeshifting demon Aku. He quests for a way back to the past so that he may stop Aku once and for all.",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/33/82695.jpg"
       },
       {
-        "id": 97,
+        "id": 92,
         "title": "The League of Gentlemen",
         "year": 1999,
         "communityScore": 87,
@@ -6954,15 +6835,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#f59e0b",
-          "#701a75"
+          "#7e22ce",
+          "#0f172a"
         ],
         "tagline": "Dark, surreal comedy about the strange inhabitants of the small town of Royston Vasey.",
         "synopsis": "Dark, surreal comedy about the strange inhabitants of the small town of Royston Vasey.",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/24073.jpg"
       },
       {
-        "id": 98,
+        "id": 93,
         "title": "Mr. Bean",
         "year": 1990,
         "communityScore": 88,
@@ -6977,39 +6858,15 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#2563eb",
-          "#0f172a"
+          "#d97706",
+          "#2a1305"
         ],
         "tagline": "The first episode of the original Mr.",
         "synopsis": "The first episode of the original Mr. Bean series starring Rowan Atkinson was first broadcast on 1st January 1990. Since then Mr. Bean has become known all over the world. Created by Rowan Atkinson, Richard Curtis and Robin Driscoll, there were only 14 episodes ever made. The ori",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/45/113952.jpg"
       },
       {
-        "id": 99,
-        "title": "Fear the Walking Dead",
-        "year": 2015,
-        "communityScore": 83,
-        "seasons": 4,
-        "episodes": 40,
-        "genres": [
-          "Drama",
-          "Action",
-          "Horror"
-        ],
-        "genre": "Drama • Action • Horror",
-        "platforms": [
-          "Prime Video"
-        ],
-        "colors": [
-          "#16a34a",
-          "#052e2b"
-        ],
-        "tagline": "2015 Drama & Action streaming on Prime Video.",
-        "synopsis": "Living in the same universe as The Walking Dead , Fear the Walking Dead is a gritty drama that explores the onset of the undead apocalypse through the lens of a fractured family. Set in a city where people come to escape, shield secrets, and bury their pasts, a mysterious outbrea",
-        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/479/1198360.jpg"
-      },
-      {
-        "id": 100,
+        "id": 94,
         "title": "The Avengers",
         "year": 1961,
         "communityScore": 88,
@@ -7025,12 +6882,152 @@ export const PROVIDERS = [
           "Prime Video"
         ],
         "colors": [
-          "#991b1b",
-          "#090d16"
+          "#0f766e",
+          "#0a1a24"
         ],
         "tagline": "1961 Comedy & Action streaming on Prime Video.",
         "synopsis": "Urbane John Steed and a variety of partners work for an elite organization tasked with investigating criminal and espionage matters within the UK. Their opponents use everything from standard techniques to robots and other science fiction gadgetry.",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/543/1357959.jpg"
+      },
+      {
+        "id": 95,
+        "title": "The Venture Bros.",
+        "year": 2003,
+        "communityScore": 89,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Adventure"
+        ],
+        "genre": "Comedy • Adventure",
+        "platforms": [
+          "Prime Video"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2003 Comedy & Adventure streaming on Prime Video.",
+        "synopsis": "The Venture Bros. is an American animated television series that premiered on Cartoon Network's Adult Swim on February 16, 2003. The series mixes action and comedy together while it chronicles the adventures of the Venture family: well-meaning but incompetent teenagers Hank and D",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/2/5028.jpg"
+      },
+      {
+        "id": 96,
+        "title": "Xena: Warrior Princess",
+        "year": 1995,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Fantasy"
+        ],
+        "genre": "Action • Adventure • Fantasy",
+        "platforms": [
+          "Prime Video"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "\"In a time of ancient gods, warlords, and kings, a land in turmoil cried out for a hero.",
+        "synopsis": "\"In a time of ancient gods, warlords, and kings, a land in turmoil cried out for a hero. She was Xena, a mighty princess, forged in the heat of battle. The power... the passion... the danger... Her courage will change the world\". This spin-off from Hercules: The Legendary Journey",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/3/9021.jpg"
+      },
+      {
+        "id": 97,
+        "title": "Forged in Fire",
+        "year": 2015,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Prime Video"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2015 Drama streaming on Prime Video.",
+        "synopsis": "Forged in Fire features world-class bladesmiths competing against each other to create some of the most iconic edged weapons from history. In each episode, four of the best bladesmiths in the country will come together to put both their skills and reputations on the line. Whether",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/631/1577508.jpg"
+      },
+      {
+        "id": 98,
+        "title": "FlashForward",
+        "year": 2009,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Science-Fiction"
+        ],
+        "genre": "Drama • Crime • Science-Fiction",
+        "platforms": [
+          "Prime Video"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "What would you do if you were given a glimpse of the future?",
+        "synopsis": "What would you do if you were given a glimpse of the future? Would you accept what you saw and live life to its fullest, or would you do everything in your power to change your destiny? When the world's population is given a glimpse of their future, it forces everyone to come to ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/3/9176.jpg"
+      },
+      {
+        "id": 99,
+        "title": "Sliders",
+        "year": 1995,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Adventure",
+          "Fantasy",
+          "Science-Fiction"
+        ],
+        "genre": "Adventure • Fantasy • Science-Fiction",
+        "platforms": [
+          "Prime Video"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "1995 Adventure & Fantasy streaming on Prime Video.",
+        "synopsis": "Brilliant grad student Quinn has created a device that opens a wormhole to an infinite number of parallel universes where history has taken different paths. His first test trip goes awry stranding his physics professor Arturo, his friend Wade, and bystander Rembrandt \"Crying Man\"",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/4/11896.jpg"
+      },
+      {
+        "id": 100,
+        "title": "GREEK",
+        "year": 2007,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy"
+        ],
+        "genre": "Drama • Comedy",
+        "platforms": [
+          "Prime Video"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2007 Drama & Comedy streaming on Prime Video.",
+        "synopsis": "Rusty begins his freshman year at Cyprus-Rhodes University determined to change his life and rush a fraternity. However, his sister Casey, who is already ensconced as a sorority siren, is not too keen on having her younger brother invade her world.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15483.jpg"
       }
     ]
   },
@@ -16735,30 +16732,6 @@ export const PROVIDERS = [
       },
       {
         "id": 13,
-        "title": "The Terror",
-        "year": 2018,
-        "communityScore": 79,
-        "seasons": 4,
-        "episodes": 40,
-        "genres": [
-          "Drama",
-          "Horror",
-          "Thriller"
-        ],
-        "genre": "Drama • Horror • Thriller",
-        "platforms": [
-          "Apple TV+"
-        ],
-        "colors": [
-          "#b91c1c",
-          "#1a0a1f"
-        ],
-        "tagline": "2018 Drama & Horror streaming on Apple TV+.",
-        "synopsis": "The Terror is an American anthology television series exploring historical speculative fiction based on true events. The series is named after Dan Simmons's 2007 novel, which serves as the basis for the first season and is a fictionalized account of Captain Sir John Franklin's lo",
-        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/625/1563397.jpg"
-      },
-      {
-        "id": 14,
         "title": "Krypton",
         "year": 2018,
         "communityScore": 78,
@@ -16774,15 +16747,15 @@ export const PROVIDERS = [
           "Apple TV+"
         ],
         "colors": [
-          "#1d4ed8",
-          "#0b1230"
+          "#b91c1c",
+          "#1a0a1f"
         ],
         "tagline": "2018 Drama & Action streaming on Apple TV+.",
         "synopsis": "Set two generations before the destruction of Superman's home planet, Krypton follows Seg-El, the legendary Man of Steel's grandfather—whose House of El was ostracized and shamed. With Krypton's leadership in disarray, Seg-El encounters Earthly time-traveler Adam Strange who warn",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/192/480621.jpg"
       },
       {
-        "id": 15,
+        "id": 14,
         "title": "McMafia",
         "year": 2018,
         "communityScore": 79,
@@ -16798,15 +16771,15 @@ export const PROVIDERS = [
           "Apple TV+"
         ],
         "colors": [
-          "#db2777",
-          "#1f0a24"
+          "#1d4ed8",
+          "#0b1230"
         ],
         "tagline": "2018 Drama & Crime streaming on Apple TV+.",
         "synopsis": "Alex Godman has spent his life trying to avoid the shadow of his family's criminal past, but when tragedy strikes, he is drawn into the world of international crime.",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/140/350382.jpg"
       },
       {
-        "id": 16,
+        "id": 15,
         "title": "Bargain Hunt",
         "year": 2018,
         "communityScore": 74,
@@ -16820,8 +16793,8 @@ export const PROVIDERS = [
           "Apple TV+"
         ],
         "colors": [
-          "#4338ca",
-          "#0f0a24"
+          "#db2777",
+          "#1f0a24"
         ],
         "tagline": "2018 Drama streaming on Apple TV+.",
         "synopsis": "Two teams of amateur collectors have an hour at an antiques fair in which to acquire the best bargains possible with £300.",
@@ -21573,6 +21546,18584 @@ export const PROVIDERS = [
         "tagline": "Kanna, a small village, is being persecuted by mechanized samurai called Nobuseri.",
         "synopsis": "Kanna, a small village, is being persecuted by mechanized samurai called Nobuseri. The Nobuseri return every harvest to seize the village's crops. Faced with starvation, the villagers send out a mission to find and recruit some samurai to defend them. With no pay to offer except ",
         "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/20/50881.jpg"
+      }
+    ]
+  },
+  {
+    "id": "starz",
+    "name": "Starz",
+    "brand": "#000000",
+    "accent": "#e5e5ea",
+    "shows": [
+      {
+        "id": 1,
+        "title": "Gravity",
+        "year": 2010,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy"
+        ],
+        "genre": "Drama • Comedy",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2010 Drama & Comedy streaming on Starz.",
+        "synopsis": "Dark comedy chronicling a young woman's experiences and relationships during her journey with an outpatient suicide survivors support group.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/21/54955.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Flesh and Bone",
+        "year": 2015,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2015 Drama streaming on Starz.",
+        "synopsis": "Described as a dark and gritty exploration of the dysfunction and glamour of the ballet world, Flesh and Bone follows a young ballet dancer, Claire, who has a distinctly troubled past, as she joins a prestigious ballet company in New York.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/14/37166.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Camelot",
+        "year": 2011,
+        "communityScore": 75,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Fantasy"
+        ],
+        "genre": "Drama • Fantasy",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2011 Drama & Fantasy streaming on Starz.",
+        "synopsis": "The 10-episode epic drama, redefines the classic medieval tale of King Arthur with an exciting ensemble cast including Joseph Fiennes reimagining the iconic role of Merlin, Jamie Campbell Bower as the young and reckless Arthur, and Eva Green in her television debut as the darkly ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16578.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Survivor's Remorse",
+        "year": 2014,
+        "communityScore": 73,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Sports"
+        ],
+        "genre": "Drama • Comedy • Sports",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2014 Drama & Comedy streaming on Starz.",
+        "synopsis": "Survivor's Remorse follows Cam Calloway, a basketball phenom in his early 20's who is suddenly thrust into the limelight after signing a multi-million dollar contract with a professional basketball team in Atlanta. Cam, along with his cousin, and confidant Reggie Vaughn, move to ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/3168.jpg"
+      },
+      {
+        "id": 5,
+        "title": "The Girlfriend Experience",
+        "year": 2016,
+        "communityScore": 73,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance",
+          "Thriller"
+        ],
+        "genre": "Drama • Romance • Thriller",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2016 Drama & Romance streaming on Starz.",
+        "synopsis": "The Girlfriend Experience is an anthology series, which explores the complex dynamics of transactional relationships.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/300/750470.jpg"
+      },
+      {
+        "id": 6,
+        "title": "Crash",
+        "year": 2008,
+        "communityScore": 72,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2008 Drama streaming on Starz.",
+        "synopsis": "Set in Los Angeles, Crash focuses on a multi-ethnic group of people from different socio-economic backgrounds and their lives as they intertwine and connect and their personal dramas unfold.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/21072.jpg"
+      },
+      {
+        "id": 7,
+        "title": "This Old House",
+        "year": 1979,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "DIY"
+        ],
+        "genre": "DIY",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "1979 DIY streaming on Starz.",
+        "synopsis": "The mission of This Old House is to demystify the home improvement process and to celebrate the fusion of old world craftsmanship and modern technology. Each season features two renovation projects. Project One traditionally consists of eighteen or so episodes and is filmed in Ma",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/625/1563395.jpg"
+      },
+      {
+        "id": 8,
+        "title": "The Adventures of Sherlock Holmes",
+        "year": 1984,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "Sherlock Holmes is one of the world's greatest and most popular fictional detectives.",
+        "synopsis": "Sherlock Holmes is one of the world's greatest and most popular fictional detectives. His acute perception and powers of observation are called upon in solving a compendium of crime. As ever, Dr. Watson is on hand as his indispensable assistant.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/501/1254452.jpg"
+      },
+      {
+        "id": 9,
+        "title": "Nature",
+        "year": 1982,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Nature"
+        ],
+        "genre": "Nature",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "1982 Nature streaming on Starz.",
+        "synopsis": "For more than a quarter-century, Nature has brought the beauty and wonder of the natural world into American homes, becoming in the process the benchmark of natural history programs on American television. The series has won more than 600 honors from the television industry, the ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/614/1537388.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Running Man",
+        "year": 2010,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "Running Man is a South Korean variety show that first aired on July 11, 2010.",
+        "synopsis": "Running Man is a South Korean variety show that first aired on July 11, 2010. This show is classified as an \"urban action variety\"; a never-before-seen new genre of variety shows. The MCs and guests complete missions in landmarks to win the race. It has garnered attention as bein",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/18/46329.jpg"
+      },
+      {
+        "id": 11,
+        "title": "My Kitchen Rules",
+        "year": 2010,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Food"
+        ],
+        "genre": "Food",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "2010 Food streaming on Starz.",
+        "synopsis": "Channel Seven is heading back to the kitchen - from the makers of the successful cooking series My Restaurant Rules comes a new show – My Kitchen Rules! This series will travel the country to find Australia's best home-cooking team. In a unique twist, the teams-of-two in My Kitch",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/590/1477431.jpg"
+      },
+      {
+        "id": 12,
+        "title": "Motive",
+        "year": 2013,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "Motive is an unconventional way to watch a crime drama unfold.",
+        "synopsis": "Motive is an unconventional way to watch a crime drama unfold. Each episode begins by revealing not only the victim, but the killer as well. It's not a \"whodunit\", it's a \"whydunit\", a question faced by spirited female Vancouver homicide detective Angie Flynn as she begins to pie",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/4903.jpg"
+      },
+      {
+        "id": 13,
+        "title": "Damages",
+        "year": 2007,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Legal"
+        ],
+        "genre": "Drama • Legal",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2007 Drama & Legal streaming on Starz.",
+        "synopsis": "Set in New York's world of high stakes litigation, Damages follows the lives of Patty Hewes, the nation's most revered and most reviled litigator, and her bright, ambitious protégée Ellen Parsons as they become embroiled in a class action lawsuit targeting Arthur Frobisher, one o",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/5/14830.jpg"
+      },
+      {
+        "id": 14,
+        "title": "The World at War",
+        "year": 1973,
+        "communityScore": 96,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "War",
+          "History"
+        ],
+        "genre": "War • History",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "1973 War & History streaming on Starz.",
+        "synopsis": "Laurence Olivier narrates the landmark 26-part British documentary series telling the story of World War II, profiling its main campaigns and highlighting the human cost on all sides of the conflict.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/17/43921.jpg"
+      },
+      {
+        "id": 15,
+        "title": "Versailles",
+        "year": 2015,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "History"
+        ],
+        "genre": "Drama • History",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "Versailles , 1667.",
+        "synopsis": "Versailles , 1667. Louis XIV was 28 years old. To rise to the heights of the nobility and wield its absolute power, he launched the construction of Versailles... it proved to be a snare. Louis XIV is a young King haunted by childhood trauma, the Fronde civil, a rebellion of the n",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/34/86312.jpg"
+      },
+      {
+        "id": 16,
+        "title": "Pinocchio",
+        "year": 2014,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Family",
+          "Fantasy",
+          "Romance"
+        ],
+        "genre": "Family • Fantasy • Romance",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "2014 Family & Fantasy streaming on Starz.",
+        "synopsis": "A drama depicts love, frustration, growth and the competitive process of young people in their 20s becoming reporters as they cry and get hurt by truth but realize that as reporters, they must tell the truth. It will center the story of a man who hides a special talent living und",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/18/45357.jpg"
+      },
+      {
+        "id": 17,
+        "title": "The Goldbergs",
+        "year": 2013,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "2013 Comedy & Family streaming on Starz.",
+        "synopsis": "Before there were parenting blogs, trophies for showing up and peanut allergies, there was a simpler time called the '80s. For geeky and movie obsessed youngest child Adam, these were his wonder years, and he faced them armed with a video camera to capture all the crazy. The Gold",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/442/1105185.jpg"
+      },
+      {
+        "id": 18,
+        "title": "Unforgettable",
+        "year": 2011,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2011 Drama & Crime streaming on Starz.",
+        "synopsis": "Unforgettable follows Carrie Wells, an enigmatic former police detective with a rare condition that makes her memory so flawless that every place, every conversation, every moment of joy and every heartbreak is forever embedded in her mind. It's not just that she doesn't forget a",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/0/663.jpg"
+      },
+      {
+        "id": 19,
+        "title": "Once Upon a Time",
+        "year": 2011,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Romance"
+        ],
+        "genre": "Drama • Fantasy • Romance",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "Once Upon a Time is Fairy Tale Land.",
+        "synopsis": "Once Upon a Time is Fairy Tale Land. It's filled with magic, monsters and all of the characters we all know from stories growing up. It's real, and so are the people in it. But unlike the \"happily ever after\" you may have heard about, their stories continued, and The Evil Queen c",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/127/319360.jpg"
+      },
+      {
+        "id": 20,
+        "title": "Batman Beyond",
+        "year": 1999,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Science-Fiction"
+        ],
+        "genre": "Action • Adventure • Science-Fiction",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "1999 Action & Adventure streaming on Starz.",
+        "synopsis": "Batman Beyond tells the story of Terry McGinnis was just an ordinary teenager...until his father was mysteriously murdered. Suspecting foul play at his father's company Wayne/Powers Corporation, Terry meets Bruce Wayne and learns a secret identity hidden for decades. Now too old ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/4/10842.jpg"
+      },
+      {
+        "id": 21,
+        "title": "Manhattan",
+        "year": 2014,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2014 Drama streaming on Starz.",
+        "synopsis": "Set in Los Alamos, N.M., at the Manhattan Project during the race to build the world's first atomic bomb, Manhattan explores the cost of secrets and the corrosive effect they have on individuals, families and their relationships.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/46/116919.jpg"
+      },
+      {
+        "id": 22,
+        "title": "Modern Marvels",
+        "year": 1993,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Mystery",
+          "Nature",
+          "History"
+        ],
+        "genre": "Mystery • Nature • History",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "1993 Mystery & Nature streaming on Starz.",
+        "synopsis": "Celebrating ingenuity, invention and imagination on a grand scale, \"Modern Marvels\" tells the amazing stories of the doers, dreamers and sometime-schemers who create everyday items, technological advancements and man-made wonders. From the Statue of Liberty to distilled spirits, ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/417/1044178.jpg"
+      },
+      {
+        "id": 23,
+        "title": "Cosmos",
+        "year": 1980,
+        "communityScore": 92,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Mystery",
+          "Nature",
+          "History"
+        ],
+        "genre": "Mystery • Nature • History",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "1980 Mystery & Nature streaming on Starz.",
+        "synopsis": "Hosted by renowned astrophysicist Neil deGrasse Tyson, Cosmos will explore how we discovered the laws of nature and found our coordinates in space and time. It will bring to life never-before-told stories of the heroic quest for knowledge and transport viewers to new worlds and a",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/402/1006408.jpg"
+      },
+      {
+        "id": 24,
+        "title": "Unsere Mütter, unsere Väter",
+        "year": 2013,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "War"
+        ],
+        "genre": "Drama • Action • War",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "The story of five German friends in the years from 1941 to 1945.",
+        "synopsis": "The story of five German friends in the years from 1941 to 1945. Their friendship was meant to last their whole lives, but the war changed everything.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/17646.jpg"
+      },
+      {
+        "id": 25,
+        "title": "Foyle's War",
+        "year": 2002,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2002 Drama & Crime streaming on Starz.",
+        "synopsis": "Post-WWII drama. Foyle, now working for British Intelligence, is drawn into the world of corrupt Nazi businessmen when a London university professor is found murdered.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/18354.jpg"
+      },
+      {
+        "id": 26,
+        "title": "Life Below Zero°",
+        "year": 2013,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Nature"
+        ],
+        "genre": "Nature",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2013 Nature streaming on Starz.",
+        "synopsis": "Life Below Zero° follows seven people as they battle for the most basic necessities in the state with the lowest population density in the United States. Living at the ends of the world's loneliest roads and subsisting off the rugged Alaskan bush, they battle whiteout snow storms",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/542/1356079.jpg"
+      },
+      {
+        "id": 27,
+        "title": "C.S. Forester's Horatio Hornblower",
+        "year": 1998,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Drama • Action • Adventure",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "1998 Drama & Action streaming on Starz.",
+        "synopsis": "The epic saga of legendary seafaring hero Horatio Hornblower comes to swashbuckling life in these epic films based on C.S. Forester's classic novels. As the Napoleonic wars rage, Hornblower survives battle after battle, evades capture, and works his way up the ranks in the king's",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/22757.jpg"
+      },
+      {
+        "id": 28,
+        "title": "The Bletchley Circle",
+        "year": 2012,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2012 Drama & Crime streaming on Starz.",
+        "synopsis": "The Bletchley Circle follows the journey of four ordinary women with extraordinary skills that helped to end World War II. Set in 1952, Susan, Millie, Lucy and Jean have returned to their normal lives, modestly setting aside the part they played in producing crucial intelligence,",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/147/369403.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Gomorra: La Serie",
+        "year": 2014,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "2014 Drama & Action streaming on Starz.",
+        "synopsis": "Based on Robert Saviano's bestselling book, this gritty Italian crime drama paints a portrait of the brutal Neapolitan crime organisation the Camorra.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/290/726024.jpg"
+      },
+      {
+        "id": 30,
+        "title": "The Hitchhiker's Guide to the Galaxy",
+        "year": 1981,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Adventure",
+          "Science-Fiction"
+        ],
+        "genre": "Comedy • Adventure • Science-Fiction",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "1981 Comedy & Adventure streaming on Starz.",
+        "synopsis": "The Hitchhiker's Guide to the Galaxy was a BBC television adaptation of Douglas Adams's The Hitchhiker's Guide to the Galaxy broadcast in January and February 1981 on UK television station BBC Two. The adaptation follows the original radio series in 1978 and 1980, the first novel",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/23/59224.jpg"
+      },
+      {
+        "id": 31,
+        "title": "How to Get Away with Murder",
+        "year": 2014,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Thriller",
+          "Legal"
+        ],
+        "genre": "Drama • Thriller • Legal",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2014 Drama & Thriller streaming on Starz.",
+        "synopsis": "The brilliant, charismatic and seductive Professor Annalise Keating gets entangled with four law students from her class, How to Get Away with Murder . Little do they know that they will have to apply what they learned to real life, in this masterful, sexy, suspense-driven legal ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/212/531512.jpg"
+      },
+      {
+        "id": 32,
+        "title": "Crossing Lines",
+        "year": 2013,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "2013 Drama & Action streaming on Starz.",
+        "synopsis": "The series taps into a fictional unit mandated by the International Criminal Court (ICC) to investigate cross-border crimes and ultimately bring global criminals to justice. Crossing Lines is set in the world's most exotic locales, where an elite team of eager cops work to solve ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/231/577869.jpg"
+      },
+      {
+        "id": 33,
+        "title": "Everwood",
+        "year": 2002,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Family",
+          "Romance"
+        ],
+        "genre": "Drama • Family • Romance",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "As a world-class neurosurgeon, Dr.",
+        "synopsis": "As a world-class neurosurgeon, Dr. Andrew Brown is a hero. As a father, he's a zero. But that is changing. Tragedy makes him a single parent to his two children. And as the first act of his new life, Andy leaves Manhattan and moves his family to Everwood , the tiny Colorado town ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/81/204375.jpg"
+      },
+      {
+        "id": 34,
+        "title": "Later... with Jools Holland",
+        "year": 1992,
+        "communityScore": 88,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Music"
+        ],
+        "genre": "Music",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "1992 Music streaming on Starz.",
+        "synopsis": "Jools Holland presents BBC Two's flagship music show, with legendary musicians and brand new acts from around the world, all performing live.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/590/1477298.jpg"
+      },
+      {
+        "id": 35,
+        "title": "Impractical Jokers",
+        "year": 2011,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "2011 Comedy streaming on Starz.",
+        "synopsis": "Four longtime friends take dares to outrageous new levels in truTV's hilarious series Impractical Jokers . Q, Murr, Joe and Sal bravely face some of the most unbelievably awkward and brazen hijinks yet, daring each other with over-the-top challenges that are guaranteed to set a n",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/633/1583027.jpg"
+      },
+      {
+        "id": 36,
+        "title": "Houdini",
+        "year": 2014,
+        "communityScore": 88,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2014 Drama streaming on Starz.",
+        "synopsis": "The event miniseries follows the epic tales of Harry Houdini as he emerges as America's first bonafide world-renowned superstar. From humble beginnings at circus sideshows to sold-out concert halls, Eastern European immigrant Erich Weiss rose to become a household name across the",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/17834.jpg"
+      },
+      {
+        "id": 37,
+        "title": "The First 48",
+        "year": 2004,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Crime"
+        ],
+        "genre": "Crime",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2004 Crime streaming on Starz.",
+        "synopsis": "The First 48 follows detectives from around the country during these first critical hours as they race against time to find the suspect. Gritty and fast-paced, it takes viewers behind the scenes of real-life investigations with unprecedented access to crime scenes, autopsies, for",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/563/1409397.jpg"
+      },
+      {
+        "id": 38,
+        "title": "Catastrophe",
+        "year": 2015,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "genre": "Comedy • Romance",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2015 Comedy & Romance streaming on Starz.",
+        "synopsis": "Rob Delaney and Sharon Horgan write/star in a comedy that follows a man and a woman who make a bloody mess as they struggle to fall in love in London.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/189/473908.jpg"
+      },
+      {
+        "id": 39,
+        "title": "Father Ted",
+        "year": 1995,
+        "communityScore": 88,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "One small island off the west coast of Ireland.",
+        "synopsis": "One small island off the west coast of Ireland. Three priests. One housekeeper. A bunch of nuns - and the most consistently awful weather on the planet.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/17/43679.jpg"
+      },
+      {
+        "id": 40,
+        "title": "Only Connect",
+        "year": 2008,
+        "communityScore": 88,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2008 Drama streaming on Starz.",
+        "synopsis": "Quiz show in which connections must be made between apparently unconnected things, where patience and lateral thinking are as vital as knowledge.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/632/1580938.jpg"
+      },
+      {
+        "id": 41,
+        "title": "Frank Herbert's Dune",
+        "year": 2000,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Science-Fiction"
+        ],
+        "genre": "Drama • Action • Science-Fiction",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "A three-part miniseries on politics, betrayal, lust, greed and the coming of a Messiah.",
+        "synopsis": "A three-part miniseries on politics, betrayal, lust, greed and the coming of a Messiah. Based on Frank Herbert's classic science fiction novel.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/17229.jpg"
+      },
+      {
+        "id": 42,
+        "title": "A Place to Call Home",
+        "year": 2013,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "genre": "Drama • Romance",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2013 Drama & Romance streaming on Starz.",
+        "synopsis": "From the creator of Packed to the Rafters comes the sweeping and romantic drama, A Place to Call Home . It tells the story of a mysterious woman perched between the harsh legacy of World War II and the hope of a new life in Australia and of a wealthy family forced by her to embra",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/164/410284.jpg"
+      },
+      {
+        "id": 43,
+        "title": "Finding Your Roots with Henry Louis Gates Jr.",
+        "year": 2012,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "History"
+        ],
+        "genre": "History",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2012 History streaming on Starz.",
+        "synopsis": "Since the premiere of his groundbreaking series African American Lives through the first season of Finding Your Roots , noted Harvard scholar Henry Louis Gates, Jr. has been helping people discover long-lost relatives hidden for generations within the branches of their family tre",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/494/1236134.jpg"
+      },
+      {
+        "id": 44,
+        "title": "Defiance",
+        "year": 2013,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Science-Fiction"
+        ],
+        "genre": "Action • Adventure • Science-Fiction",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2013 Action & Adventure streaming on Starz.",
+        "synopsis": "Set on a future Earth, Defiance introduces players and viewers to a world where humans and aliens live together on a planet ravaged by decades of war and transformed by alien terra-forming machines. It centers on Jeb Nolan, the law-keeper in a bustling frontier boomtown that is o",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/0/700.jpg"
+      },
+      {
+        "id": 45,
+        "title": "Charlie's Angels",
+        "year": 1976,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Action • Adventure",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "1976 Action & Adventure streaming on Starz.",
+        "synopsis": "Once upon a time, Jill, Sabrina and Kelly were police officers whose skills were being wasted in menial duties such as answering phones and filing. A mysterious millionaire named Charles Townsend took them away from all that by opening his own private investigation agency and hir",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/3/9311.jpg"
+      },
+      {
+        "id": 46,
+        "title": "Spin City",
+        "year": 1996,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "1996 Comedy streaming on Starz.",
+        "synopsis": "Spin City is a smart, sophisticated sitcom about the behind-the-scenes workings of City Hall in the biggest city in America. Workaholic Mike Flaherty is the Deputy Mayor of New York City, serving as Mayor Randall Winston's key strategist and much-needed handler. Mike runs the cit",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/5/13641.jpg"
+      },
+      {
+        "id": 47,
+        "title": "Thirteen",
+        "year": 2016,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Thriller",
+          "Mystery"
+        ],
+        "genre": "Drama • Thriller • Mystery",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "After thirteen years held captive by her kidnapper, Ivy Moxam escapes.",
+        "synopsis": "After thirteen years held captive by her kidnapper, Ivy Moxam escapes. Piecing back together the version of family life that existed before is no easy task.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/144/360158.jpg"
+      },
+      {
+        "id": 48,
+        "title": "American Experience",
+        "year": 1988,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "History"
+        ],
+        "genre": "History",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "1988 History streaming on Starz.",
+        "synopsis": "American Experience is TV's most-watched history series and brings to life incredible characters and compelling stories from our past that inform our understanding of the world today. Acclaimed by viewers and critics alike, American Experience documentaries have been honored with",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/614/1536238.jpg"
+      },
+      {
+        "id": 49,
+        "title": "Skins",
+        "year": 2007,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy"
+        ],
+        "genre": "Drama • Comedy",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2007 Drama & Comedy streaming on Starz.",
+        "synopsis": "Irreverent comedy drama from the makers of Shameless , which follows the messy lives, loves, delirious highs and inevitable lows of a group of raucous teenage friends in Bristol.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/4/11516.jpg"
+      },
+      {
+        "id": 50,
+        "title": "A Haunting",
+        "year": 2005,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Horror",
+          "Mystery"
+        ],
+        "genre": "Drama • Horror • Mystery",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "2005 Drama & Horror streaming on Starz.",
+        "synopsis": "\"When the door between the spirit world and ours is opened, the stuff of nightmares becomes reality\". That's according to the introduction of this series, A Haunting , which dramatizes the \"true\" stories of people who have been haunted or experienced a haunting. In this docu-dram",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/389/973876.jpg"
+      },
+      {
+        "id": 51,
+        "title": "Happy Days",
+        "year": 1974,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "1974 Comedy streaming on Starz.",
+        "synopsis": "Set in Milwaukee, Wisconsin in the 1950's, Happy Days revolves around Richie Cunningham and his family and friends. A \"wholesome\" young man, Richie is a Jefferson High School student who would do anything to get a date and he spends plenty of time with his friends at Arnold's, th",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/21115.jpg"
+      },
+      {
+        "id": 52,
+        "title": "DCI Banks",
+        "year": 2010,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "2010 Drama & Crime streaming on Starz.",
+        "synopsis": "No-nonsense Yorkshire detective Alan Banks (Stephen Tompkinson) tackles each new case with the weary professionalism of a man who has seen too much. Watch him doggedly decipher the clues in the gruesome murders on his patch.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/24589.jpg"
+      },
+      {
+        "id": 53,
+        "title": "Sledge Hammer!",
+        "year": 1986,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Action"
+        ],
+        "genre": "Comedy • Action",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "Meet Inspector Sledge Hammer , a new kind of hero who makes Rambo look like Pee Wee Herman.",
+        "synopsis": "Meet Inspector Sledge Hammer , a new kind of hero who makes Rambo look like Pee Wee Herman. Sledge is the trigger-happy lawman whose hatred of criminal scum and yogurt eatin' creeps was matched only by his love of excessive force and a .44 Magnum. Over the next two seasons, this ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/27611.jpg"
+      },
+      {
+        "id": 54,
+        "title": "Garth Marenghi's Darkplace",
+        "year": 2004,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Horror",
+          "Science-Fiction"
+        ],
+        "genre": "Comedy • Horror • Science-Fiction",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2004 Comedy & Horror streaming on Starz.",
+        "synopsis": "Garth Marenghi's Darkplace is the brainchild of celebrated horror writer and self-styled \"fabulist\" Garth Marenghi, author of such genre classics as Afterbirth (a mutated placenta attacks Bristol) and Crab! (\"One of the three best horror books about crabs I've ever read\" - Hard G",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/42/105449.jpg"
+      },
+      {
+        "id": 55,
+        "title": "Alphas",
+        "year": 2011,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Science-Fiction",
+          "Supernatural"
+        ],
+        "genre": "Drama • Science-Fiction • Supernatural",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2011 Drama & Science-Fiction streaming on Starz.",
+        "synopsis": "Alphas is a science fiction drama focusing on a team that investigates people with supernatural abilities.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/3632.jpg"
+      },
+      {
+        "id": 56,
+        "title": "Rookie Blue",
+        "year": 2010,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2010 Drama & Action streaming on Starz.",
+        "synopsis": "The stakes are high for five young cops fresh out of the Academy and ready for their first day with one of the most elite units in the city. Under the watchful guidance of their officers, Andy McNally and her four fellow rookies quickly learn that no amount of training could prep",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/2/5609.jpg"
+      },
+      {
+        "id": 57,
+        "title": "Robot Chicken",
+        "year": 2005,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Science-Fiction"
+        ],
+        "genre": "Comedy • Science-Fiction",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2005 Comedy & Science-Fiction streaming on Starz.",
+        "synopsis": "Robot Chicken uses stop-motion animation to bring pop-culture parodies to life in a modern take on the variety/sketch show format.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/587/1468712.jpg"
+      },
+      {
+        "id": 58,
+        "title": "The Young Ones",
+        "year": 1982,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "Anarchic sitcom about degenerate North London students in the 80s.",
+        "synopsis": "Anarchic sitcom about degenerate North London students in the 80s.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/62/155416.jpg"
+      },
+      {
+        "id": 59,
+        "title": "Police Squad!",
+        "year": 1982,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Crime"
+        ],
+        "genre": "Comedy • Crime",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "1982 Comedy & Crime streaming on Starz.",
+        "synopsis": "Police Squad! was a parody of the Quinn Martin Productions' police dramas of the 1960s and 1970s, hence the use of \"In Color\" by the narrator. The show's main staple of entertainment came from sight gags (such as a tow truck being a truck in the shape of a big toe) and misunderst",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/12/31083.jpg"
+      },
+      {
+        "id": 60,
+        "title": "University Challenge",
+        "year": 1962,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "1962 Drama streaming on Starz.",
+        "synopsis": "Academic quiz show where teams of students from UK universities answer questions on all manner of subjects.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/632/1580708.jpg"
+      },
+      {
+        "id": 61,
+        "title": "A Touch of Frost",
+        "year": 1992,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "1992 Drama & Crime streaming on Starz.",
+        "synopsis": "Detective Inspector Jack Frost is a disorganised DI for the Denton Police Force and will do anything to see that justice is done, even if he has to break the rules.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/419/1047667.jpg"
+      },
+      {
+        "id": 62,
+        "title": "Australian Survivor",
+        "year": 2002,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "Australian Survivor is a television series based on the popular reality show \"Survivor\".",
+        "synopsis": "Australian Survivor is a television series based on the popular reality show \"Survivor\". Australian Survivor sees 24 tough and tenacious people marooned on a tropical island with little more than the clothes on their backs and the drive to be the sole survivor.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/614/1537115.jpg"
+      },
+      {
+        "id": 63,
+        "title": "Devious Maids",
+        "year": 2013,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2013 Drama & Crime streaming on Starz.",
+        "synopsis": "Devious Maids is set in a world where murder and mayhem collide in the mansions of Beverly Hills' wealthiest and most powerful families. Class warfare has never been as fun and dirty as it is in the tiny enclave where the staff is as clever, witty and downright devilish as their ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/40/100562.jpg"
+      },
+      {
+        "id": 64,
+        "title": "The League",
+        "year": 2009,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Sports"
+        ],
+        "genre": "Comedy • Sports",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2009 Comedy & Sports streaming on Starz.",
+        "synopsis": "The League follows Kevin, a happily married father and commissioner of the fantasy football league; Jenny, Kevin's wife and his better half - especially when it comes to fantasy football; Pete, the perennial league champ who is struggling to become an adult; Taco, Kevin's little ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/4720.jpg"
+      },
+      {
+        "id": 65,
+        "title": "Desperate Housewives",
+        "year": 2004,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Mystery"
+        ],
+        "genre": "Drama • Comedy • Mystery",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "2004 Drama & Comedy streaming on Starz.",
+        "synopsis": "In the town of Fairview there's a street called Wisteria Lane; a peaceful cul-de-sac with manicured lawns and beautiful houses. It's a place where you know all your neighbors and your neighbors know all about you. It's the perfect suburban fantasy. But, behind every picket fence ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/4/11549.jpg"
+      },
+      {
+        "id": 66,
+        "title": "Highway Thru Hell",
+        "year": 2012,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action"
+        ],
+        "genre": "Drama • Action",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2012 Drama & Action streaming on Starz.",
+        "synopsis": "Highway Thru Hell focuses on a team of drivers who work for Jamie Davis, along with several other heavy recovery operations fighting to keep the roads open in some of the most dangerous working conditions ever seen on TV. The Coquihalla and nearby highways through BC's Cascade Mo",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/614/1536890.jpg"
+      },
+      {
+        "id": 67,
+        "title": "You're the Worst",
+        "year": 2014,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Romance"
+        ],
+        "genre": "Drama • Comedy • Romance",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2014 Drama & Comedy streaming on Starz.",
+        "synopsis": "You're the Worst is a comedic love story about what happens when two toxic, self-destructive people fall in love despite themselves and attempt the impossible - a relationship...",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/181/453177.jpg"
+      },
+      {
+        "id": 68,
+        "title": "The IT Crowd",
+        "year": 2006,
+        "communityScore": 94,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "2006 Comedy streaming on Starz.",
+        "synopsis": "The comedic misadventures of Roy, Moss and their grifting supervisor Jen, a rag-tag team of IT support workers at a large corporation headed by a hotheaded yuppie.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/4/11405.jpg"
+      },
+      {
+        "id": 69,
+        "title": "Who's the Boss?",
+        "year": 1984,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "1984 Comedy & Family streaming on Starz.",
+        "synopsis": "When a career-ending injury forces a baseball star into early retirement, he takes a job as a live-in housekeeper for a pushy advertising executive and her nosy mother-but \" Who's the Boss? \".",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/614/1536844.jpg"
+      },
+      {
+        "id": 70,
+        "title": "How It's Made",
+        "year": 2001,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "2001 Drama streaming on Starz.",
+        "synopsis": "How It's Made is the addictive assembly line series that returns to give viewers an exclusive look at how their favorite items are manufactured. The series visits dozens of factories where raw materials transform into final products in the scope of a 30-minute episode.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/67/168064.jpg"
+      },
+      {
+        "id": 71,
+        "title": "Private Practice",
+        "year": 2007,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance",
+          "Medical"
+        ],
+        "genre": "Drama • Romance • Medical",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "2007 Drama & Romance streaming on Starz.",
+        "synopsis": "Private Practice is the story of a team of gifted doctors working together to change the lives of their patients for the better as they look to one another for friendship and love. The doctors of Seaside Health and Wellness work on the most difficult cases, patients whose medical",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15330.jpg"
+      },
+      {
+        "id": 72,
+        "title": "Flashpoint",
+        "year": 2008,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Crime"
+        ],
+        "genre": "Action • Adventure • Crime",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2008 Action & Adventure streaming on Starz.",
+        "synopsis": "Flashpoint is a drama which depicts the emotional journey into the tough, risk-filled lives of a group of cops in the SRU (inspired by Toronto's Emergency Task Force). It's a unique unit that rescues hostages, busts gangs, defuses bombs, climbs the sides of buildings and talks do",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/404/1012469.jpg"
+      },
+      {
+        "id": 73,
+        "title": "The Boondocks",
+        "year": 2005,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2005 Comedy streaming on Starz.",
+        "synopsis": "In The Boondocks , Robert \"Granddad\" Freeman is the cantankerous legal guardian of his rambunctious grandkids Huey and Riley and has moved them from the south side of Chicago to the quiet and safety of \"The Boondocks\" (in this case, suburban Woodcrest), hoping that he can ignore ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16045.jpg"
+      },
+      {
+        "id": 74,
+        "title": "The Inbetweeners",
+        "year": 2008,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "Sitcom about a bunch of middle-class adolescent lads.",
+        "synopsis": "Sitcom about a bunch of middle-class adolescent lads. Welcome to a world of futile crushes, sibling brawls, getting drunk too quickly and casting constant aspersions about your friends' sexuality...",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16301.jpg"
+      },
+      {
+        "id": 75,
+        "title": "Cedar Cove",
+        "year": 2013,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance",
+          "Mystery"
+        ],
+        "genre": "Drama • Romance • Mystery",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "Cedar Cove is a small lakeside town full of romance and drama.",
+        "synopsis": "Cedar Cove is a small lakeside town full of romance and drama. One person in the middle of it all is Judge Olivia Lockhart, whose municipal court unveils the town's secrets and serves as a microcosm of the personal issues that she faces with her own family and friends. Also, Jack",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/14/35053.jpg"
+      },
+      {
+        "id": 76,
+        "title": "The Aurora Teagarden Mysteries",
+        "year": 2015,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Crime • Mystery",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2015 Crime & Mystery streaming on Starz.",
+        "synopsis": "Librarian Aurora \"Roe\" Teagarden; is a crime buff, lover of mystery novels and a member of the Real Murders Club, which meets to analyze famous crimes and mysteries. Aurora's passion and insight about true crime ends up putting her at the center of different crimes that happen in",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/142/355616.jpg"
+      },
+      {
+        "id": 77,
+        "title": "The Addams Family",
+        "year": 1964,
+        "communityScore": 89,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family",
+          "Horror"
+        ],
+        "genre": "Comedy • Family • Horror",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "The Addams Family is the creation of American cartoonist Charles Addams.",
+        "synopsis": "The Addams Family is the creation of American cartoonist Charles Addams. A satirical inversion of the ideal of the perfect American nuclear family, they are an eccentric wealthy family who delight in everything grotesque and macabre, and are never really aware that people find th",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/19/49618.jpg"
+      },
+      {
+        "id": 78,
+        "title": "Baby Daddy",
+        "year": 2012,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2012 Comedy & Family streaming on Starz.",
+        "synopsis": "Baby Daddy follows Ben, a young man in his early 20s living the life of a bachelor in New York City with his buddy, Tucker, and his brother, Danny. Their lives are turned upside down when they come home one day to find a baby girl left on the doorstep by an ex-girlfriend of Ben's",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/2/5387.jpg"
+      },
+      {
+        "id": 79,
+        "title": "Drop Dead Diva",
+        "year": 2009,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Fantasy"
+        ],
+        "genre": "Drama • Comedy • Fantasy",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "Life can really throw you curves -- especially in this breakthrough comedic drama.",
+        "synopsis": "Life can really throw you curves -- especially in this breakthrough comedic drama. Drop Dead Diva tells the story of Deb, a shallow model who dies in a sudden accident. By a twist of fate and a bolt of divine intervention, her soul resurfaces in the body of Jane, a smart, plus-si",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/5/14740.jpg"
+      },
+      {
+        "id": 80,
+        "title": "The Sky at Night",
+        "year": 1957,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Mystery",
+          "Nature",
+          "History"
+        ],
+        "genre": "Mystery • Nature • History",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "Our team of astronomers tell us what's on view in the night sky.",
+        "synopsis": "Our team of astronomers tell us what's on view in the night sky. From comets to quasars, there is always something fascinating to discuss in the Universe.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/17/43088.jpg"
+      },
+      {
+        "id": 81,
+        "title": "My Love from the Star",
+        "year": 2013,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Romance",
+          "Science-Fiction",
+          "Thriller"
+        ],
+        "genre": "Romance • Science-Fiction • Thriller",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "Do Min Joon is an alien who landed on Earth 400 years ago during the Joseon Dynasty period.",
+        "synopsis": "Do Min Joon is an alien who landed on Earth 400 years ago during the Joseon Dynasty period. He possesses a near-perfect appearance and enhanced physical abilities involving his vision, hearing and speed. He holds a cynical view to human beings, but he falls in love with the beaut",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/18/47470.jpg"
+      },
+      {
+        "id": 82,
+        "title": "Tremors",
+        "year": 2003,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Horror",
+          "Science-Fiction"
+        ],
+        "genre": "Action • Horror • Science-Fiction",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2003 Action & Horror streaming on Starz.",
+        "synopsis": "In this sequel to the theatrical and direct-to-video movies, the desert town of Perfection, Nevada, is under government protection because of the endangered species known as Graboids: large earth-burrowing worm-like creatures. Most of the residents of Perfection have refused to m",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/20/50618.jpg"
+      },
+      {
+        "id": 83,
+        "title": "Spooks: Code 9",
+        "year": 2008,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Drama • Action • Adventure",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "In an alternative 2013, London has been evacuated following a nuclear bomb.",
+        "synopsis": "In an alternative 2013, London has been evacuated following a nuclear bomb. Six new MI5 recruits take up the challenge of gathering intelligence in the fightback.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/20/51875.jpg"
+      },
+      {
+        "id": 84,
+        "title": "Pretty Little Liars",
+        "year": 2010,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Romance",
+          "Thriller",
+          "Mystery"
+        ],
+        "genre": "Romance • Thriller • Mystery",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "Rosewood is a perfect little town.",
+        "synopsis": "Rosewood is a perfect little town. So quiet and pristine, you'd never guess it holds so many secrets. Some of the ugliest ones belong to the prettiest girls in town: Aria, Spencer, Hanna and Emily, four friends whose darkest secrets have been unraveling since Alison, the Queen Be",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/125/314775.jpg"
+      },
+      {
+        "id": 85,
+        "title": "NYPD Blue",
+        "year": 1993,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "The gritty details of life as a member of a New York City police unit.",
+        "synopsis": "The gritty details of life as a member of a New York City police unit.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/4/11779.jpg"
+      },
+      {
+        "id": 86,
+        "title": "The Glades",
+        "year": 2010,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "2010 Drama & Action streaming on Starz.",
+        "synopsis": "In The Glades , Jim Longworth, is a brilliant homicide detective from Chicago who moves to South Florida after being shot by his captain. He assumes it will afford him a more relaxing lifestyle, but he finds things are more complicated than he had imagined when he finds himself s",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/4/11802.jpg"
+      },
+      {
+        "id": 87,
+        "title": "Dawson's Creek",
+        "year": 1998,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "genre": "Drama • Romance",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "1998 Drama & Romance streaming on Starz.",
+        "synopsis": "Dawson Leery, Joey Potter, and Pacey Witter are life long friends, whose lives start to rapidly change when a new girl, Jen Lindley, moves in next door to Dawson and the foursome start high school. Chronicling the passage from adolescence to young adulthood, they are joined by tw",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/81/204413.jpg"
+      },
+      {
+        "id": 88,
+        "title": "The Assets",
+        "year": 2014,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Thriller"
+        ],
+        "genre": "Thriller",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "2014 Thriller streaming on Starz.",
+        "synopsis": "The Assets is an eight-part limited series based on the real life events of CIA counter-intelligence officer Sandy Grimes. The year 1985 serves as the backdrop to the final showdown of the Cold War when Sandy and her partner Jeanne Vertefeuille vowed to find the mole who would tu",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/17012.jpg"
+      },
+      {
+        "id": 89,
+        "title": "Hatfields & McCoys",
+        "year": 2012,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance",
+          "Western"
+        ],
+        "genre": "Drama • Romance • Western",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "The Hatfield-McCoy saga begins with 'Devil' Anse Hatfield (Costner) and Randall McCoy (Paxton).",
+        "synopsis": "The Hatfield-McCoy saga begins with 'Devil' Anse Hatfield (Costner) and Randall McCoy (Paxton). Close friends and comrades during the Civil War, they returned to their neighboring homes - Hatfield in West Virginia, McCoy just across the Tug River border in Kentucky - to increasin",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/17230.jpg"
+      },
+      {
+        "id": 90,
+        "title": "Forbrydelsen",
+        "year": 2007,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2007 Drama & Crime streaming on Starz.",
+        "synopsis": "An intense crime drama which is set in Copenhagen and revolves around Detective Inspector Sarah Lund. Each series follows a murder case day-by-day. Each episode covers twenty-four hours of the investigation. The series is noted for its plot twists, season-long storylines, dark to",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/18353.jpg"
+      },
+      {
+        "id": 91,
+        "title": "Black Books",
+        "year": 2000,
+        "communityScore": 91,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "Black Books is a second-hand bookshop in London run by an Irishman named Bernard Black.",
+        "synopsis": "Black Books is a second-hand bookshop in London run by an Irishman named Bernard Black. He is probably the planet's worst-suited person to run such an establishment: he makes no effort to sell, closes at strange hours on a whim, is in a perpetual alcoholic stupor, abhors his cust",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/81/204617.jpg"
+      },
+      {
+        "id": 92,
+        "title": "The Listener",
+        "year": 2009,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Supernatural"
+        ],
+        "genre": "Drama • Crime • Supernatural",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2009 Drama & Crime streaming on Starz.",
+        "synopsis": "In this one-hour drama, Toby Logan is a 24-year-old paramedic living with a secret: he can read people's minds. This telepathic procedural takes viewers into the heart of a tortured hero who struggles to solve crimes with his unique gift. Week-to-week, The Listener balances high-",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/23690.jpg"
+      },
+      {
+        "id": 93,
+        "title": "Glitch",
+        "year": 2015,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Mystery",
+          "Supernatural"
+        ],
+        "genre": "Drama • Mystery • Supernatural",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2015 Drama & Mystery streaming on Starz.",
+        "synopsis": "James Hayes is a small town police man who is called to the local cemetery in the middle of the night after six people have inexplicably risen from the dead in perfect health. With no memory of their identities, they are determined to discover who they are and what has happened t",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/127/319685.jpg"
+      },
+      {
+        "id": 94,
+        "title": "Miraculous: Les aventures de Ladybug et Chat Noir",
+        "year": 2015,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Action",
+          "Fantasy"
+        ],
+        "genre": "Comedy • Action • Fantasy",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "Normal high school kids by day, protectors of Paris by night!",
+        "synopsis": "Normal high school kids by day, protectors of Paris by night! Miraculous follows the heroic adventures of Marinette and Adrien as they transform into Ladybug and Cat Noir and set out to capture akumas, creatures responsible for turning the people of Paris into villains. But neith",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/599/1499134.jpg"
+      },
+      {
+        "id": 95,
+        "title": "Wynonna Earp",
+        "year": 2016,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Western",
+          "Supernatural"
+        ],
+        "genre": "Drama • Western • Supernatural",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2016 Drama & Western streaming on Starz.",
+        "synopsis": "Based on the IDW Comic, Wynonna Earp follows Wyatt Earp's great granddaughter as she battles demons and other creatures. With her unique abilities, and a posse of dysfunctional allies, she's the only thing that can bring the paranormal to justice. After years away, Wynonna Earp h",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/206/515140.jpg"
+      },
+      {
+        "id": 96,
+        "title": "Sabrina the Teenage Witch",
+        "year": 1996,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family",
+          "Fantasy"
+        ],
+        "genre": "Comedy • Family • Fantasy",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "1996 Comedy & Family streaming on Starz.",
+        "synopsis": "When Sabrina Spellman is informed by her aunts, Hilda and Zelda, that she is a witch on her 16th birthday, she is hesitant to believe them. Having been sent to live with them in Massachusetts by her Warlock father and mortal mother, Sabrina learns the tricks of magic in order to ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/214/536178.jpg"
+      },
+      {
+        "id": 97,
+        "title": "This is England",
+        "year": 2010,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2010 Drama & Crime streaming on Starz.",
+        "synopsis": "The first two series of the Channel 4 drama written and directed by Shane Meadows revisiting the characters from his 2007 film This is England . In This is England '86 Thomas Turgoose reprises his role as Shaun, a school-leaver with few prospects in mid-1980s England. Shaun and h",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/27594.jpg"
+      },
+      {
+        "id": 98,
+        "title": "Due South",
+        "year": 1994,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "1994 Drama & Action streaming on Starz.",
+        "synopsis": "An upright Mountie cracks cases alongside a savvy Chicago detective in a wry cult series that playfully deconstructs American and Canadian stereotypes, while providing enough cast chemistry and plot surprises to make this one of the more fondly remembered '90s crime dramas.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/27960.jpg"
+      },
+      {
+        "id": 99,
+        "title": "Lawman",
+        "year": 1958,
+        "communityScore": 97,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Western"
+        ],
+        "genre": "Drama • Western",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "Marshal Dan Troop keeps law in the Old West town of Laramie.",
+        "synopsis": "Marshal Dan Troop keeps law in the Old West town of Laramie. Helping him is his loyal deputy, Johnny McKay, and the local saloon owner, Lily Merrill.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/18/46937.jpg"
+      },
+      {
+        "id": 100,
+        "title": "Coronation Street",
+        "year": 1960,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Starz"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "1960 Drama streaming on Starz.",
+        "synopsis": "Step onto the cobbles for all the drama, secrets and unforgettable moments from the world's longest running TV soap.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/598/1495734.jpg"
+      }
+    ]
+  },
+  {
+    "id": "amc",
+    "name": "AMC+",
+    "brand": "#FF6600",
+    "accent": "#ff8833",
+    "shows": [
+      {
+        "id": 1,
+        "title": "The Walking Dead",
+        "year": 2010,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Horror"
+        ],
+        "genre": "Drama • Action • Horror",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "The Walking Dead tells the story of the months and years that follow after a zombie apocalypse.",
+        "synopsis": "The Walking Dead tells the story of the months and years that follow after a zombie apocalypse. It follows a group of survivors, led by former police officer Rick Grimes, who travel in search of a safe and secure home. As the world overrun by the dead takes its toll on the surviv",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/424/1061900.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Fear the Walking Dead",
+        "year": 2015,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Horror"
+        ],
+        "genre": "Drama • Action • Horror",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2015 Drama & Action streaming on AMC+.",
+        "synopsis": "Living in the same universe as The Walking Dead , Fear the Walking Dead is a gritty drama that explores the onset of the undead apocalypse through the lens of a fractured family. Set in a city where people come to escape, shield secrets, and bury their pasts, a mysterious outbrea",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/479/1198360.jpg"
+      },
+      {
+        "id": 3,
+        "title": "The Terror",
+        "year": 2018,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Horror",
+          "Thriller"
+        ],
+        "genre": "Drama • Horror • Thriller",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2018 Drama & Horror streaming on AMC+.",
+        "synopsis": "The Terror is an American anthology television series exploring historical speculative fiction based on true events. The series is named after Dan Simmons's 2007 novel, which serves as the basis for the first season and is a fictionalized account of Captain Sir John Franklin's lo",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/625/1563397.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Rubicon",
+        "year": 2010,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Thriller",
+          "Espionage"
+        ],
+        "genre": "Drama • Thriller • Espionage",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2010 Drama & Thriller streaming on AMC+.",
+        "synopsis": "Rubicon is a conspiracy thriller set in a NYC-based government intelligence agency, API, where nothing is what it seems. The series focuses on a beleaguered analyst, Will Travers, who, faced with a shocking tragedy, begins to uncover clues that point to a complex and sinister con",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16431.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Into the Badlands",
+        "year": 2015,
+        "communityScore": 88,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Drama • Action • Adventure",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2015 Drama & Action streaming on AMC+.",
+        "synopsis": "Into the Badlands is a genre-bending martial arts series very loosely based on the classic Chinese tale \"Journey to the West\". In a land controlled by feudal barons, Into the Badlands tells the story of a great warrior and a young boy who embark on a journey across a dangerous la",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/186/465817.jpg"
+      },
+      {
+        "id": 6,
+        "title": "The Making of The Mob",
+        "year": 2015,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "History"
+        ],
+        "genre": "Drama • Crime • History",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2015 Drama & Crime streaming on AMC+.",
+        "synopsis": "The Making of The Mob is a special event miniseries chronicling the historical roots of the original Five Families that led to the formation of the modern American Mafia.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/67/168217.jpg"
+      },
+      {
+        "id": 7,
+        "title": "The Prisoner",
+        "year": 2009,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Science-Fiction",
+          "Mystery"
+        ],
+        "genre": "Drama • Science-Fiction • Mystery",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2009 Drama & Science-Fiction streaming on AMC+.",
+        "synopsis": "The Prisoner tells the story of a man, Six, who wakes up to find himself inexplicably trapped in a mysterious and surreal place, The Village, with no memory of how he arrived. As he frantically explores his new environment, he discovers that Village residents are identified by nu",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/3/9294.jpg"
+      },
+      {
+        "id": 8,
+        "title": "Broken Trail",
+        "year": 2006,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Western"
+        ],
+        "genre": "Drama • Western",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2006 Drama & Western streaming on AMC+.",
+        "synopsis": "Veteran cowboy Print Ritter and his estranged nephew Tom Harte must run 500 horses from Oregon to Wyoming. When they cross paths with a low-life trafficker and five innocent Chinese girls, a twist of fate makes the girls Print and Tom's responsibility.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/89/223698.jpg"
+      },
+      {
+        "id": 9,
+        "title": "Low Winter Sun",
+        "year": 2013,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2013 Drama & Crime streaming on AMC+.",
+        "synopsis": "Low Winter Sun is a contemporary story of murder, deception, revenge and corruption in a world where the line between cops and criminals is blurred. The series begins with the murder of a cop by a fellow Detroit detective. Seemingly the perfect crime, in reality the murder activa",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/17727.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Ride with Norman Reedus",
+        "year": 2016,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Travel"
+        ],
+        "genre": "Travel",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2016 Travel streaming on AMC+.",
+        "synopsis": "Ride with Norman Reedus follows actor and motorcycle enthusiast Reedus as he takes viewers on a ride on the open road to explore local biker culture and its history and celebrate some of the best and brightest collectors, mechanics and motorcycle craftsmen around the country. Eac",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/587/1468849.jpg"
+      },
+      {
+        "id": 11,
+        "title": "Comic Book Men",
+        "year": 2012,
+        "communityScore": 81,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2012 Comedy streaming on AMC+.",
+        "synopsis": "AMC's popular unscripted series Comic Book Men takes another dive into world of geekdom by following the antics in and around master fanboy Kevin Smith's New Jersey comic shop, Jay and Silent Bob's Secret Stash. Leading the team behind the shop's counter are Walt, Bryan, Michael ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/4661.jpg"
+      },
+      {
+        "id": 12,
+        "title": "Feed the Beast",
+        "year": 2016,
+        "communityScore": 79,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Food",
+          "Crime"
+        ],
+        "genre": "Drama • Food • Crime",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "Feed the Beast tells the story of Tommy and Dion who are like brothers.",
+        "synopsis": "Feed the Beast tells the story of Tommy and Dion who are like brothers. Dion can't stay out of trouble. Tommy can't move past it. For two friends on the brink of losing everything, a dusty pipe dream of opening up an upscale restaurant in their hometown of the Bronx is all they h",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/60/150687.jpg"
+      },
+      {
+        "id": 13,
+        "title": "Talking Dead",
+        "year": 2011,
+        "communityScore": 70,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "A live after show about Fear/The Walking Dead , hosted by Chris Hardwick.",
+        "synopsis": "A live after show about Fear/The Walking Dead , hosted by Chris Hardwick. Talking Dead features Hardwick spending time with fans, actors, producers and TV enthusiasts, recapping the most recent Fear/The Walking Dead episodes and taking questions and comments from viewers.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/357/893939.jpg"
+      },
+      {
+        "id": 14,
+        "title": "TNA iMPACT!",
+        "year": 2004,
+        "communityScore": 70,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2004 Drama streaming on AMC+.",
+        "synopsis": "TNA iMPACT! is 2 hours of fast paced, innovative, usually high flying, sometimes brutal pro-wrestling. Featuring a mix of stars you know and love and new, up and coming talent, it'll blow away the cobwebs and leave you wanting more.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/613/1533807.jpg"
+      },
+      {
+        "id": 15,
+        "title": "Talking Bad",
+        "year": 2013,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2013 Drama streaming on AMC+.",
+        "synopsis": "Talking Bad features Hardwick spending time with fans, actors, producers and tv enthusiasts, recapping the most recent Breaking Bad episode, and taking questions and comments from viewers. Fans may continue to engage with the after-show following the on-air conclusion, online, at",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16586.jpg"
+      },
+      {
+        "id": 16,
+        "title": "The Pitch",
+        "year": 2012,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "2012 Drama streaming on AMC+.",
+        "synopsis": "The Pitch chronicles numerous interesting characters as they prepare unique creative campaigns, with big personal stakes, at their advertising agencies to try and win a major new piece of business. The show focuses on the characters who are putting their best work forward and sho",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/28143.jpg"
+      },
+      {
+        "id": 17,
+        "title": "Portrait Artist of the Year",
+        "year": 2013,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "2013 Drama streaming on AMC+.",
+        "synopsis": "Portrait Artist of the Year is hosted by UK TV personalities Joan Bakewell and Frank Skinner; an esteemed group of judges travel across the Europe in search of a new star in the art world. Each episode features a regional competition where artists are shortlisted and challenged t",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/644/1611170.jpg"
+      },
+      {
+        "id": 18,
+        "title": "Rogue",
+        "year": 2013,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Crime"
+        ],
+        "genre": "Action • Crime",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "Grace has left her life as an undercover cop to be a better mother to her daughter.",
+        "synopsis": "Grace has left her life as an undercover cop to be a better mother to her daughter. She's recently separated from Tom and with the arrival of her estranged mother, she's got plenty of drama at home. Grace's new job as a handler for an FBI task force has her investigating corporat",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/55/138114.jpg"
+      },
+      {
+        "id": 19,
+        "title": "Aqua Teen Hunger Force",
+        "year": 2000,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Comedy • Action • Adventure",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "2000 Comedy & Action streaming on AMC+.",
+        "synopsis": "Aqua Teen Hunger Force follows the adventures of the aptly named Aqua Teen Hunger Force, a group of mystery-solving fast food items. The team consists of Master Shake, or Shake, a rather sadistic, lazy, ordering milkshake who loves to torture Meatwad. Frylock, the floating box of",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/78/196672.jpg"
+      },
+      {
+        "id": 20,
+        "title": "Zero Hour",
+        "year": 2013,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Thriller",
+          "Supernatural"
+        ],
+        "genre": "Drama • Thriller • Supernatural",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2013 Drama & Thriller streaming on AMC+.",
+        "synopsis": "Zero Hour follows Hank Galliston, who has spent his life debunking myths, only to be drawn into one of the most compelling mysteries in human history after his wife's shocking disappearance.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16617.jpg"
+      },
+      {
+        "id": 21,
+        "title": "Les Revenants",
+        "year": 2012,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Horror"
+        ],
+        "genre": "Drama • Fantasy • Horror",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "Les Revenants is a unique, stylish and powerful supernatural drama.",
+        "synopsis": "Les Revenants is a unique, stylish and powerful supernatural drama. It follows the residents of a small French alpine town as they come to terms with a series of mysterious and unbelievable occurrences. As a small group of unknowingly deceased men, women and children return from ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/272/680355.jpg"
+      },
+      {
+        "id": 22,
+        "title": "Fortitude",
+        "year": 2015,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Science-Fiction",
+          "Thriller",
+          "Mystery"
+        ],
+        "genre": "Science-Fiction • Thriller • Mystery",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "Fortitude is a place like nowhere else.",
+        "synopsis": "Fortitude is a place like nowhere else. Although surrounded by the savage beauty of the Arctic landscape, Fortitude is one of the safest towns on earth. There has never been a violent crime here. Until now. In such a close-knit community a murder touches everyone and the unsettli",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/19009.jpg"
+      },
+      {
+        "id": 23,
+        "title": "Gangland Undercover",
+        "year": 2015,
+        "communityScore": 88,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2015 Drama & Crime streaming on AMC+.",
+        "synopsis": "The only man brave enough to sneak into three outlaw biker gangs and live to tell the tale, Charles Falco, author of \"Vagos, Mongols and Outlaws\", goes from convict to infiltrator as he secretly documents the Vagos' illegal activities and ultimately brings them to justice. With t",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/23782.jpg"
+      },
+      {
+        "id": 24,
+        "title": "The Lizzie Borden Chronicles",
+        "year": 2015,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Horror"
+        ],
+        "genre": "Horror",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2015 Horror streaming on AMC+.",
+        "synopsis": "The Lizzie Borden Chronicles delivers an intense and fictionalized account of actual events and people surrounding Lizzie's life after her controversial acquittal of the horrific double murder of her father and stepmother in 1892, when the exonerated figure lives a life awash in ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/629/1572567.jpg"
+      },
+      {
+        "id": 25,
+        "title": "The Amazing Race Australia",
+        "year": 2011,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Adventure",
+          "Travel"
+        ],
+        "genre": "Adventure • Travel",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2011 Adventure & Travel streaming on AMC+.",
+        "synopsis": "The Amazing Race Australia is based on the hugely popular franchise The Amazing Race, this reality competition follows the same format seen in various countries around the world. Teams of two compete against each other as they race around the globe in hopes of winning $250,000.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/17/43524.jpg"
+      },
+      {
+        "id": 26,
+        "title": "American Masters",
+        "year": 1986,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Music"
+        ],
+        "genre": "Music",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "1986 Music streaming on AMC+.",
+        "synopsis": "Now in its 30th year, American Masters has produced an exceptional library of more than 160 television programs, bringing unique originality and perspective to exploring the lives and illuminating the creative journeys of our most enduring writers, musicians, visual and performin",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/614/1537387.jpg"
+      },
+      {
+        "id": 27,
+        "title": "Toast of London",
+        "year": 2012,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2012 Comedy streaming on AMC+.",
+        "synopsis": "Comedy series following Steven Toast, an eccentric middle-aged actor with a chequered past who spends more time dealing with his problems off stage than performing on it.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/19/47539.jpg"
+      },
+      {
+        "id": 28,
+        "title": "Ice Road Rescue",
+        "year": 2015,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "The mountain passes of Norway are some of the most dangerous roads in all of Europe.",
+        "synopsis": "The mountain passes of Norway are some of the most dangerous roads in all of Europe. And when winter hits, the transport roads turn into treacherous bobsleigh tracks with trucks and cars skidding and sliding everywhere, blocking vital trade routes and in extreme cases, causing fa",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/269/672718.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Cook's Country from America's Test Kitchen",
+        "year": 2008,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Food"
+        ],
+        "genre": "Food",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2008 Food streaming on AMC+.",
+        "synopsis": "\"Cook's Country from America's Test Kitchen\" is a half-hour cooking show distributed to public television stations (reruns airing on Create) in the United States, which are also available in most Canadian markets. The show's hosts are Julia Collin Davison &amp; Bridget Lancaster;",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/641/1603951.jpg"
+      },
+      {
+        "id": 30,
+        "title": "Borgen",
+        "year": 2010,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2010 Drama streaming on AMC+.",
+        "synopsis": "Danish Prime Minister Birgitte Nyborg wins a shocking victory and ushers in a wave of political struggles.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/461/1154695.jpg"
+      },
+      {
+        "id": 31,
+        "title": "Space: 1999",
+        "year": 1975,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Science-Fiction"
+        ],
+        "genre": "Action • Adventure • Science-Fiction",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "1975 Action & Adventure streaming on AMC+.",
+        "synopsis": "It's 1999 and Moonbase Alpha has been built on the Moon to safeguard the nuclear waste shipped from Earth. On September 13, 1999, disaster strikes and the nuclear waste explodes, causing a chain reaction that hurls the Moon out of Earth's orbit and into deep space.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/23/58465.jpg"
+      },
+      {
+        "id": 32,
+        "title": "Saving Hope",
+        "year": 2012,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Medical"
+        ],
+        "genre": "Drama • Fantasy • Medical",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2012 Drama & Fantasy streaming on AMC+.",
+        "synopsis": "When Hope Zion Hospital's Chief of Surgery, Charlie Harris ends up in a coma, he finds himself wandering the halls in spirit form. Stuck between worlds, he watches as his fiancée and the staff of the hospital fight to keep patients - and hope - alive.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/91/229823.jpg"
+      },
+      {
+        "id": 33,
+        "title": "Mock the Week",
+        "year": 2005,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2005 Comedy streaming on AMC+.",
+        "synopsis": "Comedy show combining the best elements of panel show, stand-up and improvised games with two teams of comedians taking a satirical swipe at the news and world events.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/61/154228.jpg"
+      },
+      {
+        "id": 34,
+        "title": "Copper",
+        "year": 2012,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "2012 Drama & Crime streaming on AMC+.",
+        "synopsis": "Copper is an American saga set in 1865 New York City, picks-up on the brink of Lincoln's assassination - with shifts in politics and society altering the landscape for Irish immigrants and African-Americans. At the center, Detective Kevin Corcoran struggles to tame the wartime me",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/2/6166.jpg"
+      },
+      {
+        "id": 35,
+        "title": "Berlin Station",
+        "year": 2016,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Mystery",
+          "Espionage"
+        ],
+        "genre": "Drama • Mystery • Espionage",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "2016 Drama & Mystery streaming on AMC+.",
+        "synopsis": "Berlin Station is a contemporary spy series that follows Daniel Miller, an undercover agent who has just arrived at the CIA station in Berlin, Germany. Miller has a clandestine mission: to determine the identity of a now-famous whistleblower masquerading as \"Thomas Shaw\". Guided ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/176/440242.jpg"
+      },
+      {
+        "id": 36,
+        "title": "Paranormal Witness",
+        "year": 2011,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Horror",
+          "Mystery",
+          "Supernatural"
+        ],
+        "genre": "Horror • Mystery • Supernatural",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "2011 Horror & Mystery streaming on AMC+.",
+        "synopsis": "In Paranormal Witness , real people relate true tales of supernatural hauntings and explanation-defying paranormal experiences, which are brought to life through recreations.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/17/44035.jpg"
+      },
+      {
+        "id": 37,
+        "title": "Secrets and Lies",
+        "year": 2015,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Thriller"
+        ],
+        "genre": "Drama • Crime • Thriller",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "2015 Drama & Crime streaming on AMC+.",
+        "synopsis": "The explosive power of people's secrets and lies will once again take center stage in season two of ABC's hit drama, Secrets and Lies . No matter who you are, everyone has secrets and everybody tells lies. What will people do to keep their most intimate, devastating indiscretions",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/67/167976.jpg"
+      },
+      {
+        "id": 38,
+        "title": "Misfits",
+        "year": 2009,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Science-Fiction"
+        ],
+        "genre": "Drama • Comedy • Science-Fiction",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2009 Drama & Comedy streaming on AMC+.",
+        "synopsis": "When five young outsiders on Community Service get caught in a strange storm, they discover that they have developed superpowers.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15508.jpg"
+      },
+      {
+        "id": 39,
+        "title": "Air Crash Investigation",
+        "year": 2003,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "Flying is one of the safest forms of transport.",
+        "synopsis": "Flying is one of the safest forms of transport. But what happens when tragedy strikes? From human error and accidents to mechanical faults and design flaws, the success of aviation history is punctuated with disaster and catastrophe. It's rare, but it does happen. Follow experts ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/599/1498204.jpg"
+      },
+      {
+        "id": 40,
+        "title": "Lewis",
+        "year": 2006,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2006 Drama & Crime streaming on AMC+.",
+        "synopsis": "A spin-off of the popular series Inspector Morse , a special two-hour drama picked up five years after the series ended. It is now continuing in its own series, with Lewis and Hathaway investigating in Morse's old stomping ground of Oxford.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/46/115217.jpg"
+      },
+      {
+        "id": 41,
+        "title": "8 Out of 10 Cats",
+        "year": 2005,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "A topical news panel show based on statistics and opinion polls.",
+        "synopsis": "A topical news panel show based on statistics and opinion polls.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/19/47775.jpg"
+      },
+      {
+        "id": 42,
+        "title": "Offspring",
+        "year": 2010,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Family",
+          "Romance"
+        ],
+        "genre": "Drama • Family • Romance",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2010 Drama & Family streaming on AMC+.",
+        "synopsis": "Offspring follows Nina's quest to manage the intensity of her job delivering babies along with the challenges of raising her daughter Zoe in the midst of the fabulously unpredictable Proudman family - all while trying to establish a decent love life for herself.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/20/51453.jpg"
+      },
+      {
+        "id": 43,
+        "title": "Cracker",
+        "year": 1993,
+        "communityScore": 90,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "1993 Drama & Crime streaming on AMC+.",
+        "synopsis": "After a murder case in which the chief suspect claims amnesia, Psychology professor Eddie Fitzgerald, known to all as 'Fitz', develops a professional relationship with the Greater Manchester Police. Meanwhile, he battles with his own personal demons.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/24/62066.jpg"
+      },
+      {
+        "id": 44,
+        "title": "Kommissar Rex",
+        "year": 1994,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Action • Crime • Mystery",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "1994 Action & Crime streaming on AMC+.",
+        "synopsis": "A recently divorced cop adopts a police dog who lost his former companion, together they solve crimes in and around Vienna.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/24/62355.jpg"
+      },
+      {
+        "id": 45,
+        "title": "Agatha Raisin",
+        "year": 2014,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Crime"
+        ],
+        "genre": "Drama • Comedy • Crime",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2014 Drama & Comedy streaming on AMC+.",
+        "synopsis": "Agatha Raisin is an exuberant and quirky crime drama starring Ashley Jensen as the notorious Agatha. Based on the novels of M. C. Beaton. She first appeared in the made for TV movie Agatha Raisin and the Quiche of Death .",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/218/545133.jpg"
+      },
+      {
+        "id": 46,
+        "title": "The Lost World",
+        "year": 1999,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Science-Fiction"
+        ],
+        "genre": "Action • Adventure • Science-Fiction",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "1999 Action & Adventure streaming on AMC+.",
+        "synopsis": "Determined to prove the existence of The Lost World, dashing adventurer and scholar Professor Edward Challenger mounts a British expedition team consisting of a mismatched group of enthusiasts, all with less than selfless reasons for making the journey. Traveling through the unch",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/4/10831.jpg"
+      },
+      {
+        "id": 47,
+        "title": "American Pickers",
+        "year": 2010,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Travel",
+          "History"
+        ],
+        "genre": "Travel • History",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "This isn't your grandmother's antiquing.",
+        "synopsis": "This isn't your grandmother's antiquing. The American Pickers are on a mission to recycle America, even if it means diving into countless piles of grimy junk or getting chased off a gun-wielding homeowner's land. Hitting back roads from coast to coast, the Pickers earn a living b",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/538/1345359.jpg"
+      },
+      {
+        "id": 48,
+        "title": "Casualty",
+        "year": 1986,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Medical"
+        ],
+        "genre": "Drama • Medical",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "1986 Drama & Medical streaming on AMC+.",
+        "synopsis": "They're fighting to save patients while their personal lives are brimming with drama and intrigue. Everything's at stake on the emergency ward.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/639/1599805.jpg"
+      },
+      {
+        "id": 49,
+        "title": "Waking the Dead",
+        "year": 2000,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "2000 Drama & Crime streaming on AMC+.",
+        "synopsis": "Drama series following the members of a Cold Case investigation team as they use advanced forensic techniques to uncover the truth and bring criminals to justice.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16232.jpg"
+      },
+      {
+        "id": 50,
+        "title": "The Block",
+        "year": 2003,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "The Block is an Australian reality television show.",
+        "synopsis": "The Block is an Australian reality television show. The show sees four couples compete against each other to renovate a home in an apartment block and sell it at auction for the highest price.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/634/1586153.jpg"
+      },
+      {
+        "id": 51,
+        "title": "Outcast",
+        "year": 2016,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Horror",
+          "Supernatural"
+        ],
+        "genre": "Drama • Horror • Supernatural",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2016 Drama & Horror streaming on AMC+.",
+        "synopsis": "Outcast follows Kyle Barnes, a young man who has been plagued by possession since he was a child. Now an adult, he embarks on a journey to find answers but what he uncovers could mean the end of life on Earth as we know it .",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/60/151204.jpg"
+      },
+      {
+        "id": 52,
+        "title": "Mike Tyson Mysteries",
+        "year": 2014,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Action",
+          "Mystery"
+        ],
+        "genre": "Comedy • Action • Mystery",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "In Mike Tyson Mysteries , Mike Tyson is taking the fight from the boxing ring to the streets...",
+        "synopsis": "In Mike Tyson Mysteries , Mike Tyson is taking the fight from the boxing ring to the streets... by solving mysteries! Aided by the Mike Tyson Mystery Team - the Ghost of the Marquess of Queensberry, Mike's adopted Korean daughter Yung Hee, and a pigeon who was once a man - Mike T",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/205/513104.jpg"
+      },
+      {
+        "id": 53,
+        "title": "The Almighty Johnsons",
+        "year": 2011,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Fantasy"
+        ],
+        "genre": "Drama • Comedy • Fantasy",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "2011 Drama & Comedy streaming on AMC+.",
+        "synopsis": "The Almighty Johnsons is a South Pacific Pictures comedy-drama series about four brothers, raised in heartland New Zealand, who also happen to be the living incarnations of Norse Gods. They even have their own super-god-powers. Sort of - it's just that their powers aren't actuall",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/112/281266.jpg"
+      },
+      {
+        "id": 54,
+        "title": "River",
+        "year": 2015,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "2015 Drama & Crime streaming on AMC+.",
+        "synopsis": "Respected police officer John River, a gifted cop with a troubled mind, struggles to come to terms with the recent loss of a close colleague, and chases a potential suspect across London - with tragic consequences. Now at odds with authorities both within and outside of the polic",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/24/61458.jpg"
+      },
+      {
+        "id": 55,
+        "title": "Knots Landing",
+        "year": 1979,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "genre": "Drama • Romance",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "1979 Drama & Romance streaming on AMC+.",
+        "synopsis": "Knots Landing follows the lives and loves of four married couples who live in the fictional but always interesting upper-middle class southern California cul-de-sac, Seaview Circle.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/22/55263.jpg"
+      },
+      {
+        "id": 56,
+        "title": "Le Bureau des Légendes",
+        "year": 2015,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Espionage"
+        ],
+        "genre": "Drama • Espionage",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2015 Drama & Espionage streaming on AMC+.",
+        "synopsis": "Within the French secret service, one department known as the DGSE manages the missions of all undercover operatives working under fake identities to identify intelligence sources.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/247/619649.jpg"
+      },
+      {
+        "id": 57,
+        "title": "Tinker Tailor Soldier Spy",
+        "year": 1979,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Espionage"
+        ],
+        "genre": "Drama • Espionage",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "1979 Drama & Espionage streaming on AMC+.",
+        "synopsis": "Acclaimed adaptation of John le Carre's novel about spy George Smiley, who is recalled from retirement.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/27/67561.jpg"
+      },
+      {
+        "id": 58,
+        "title": "Mistresses",
+        "year": 2013,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "genre": "Drama • Romance",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2013 Drama & Romance streaming on AMC+.",
+        "synopsis": "Based on the hit UK television series of the same name, Mistresses is a provocative and thrilling drama about the scandalous lives of a sexy and sassy group of four girlfriends, each on her own path to self-discovery. These four friends find support and guidance with each other a",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/2950.jpg"
+      },
+      {
+        "id": 59,
+        "title": "Cougar Town",
+        "year": 2009,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2009 Comedy streaming on AMC+.",
+        "synopsis": "Jules Cobb is a mom in her forties facing the often humorous challenges, pitfalls and rewards of life's next chapter. Along for the journey is her son, her ex-husband, her husband/neighbor and her friends who together make up her dysfunctional, but supportive and caring extended ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/2/5195.jpg"
+      },
+      {
+        "id": 60,
+        "title": "Masters of Horror",
+        "year": 2005,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Horror"
+        ],
+        "genre": "Horror",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "Chilling horror stories from the most prominent directors of the genre.",
+        "synopsis": "Chilling horror stories from the most prominent directors of the genre.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/3/9371.jpg"
+      },
+      {
+        "id": 61,
+        "title": "The Practice",
+        "year": 1997,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Legal"
+        ],
+        "genre": "Drama • Legal",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "1997 Drama & Legal streaming on AMC+.",
+        "synopsis": "Set in Boston, The Practice centers on a firm of passionate attorneys to whom every case is important and every client worth a fight to the end. Pursuing justice, however, sometimes means crossing the line...",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/60/151385.jpg"
+      },
+      {
+        "id": 62,
+        "title": "I, Claudius",
+        "year": 1976,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "History"
+        ],
+        "genre": "Drama • History",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "Acclaimed blackly comic historical drama series.",
+        "synopsis": "Acclaimed blackly comic historical drama series. Set amidst a web of power, corruption and lies, it chronicles the reigns of the Roman emperors - Augustus, Tiberius, Caligula and finally Claudius.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/17232.jpg"
+      },
+      {
+        "id": 63,
+        "title": "Prime Suspect",
+        "year": 1991,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "1991 Drama & Crime streaming on AMC+.",
+        "synopsis": "This tense, uncompromising drama starring the Oscar®-winning actress Helen Mirren and from the distinguished dramatist and novelist Lynda La Plante, has been critically acclaimed on both sides of the Atlantic and has won a total of 14 international awards including BAFTAs for 'Dr",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/18390.jpg"
+      },
+      {
+        "id": 64,
+        "title": "Bad Girls",
+        "year": 1999,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Romance"
+        ],
+        "genre": "Drama • Crime • Romance",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "1999 Drama & Crime streaming on AMC+.",
+        "synopsis": "Step inside HMP Larkhall and meet the women of G-Wing, who've committed various offences that range from shoplifting to murder. Bad Girls shows what life is like for these women in the 'inside world' and also shows the real-life problems (and maybe behaviour!) of the officers who",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/18492.jpg"
+      },
+      {
+        "id": 65,
+        "title": "Wire in the Blood",
+        "year": 2002,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "Wire in the Blood is a British crime drama television series.",
+        "synopsis": "Wire in the Blood is a British crime drama television series. The series is based on characters created by Val McDermid , including a university clinical psychologist, Dr Anthony \"Tony\" Valentine Hill (played by Robson Green ), who is able to tap into his own dark side to get ins",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/414/1035167.jpg"
+      },
+      {
+        "id": 66,
+        "title": "Touched by an Angel",
+        "year": 1994,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Family",
+          "Supernatural"
+        ],
+        "genre": "Drama • Family • Supernatural",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "1994 Drama & Family streaming on AMC+.",
+        "synopsis": "A trio of angels Monica, Tess and Andrew are dispatched from heaven with a special mission: to inspire people facing sometimes unseen crossroads in their lives. Monica, an angel who at times still needs some guidance with her earthly assignments, reports to Tess, her tough, wise ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/19094.jpg"
+      },
+      {
+        "id": 67,
+        "title": "Moonlighting",
+        "year": 1985,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Mystery"
+        ],
+        "genre": "Drama • Comedy • Mystery",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "1985 Drama & Comedy streaming on AMC+.",
+        "synopsis": "Maddie Hayes, a wealthy former model, discovers one morning that her business manager has stolen all the money she has in the bank. However, it turns out that she still owns some non-liquid assets -- money-losing companies which were maintained as tax write-offs -- one of which i",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/21190.jpg"
+      },
+      {
+        "id": 68,
+        "title": "Two Guys and a Girl",
+        "year": 1998,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "genre": "Comedy • Romance",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "1998 Comedy & Romance streaming on AMC+.",
+        "synopsis": "Two Boston grad students work in a pizza joint and hang out with their sexy neighbor in an American television sitcom that was originally titled \"Two Guys, a Girl and a Pizza Place\".",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/577/1444617.jpg"
+      },
+      {
+        "id": 69,
+        "title": "Yes Minister",
+        "year": 1980,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "1980 Comedy streaming on AMC+.",
+        "synopsis": "Satirical sitcom set in the office of a UK Cabinet minister, Jim Hacker MP, who struggles with Civil Service bureaucracy and political machinations as he tries to get on with government business.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/206/517241.jpg"
+      },
+      {
+        "id": 70,
+        "title": "The Thick of It",
+        "year": 2005,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "2005 Comedy streaming on AMC+.",
+        "synopsis": "Join the farce that is the department of Social afairs and Citizenship as it farcically stumbles its way through the corridors of power.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/22970.jpg"
+      },
+      {
+        "id": 71,
+        "title": "Banished",
+        "year": 2015,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "At its heart, Banished is a story of survival.",
+        "synopsis": "At its heart, Banished is a story of survival. Though it is set in the stark historical reality of the founding of the penal colony in Australia in 1788 after the arrival of the First Fleet, it is not the story of Australia and how it came to be. Rather, it is a tale of love, fai",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/80/201739.jpg"
+      },
+      {
+        "id": 72,
+        "title": "Victorious",
+        "year": 2010,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Drama • Comedy • Family",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "2010 Drama & Comedy streaming on AMC+.",
+        "synopsis": "Tori Vega's thrown into the spotlight at a musical showcase and lands a spot at Hollywood Arts, the most prestigious arts high school in the country. At the school, Tori realizes that to fit in, she must stand out!",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/441/1102783.jpg"
+      },
+      {
+        "id": 73,
+        "title": "Horizon",
+        "year": 1964,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "1964 Drama streaming on AMC+.",
+        "synopsis": "Horizon tells amazing science stories, unravels mysteries and reveals worlds you've never seen before.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/43/109160.jpg"
+      },
+      {
+        "id": 74,
+        "title": "Detectorists",
+        "year": 2014,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2014 Comedy streaming on AMC+.",
+        "synopsis": "Comedy series about two friends who go in search of their hearts' desire with a couple of metal detectors.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/18/45415.jpg"
+      },
+      {
+        "id": 75,
+        "title": "DIY SOS",
+        "year": 1999,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "DIY"
+        ],
+        "genre": "DIY",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "1999 DIY streaming on AMC+.",
+        "synopsis": "Nick Knowles and the team issue a call to arms and recruit friends, family and local trades to help transform the homes of families across Britain.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/644/1612489.jpg"
+      },
+      {
+        "id": 76,
+        "title": "Benidorm",
+        "year": 2007,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2007 Comedy streaming on AMC+.",
+        "synopsis": "Comedy series following regular and first-time holidaymakers as they visit the Solana Resort in Benidorm. All the guests have one thing in common: a quest to get value for their hard-earned Euros.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/147/369353.jpg"
+      },
+      {
+        "id": 77,
+        "title": "DC's Legends of Tomorrow",
+        "year": 2016,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Science-Fiction"
+        ],
+        "genre": "Drama • Action • Science-Fiction",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "When heroes alone are not enough...",
+        "synopsis": "When heroes alone are not enough... the world needs legends. Having seen the future, one he will desperately try to prevent from happening, time-traveling rogue Rip Hunter is tasked with assembling a disparate group of both heroes and villains to confront an unstoppable threat - ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/315/787584.jpg"
+      },
+      {
+        "id": 78,
+        "title": "H2O: Just Add Water",
+        "year": 2006,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Family",
+          "Fantasy"
+        ],
+        "genre": "Drama • Family • Fantasy",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2006 Drama & Family streaming on AMC+.",
+        "synopsis": "H2O: Just Add Water is a story about three normal teenage girls stumble upon a ancient cave they undergo a transformation that wll change their lives forever. H2O - Just Add Water, sees three very different girls facing everyday teen problems with an added twist - they're mermaid",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/43/107555.jpg"
+      },
+      {
+        "id": 79,
+        "title": "Are You Being Served?",
+        "year": 1972,
+        "communityScore": 88,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "1972 Comedy streaming on AMC+.",
+        "synopsis": "This comedy series, which follows the exploits of employees at London's Grace Brothers department store, is full of sexual innuendo, slapstick, visual gags and double entendres. Much of the show's humor parodies Britain's class system, with the characters rarely calling their co-",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/20/52076.jpg"
+      },
+      {
+        "id": 80,
+        "title": "Fantasy Island",
+        "year": 1977,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "Smiles everyone, Smiles!",
+        "synopsis": "Smiles everyone, Smiles! So began this long-running (7 season) series which was one of the ABC Network's anthology/guest-cast series (along with The Love Boat) that proved wildly popular. Each week two guests came to Fantasy Island to get their wish/fantasy fulfilled. Their myste",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/115/288447.jpg"
+      },
+      {
+        "id": 81,
+        "title": "Z Nation",
+        "year": 2014,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Horror",
+          "Science-Fiction"
+        ],
+        "genre": "Action • Horror • Science-Fiction",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2014 Action & Horror streaming on AMC+.",
+        "synopsis": "Z Nation starts three years after the zombie virus has gutted the country, a team of everyday heroes must transport the only known survivor of the plague from New York to California, where the last functioning viral lab waits for his blood. Although the antibodies he carries are ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/170/426759.jpg"
+      },
+      {
+        "id": 82,
+        "title": "The Wrong Mans",
+        "year": 2013,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Crime",
+          "Thriller"
+        ],
+        "genre": "Comedy • Crime • Thriller",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2013 Comedy & Crime streaming on AMC+.",
+        "synopsis": "Comedy thriller about two well-meaning idiots who become entangled in a hideous world of crime, conspiracy and corruption.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/2/5375.jpg"
+      },
+      {
+        "id": 83,
+        "title": "Gene Roddenberry's Andromeda",
+        "year": 2000,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Science-Fiction"
+        ],
+        "genre": "Action • Science-Fiction",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2000 Action & Science-Fiction streaming on AMC+.",
+        "synopsis": "Dylan Hunt is the courageous captain of the most glorious starship in the universe, the Andromeda Ascendant. After 300 years frozen in time at the event horizon of a black hole. Dylan Hunt wakes... to a universe in chaos. The Systems Commonwealth, the greatest civilization in his",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/3/9402.jpg"
+      },
+      {
+        "id": 84,
+        "title": "Ugly Betty",
+        "year": 2006,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy"
+        ],
+        "genre": "Drama • Comedy",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2006 Drama & Comedy streaming on AMC+.",
+        "synopsis": "Smart but wholesome Betty embraces her unique appearance and independent attitude in the cutthroat world of New York fashion. It's amazing how Betty can stay true to herself, no matter how much drama the fashionistas throw her way. With the help of her proud yet far-from-glamorou",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15559.jpg"
+      },
+      {
+        "id": 85,
+        "title": "Pan Am",
+        "year": 2011,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Thriller"
+        ],
+        "genre": "Drama • Thriller",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "Passion, jealousy, espionage.",
+        "synopsis": "Passion, jealousy, espionage. They do it all and they do it at 30,000 feet. Mad Men's style meets Grey's Anatomy's entanglements in this thrilling and highly original new drama from producer Nancy Hult Ganis , writer Jack Orman and director Tommy Schlamme.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16205.jpg"
+      },
+      {
+        "id": 86,
+        "title": "The Playboy Club",
+        "year": 2011,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2011 Drama streaming on AMC+.",
+        "synopsis": "The Playboy Club is a provocative drama about a time and place that challenged the social mores, where a visionary entrepreneur created an empire and an icon changed American culture. It's the early '60s, and the legendary Playboy Club in Chicago is the door to all of your fantas",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16630.jpg"
+      },
+      {
+        "id": 87,
+        "title": "Upstairs Downstairs",
+        "year": 2010,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "Revival of the iconic '70s series.",
+        "synopsis": "Revival of the iconic '70s series. Life in a London townhouse in the late 1930s, where the fates of the servants 'downstairs' and their masters 'upstairs' are intimately linked.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16943.jpg"
+      },
+      {
+        "id": 88,
+        "title": "Top of the Lake",
+        "year": 2013,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "2013 Drama & Crime streaming on AMC+.",
+        "synopsis": "A woman haunted by her past, Detective Robin Griffin, investigates complex and unsettling cases in Jane Campion's mystery drama.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16957.jpg"
+      },
+      {
+        "id": 89,
+        "title": "Party Down",
+        "year": 2009,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "2009 Comedy streaming on AMC+.",
+        "synopsis": "Party Down follows a group of Hollywood dreamers - struggling actors and writers - stuck working as caterers while waiting for their big show business break.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/453/1134634.jpg"
+      },
+      {
+        "id": 90,
+        "title": "Ironside",
+        "year": 2013,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "In the gritty world of the NYPD, no one's tougher than Det.",
+        "synopsis": "In the gritty world of the NYPD, no one's tougher than Det. Robert Ironside. He's a fearless cop who won't stop until the guilty are brought to justice. He and his trusted, handpicked team of specialists - Virgil, Holly and Teddy, as well as his former partner Gary and boss, Det.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/17844.jpg"
+      },
+      {
+        "id": 91,
+        "title": "The Game",
+        "year": 2014,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "In the secret world of espionage, the players are set and the fight to save Britain begins.",
+        "synopsis": "In the secret world of espionage, the players are set and the fight to save Britain begins. A complex invisible war is being fought by skilled spies trained in the high stakes world of covert espionage. In 1972 London, tensions are at a terrifying peak as the world's super powers",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/20717.jpg"
+      },
+      {
+        "id": 92,
+        "title": "Rush",
+        "year": 2014,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Medical"
+        ],
+        "genre": "Drama • Medical",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "USH examines the world of renegade physician Dr.",
+        "synopsis": "USH examines the world of renegade physician Dr. William Rush (Tom Ellis, \"Miranda\"), a \"medical fixer\" who privately caters to LA's elite and whose service comes with a hefty price tag. Though the hard-partying doctor claims that he doesn't make judgments about his less-than-squ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/23904.jpg"
+      },
+      {
+        "id": 93,
+        "title": "Prey",
+        "year": 2014,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2014 Drama & Action streaming on AMC+.",
+        "synopsis": "On the run accused of a terrible crime, Manchester Detective Marcus Farrow tries to prove his innocence while being hunted by his former friends and colleagues.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/10/25704.jpg"
+      },
+      {
+        "id": 94,
+        "title": "Frontline",
+        "year": 1983,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "1983 Drama streaming on AMC+.",
+        "synopsis": "Since it began in 1983, Frontline has been airing public-affairs documentaries that explore a wide scope of the complex human experience. Frontline's goal is to extend the impact of the documentary beyond its initial broadcast by serving as a catalyst for change. .",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/641/1603947.jpg"
+      },
+      {
+        "id": 95,
+        "title": "The Rifleman",
+        "year": 1958,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Western"
+        ],
+        "genre": "Action • Adventure • Western",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "Lucas McCain is an ex-soldier who loses his wife after the birth of one son, Mark.",
+        "synopsis": "Lucas McCain is an ex-soldier who loses his wife after the birth of one son, Mark. Lucas and Mark move to North Fork and attempt to make a living as farmers. However, outlaws and criminals ride into North Fork regularly, and Lucas' past comes back to haunt him from time to time. ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/19/48671.jpg"
+      },
+      {
+        "id": 96,
+        "title": "St. Elsewhere",
+        "year": 1982,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Medical"
+        ],
+        "genre": "Drama • Comedy • Medical",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "1982 Drama & Comedy streaming on AMC+.",
+        "synopsis": "St. Eligius Hospital in South Boston was not exactly the world's best health care center. Despite its flaws, it featured some of the most caring doctors and nurses you could ever meet. Led by Dr. Donald Westphall (and later by Dr. Benjamin Gideon), St. Eligius became a sanctuary ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/20/51876.jpg"
+      },
+      {
+        "id": 97,
+        "title": "Mama's Family",
+        "year": 1983,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "1983 Comedy streaming on AMC+.",
+        "synopsis": "Based on a series of sketches from The Carol Burnett Show , Mama's Family mined humor from a squabbling family in the Midwestern blue collar suburb of Raytown. The noisy clan was headed by Mama, a buxom, gray-haired widow with sharp opinions and a sharper tongue who shared her sm",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/23/59869.jpg"
+      },
+      {
+        "id": 98,
+        "title": "Dix pour cent",
+        "year": 2015,
+        "communityScore": 89,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "Mathias, Andréa, Gabriel &amp; Arlette are agents in a Talent Agency called ASK.",
+        "synopsis": "Mathias, Andréa, Gabriel &amp; Arlette are agents in a Talent Agency called ASK. When its founder, Samuel Kerr, who has not taken any vacation for 8 years, dies while on holiday, their entire lives are upheaved. Mathias is being courted by other agencies especially since he has t",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/26/66432.jpg"
+      },
+      {
+        "id": 99,
+        "title": "Sharpe",
+        "year": 1993,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Drama • Action • Adventure",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "1993 Drama & Action streaming on AMC+.",
+        "synopsis": "Sean Bean is Sharpe , a troubled outsider who, following an heroic act of bravery, finds himself promoted to the rank of officer. In this definitive collection of the acclaimed drama, follow his breathtaking adventures commanding the King's Rifles during the Napoleonic Wars.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/29/73837.jpg"
+      },
+      {
+        "id": 100,
+        "title": "Believe",
+        "year": 2014,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Fantasy"
+        ],
+        "genre": "Drama • Action • Fantasy",
+        "platforms": [
+          "AMC+"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "Levitation, telekinesis, the ability to control nature and even predict the future...",
+        "synopsis": "Levitation, telekinesis, the ability to control nature and even predict the future... Since she was 2 years old, Bo has had gifts she could neither fully understand, nor control. Raised by a small group known as the \"True Believers,\" the orphaned girl has been safeguarded from ha",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/51/127824.jpg"
+      }
+    ]
+  },
+  {
+    "id": "discovery",
+    "name": "Discovery+",
+    "brand": "#00FFFF",
+    "accent": "#33ffff",
+    "shows": [
+      {
+        "id": 1,
+        "title": "Gold Rush",
+        "year": 2010,
+        "communityScore": 88,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Nature"
+        ],
+        "genre": "Action • Adventure • Nature",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2010 Action & Adventure streaming on Discovery+.",
+        "synopsis": "Gold Rush follows six men who, in the face of an economic meltdown, risk everything - their families, their dignity, and in some cases, their lives - to strike it rich mining for gold in the wilds of Alaska. Inspired by his father Jack, Todd Hoffman of Sandy, Oregon, leads a grou",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/644/1610104.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Bering Sea Gold",
+        "year": 2012,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Drama • Action • Adventure",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "In the frontier town of Nome, Alaska, there's a gold rush on.",
+        "synopsis": "In the frontier town of Nome, Alaska, there's a gold rush on. But you've never seen gold mining like this before -- here, the precious metal isn't found in the ground. It's sitting in the most unlikely of places: the bottom of the frigid, unpredictable Bering Sea. And there are a",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/544/1362349.jpg"
+      },
+      {
+        "id": 3,
+        "title": "See No Evil",
+        "year": 2015,
+        "communityScore": 88,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2015 Drama & Crime streaming on Discovery+.",
+        "synopsis": "See No Evil pieces together the truth when shocking surveillance footage reveals breakthrough clues to solve a murder.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/499/1248505.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Deadliest Catch",
+        "year": 2005,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Nature"
+        ],
+        "genre": "Action • Adventure • Nature",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "It's the deadliest job on earth: crab fishing off the Alaskan coast on the icy Bering Sea.",
+        "synopsis": "It's the deadliest job on earth: crab fishing off the Alaskan coast on the icy Bering Sea. These adventurers will battle Arctic weather, brutal waves, and a ticking clock for big money in this modern-day gold rush from which they may never return.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/544/1362281.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Expedition Unknown",
+        "year": 2015,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Adventure",
+          "Mystery",
+          "History"
+        ],
+        "genre": "Adventure • Mystery • History",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2015 Adventure & Mystery streaming on Discovery+.",
+        "synopsis": "In the hit series Expedition Unknown , Travel Channel's witty explorer Josh Gates seeks answers to some of the world's most captivating unsolved stories and legends. Gates is on a mission to find the truth behind each iconic legend, digging through years of historical evidence, f",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/544/1361732.jpg"
+      },
+      {
+        "id": 6,
+        "title": "BattleBots",
+        "year": 2015,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action"
+        ],
+        "genre": "Action",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2015 Action streaming on Discovery+.",
+        "synopsis": "BattleBots is a reimagined take on the killer robot combat sport, from Whalerock Industries and the creators of the original BattleBots franchise, Ed Roski and Greg Munson. The homemade robots are back for season two, where they will battle against each other in a single eliminat",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/481/1203662.jpg"
+      },
+      {
+        "id": 7,
+        "title": "Alaska: The Last Frontier",
+        "year": 2011,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Adventure"
+        ],
+        "genre": "Adventure",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "2011 Adventure streaming on Discovery+.",
+        "synopsis": "Alaska: The Last Frontier follows the Kilcher family and their simple, off-the-grid lifestyle.The show documents the extended Kilcher family, descendants of a Swiss immigrant Alaska pioneer, at their homestead 11 miles outside of Homer. By living without plumbing or modern heatin",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/438/1095062.jpg"
+      },
+      {
+        "id": 8,
+        "title": "Homicide Hunter: Lt. Joe Kenda",
+        "year": 2011,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "Homicide Hunter: Lt.",
+        "synopsis": "Homicide Hunter: Lt. Joe Kenda is an investigative series of murder cases told through the personal experience of retired detective, Lieutenant Joe Kenda. With his personal interviews and compelling storytelling style, Kenda captivates with the details of a different investigatio",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/432/1082258.jpg"
+      },
+      {
+        "id": 9,
+        "title": "Wheeler Dealers",
+        "year": 2003,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2003 Drama streaming on Discovery+.",
+        "synopsis": "All new Wheeler Dealers episodes debut on Discovery Channel this summer, as Mike and Edd continue on their quest to find and restore some of the most iconic cars in the world. Back in the UK after their stint in the US, the chaps pick up exactly where they left off and continue t",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/157/394267.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Shark Week",
+        "year": 1988,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Nature"
+        ],
+        "genre": "Nature",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "1988 Nature streaming on Discovery+.",
+        "synopsis": "Shark Week is an annual, week-long TV programming block created by Tom Golden at the Discovery Channel, which features shark-based programming. Shark Week originally premiered on July 17, 1988.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/413/1034005.jpg"
+      },
+      {
+        "id": 11,
+        "title": "My Little Pony: Friendship is Magic",
+        "year": 2010,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Adventure",
+          "Children",
+          "Fantasy"
+        ],
+        "genre": "Adventure • Children • Fantasy",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "2010 Adventure & Children streaming on Discovery+.",
+        "synopsis": "\"Get your muzzle out of those books and make some friends!\" That's what Princess Celestia tells Twilight Sparkle. She may be the smartest unicorn in Equestria, but Twilight Sparkle gets an \"incomplete\" in friendship. There's more to life than learning magic, after all -- so she g",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/15/38187.jpg"
+      },
+      {
+        "id": 12,
+        "title": "Ghost Adventures",
+        "year": 2008,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Horror",
+          "Mystery",
+          "Supernatural"
+        ],
+        "genre": "Horror • Mystery • Supernatural",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "Are you ready for the lockdown?",
+        "synopsis": "Are you ready for the lockdown? Ghost Adventures crew -- Zak Bagans, Aaron Goodwin, Billy Tolley, and Jay Wasley -- is back to investigate the scariest, most notorious, haunted places in the world. The trio will interview eyewitnesses and historians at each location, arming thems",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/564/1410376.jpg"
+      },
+      {
+        "id": 13,
+        "title": "The Dead Files",
+        "year": 2011,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Fantasy",
+          "Mystery"
+        ],
+        "genre": "Fantasy • Mystery",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "2011 Fantasy & Mystery streaming on Discovery+.",
+        "synopsis": "Physical medium Amy Allan and retired NYPD homicide detective Steve DiSchiavi combine their unique and often conflicting skills to solve unexplained paranormal phenomena in haunted locations across America.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/482/1206856.jpg"
+      },
+      {
+        "id": 14,
+        "title": "Fear Thy Neighbor",
+        "year": 2014,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2014 Drama & Action streaming on Discovery+.",
+        "synopsis": "Fear Thy Neighbor tells the true and disturbing tales of conflicts between neighbors that spiral out of control - often culminating in tragic and violent confrontations in their living rooms, backyards, or driveway. These are the stories of ordinary people from all walks of life ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/540/1350414.jpg"
+      },
+      {
+        "id": 15,
+        "title": "Naked and Afraid",
+        "year": 2013,
+        "communityScore": 72,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Adventure",
+          "Nature"
+        ],
+        "genre": "Adventure • Nature",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2013 Adventure & Nature streaming on Discovery+.",
+        "synopsis": "Each week on Naked and Afraid , a new pair of complete and total strangers - one man and one woman - will find themselves stranded in and, quite literally, exposed to one of the world's most extreme weather environments. This duo will be left high and dry with no food, no water..",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/561/1404030.jpg"
+      },
+      {
+        "id": 16,
+        "title": "Dual Survival",
+        "year": 2010,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Adventure"
+        ],
+        "genre": "Drama • Adventure",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "Experts agree there are some very basic — and universal — rules for surviving in the wild.",
+        "synopsis": "Experts agree there are some very basic — and universal — rules for surviving in the wild. Find shelter, find water, find food, find help. Beyond that, there's not much they agree on. Meet military trained Dave Canterbury and naturalist Cody Lundin — trained survival experts who ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/481/1203664.jpg"
+      },
+      {
+        "id": 17,
+        "title": "Moonshiners",
+        "year": 2011,
+        "communityScore": 71,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2011 Drama streaming on Discovery+.",
+        "synopsis": "The secret and illegal world of moonshining stretches all across Appalachia raking in a pretty penny for those who choose to shine. Moonshiners will go to unprecedented extremes in their efforts to hide their still sites and cloak their distribution networks, some can hide in pla",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/613/1533044.jpg"
+      },
+      {
+        "id": 18,
+        "title": "Klondike",
+        "year": 2014,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Adventure",
+          "History"
+        ],
+        "genre": "Drama • Adventure • History",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2014 Drama & Adventure streaming on Discovery+.",
+        "synopsis": "Klondike follows the lives of two childhood best friends, Bill and Epstein, in the late 1890s as they flock to the gold rush capital in the untamed Yukon Territory. This man-versus-nature tale places our heroes in a land full of undiscovered wealth, but ravaged by harsh condition",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/17244.jpg"
+      },
+      {
+        "id": 19,
+        "title": "Fast N' Loud",
+        "year": 2012,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2012 Drama streaming on Discovery+.",
+        "synopsis": "Motor mastermind and entrepreneur Richard Rawlings of Gas Monkey Garage searches for derelict classic cars. To some, the cars look like rust buckets but to this crew, they're gold and ready to be brought back to life.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/207/518600.jpg"
+      },
+      {
+        "id": 20,
+        "title": "The Perfect Murder",
+        "year": 2014,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Crime"
+        ],
+        "genre": "Crime",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2014 Crime streaming on Discovery+.",
+        "synopsis": "The Perfect Murder brings viewers some of the most diabolical, perplexing murder cases to land on detectives' desks – the kind of cases that make or break careers and provide fodder for Hollywood mystery movies. These ingenious killers are every detective's worst nightmare. Wheth",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/68/170603.jpg"
+      },
+      {
+        "id": 21,
+        "title": "Street Outlaws",
+        "year": 2013,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2013 Drama streaming on Discovery+.",
+        "synopsis": "Street Outlaws follows the street racers of Oklahoma City as they hit the streets to prove that OKC has the fastest drivers in the country.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/441/1104610.jpg"
+      },
+      {
+        "id": 22,
+        "title": "Misfit Garage",
+        "year": 2014,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2014 Drama streaming on Discovery+.",
+        "synopsis": "A spin-off of the hit series Fast N' Loud, the #1 car show on television, Misfit Garage features four mechanics who have all done business with Richard Rawling's Gas Monkey Garage and join forces to create their own hot rod shop to rival Gas Monkey. Will this band of misfits be a",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/22799.jpg"
+      },
+      {
+        "id": 23,
+        "title": "Web of Lies",
+        "year": 2014,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2014 Drama streaming on Discovery+.",
+        "synopsis": "In a 21st-century world, we're increasingly living our lives online, sharing everything in one quick click from vacation photos and observances of daily life to breaking news stories and expressions of our deepest insecurities. It's easy to ignore or forget the millions of people",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/447/1119637.jpg"
+      },
+      {
+        "id": 24,
+        "title": "Alaskan Bush People",
+        "year": 2014,
+        "communityScore": 73,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Adventure",
+          "Nature"
+        ],
+        "genre": "Adventure • Nature",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2014 Adventure & Nature streaming on Discovery+.",
+        "synopsis": "In Alaskan Bush People , a family of nine strives to be self-sufficient against all odds- often shunning modern society to live off the wilderness and to walk where no man has ever walked before. After the tragic death of his parents and sister that left him orphaned at 16, Billy",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/424/1061044.jpg"
+      },
+      {
+        "id": 25,
+        "title": "Edge of Alaska",
+        "year": 2014,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "Hidden deep in the wilderness of eastern Alaska is the toughest town in America: McCarthy.",
+        "synopsis": "Hidden deep in the wilderness of eastern Alaska is the toughest town in America: McCarthy. Once considered to be the state's very own \"Sin City,\" McCarthy is now an isolated town - a refuge for people who don't want to be found that's surrounded by extreme wilderness. While some ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15270.jpg"
+      },
+      {
+        "id": 26,
+        "title": "Deadly Women",
+        "year": 2005,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Crime"
+        ],
+        "genre": "Crime",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "Hell hath no fury like a woman scorned, especially when she's on a mission to murder.",
+        "synopsis": "Hell hath no fury like a woman scorned, especially when she's on a mission to murder. Deadly Women investigates the motives and modus operandi of female murderers. While males are often driven by anger, impulse and destruction, women usually have more complex, long-term reasons t",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/432/1082262.jpg"
+      },
+      {
+        "id": 27,
+        "title": "Naked and Afraid XL",
+        "year": 2015,
+        "communityScore": 81,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Adventure",
+          "Nature"
+        ],
+        "genre": "Adventure • Nature",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2015 Adventure & Nature streaming on Discovery+.",
+        "synopsis": "A group of the best survival experts in the world are taking on an un-survivable situation that has never been attempted before: 12 people. 40 days. 40 nights. No food. No water. No clothes. The ultimate trial of human endurance and will to survive. Naked and Afraid XL is a 40 da",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/544/1362393.jpg"
+      },
+      {
+        "id": 28,
+        "title": "Gold Rush: The Dirt",
+        "year": 2012,
+        "communityScore": 70,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "2012 Drama streaming on Discovery+.",
+        "synopsis": "Go behind the scenes as executive producer Christo Doyle gets the Gold Rush miners to give us the dirt on life at the mine.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/231/579643.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Vanity Fair Confidential",
+        "year": 2015,
+        "communityScore": 79,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "2015 Drama streaming on Discovery+.",
+        "synopsis": "Offering unprecedented access to the magazine's writers and editors, Vanity Fair Confidential takes viewers to the heart of some of the most controversial dramas in history - dramas centered at the cross section of power, wealth and celebrity.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/23788.jpg"
+      },
+      {
+        "id": 30,
+        "title": "A Crime to Remember",
+        "year": 2013,
+        "communityScore": 76,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "Styles may change, but murder lasts forever.",
+        "synopsis": "Styles may change, but murder lasts forever. A Crime to Remember invites viewers to step into the past and unravel the intricacies of real-life murder cases of the ‘50s and ‘60s. Set against the backdrop of Studebakers, fedoras, and three-martini lunches, these stories of truly m",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/562/1406710.jpg"
+      },
+      {
+        "id": 31,
+        "title": "Killer Instinct with Chris Hansen",
+        "year": 2015,
+        "communityScore": 81,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Crime"
+        ],
+        "genre": "Crime",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "2015 Crime streaming on Discovery+.",
+        "synopsis": "\"Who, what, where, why and when?\" are the essential questions at the heart of every homicide investigation – for detectives but also for journalists chasing the 360-degree story. Investigative correspondent Chris Hansen knows the routine all too well, having won eight Emmy awards",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/319/797934.jpg"
+      },
+      {
+        "id": 32,
+        "title": "Fatal Vows",
+        "year": 2012,
+        "communityScore": 70,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Thriller"
+        ],
+        "genre": "Drama • Crime • Thriller",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2012 Drama & Crime streaming on Discovery+.",
+        "synopsis": "When marriages fail, divorce can turn ugly - even, deadly: what was once a passionate union becomes plagued by spite, greed, betrayal and, literally, backstabbing. Each episode explores tumultuous, shocking, and disturbing divorces, and delves into the criminal psychology behind ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/447/1119635.jpg"
+      },
+      {
+        "id": 33,
+        "title": "Brille",
+        "year": 2012,
+        "communityScore": 81,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2012 Comedy streaming on Discovery+.",
+        "synopsis": "Brille is a humor-based questioning program where some of the country's leading comedians are served seemingly impossible tasks and questions. The answers are often as unexpected and funny as the panel's thoughts.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/382/955151.jpg"
+      },
+      {
+        "id": 34,
+        "title": "Naked and Afraid: Uncensored",
+        "year": 2013,
+        "communityScore": 70,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Adventure",
+          "Nature"
+        ],
+        "genre": "Adventure • Nature",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2013 Adventure & Nature streaming on Discovery+.",
+        "synopsis": "Each week on Naked and Afraid: Uncensored , a new pair of total strangers are faced with the ultimate survival challenge: survive for 21 days together with no clothes or supplies in some of the most dangerous environments in the world. In addition to the landscape itself working ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/220/550665.jpg"
+      },
+      {
+        "id": 35,
+        "title": "On the Case with Paula Zahn",
+        "year": 2009,
+        "communityScore": 78,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2009 Drama & Action streaming on Discovery+.",
+        "synopsis": "Led by Emmy Award-winning journalist Paula Zahn, On the Case features in-depth interviews and original reporting that go beyond the headlines in search of fascinating mysteries from within our nation's justice system. Each episode is highlighted by Zahn's riveting exclusive inter",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/562/1406698.jpg"
+      },
+      {
+        "id": 36,
+        "title": "The Last Alaskans",
+        "year": 2015,
+        "communityScore": 87,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2015 Drama streaming on Discovery+.",
+        "synopsis": "The Last Alaskans chronicles the daily rituals of four families choosing to live in seclusion, vast distances from each other as they overcome harsh arctic conditions, frustrating setbacks, and aggressive wildlife while they survive in one of the last great unspoiled and unforgiv",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/302/755199.jpg"
+      },
+      {
+        "id": 37,
+        "title": "Treasure Quest: Snake Island",
+        "year": 2015,
+        "communityScore": 80,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Adventure",
+          "Mystery",
+          "Nature"
+        ],
+        "genre": "Adventure • Mystery • Nature",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2015 Adventure & Mystery streaming on Discovery+.",
+        "synopsis": "Off the southeastern coast of Brazil, an elite team of treasure hunters follows a radical new theory to uncover the resting place of a legendary treasure estimated to be worth hundreds of millions of dollars. And the evidence they have gathered leads them to the one place no one ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/509/1274844.jpg"
+      },
+      {
+        "id": 38,
+        "title": "Deadline: Crime with Tamron Hall",
+        "year": 2013,
+        "communityScore": 82,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2013 Drama & Crime streaming on Discovery+.",
+        "synopsis": "Journalist Tamron Hall knows first-hand the effect of violent crime, as her older sister was a murder victim in a case that is still officially unsolved. In each one-hour episode, Hall is joined by a core team of correspondents with extensive knowledge of law enforcement, to go b",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/214/536916.jpg"
+      },
+      {
+        "id": 39,
+        "title": "Yukon Men",
+        "year": 2012,
+        "communityScore": 80,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Adventure"
+        ],
+        "genre": "Drama • Adventure",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "Just 60 miles from the Arctic Circle lies a town on the edge of civilization: Tanana, Alaska.",
+        "synopsis": "Just 60 miles from the Arctic Circle lies a town on the edge of civilization: Tanana, Alaska. This frozen village of 200 people is at the junction of two powerful rivers, with no roads in or out, where wolves howling through the frigid night air remind the residents how isolated ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/18/46505.jpg"
+      },
+      {
+        "id": 40,
+        "title": "Into the Universe with Stephen Hawking",
+        "year": 2010,
+        "communityScore": 83,
+        "seasons": 2,
+        "episodes": 20,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2010 Drama streaming on Discovery+.",
+        "synopsis": "Into the Universe with Stephen Hawking is an epic new kind of cosmology series, a Planet Earth of the heavens. It takes the world's most famous scientific mind and sets it free, powered by the limitless possibilities of computer animation. Hawking gives us the ultimate guide to t",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/46/115671.jpg"
+      },
+      {
+        "id": 41,
+        "title": "Dirty Jobs",
+        "year": 2003,
+        "communityScore": 86,
+        "seasons": 2,
+        "episodes": 20,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2003 Drama streaming on Discovery+.",
+        "synopsis": "Dirty Jobs videos follow the unsung laborers who make a living in some of the most unthinkable ways.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/434/1085522.jpg"
+      },
+      {
+        "id": 42,
+        "title": "Man vs. Wild",
+        "year": 2006,
+        "communityScore": 87,
+        "seasons": 2,
+        "episodes": 20,
+        "genres": [
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Action • Adventure",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2006 Action & Adventure streaming on Discovery+.",
+        "synopsis": "Join survival expert Bear Grylls as he takes on some of the harshest locations on the planet and shares invaluable survival strategies along the way.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/23449.jpg"
+      },
+      {
+        "id": 43,
+        "title": "Storm Chasers",
+        "year": 2007,
+        "communityScore": 82,
+        "seasons": 2,
+        "episodes": 20,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "2007 Drama streaming on Discovery+.",
+        "synopsis": "Anyone who has seen \"The Wizard of Oz\" knows that an oncoming tornado is nothing to trifle with, but \"extreme filmmaker\" Sean Casey takes viewers right into the heart of Tornado Alley and inside the storms themselves to capture valuable research data and unprecedented footage",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/23/58991.jpg"
+      },
+      {
+        "id": 44,
+        "title": "Dan vs.",
+        "year": 2011,
+        "communityScore": 85,
+        "seasons": 2,
+        "episodes": 20,
+        "genres": [
+          "Action"
+        ],
+        "genre": "Action",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "Dan thinks the whole world is against him.",
+        "synopsis": "Dan thinks the whole world is against him. Maybe it is, and maybe it isn't -- not even his laid-back friend Chris is totally sure. Maybe Dan's just imagining it all. But, like Chris, you can't help going along for the ride when Dan dreams up his wild plots to get even with whoeve",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/22/56743.jpg"
+      },
+      {
+        "id": 45,
+        "title": "Blood Relatives",
+        "year": 2012,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Crime",
+          "Thriller",
+          "Mystery"
+        ],
+        "genre": "Crime • Thriller • Mystery",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "From the outside, families seem like harmonious units in loving homes.",
+        "synopsis": "From the outside, families seem like harmonious units in loving homes. But you don't necessarily know what secrets families are hiding from the outside world. This series, narrated by actress Brenda Strong, explores families hiding the most extreme of family secrets: murder. Each",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/447/1119641.jpg"
+      },
+      {
+        "id": 46,
+        "title": "Wives with Knives",
+        "year": 2012,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "Wives with Knives features gripping stories of women who fight at close range.",
+        "synopsis": "Wives with Knives features gripping stories of women who fight at close range. Some women endured years of sexual, emotional, and physical abuse before fighting back. Others were motivated by greed and jealousy. Some of the victims died and others lived to testify against their a",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/302/755215.jpg"
+      },
+      {
+        "id": 47,
+        "title": "Sons of Guns",
+        "year": 2011,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "Will Hayden is an American success story.",
+        "synopsis": "Will Hayden is an American success story. Having turned his Louisiana-based small business, Red Jacket Firearms, into a regional powerhouse, he's ready for the next step for himself and his family. Like so many American small businesses, Will's journey from garage based gun shop ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16816.jpg"
+      },
+      {
+        "id": 48,
+        "title": "Flying Wild Alaska",
+        "year": 2011,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Adventure",
+          "Family"
+        ],
+        "genre": "Adventure • Family",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "2011 Adventure & Family streaming on Discovery+.",
+        "synopsis": "For the small, isolated communities of Northern Alaska, the only way in (and the only way out) is by bush plane. Here, the Tweto family - husband and wife Jim and Ferno and their daughters Ariel and Ayla - provide the only lifeline to America's last frontier via their regional ai",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/20648.jpg"
+      },
+      {
+        "id": 49,
+        "title": "The FBI Files",
+        "year": 1998,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "1998 Drama & Crime streaming on Discovery+.",
+        "synopsis": "Through re-enactments of high profile cases involving the FBI, the show reveals how agents solve these crimes behind the scene. The show producers work with FBI special agents and examiners in high tech crime labs to portrait each case accurately. You will learn how the FBI prote",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/19/49930.jpg"
+      },
+      {
+        "id": 50,
+        "title": "I'd Kill for You",
+        "year": 2013,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "How far would you go for the person you love?",
+        "synopsis": "How far would you go for the person you love? Would you lie for them, die for them... or even kill for them? I'd Kill for You lifts the lid on unbelievable crimes in which one human's love is chosen over another's life. These pre-meditated, highly calculated killings were all orc",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/12/31450.jpg"
+      },
+      {
+        "id": 51,
+        "title": "Ice Cold Killers",
+        "year": 2012,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Thriller"
+        ],
+        "genre": "Drama • Crime • Thriller",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2012 Drama & Crime streaming on Discovery+.",
+        "synopsis": "Ice Cold Killers is a diabolically dark true crime series set in the harshest of climates against a backdrop of pristine, rugged wilderness as unforgiving as the murderers themselves. Each episode is a psychological thriller that profiles a single sadistic act of evil...from the ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/120/301382.jpg"
+      },
+      {
+        "id": 52,
+        "title": "Marooned with Ed Stafford",
+        "year": 2013,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Adventure"
+        ],
+        "genre": "Adventure",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "Ed Stafford is undertaking an extreme survival challenge.",
+        "synopsis": "Ed Stafford is undertaking an extreme survival challenge. He'll be washed up naked and alone on a desert island, south east of Fiji, with only his brain, bare hands, and a camera to keep him alive. He'll take no food, water, clothes, knife or tools, so from the moment he arrives ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/13/34662.jpg"
+      },
+      {
+        "id": 53,
+        "title": "Evil Kin",
+        "year": 2013,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2013 Drama & Crime streaming on Discovery+.",
+        "synopsis": "It's amazing the things that you can inherit from your family gene pool: blue eyes, a beautiful smile, a winning personality. But what about your family's less desirable traits? A grandfather's talent for swindling, an aunt's knack for aggravated assault or even a father's flair ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/447/1119645.jpg"
+      },
+      {
+        "id": 54,
+        "title": "Rusted Development",
+        "year": 2014,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2014 Drama streaming on Discovery+.",
+        "synopsis": "Hidden just out of sight in backyards and garages across the country are vast treasure troves of an Americana relic -- classic cars. Custom car guru, Rick Dore and former WWE superstar Chuck Palumbo are back to rebuild legendary cars and transform lives in the return of Rusted De",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/333/833771.jpg"
+      },
+      {
+        "id": 55,
+        "title": "Sons of Winter",
+        "year": 2015,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2015 Drama streaming on Discovery+.",
+        "synopsis": "Meet the Barks family, homesteaders who have rejected modern living in favor of living off the grid and maintaining a prairie lifestyle in Northern Saskatchewan, a remote province in Canada. This winter, their entire world is about to change. The two eldest sons, 20-year-old Dale",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/302/755285.jpg"
+      },
+      {
+        "id": 56,
+        "title": "FBI: Criminal Pursuit",
+        "year": 2011,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2011 Drama streaming on Discovery+.",
+        "synopsis": "FBI: Criminal Pursuit profiles the modern Federal Bureau of Investigation and explores the determination required to solve some of the most mystifying cases of the 21st Century. The challenges range from combating arsonists to tracking down terrorists, and the goal is always to b",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/338/845238.jpg"
+      },
+      {
+        "id": 57,
+        "title": "Obsession: Dark Desires",
+        "year": 2014,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "When desire overtakes reason, the human mind can unleash deadly obsession.",
+        "synopsis": "When desire overtakes reason, the human mind can unleash deadly obsession. In Obsession: Dark Desires, women share their emotional stories of survival against obsessive stalkers who would do anything to satisfy their all-consuming infatuation. In the beginning, a persistent suito",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/231/578189.jpg"
+      },
+      {
+        "id": 58,
+        "title": "The Mind of a Murderer",
+        "year": 2015,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Thriller"
+        ],
+        "genre": "Drama • Crime • Thriller",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "Investigation Discovery presents the modern-day Clarice Starling as Dr.",
+        "synopsis": "Investigation Discovery presents the modern-day Clarice Starling as Dr. Michelle Ward goes behind bars to interview violent murderers and offer insight into what drives people to kill with the new series The Mind of a Murderer premiering Thursday, February 19 at 10/9c. From her e",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/60/150592.jpg"
+      },
+      {
+        "id": 59,
+        "title": "Airplane Repo",
+        "year": 2010,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2010 Drama streaming on Discovery+.",
+        "synopsis": "In each episode of Airplane Repo , these experts are hired by banks to repossess high-end and enormous luxury assets from wealthy individuals behind on their payments. From violent altercations with owners and potential incarceration, to the dangers of flying unfamiliar and possi",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/13/33375.jpg"
+      },
+      {
+        "id": 60,
+        "title": "Swamp Murders",
+        "year": 2013,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2013 Drama & Crime streaming on Discovery+.",
+        "synopsis": "From the swampy bayou of Louisiana to the Great Lake o' the Cherokees in Missouri and even rivers and lakes in Georgia, Texas, and Florida, Swamp Murders proves that even muddied waters eventually bring secrets to the surface. The premiere episode on June 4 at 10 PM profiles whol",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/331/828433.jpg"
+      },
+      {
+        "id": 61,
+        "title": "Arctic Rescue",
+        "year": 2015,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Adventure"
+        ],
+        "genre": "Adventure",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "2015 Adventure streaming on Discovery+.",
+        "synopsis": "Fairbanks, Alaska is home to some of the harshest weather conditions in North America, making roadways impassible in only a matter of minutes. When motorists become stranded, three towing companies are called on to pull them to safety: Borealis, Ron's and Lucky 7. These three tea",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/78/196720.jpg"
+      },
+      {
+        "id": 62,
+        "title": "The Colony",
+        "year": 2009,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2009 Drama streaming on Discovery+.",
+        "synopsis": "The Colony is a controlled experiment to see exactly what it would take to survive and rebuild under these circumstances. For 10 weeks, a group of 10 volunteers, whose backgrounds and expertise represent a cross-section of modern society, are isolated in an urban environment outs",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/17/44050.jpg"
+      },
+      {
+        "id": 63,
+        "title": "Fast N' Loud: Demolition Theater",
+        "year": 2014,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2014 Drama streaming on Discovery+.",
+        "synopsis": "Richard Rawlins and Aaron Kaufman drop their tools and kick back to share the most amazing and funniest video clips collected from around the world. They'll be joined in the studio by members of the Gas Monkey crew, as well as special guests from the videos themselves. Videos inc",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/405/1013156.jpg"
+      },
+      {
+        "id": 64,
+        "title": "Wheeler Dealers: Trading Up",
+        "year": 2013,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "2013 Drama streaming on Discovery+.",
+        "synopsis": "Mike Brewer is the ultimate motoring wheeler dealer and now he is travelling all over the world, from India to Poland, to prove his credentials internationally. With just $3,000 in used notes in his back pocket, Mike's mission is to trade his way across the globe from a cheap run",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/515/1288253.jpg"
+      },
+      {
+        "id": 65,
+        "title": "North America",
+        "year": 2013,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Nature"
+        ],
+        "genre": "Nature",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "For many of us, North America is our home.",
+        "synopsis": "For many of us, North America is our home. We live in this extraordinary continent each and every day, but have we ever truly experienced first-hand the wide scope of incredible dangers challenging our diverse and tenacious continent? If you think you know North America, you can ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/17710.jpg"
+      },
+      {
+        "id": 66,
+        "title": "Catching Monsters",
+        "year": 2015,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "2015 Drama streaming on Discovery+.",
+        "synopsis": "Up in the unforgiving North Atlantic, in a small sacred stretch of ocean, treasure lurks in the deep. In just 1,000 square nautical miles, a group of hearty fishermen battle it out for the biggest and most valuable fish in the sea--the monster Atlantic Bluefin Tuna. These massive",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/302/755327.jpg"
+      },
+      {
+        "id": 67,
+        "title": "True Nightmares",
+        "year": 2015,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Crime",
+          "Thriller",
+          "Mystery"
+        ],
+        "genre": "Crime • Thriller • Mystery",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "2015 Crime & Thriller streaming on Discovery+.",
+        "synopsis": "True stories of murder and mayhem morph into urban legends like the boogeyman or the monster under the bed – haunting our childhoods and scaring us throughout our lives. Investigation Discovery's (ID) upcoming series True Nightmares brings to life the true stories that spawned th",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/338/845480.jpg"
+      },
+      {
+        "id": 68,
+        "title": "Ed Stafford: Into the Unknown",
+        "year": 2015,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Adventure",
+          "Mystery",
+          "Travel"
+        ],
+        "genre": "Adventure • Mystery • Travel",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2015 Adventure & Mystery streaming on Discovery+.",
+        "synopsis": "Ed Stafford: Into the Unknown sees Ed on a mission to investigate the planet's newest mysteries. With photographs of Earth from the International Space Station and spy satellites showing strange and unexplained markings in some some of the most remote and inaccessible places on t",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/125/313366.jpg"
+      },
+      {
+        "id": 69,
+        "title": "Discovery Atlas",
+        "year": 2006,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2006 Drama streaming on Discovery+.",
+        "synopsis": "Discovery Atlas is a documentary television series on the Discovery Channel and Discovery HD Theater which focuses on the cultural, sociological, and natural aspects of various countries by exploring their different peoples, traditions, and lands. The documentary follows the live",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/21/53334.jpg"
+      },
+      {
+        "id": 70,
+        "title": "Untouchable: Power Corrupts",
+        "year": 2015,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2015 Drama streaming on Discovery+.",
+        "synopsis": "A powerful résumé and a charming smile can be the keys to success-but they can also be beguiling tools to mask a cold-blooded killer. Investigation Discovery's (ID) new series Untouchable: Power Corrupts offers an inside look into how a taste for power can turn into a thirst for ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/329/823252.jpg"
+      },
+      {
+        "id": 71,
+        "title": "Surviving Evil",
+        "year": 2013,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Thriller"
+        ],
+        "genre": "Drama • Crime • Thriller",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2013 Drama & Crime streaming on Discovery+.",
+        "synopsis": "Surviving Evil features dramatically compelling and emotional stories of victims who fought back against their attackers and, against amazing odds, survived.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/343/857507.jpg"
+      },
+      {
+        "id": 72,
+        "title": "Big Giant Swords",
+        "year": 2015,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2015 Drama streaming on Discovery+.",
+        "synopsis": "When it comes to gigantic swords, no one makes them bigger and badder than Irishman Michael Craughwell. Irish Mike is putting it all on the line to make his passion his profession by attempting to make a living designing and building these larger-than-life works of art. Joined by",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/19691.jpg"
+      },
+      {
+        "id": 73,
+        "title": "Auction Kings",
+        "year": 2010,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2010 Drama streaming on Discovery+.",
+        "synopsis": "Discovery Channel's series Auction Kings delves into the world of unique items - from vampire-hunting kits to meteorites to jewel-encrusted pencils - and the emotional process of their acquisition and loss.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/20/50269.jpg"
+      },
+      {
+        "id": 74,
+        "title": "Bear Grylls: Escape from Hell",
+        "year": 2013,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Action • Adventure",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2013 Action & Adventure streaming on Discovery+.",
+        "synopsis": "The world renowned adventurer and survival expert, Bear Grylls, reveals the true life stories of ordinary people trapped in extraordinary situations of survival. From bandit attacks, to avalanches, being lost in ferocious sand storms to being confronted with real life bears… thes",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/21/54112.jpg"
+      },
+      {
+        "id": 75,
+        "title": "Pacific Warriors",
+        "year": 2015,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2015 Drama streaming on Discovery+.",
+        "synopsis": "Pacific Warriors follows the brave Hawaiian men and women who venture out in kayaks, alone, to catch some of the most desirable fish in the sea. They must rely on brute strength to pull in 500 pound Marlin, Tuna, Mahi Mahi and Ono. In these shark-infested waters, the slightest mi",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/25/63931.jpg"
+      },
+      {
+        "id": 76,
+        "title": "Scorned: Love Kills",
+        "year": 2012,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Crime"
+        ],
+        "genre": "Crime",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2012 Crime streaming on Discovery+.",
+        "synopsis": "Investigation Discovery's new series Scorned: Love Kills uncovers crimes of passion sparked by a spurned lover's snap from provocative paramour to predacious threat. The 20-episode first season examines the dark side of love with a voyeuristic peek into the lust and obsession tha",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/436/1091915.jpg"
+      },
+      {
+        "id": 77,
+        "title": "Nowhere to Hide",
+        "year": 2014,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Crime",
+          "History"
+        ],
+        "genre": "Drama • Crime • History",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2014 Drama & Crime streaming on Discovery+.",
+        "synopsis": "Investigation Discovery's compelling new crime and justice series Nowhere to Hide follows New York City private investigator extraordinaire, Steven Rambam, as he recounts the most dramatic stories from his extensive casebook. Just when criminals think they have escaped the long a",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/331/829544.jpg"
+      },
+      {
+        "id": 78,
+        "title": "Bear Grylls: Extreme Survival Caught on Camera",
+        "year": 2014,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Action • Adventure",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2014 Action & Adventure streaming on Discovery+.",
+        "synopsis": "Bear Grylls: Extreme Survival Caught on Camera presents some of the most jaw-dropping footage of great escapes and near-death experiences. In each episode, survivors share their stories, experts provide survival tips with 'how to' advice and Bear chooses his favourite clip of the",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/21/54219.jpg"
+      },
+      {
+        "id": 79,
+        "title": "Gossip Girl",
+        "year": 2007,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "genre": "Drama • Romance",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "2007 Drama & Romance streaming on Discovery+.",
+        "synopsis": "The privileged prep school teens on Manhattan's Upper East Side first learn that notorious party girl Serena van der Woodsen is back in town the way they learn all the important news in their lives -- from the blog of the all-knowing albeit ultra-secretive Gossip Girl . No one kn",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/499/1247570.jpg"
+      },
+      {
+        "id": 80,
+        "title": "Fresh Off the Boat",
+        "year": 2015,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2015 Comedy streaming on Discovery+.",
+        "synopsis": "It's the '90s and 12 year old, hip-hop loving Eddie just moved to suburban Orlando from DC's Chinatown with his parents. It's culture shock for his immigrant family in this comedy about pursuing the American Dream. Fresh Off the Boat is based on Chef Eddie Huang's memoir \"Fresh O",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/211/528833.jpg"
+      },
+      {
+        "id": 81,
+        "title": "Miami Vice",
+        "year": 1984,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "1984 Drama & Action streaming on Discovery+.",
+        "synopsis": "The cops. The cars. The clothes. Miami Vice is the explosive, groundbreaking detective show that redefined the word \"cool.\" Set against the seamy and steamy Miami underworld, ride shotgun with suave Vice cops Sonny Crockett and Rico Tubbs as they battle a never-ending gallery of ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/357/894989.jpg"
+      },
+      {
+        "id": 82,
+        "title": "Medium",
+        "year": 2005,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Supernatural"
+        ],
+        "genre": "Drama • Crime • Supernatural",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "2005 Drama & Crime streaming on Discovery+.",
+        "synopsis": "Medium Allison DuBois is a strong-willed mother of three who has struggled since childhood to make sense of her visions of dead people. Hoping to prove to Allison that her dreams are stress induced, her scientist husband, Joe, sends descriptions of Allison's visions to a number o",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/495/1239868.jpg"
+      },
+      {
+        "id": 83,
+        "title": "The L Word",
+        "year": 2004,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "genre": "Drama • Romance",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "2004 Drama & Romance streaming on Discovery+.",
+        "synopsis": "An intimate drama series about a group of lesbian friends struggling with romance and careers in Los Angeles.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/440/1102025.jpg"
+      },
+      {
+        "id": 84,
+        "title": "The Village",
+        "year": 2013,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "History"
+        ],
+        "genre": "Drama • History",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "The story of 20th Century England is played out through a family in a Derbyshire village.",
+        "synopsis": "The story of 20th Century England is played out through a family in a Derbyshire village.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16270.jpg"
+      },
+      {
+        "id": 85,
+        "title": "The Nanny",
+        "year": 1993,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "1993 Comedy & Family streaming on Discovery+.",
+        "synopsis": "In The Nanny , a cosmetics saleswoman stumbles upon the opportunity to become a nanny to the three rambunctious children of rich, widowed Broadway producer Maxwell Sheffield. With her off-beat style of nurturing and straightforward honesty, she turns out to be the best thing that",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/17252.jpg"
+      },
+      {
+        "id": 86,
+        "title": "The Returned",
+        "year": 2015,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Horror"
+        ],
+        "genre": "Drama • Fantasy • Horror",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2015 Drama & Fantasy streaming on Discovery+.",
+        "synopsis": "The Returned focuses on a small town that is turned upside down when several local people who have been long presumed dead suddenly reappear, having not aged and unaware of their own fatality. As they attempt to resume their lives, strange phenomena and gruesome murders begin to ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/23492.jpg"
+      },
+      {
+        "id": 87,
+        "title": "Fleming: The Man Who Would Be Bond",
+        "year": 2014,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Espionage"
+        ],
+        "genre": "Drama • Action • Espionage",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2014 Drama & Action streaming on Discovery+.",
+        "synopsis": "There's no questioning the iconic status of the man they call 007, but before his thrilling adventures hit the page or screen, they were experienced first-hand by author-to-be, Ian Fleming. Stylish and explosive - BBC America's Fleming: The Man Who Would Be Bond tells the fascina",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/21337.jpg"
+      },
+      {
+        "id": 88,
+        "title": "Proof",
+        "year": 2015,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Mystery",
+          "Supernatural"
+        ],
+        "genre": "Drama • Mystery • Supernatural",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "Jennifer Beals plays Dr.",
+        "synopsis": "Jennifer Beals plays Dr. Carolyn Tyler, who has suffered the recent, devastating loss of her teenage son, the breakup of her marriage and a growing estrangement from her daughter. Carolyn is persuaded by Ivan Turing (Modine), a cancer-stricken tech inventor and billionaire to inv",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/29511.jpg"
+      },
+      {
+        "id": 89,
+        "title": "Uncle",
+        "year": 2014,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2014 Comedy streaming on Discovery+.",
+        "synopsis": "Uncle stars stand-up comedian and singer/songwriter Nick Helm as Andy, a dissolute out-of work musician who forges an unlikely alliance with his 12-year-old nephew Errol after being morally blackmailed into looking after him by his chaotic sister Sam – all on the day Andy was pla",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/14/35520.jpg"
+      },
+      {
+        "id": 90,
+        "title": "Live at the Apollo",
+        "year": 2004,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2004 Comedy streaming on Discovery+.",
+        "synopsis": "Comedic royalty and fresh new faces on the stand-up scene take to the stage of the legendary London venue.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/14/36031.jpg"
+      },
+      {
+        "id": 91,
+        "title": "Roadies",
+        "year": 2016,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "genre": "Drama • Romance",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2016 Drama & Romance streaming on Discovery+.",
+        "synopsis": "Roadies is an insider's look at the reckless, romantic, funny and often poignant lives of a committed group of \"roadies\", who live for music and the de facto family they've formed along the way. The music-infused ensemble comedy series chronicles the rock world through the eyes o",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/206/516515.jpg"
+      },
+      {
+        "id": 92,
+        "title": "Gardeners' World",
+        "year": 1968,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "1968 Drama streaming on Discovery+.",
+        "synopsis": "Gardening show packed with good ideas, tips, advice from experts and timely reminders to get the most out of your garden, whatever its size or type.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/559/1398557.jpg"
+      },
+      {
+        "id": 93,
+        "title": "Garage Sale Mystery",
+        "year": 2013,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2013 Drama & Crime streaming on Discovery+.",
+        "synopsis": "Jennifer Shannon can always find a diamond in the rough - when it comes to garage sales, that is! Whether it's a new antique to sell at her consignment shop, an Atari game for her son or a piece of furniture for her handy husband Jason to refurbish, she has made a career out of h",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/171/428059.jpg"
+      },
+      {
+        "id": 94,
+        "title": "Jack Irish",
+        "year": 2012,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "Jack Irish is a man getting his life back together again.",
+        "synopsis": "Jack Irish is a man getting his life back together again. A former criminal lawyer whose world imploded, he now spends his days as a part-time investigator, debt collector, apprentice cabinet maker, punter and sometime lover – the complete man really. An expert in finding those w",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/18/47317.jpg"
+      },
+      {
+        "id": 95,
+        "title": "The Saint",
+        "year": 1962,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "Simon Templar is...",
+        "synopsis": "Simon Templar is... The Saint ! A gentleman adventurer, Simon travels around the world living the life of a wealthy playboy. He's made his money by taking cash from the unsaintly--criminals--and giving much of it back to their victims while keeping a bit for himself. This modern-",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/19/48675.jpg"
+      },
+      {
+        "id": 96,
+        "title": "Three's Company",
+        "year": 1977,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "1977 Comedy streaming on Discovery+.",
+        "synopsis": "Three's Company was a groundbreaking comedy series that tripped and jiggled through a world of slapstick pratfalls and some of the most scandalously titillating comedy America had ever seen, and hasn't seen since.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/20/50015.jpg"
+      },
+      {
+        "id": 97,
+        "title": "Collision",
+        "year": 2009,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "Police drama series.",
+        "synopsis": "Police drama series. Troubled detective John Tolin returns to work after an extended period of leave, and is handed a complicated case involving a shocking road traffic accident.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/286/715183.jpg"
+      },
+      {
+        "id": 98,
+        "title": "The Dukes of Hazzard",
+        "year": 1979,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Comedy • Action • Adventure",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "1979 Comedy & Action streaming on Discovery+.",
+        "synopsis": "Cousins Bo and Luke Duke and their car \"General Lee\", assisted by Cousin Daisy and Uncle Jesse, have a running battle with the authorities of Hazzard County (Boss Hogg and Sheriff Coltrane), plus a string of ne'er-do-wells often backed by the scheming Hogg.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/20/51133.jpg"
+      },
+      {
+        "id": 99,
+        "title": "The Trip",
+        "year": 2010,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Food",
+          "Travel"
+        ],
+        "genre": "Comedy • Food • Travel",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "Michael Winterbottom's acclaimed gastronomic sitcom starring Steve Coogan and Rob Brydon.",
+        "synopsis": "Michael Winterbottom's acclaimed gastronomic sitcom starring Steve Coogan and Rob Brydon.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/21/54269.jpg"
+      },
+      {
+        "id": 100,
+        "title": "Chesapeake Shores",
+        "year": 2016,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Family",
+          "Romance"
+        ],
+        "genre": "Drama • Family • Romance",
+        "platforms": [
+          "Discovery+"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "2016 Drama & Family streaming on Discovery+.",
+        "synopsis": "The multi-generational family drama of Chesapeake Shores follows Abby O'Brien, a high-powered career woman, divorcee and mother to twin daughters, who makes a trip from New York City to her hometown of Chesapeake Shores. Her visit home brings Abby face to face with her past, incl",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/135/339281.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pluto",
+    "name": "Pluto TV",
+    "brand": "#111111",
+    "accent": "#00d2ff",
+    "shows": [
+      {
+        "id": 1,
+        "title": "Secret City",
+        "year": 2016,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Thriller"
+        ],
+        "genre": "Drama • Thriller",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2016 Drama & Thriller streaming on Pluto TV.",
+        "synopsis": "Amidst rising tension between China and America, Canberra press gallery journalist Harriet Dunkley forces her way closer to the truth, uncovering a secret city of interlocked conspiracies which will threaten her career, her life and endangers the freedom of every Australian.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/256/640290.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Mob City",
+        "year": 2013,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2013 Drama & Crime streaming on Pluto TV.",
+        "synopsis": "The epic battle between a determined police chief and a dangerous mobster inflames 1940s Los Angeles in TNT's eagerly anticipated television event Mob City . This powerful drama comes to TNT from Frank Darabont, who wrote and directed the pilot and serves as executive producer on",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/117/293987.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Dharma & Greg",
+        "year": 1997,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family",
+          "Romance"
+        ],
+        "genre": "Comedy • Family • Romance",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "1997 Comedy & Family streaming on Pluto TV.",
+        "synopsis": "When free-spirited yoga instructor Dharma Finkelstein meets conservative attorney Greg Montgomery, it's love at first sight. Unfortunately, there is absolutely no love in the air when Dharma's hippie parents and Greg's blue-blood establishment parents finally meet after their chi",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/4/11770.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Containment",
+        "year": 2016,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Horror",
+          "Thriller"
+        ],
+        "genre": "Drama • Horror • Thriller",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2016 Drama & Horror streaming on Pluto TV.",
+        "synopsis": "When a mysterious and deadly epidemic breaks out in Atlanta, a vast urban quarantine is quickly enforced, forcing those stuck on the inside to fight for their lives while local and federal officials desperately search for a cure. Trying to keep the peace on the streets is police ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/54/135379.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Ancient Discoveries",
+        "year": 2003,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "War",
+          "Mystery",
+          "History"
+        ],
+        "genre": "War • Mystery • History",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2003 War & Mystery streaming on Pluto TV.",
+        "synopsis": "In the ancient texts of Homer and the walls of Egyptian tombs lie tantalizing clues that are causing historians to re-think just how sophisticated centuries-old societies were. Drawings show that the Egyptians may have unlocked the secret to flight with primitive helicopter desig",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/29603.jpg"
+      },
+      {
+        "id": 6,
+        "title": "XIII: The Conspiracy",
+        "year": 2008,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Action • Crime • Mystery",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2008 Action & Crime streaming on Pluto TV.",
+        "synopsis": "Based on a Belgian comic book and a Ubisoft video game, this action mini-series is about a massive governmental conspiracy involving the assassination of the first female U.S. president. A man is found washed up on a beach with his memory gone. When elite special ops forces detec",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/14/36940.jpg"
+      },
+      {
+        "id": 7,
+        "title": "Garfield and Friends",
+        "year": 1988,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Children"
+        ],
+        "genre": "Children",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "An animated television series based on the life's work of comic strip artist Jim Davis.",
+        "synopsis": "An animated television series based on the life's work of comic strip artist Jim Davis. It was a very long running Saturday morning cartoon, second to The Smurfs. Garfield &amp; Friends contains Garfield , as well as a bonus adaptation of U.S. Acres , which is another newspaper c",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/24/61750.jpg"
+      },
+      {
+        "id": 8,
+        "title": "MasterChef: The Professionals",
+        "year": 2008,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Food"
+        ],
+        "genre": "Food",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "The hunt for the the next superstar chef.",
+        "synopsis": "The hunt for the the next superstar chef. Professional cooks are put through their paces. Who will cope and who will crack?",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/612/1532217.jpg"
+      },
+      {
+        "id": 9,
+        "title": "Black Dynamite",
+        "year": 2012,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Action"
+        ],
+        "genre": "Comedy • Action",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "Dynamite is a 1970s renaissance man with a kung-fu grip.",
+        "synopsis": "Dynamite is a 1970s renaissance man with a kung-fu grip. A lover and a fighter who is not afraid to leap before he looks. His sidekick extraordinaire is Bullhorn, the brains and cunning that complements Black Dynamite's hard-hittin', bone-crushin' style. Providing comic relief on",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/4742.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Samantha Who?",
+        "year": 2007,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "genre": "Comedy • Romance",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2007 Comedy & Romance streaming on Pluto TV.",
+        "synopsis": "Samantha \"Sam\" Newly is a corporate executive and hit-and-run victim who awakens after being in a coma for eight days, only to find she has amnesia. With no memories of the past, she must rediscover everything about her life and herself by looking for clues from her past.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/52/130610.jpg"
+      },
+      {
+        "id": 11,
+        "title": "Frank Herbert's Children of Dune",
+        "year": 2003,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Science-Fiction"
+        ],
+        "genre": "Drama • Science-Fiction",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "2003 Drama & Science-Fiction streaming on Pluto TV.",
+        "synopsis": "The spectacular epic that began in the Emmy Award-winning Frank Herbert's Dune mini-series continues in this dazzling new journey into sweeping interstellar intrigue and visionary sci-fi adventure! On the desert planet of Dune, the ancient prophecy has been fulfilled: the rule of",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/17123.jpg"
+      },
+      {
+        "id": 12,
+        "title": "Young & Hungry",
+        "year": 2014,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Food",
+          "Romance"
+        ],
+        "genre": "Comedy • Food • Romance",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2014 Comedy & Food streaming on Pluto TV.",
+        "synopsis": "In Young &amp; Hungry , two worlds collide when Josh, a wealthy young tech entrepreneur, meets Gabi, a feisty young food blogger, looking to be his personal chef. Gabi is desperate for the job and must prove herself, mostly to Josh's aide, who prefers a famous chef for the job. W",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/24374.jpg"
+      },
+      {
+        "id": 13,
+        "title": "Supergirl",
+        "year": 2015,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Science-Fiction"
+        ],
+        "genre": "Drama • Action • Science-Fiction",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2015 Drama & Action streaming on Pluto TV.",
+        "synopsis": "Supergirl is an action-adventure drama based on the DC Comics character Kara Zor-El, Superman's (Kal-El) cousin who, after 12 years of keeping her powers a secret on Earth, decides to finally embrace her superhuman abilities and be the hero she was always meant to be.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/486/1215665.jpg"
+      },
+      {
+        "id": 14,
+        "title": "Secret Love",
+        "year": 2013,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance",
+          "Thriller"
+        ],
+        "genre": "Drama • Romance • Thriller",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "Everyone has their own secrets.",
+        "synopsis": "Everyone has their own secrets. Secrets can help people succeed and even fall in love; but secrets can also destroy people. Secrets can sometimes make us happy, worried, or even blind us to reality. This drama is about secrets. It is an exploration into the trials and tribulation",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/529/1323603.jpg"
+      },
+      {
+        "id": 15,
+        "title": "Aranyélet",
+        "year": 2015,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "Miklósiék is living an enviable life in Aranyélet .",
+        "synopsis": "Miklósiék is living an enviable life in Aranyélet . A successful entrepreneur head of the family, the wife of a volunteer helping the homeless foundation. Their daughter-in-class, and even the family feketebáránya, the rebellious teenage son is a real talent, just busy all the ra",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/168/422172.jpg"
+      },
+      {
+        "id": 16,
+        "title": "Lonesome Dove",
+        "year": 1989,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Adventure",
+          "Western"
+        ],
+        "genre": "Drama • Adventure • Western",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "1989 Drama & Adventure streaming on Pluto TV.",
+        "synopsis": "Retired Texas Rangers Gus McRae and Woodrow Call are content to live out their remaining years in the tiny Texas town of Lonesome Dove. Then their old friend Jake comes to town, and tells them about the incredible opportunities for cattle ranching in Montana. Encouraged by this, ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/28/72029.jpg"
+      },
+      {
+        "id": 17,
+        "title": "Cops",
+        "year": 1989,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Crime"
+        ],
+        "genre": "Action • Crime",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "1989 Action & Crime streaming on Pluto TV.",
+        "synopsis": "COPS follows police officers, constables, and sheriff's deputies during patrols and various police activities by embedding camera crews with their units. The show's formula adheres to a classic cinéma vérité ethos. With no narration or scripted dialog, it depends entirely on the ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/4185.jpg"
+      },
+      {
+        "id": 18,
+        "title": "VICE",
+        "year": 2013,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2013 Drama & Crime streaming on Pluto TV.",
+        "synopsis": "VICE explores today's most pressing issues, from civil unrest and hotbeds of terrorism, to unchecked government corruption and looming environmental catastrophes.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/463/1159193.jpg"
+      },
+      {
+        "id": 19,
+        "title": "Coupling",
+        "year": 2000,
+        "communityScore": 88,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "genre": "Comedy • Romance",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2000 Comedy & Romance streaming on Pluto TV.",
+        "synopsis": "Britcom about a group of six friends - three men and three women - and the ups and downs they encounter playing the 21st century dating game.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/17197.jpg"
+      },
+      {
+        "id": 20,
+        "title": "Sister Wives",
+        "year": 2010,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "Sister Wives explores the complex daily life of a polygamist family.",
+        "synopsis": "Sister Wives explores the complex daily life of a polygamist family. Sister Wives introduces audiences to husband Kody -- along with his three wives; Meri, Janelle and Christine and their combined 13 children -- showing how they attempt to navigate life as a \"normal\" family in a ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/602/1505682.jpg"
+      },
+      {
+        "id": 21,
+        "title": "The Beverly Hillbillies",
+        "year": 1962,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "An instant hit, the rural comedy was the ultimate fish-out-of-water story.",
+        "synopsis": "An instant hit, the rural comedy was the ultimate fish-out-of-water story. The Clampett family strikes it rich in oil and move from their mountain cabin in the Ozark Mountains to the upscale neighborhood of Beverly Hills. Each hilarious episode revolves around the culture clash b",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/29898.jpg"
+      },
+      {
+        "id": 22,
+        "title": "Jekyll and Hyde",
+        "year": 2015,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Drama • Action • Adventure",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2015 Drama & Action streaming on Pluto TV.",
+        "synopsis": "Set in 1930's London at a time of Hollywood glamour, aerodynamic cars and monster movies, the drama will pay homage to the Stevenson novel, and focus on the young, attractive, troubled hero, Robert Jekyll, the grandson of the original doctor. At the heart of the drama is Robert J",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/17/44334.jpg"
+      },
+      {
+        "id": 23,
+        "title": "Remember Me",
+        "year": 2014,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Horror",
+          "Supernatural"
+        ],
+        "genre": "Drama • Horror • Supernatural",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "Three-part contemporary ghost story set in Yorkshire.",
+        "synopsis": "Three-part contemporary ghost story set in Yorkshire. Tom Parfitt's arrival at a local retirement home leads to an eerie unexpected death.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/17/44645.jpg"
+      },
+      {
+        "id": 24,
+        "title": "Have You Been Paying Attention?",
+        "year": 2013,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "Have You Been Paying Attention?",
+        "synopsis": "Have You Been Paying Attention? is a topical comedy-quiz show featuring five guests competing to see who can remember the most about events of the week. A fast-paced, funny look at international affairs, politics, sport and entertainment news, we test just how well our contestant",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/623/1559752.jpg"
+      },
+      {
+        "id": 25,
+        "title": "Yes, Prime Minister",
+        "year": 1986,
+        "communityScore": 88,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "1986 Comedy streaming on Pluto TV.",
+        "synopsis": "Continuing the struggle of Minster Jim Hacker to actually get something done in Whitehall politics, Yes, Prime Minister saw Jim achieve every politician's dream and slide up the greasy pole, right to the door of Number 10.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/25/62845.jpg"
+      },
+      {
+        "id": 26,
+        "title": "Beauty & the Beast",
+        "year": 2012,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Romance",
+          "Science-Fiction"
+        ],
+        "genre": "Action • Romance • Science-Fiction",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "Detective Catherine Chandler is a smart, no-nonsense homicide detective.",
+        "synopsis": "Detective Catherine Chandler is a smart, no-nonsense homicide detective. When she was a teenager, she witnessed the murder of her mother at the hands of two gunmen and herself was saved by someone – or something. Years have passed and while investigating a murder, Catherine disco",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/0/2128.jpg"
+      },
+      {
+        "id": 27,
+        "title": "The King of Queens",
+        "year": 1998,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "1998 Comedy & Family streaming on Pluto TV.",
+        "synopsis": "Set in the working-class suburb of Queens, New York, the show follows Doug Heffernan, an amiable deliveryman, and his wife, spitfire secretary Carrie Heffernan, as they explore the everyday challenges of love, life, family and marriage.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/94/235537.jpg"
+      },
+      {
+        "id": 28,
+        "title": "Brothers & Sisters",
+        "year": 2006,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Family",
+          "Romance"
+        ],
+        "genre": "Drama • Family • Romance",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2006 Drama & Family streaming on Pluto TV.",
+        "synopsis": "Brothers &amp; Sisters is a one-hour hit drama that follows the California-based Walker family through the complicated maze of American life today. It revolves around a collection of enmeshed and somewhat damaged adult siblings and their strong but passionately devoted mother, No",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/546/1367083.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Secret Diary of a Call Girl",
+        "year": 2007,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Adult"
+        ],
+        "genre": "Drama • Adult",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "Drama series based on the best-selling, real life diaries of an upmarket escort.",
+        "synopsis": "Drama series based on the best-selling, real life diaries of an upmarket escort. This programme is a deeper look into the world of the glamorous and intelligent Belle de Jour - Hannah to her family.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15931.jpg"
+      },
+      {
+        "id": 30,
+        "title": "Agatha Christie's Marple",
+        "year": 2004,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2004 Drama & Crime streaming on Pluto TV.",
+        "synopsis": "Agatha Christie's crime thrillers featuring the author's much-loved spinster sleuth Miss Jane Marple.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15975.jpg"
+      },
+      {
+        "id": 31,
+        "title": "Beavis and Butt-Head",
+        "year": 1992,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Music"
+        ],
+        "genre": "Comedy • Music",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "1992 Comedy & Music streaming on Pluto TV.",
+        "synopsis": "A national treasure in an age of idiocy… When Beavis and Butt-Head first appeared on MTV more than a decade ago, critics dismissed them as brainless couch potatoes who did nothing but watch TV and make lewd jokes about bodily functions. Today we know they were ahead of their time",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16043.jpg"
+      },
+      {
+        "id": 32,
+        "title": "Eli Stone",
+        "year": 2008,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Legal"
+        ],
+        "genre": "Drama • Fantasy • Legal",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "Follow Eli Stone on his quirky quest for answers in this exciting and upbeat comedic drama.",
+        "synopsis": "Follow Eli Stone on his quirky quest for answers in this exciting and upbeat comedic drama. When Eli awakens to an unending George Michael soundtrack that only he can hear, gets dive-bombed by a WWI biplane on a busy San Francisco street, and faces a fire-breathing dragon outside",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16196.jpg"
+      },
+      {
+        "id": 33,
+        "title": "Hawaii Five-O",
+        "year": 1968,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Crime"
+        ],
+        "genre": "Action • Adventure • Crime",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "1968 Action & Adventure streaming on Pluto TV.",
+        "synopsis": "Hawaii Five-0 was filmed entirely on location in Hawaii, the show followed Jack Lord as he played Steve McGarrett, head of an elite state police unit investigating \"organized crime, murder, assassination attempts, foreign agents, felonies of every type.\" James MacArthur played hi",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16397.jpg"
+      },
+      {
+        "id": 34,
+        "title": "Bomb Girls",
+        "year": 2012,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance",
+          "War"
+        ],
+        "genre": "Drama • Romance • War",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "2012 Drama & Romance streaming on Pluto TV.",
+        "synopsis": "Set in the 1940s, Bomb Girls tells the remarkable stories of the women who risked their lives in a munitions factory building bombs for the Allied forces fighting on the European front. The series delves into the lives of these exceptional women – peers, friends and rivals – who ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/17549.jpg"
+      },
+      {
+        "id": 35,
+        "title": "Third Watch",
+        "year": 1999,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Medical"
+        ],
+        "genre": "Drama • Crime • Medical",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "1999 Drama & Crime streaming on Pluto TV.",
+        "synopsis": "The exploits of a group of men and women who serve the City of New York as police officers, firemen, and paramedics in the fictional 55th Precinct.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/126/316896.jpg"
+      },
+      {
+        "id": 36,
+        "title": "Simon & Simon",
+        "year": 1981,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Mystery"
+        ],
+        "genre": "Drama • Action • Mystery",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "Rick and AJ Simon are two brothers working as private investigators in San Diego, California.",
+        "synopsis": "Rick and AJ Simon are two brothers working as private investigators in San Diego, California. They have different ideas on how to solve problems: Rick more laid back while AJ is more business-like and their cases take them all over California as well as Hawai'i and France. They a",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/21222.jpg"
+      },
+      {
+        "id": 37,
+        "title": "Matlock",
+        "year": 1986,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Legal"
+        ],
+        "genre": "Drama • Crime • Legal",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "1986 Drama & Crime streaming on Pluto TV.",
+        "synopsis": "Matlock is a legal drama series starring Andy Griffith as defense attorney Ben Matlock - a Harvard-educated, fiery southerner who charges $100,000 a case to brilliantly defend his clients by finding the real killer.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/24437.jpg"
+      },
+      {
+        "id": 38,
+        "title": "Tut",
+        "year": 2015,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Adventure",
+          "Romance"
+        ],
+        "genre": "Drama • Adventure • Romance",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2015 Drama & Adventure streaming on Pluto TV.",
+        "synopsis": "Spike's Tut tells the astounding saga of one of history's most extraordinary rulers, Tutankhamun (King Tut), his rise to power and his struggle to lead Egypt to glory, while his closest advisors, friends and lovers scheme for their own nefarious interests. \"Tut\" opens up a fascin",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/397/994915.jpg"
+      },
+      {
+        "id": 39,
+        "title": "Diners, Drive-Ins and Dives",
+        "year": 2007,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Food",
+          "Travel"
+        ],
+        "genre": "Food • Travel",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2007 Food & Travel streaming on Pluto TV.",
+        "synopsis": "With roadside diners, vintage drive-ins and out-of-the-way \"dives\" enjoying a resurgence of hipness among foodies, host Guy Fieri travels across America in search of some of the best \"greasy spoon\" eateries. The restaurants that Guy visits are usually well-known among locals and ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/619/1549237.jpg"
+      },
+      {
+        "id": 40,
+        "title": "Not Safe for Work",
+        "year": 2015,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy"
+        ],
+        "genre": "Drama • Comedy",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2015 Drama & Comedy streaming on Pluto TV.",
+        "synopsis": "Katherine, a civil servant, is reluctantly relocated from London to Northampton as part of public sector cuts. Recently divorced and troubled by secrets in her past, her relocation may just be the last straw for her. Things are made even more difficult for Katherine when she meet",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/17/44869.jpg"
+      },
+      {
+        "id": 41,
+        "title": "Pinky and the Brain",
+        "year": 1995,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Children"
+        ],
+        "genre": "Comedy • Children",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "\"Pinky and the Brain\" are two genetically engineered lab mice living at Acme Labs.",
+        "synopsis": "\"Pinky and the Brain\" are two genetically engineered lab mice living at Acme Labs. The Brain is a genius, while Pinky is somewhat insane. The two mice initiate creative and hilarious schemes for world domination, only to have them ultimately fail. However, with great persistence,",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/21/54340.jpg"
+      },
+      {
+        "id": 42,
+        "title": "S.W.A.T.",
+        "year": 1975,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "1975 Drama & Action streaming on Pluto TV.",
+        "synopsis": "Featuring the missions of the Los Angeles Police Department's Special Weapons and Tactics team, a team of highly trained and heavily armed police officers whose purpose is to make coordinated assaults on armed and dangerous criminals in sensitive situations and defensible locatio",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/29/73846.jpg"
+      },
+      {
+        "id": 43,
+        "title": "The Mysteries of Laura",
+        "year": 2014,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Comedy • Crime • Mystery",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2014 Comedy & Crime streaming on Pluto TV.",
+        "synopsis": "Laura Diamond is a brilliant NYPD homicide detective who balances her \"Columbo\" day job with a crazy family life that includes two unruly twin boys and a soon-to-be ex-husband - also a cop - who just can't seem to sign the divorce papers. Between cleaning up after her boys and cl",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/0/568.jpg"
+      },
+      {
+        "id": 44,
+        "title": "Transporter: The Series",
+        "year": 2013,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Crime"
+        ],
+        "genre": "Action • Adventure • Crime",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2013 Action & Adventure streaming on Pluto TV.",
+        "synopsis": "Frank Martin returns as the Transporter with one very simple task - to deliver the package against all the odds. However, something that sounds so simple, is rarely so. Joined by two new team members, Caterina Boldieu, an ex- DGSE agent and later in the series, Jules Faroux, a co",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/397/994954.jpg"
+      },
+      {
+        "id": 45,
+        "title": "Awkward.",
+        "year": 2011,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Romance"
+        ],
+        "genre": "Drama • Comedy • Romance",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2011 Drama & Comedy streaming on Pluto TV.",
+        "synopsis": "This series takes an irreverent look at the conflict, chaos and humor that defines teenage life through the eyes of 15-year-old Jenna Hamilton, whose life begins to change when a simple accident becomes an epic misunderstanding and is blown way out of proportion. Narrated in the ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/494/1235459.jpg"
+      },
+      {
+        "id": 46,
+        "title": "Chasing Life",
+        "year": 2014,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance",
+          "Medical"
+        ],
+        "genre": "Drama • Romance • Medical",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "April is a smart, charismatic and quick witted twenty-something aspiring journalist.",
+        "synopsis": "April is a smart, charismatic and quick witted twenty-something aspiring journalist. When not pursuing the latest scoop, April tries to balance her ambitious career with her family, which includes her widowed mom Sara rebellious little sister Brenna and her grandmother We meet Ap",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/634/1587437.jpg"
+      },
+      {
+        "id": 47,
+        "title": "Happy Endings",
+        "year": 2011,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "2011 Comedy streaming on Pluto TV.",
+        "synopsis": "Forget who gets to keep the ring - when a couple splits, the real question is, who gets to keep the friends? Alex and Dave's wedding was supposed to be the happiest day of their lives, for them and their long-time friends - until Alex leaves groom-to-be Dave at the altar. The bre",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/481/1202649.jpg"
+      },
+      {
+        "id": 48,
+        "title": "Dig",
+        "year": 2015,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Thriller",
+          "Mystery"
+        ],
+        "genre": "Drama • Thriller • Mystery",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2015 Drama & Thriller streaming on Pluto TV.",
+        "synopsis": "Dig tells the story of a murder mystery set against the backdrop of modern day Jerusalem, a city shrouded in ancient intrigue. FBI agent Peter Connelly has had his fair share of heartbreak. Anxious to leave his personal demons behind, Peter takes a job stationed in Israel under t",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/22898.jpg"
+      },
+      {
+        "id": 49,
+        "title": "Crossing Jordan",
+        "year": 2001,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2001 Drama & Crime streaming on Pluto TV.",
+        "synopsis": "Brash, stubborn and resourceful medical examiner Jordan Cavanaugh revives her career in Boston, occasionally breaking the rules and ticking off the cops or her co-workers, including a neurotic boss. On the home front, she gets crime-solving help from her retired-cop dad.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16239.jpg"
+      },
+      {
+        "id": 50,
+        "title": "Mrs. Brown's Boys",
+        "year": 2011,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "2011 Comedy streaming on Pluto TV.",
+        "synopsis": "Comedy starring Brendan O'Carroll as loud-mouthed Irish matriarch Agnes Brown, whose favourite pastime is meddling in the lives of her six children.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/549/1373249.jpg"
+      },
+      {
+        "id": 51,
+        "title": "El Ministerio del Tiempo",
+        "year": 2015,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Adventure",
+          "Science-Fiction"
+        ],
+        "genre": "Adventure • Science-Fiction",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "2015 Adventure & Science-Fiction streaming on Pluto TV.",
+        "synopsis": "A warrior from the 16th century, the first female university student from the 19th century and a nurse from the 21st century, join a secret agency to prevent people to change the Spanish history by using time-traveling doors.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/247/617874.jpg"
+      },
+      {
+        "id": 52,
+        "title": "Nash Bridges",
+        "year": 1996,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "1996 Drama & Crime streaming on Pluto TV.",
+        "synopsis": "The life and cases of Inspector Nash Bridges of the Special Investigations Unit (SIU) and his quirky partner Inspector Joe Dominguez as they keep tabs on crime in the scenic Bay Area in Bridge's electric yellow 1971 Plymouth Barracuda.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/151/378254.jpg"
+      },
+      {
+        "id": 53,
+        "title": "The Guardian",
+        "year": 2001,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Legal"
+        ],
+        "genre": "Drama • Crime • Legal",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "Nick Fallin is a hotshot lawyer working at his father's ultra successful Pittsburgh law firm.",
+        "synopsis": "Nick Fallin is a hotshot lawyer working at his father's ultra successful Pittsburgh law firm. Unfortunately, the high life has gotten the best of Nick. Arrested for drug use, he's sentenced to do 1,500 hours of community service, somehow to be squeezed into his 24/7 cutthroat wor",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/495/1239348.jpg"
+      },
+      {
+        "id": 54,
+        "title": "Gavin & Stacey",
+        "year": 2007,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Romance"
+        ],
+        "genre": "Drama • Comedy • Romance",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2007 Drama & Comedy streaming on Pluto TV.",
+        "synopsis": "The comic tale of love between an Essex boy and a Welsh girl, starring Matthew Horne and Joanna Page, supported by a cast including James Corden, Ruth Jones, Rob Brydon and Alison Steadman.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/12/32015.jpg"
+      },
+      {
+        "id": 55,
+        "title": "Emmerdale",
+        "year": 1972,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "1972 Drama streaming on Pluto TV.",
+        "synopsis": "Emmerdale is a British soap focusing on the lives of several families and locals living around an estate, a farm and the nearby village in the Yorkshire Dales. It is the second longest British soap in television history since airing its first episode on ITV in 1972, as 'Emmerdale",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/598/1495905.jpg"
+      },
+      {
+        "id": 56,
+        "title": "Have Gun - Will Travel",
+        "year": 1957,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Western"
+        ],
+        "genre": "Action • Adventure • Western",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "1957 Action & Adventure streaming on Pluto TV.",
+        "synopsis": "The man known only as \"Paladin\" lives in San Francisco at the Carlton Hotel, accustomed to the fanciest food and furnishings. He afford it all by riding out as a gunslinger and charging top dollar for his services. His calling card? \"Have Gun Will Travel.\" Paladin will take on an",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/17/44293.jpg"
+      },
+      {
+        "id": 57,
+        "title": "Hart to Hart",
+        "year": 1979,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Crime"
+        ],
+        "genre": "Action • Adventure • Crime",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "Jonathan Hart is a self made millionaire and the CEO of Hart Industries, a global conglomerate.",
+        "synopsis": "Jonathan Hart is a self made millionaire and the CEO of Hart Industries, a global conglomerate. His wife Jennifer is a beautiful freelance journalist. Living the jet set lifestyle, the glamorous couple spend their free time as amateur detectives in cases of smuggling, theft, corp",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/21/53759.jpg"
+      },
+      {
+        "id": 58,
+        "title": "Outsiders",
+        "year": 2016,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Adventure",
+          "Crime"
+        ],
+        "genre": "Drama • Adventure • Crime",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2016 Drama & Adventure streaming on Pluto TV.",
+        "synopsis": "A struggle for power and control set in the rugged and mysterious hills of Appalachia, Outsiders tells the story of the Farrell clan, a family of outsiders who've been in these parts since before anyone can remember. Living off the grid and above the law on their mountaintop home",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/343/859302.jpg"
+      },
+      {
+        "id": 59,
+        "title": "Pulling",
+        "year": 2006,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2006 Comedy streaming on Pluto TV.",
+        "synopsis": "In the first episode, we meet Donna, a young woman about to settle down and marry her dependable - if rather boring - fiancé Karl. Then, on her hen night, the true horror of settling down and settling for second best hits Donna. Although she doesn't want to hurt Karl, she tells h",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/26/66005.jpg"
+      },
+      {
+        "id": 60,
+        "title": "Sanford and Son",
+        "year": 1972,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "1972 Comedy streaming on Pluto TV.",
+        "synopsis": "Sanford and Son is about the misadventures of a cantankerous old man and his son, partners in the family junk business in Los Angeles' Watts neighborhood. While the role of Fred G. Sanford was known for his bigotry and cantankerousness, the role of Lamont Sanford was that of a co",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/27/69158.jpg"
+      },
+      {
+        "id": 61,
+        "title": "House of Lies",
+        "year": 2012,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy"
+        ],
+        "genre": "Drama • Comedy",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2012 Drama & Comedy streaming on Pluto TV.",
+        "synopsis": "Charming, fast talking Marty Kaan and his crack team of management consultants know how to play the corporate game better than anyone, by using every dirty trick in the book to woo powerful CEOs and close huge deals. In the board rooms, barrooms, and bedrooms of the power elite, ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/0/2003.jpg"
+      },
+      {
+        "id": 62,
+        "title": "Awake",
+        "year": 2012,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Thriller"
+        ],
+        "genre": "Drama • Fantasy • Thriller",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2012 Drama & Fantasy streaming on Pluto TV.",
+        "synopsis": "Awake is an intriguing drama about Detective Michael Britten who finds he's living two parallel lives. He's involved in a car accident that seems to have killed both his son and wife yet his mind creates an ingenious coping mechanism in which he now lives two separate lives - one",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/550/1375480.jpg"
+      },
+      {
+        "id": 63,
+        "title": "Mike & Molly",
+        "year": 2010,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family",
+          "Romance"
+        ],
+        "genre": "Comedy • Family • Romance",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "Police officer Mike Biggs knows his way around the Streets.",
+        "synopsis": "Police officer Mike Biggs knows his way around the Streets. As a cop, Mike's not scared of anything—except dating, so he's joined Overeaters Anonymous to lose those extra pounds and gain some Much-needed confidence. When he meets Molly at a meeting, the attraction is immediate, a",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/2/5415.jpg"
+      },
+      {
+        "id": 64,
+        "title": "Babylon",
+        "year": 2014,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Crime"
+        ],
+        "genre": "Drama • Comedy • Crime",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2014 Drama & Comedy streaming on Pluto TV.",
+        "synopsis": "Razor-sharp comedy drama that takes a wry look at the people and politics of London's police force.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/579/1448336.jpg"
+      },
+      {
+        "id": 65,
+        "title": "Kyle XY",
+        "year": 2006,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Science-Fiction",
+          "Mystery"
+        ],
+        "genre": "Drama • Science-Fiction • Mystery",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "Kyle XY is an incredible mystery about a teenager with no past.",
+        "synopsis": "Kyle XY is an incredible mystery about a teenager with no past. The series tells the surprising journey of Kyle, a 16 year-old teenage savant who is missing instinctive human behavior such as anger, joy and love, and the family who found him. After coming out of the woods and fou",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15591.jpg"
+      },
+      {
+        "id": 66,
+        "title": "Judging Amy",
+        "year": 1999,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Family",
+          "Legal"
+        ],
+        "genre": "Drama • Family • Legal",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "1999 Drama & Family streaming on Pluto TV.",
+        "synopsis": "Judging Amy is a drama about a single mother who has left New York behind to become a Family Court judge in Hartford, Connecticut. Judge Amy Gray is divorced and raising her young daughter, Lauren. They live with Amy's very opinionated mother Maxine, a social worker who is often ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/44/111279.jpg"
+      },
+      {
+        "id": 67,
+        "title": "Mad About You",
+        "year": 1992,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "genre": "Comedy • Romance",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "1992 Comedy & Romance streaming on Pluto TV.",
+        "synopsis": "Mad About You tells the story of Paul and Jamie Buchman, a husband and wife trying their best to be married and stay in love. Along the way, this urban duo must contend with their sometimes difficult friends and family — not to mention the daily inconveniences of daily life — and",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/17248.jpg"
+      },
+      {
+        "id": 68,
+        "title": "Good Times",
+        "year": 1974,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "1974 Comedy & Family streaming on Pluto TV.",
+        "synopsis": "Money was scare, but laughs and love were abundant for Florida, her hard-working husband James, and their three kids living in the projects of South Side Chicago. From the outrageous antics of budding artist J.J., to the romantic dramas of sister Thelma and pint-sized Michael's a",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/21104.jpg"
+      },
+      {
+        "id": 69,
+        "title": "Grounded for Life",
+        "year": 2001,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "Raising kids is tough, especially when you're Grounded for Life!",
+        "synopsis": "Raising kids is tough, especially when you're Grounded for Life! Sean and Claudia Finnerty, a fun-loving Staten Island couple got pregnant and married by age 18. Now in their 30s, they aren't bad parents, but they're still just kids themselves.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/21106.jpg"
+      },
+      {
+        "id": 70,
+        "title": "Mr. Pickles",
+        "year": 2013,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "2013 Comedy streaming on Pluto TV.",
+        "synopsis": "Mr. Pickles is set in the small, old-fashioned world of Old Town that is slowly being taken over by the modern world. The series centers on the lives of the Goodman family and their innocent six-year-old son Tommy, whose best friend is the family's lovable border collie, Mr. Pick",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/20/51628.jpg"
+      },
+      {
+        "id": 71,
+        "title": "The Bill",
+        "year": 1984,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "1984 Drama & Crime streaming on Pluto TV.",
+        "synopsis": "The Bill follows the officers of Sun Hill, a Metropolitan Police station located in the fictional Borough of Canley in London's East End. Created in 1983 by Geoff McQueen as a one-off drama called \"Woodentop\", The Bill was spun off as a full series, and ran for over 26 years and ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/23/59211.jpg"
+      },
+      {
+        "id": 72,
+        "title": "A Young Doctor's Notebook",
+        "year": 2012,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy"
+        ],
+        "genre": "Drama • Comedy",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2012 Drama & Comedy streaming on Pluto TV.",
+        "synopsis": "Daniel Radcliffe and Jon Hamm star in a comedy drama based on Mikhail Bulgakov's experiences as an inexperienced doctor in a remote Russian village.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/2/6183.jpg"
+      },
+      {
+        "id": 73,
+        "title": "Every Witch Way",
+        "year": 2014,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Children",
+          "Fantasy"
+        ],
+        "genre": "Comedy • Children • Fantasy",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2014 Comedy & Children streaming on Pluto TV.",
+        "synopsis": "Every Witch Way follows 14-year-old Emma Alonso, as she moves to Miami and her ordinary life is turned upside-down when she discovers that she is a witch. Luckily Emma quickly finds a friend in tomboy Andi but when Emma develops a crush on the boy next door, Daniel, she also has ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/613/1533046.jpg"
+      },
+      {
+        "id": 74,
+        "title": "Heroes Reborn",
+        "year": 2015,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Science-Fiction"
+        ],
+        "genre": "Drama • Action • Science-Fiction",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2015 Drama & Action streaming on Pluto TV.",
+        "synopsis": "The saga behind the 2006 breakout series Heroes continues as creator Tim Kring returns to the fold and develops new layers to his original superhero concept. This highly anticipated 13-episode miniseries will reconnect with the basic elements of the show's first season where ordi",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/197/493254.jpg"
+      },
+      {
+        "id": 75,
+        "title": "Our Zoo",
+        "year": 2014,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Thriller"
+        ],
+        "genre": "Drama • Thriller",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2014 Drama & Thriller streaming on Pluto TV.",
+        "synopsis": "Our Zoo is a drama series based on the true story of the Mottershead family who, in the face of staunch opposition and huge personal sacrifice, founded Chester Zoo in the 1930s.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/20658.jpg"
+      },
+      {
+        "id": 76,
+        "title": "Daria",
+        "year": 1997,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "The people of Lawndale just don't get Daria Morgendorffer.",
+        "synopsis": "The people of Lawndale just don't get Daria Morgendorffer. She's cool with that. See, Daria was born alienated, and now she's just trying to make it through high school with as little human contact as possible. Popularity, friends, activities... whatever. Daria lacks enthusiasm, ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/13/34298.jpg"
+      },
+      {
+        "id": 77,
+        "title": "19-2",
+        "year": 2014,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2014 Drama & Action streaming on Pluto TV.",
+        "synopsis": "Based on the award-winning Québec series of the same name, 19-2 follows the lives of patrol officers Ben Chartier and Nick Barron. Nick is a veteran on Montreal's urban police force and has just returned from a three-month leave following the traumatic shooting of his partner. On",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/17/43270.jpg"
+      },
+      {
+        "id": 78,
+        "title": "Independent Lens",
+        "year": 1999,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "Independent Lens is an anthology of independent documentary films.",
+        "synopsis": "Independent Lens is an anthology of independent documentary films.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/614/1537389.jpg"
+      },
+      {
+        "id": 79,
+        "title": "60 Minutes",
+        "year": 1968,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "1968 Drama streaming on Pluto TV.",
+        "synopsis": "60 Minutes has been on the air since 1968, beginning on a Tuesday, but spending most of its time on Sundays, where it remains today. This popular news magazine provides both hard hitting investigations, interviews and features, along with people in the news and current events. 60",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/642/1605873.jpg"
+      },
+      {
+        "id": 80,
+        "title": "And Then There Were None",
+        "year": 2015,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "Europe teeters on the brink of war.",
+        "synopsis": "Europe teeters on the brink of war. Ten strangers are invited to Soldier Island, an isolated rock near the Devon coast. Cut off from the mainland, with their generous hosts Mr and Mrs U.N. Owen mysteriously absent, they are each accused of a terrible crime. When one of the party ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/77/192526.jpg"
+      },
+      {
+        "id": 81,
+        "title": "The Bob Newhart Show",
+        "year": 1972,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "1972 Comedy streaming on Pluto TV.",
+        "synopsis": "Dr. Robert Hartley is a Chicago psychologist living with his schoolteacher wife Emily. Complicating life for the serene, stammering doc is his neighbor, Howard, a flighty navigator; and Bob's coworkers, dentist Jerry and flippant receptionist Carol.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/616/1541011.jpg"
+      },
+      {
+        "id": 82,
+        "title": "State of Play",
+        "year": 2003,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2003 Drama streaming on Pluto TV.",
+        "synopsis": "The serial begins with the murder of a young man, in what appears to be a drug-related killing, and the apparently coincidental death of Sonia Baker, the young researcher for MP Stephen Collins (Morrissey). As the deaths are investigated by journalist Cal McCaffrey of The Herald ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/23/57819.jpg"
+      },
+      {
+        "id": 83,
+        "title": "Mr. Selfridge",
+        "year": 2013,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "2013 Drama streaming on Pluto TV.",
+        "synopsis": "Mr. Selfridge tells the story of 'Mile a Minute Harry', a man with a mission to make shopping as thrilling as sex.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/4876.jpg"
+      },
+      {
+        "id": 84,
+        "title": "Satisfaction",
+        "year": 2014,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Romance"
+        ],
+        "genre": "Drama • Comedy • Romance",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2014 Drama & Comedy streaming on Pluto TV.",
+        "synopsis": "In Satisfaction , investment advisor Neil Truman and his wife Grace are sifting through their stagnant relationship when Neil discovers that Grace has been seeing a male escort. After an unusual chain of events, he gains a new perspective on his life and what motivates women, whi",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/213/534976.jpg"
+      },
+      {
+        "id": 85,
+        "title": "Everybody Loves Raymond",
+        "year": 1996,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "1996 Comedy & Family streaming on Pluto TV.",
+        "synopsis": "Ray Barone is a successful sportswriter who deals with his brother and parents, who happen to live across the street.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/495/1238665.jpg"
+      },
+      {
+        "id": 86,
+        "title": "The Black Donnellys",
+        "year": 2007,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "2007 Drama & Crime streaming on Pluto TV.",
+        "synopsis": "The Donnellys are four young working-class Irish-American brothers who live by this motto despite their involvement with organized crime in New York City. Police investigators question Joey Ice Cream, a childhood friend and the unreliable narrator who introduces the Donnelly brot",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/18408.jpg"
+      },
+      {
+        "id": 87,
+        "title": "Those Who Kill",
+        "year": 2014,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "Those Who Kill is a Danish format based on the bestselling work of author Elsebeth Egholm.",
+        "synopsis": "Those Who Kill is a Danish format based on the bestselling work of author Elsebeth Egholm. A&amp;E has secured the U.S. format for the critically acclaimed crime series in Denmark. The series is about violent criminals who are surrounded by fear and mystique- the serial killer. W",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/24778.jpg"
+      },
+      {
+        "id": 88,
+        "title": "The Untouchables",
+        "year": 1959,
+        "communityScore": 88,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "The Untouchables chronicles the campaign of Eliot Ness (Robert Stack), the young U.S.",
+        "synopsis": "The Untouchables chronicles the campaign of Eliot Ness (Robert Stack), the young U.S. Prohibition Bureau agent determined to smash the beer and booze empire of Al Capone in 1920s Chicago.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/29813.jpg"
+      },
+      {
+        "id": 89,
+        "title": "Nathan for You",
+        "year": 2013,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "2013 Comedy streaming on Pluto TV.",
+        "synopsis": "Nathan Fielder is a business advisor who implements strategies that no traditional consultant would dare attempt. Whether it's creating a coffee shop called Dumb Starbucks, inventing a poo-flavored yogurt or staging an elaborate video where a pig saves a goat, no idea is too dari",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/326/816434.jpg"
+      },
+      {
+        "id": 90,
+        "title": "Odyssey 5",
+        "year": 2002,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Science-Fiction"
+        ],
+        "genre": "Drama • Science-Fiction",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "This is the story of four astronauts, a scientist, and a television news reporter.",
+        "synopsis": "This is the story of four astronauts, a scientist, and a television news reporter. During a routine shuttle mission in 2007, they watch in astonishment as the Earth rapidly dissolves into a fiery ball and then suddenly implodes. Resigned to death, the crew is saved by an alien kn",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/443/1107503.jpg"
+      },
+      {
+        "id": 91,
+        "title": "The Voice",
+        "year": 2012,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Music"
+        ],
+        "genre": "Music",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2012 Music streaming on Pluto TV.",
+        "synopsis": "The Voice is Australia's premiere singing competition, renowned for its unique Blind Audition process. The Coaches, all iconic musicians in their own right, look for one thing and one thing only: The Voice!",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/635/1587732.jpg"
+      },
+      {
+        "id": 92,
+        "title": "Car S.O.S",
+        "year": 2013,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2013 Drama streaming on Pluto TV.",
+        "synopsis": "We Brits love our cars but, just like any relationship, sometimes things can get a little rusty. Meet master mechanic Fuzz Townshend and radio and TV presenter Tim Shaw, a petrol-head pair who undertake dramatic automobile interventions across the UK, hoping to return some much-l",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/100/250748.jpg"
+      },
+      {
+        "id": 93,
+        "title": "The Odd Couple",
+        "year": 1970,
+        "communityScore": 88,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "Can two divorced men share an apartment without driving each other crazy?",
+        "synopsis": "Can two divorced men share an apartment without driving each other crazy? This TV adaptation of Neil Simon's classic play deserves its place among the best-known and funniest sitcoms of the 1970s.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/22/57193.jpg"
+      },
+      {
+        "id": 94,
+        "title": "Grace Under Fire",
+        "year": 1993,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "1993 Comedy & Family streaming on Pluto TV.",
+        "synopsis": "After divorcing her abusive, alcoholic husband and recovering from her own alcoholism, Grace tries to rebuild her life and protect her children from making the same mistakes.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/603/1507826.jpg"
+      },
+      {
+        "id": 95,
+        "title": "Brickleberry",
+        "year": 2012,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2012 Comedy streaming on Pluto TV.",
+        "synopsis": "Brickleberry follows the hapless rangers at Brickleberry National Park as they do their worst to keep the park open. Having been through everything from \"Steve's\" invention of Squabbits to the birth of the anti-Christ, the rangers are back and ready for anything.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/4787.jpg"
+      },
+      {
+        "id": 96,
+        "title": "Plebs",
+        "year": 2013,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2013 Comedy streaming on Pluto TV.",
+        "synopsis": "Rome is traditionally imagined as the home of emperors and senators, generals and gladiators, a dignified theatre of pomp and ceremony. But what about the little guys, the wasters - new to the big city, stuck in office jobs, unable to get the girls? Plebs follows three desperate ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/153/382980.jpg"
+      },
+      {
+        "id": 97,
+        "title": "Birds of Prey",
+        "year": 2002,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Science-Fiction"
+        ],
+        "genre": "Action • Adventure • Science-Fiction",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "Who will stand up to villains now that a heartbroken Dark Knight has mysteriously vanished?",
+        "synopsis": "Who will stand up to villains now that a heartbroken Dark Knight has mysteriously vanished? Never fear, New Gothamites, a trio of champions is ready to take wing – and Helena, the daughter of Batman and Catwoman, is among them. She calls herself Huntress and crime is her prey. Te",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/70/176012.jpg"
+      },
+      {
+        "id": 98,
+        "title": "America Unearthed",
+        "year": 2012,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "History"
+        ],
+        "genre": "History",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2012 History streaming on Pluto TV.",
+        "synopsis": "Forensic geologist Scott Wolter, a real-life Indiana Jones, reveals that the history we all learned in school may not always be the whole story. Across the country, ancient symbols, religious relics and unexplained artifacts suggest that civilizations from around the world have l",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/215/537845.jpg"
+      },
+      {
+        "id": 99,
+        "title": "Newhart",
+        "year": 1982,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "1982 Comedy streaming on Pluto TV.",
+        "synopsis": "Bob Newhart returns to the TV as Dick Loudon, as he and his wife Joanna decide to leave life in New York City and buy a little inn in Vermont. Dick is a how-to book writer, who eventually becomes a local TV celebrity as host of \"Vermont Today.\"",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/21195.jpg"
+      },
+      {
+        "id": 100,
+        "title": "Lexx",
+        "year": 1997,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Horror",
+          "Science-Fiction"
+        ],
+        "genre": "Drama • Horror • Science-Fiction",
+        "platforms": [
+          "Pluto TV"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "1997 Drama & Horror streaming on Pluto TV.",
+        "synopsis": "Hailed as \"the most imaginative Sci-Fi since The Hitchhiker's Guide to the Galaxy \" (New York Daily News), Lexx follows the nomadic existence of four misfit characters who have inadvertently stolen the most powerful weapon of destruction ever made: a Manhattan-sized, genetically-",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/22933.jpg"
+      }
+    ]
+  },
+  {
+    "id": "roku",
+    "name": "Roku Channel",
+    "brand": "#662d91",
+    "accent": "#9b51e0",
+    "shows": [
+      {
+        "id": 1,
+        "title": "The Lone Ranger",
+        "year": 1949,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Western"
+        ],
+        "genre": "Action • Adventure • Western",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "Who was that masked man?",
+        "synopsis": "Who was that masked man? The Lone Ranger, of course - sole survivor of a group of ambushed Texas Rangers, who was nursed back to health by Tonto, his trusty American Indian companion. The pair roam the Old West, defending the helpless against the forces of evil. Begain airing in ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/12/30000.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Travel Man: 48 Hours in...",
+        "year": 2015,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Travel"
+        ],
+        "genre": "Comedy • Travel",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2015 Comedy & Travel streaming on Roku Channel.",
+        "synopsis": "Joe Lycett takes a ruthlessly efficient approach to travel, covering everything top tourist destinations have to offer in just 48 hours.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/405/1013009.jpg"
+      },
+      {
+        "id": 3,
+        "title": "The Suspicions of Mr. Whicher",
+        "year": 2011,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "History"
+        ],
+        "genre": "Drama • Crime • History",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "The Suspicions of Mr.",
+        "synopsis": "The Suspicions of Mr. Whicher is based on Kate Summerscale's account of a Victorian murder case that shocked the whole country. Detective Inspector Jack Whicher finds himself traveling to a remote country house where he investigates the murder of a young child. He soon manages to",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/19/47988.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Бригада",
+        "year": 2002,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2002 Drama & Action streaming on Roku Channel.",
+        "synopsis": "Brigada (Russian: Бригада ), also known as Law of the Lawless , is a Russian 15-episode crime miniseries that debuted in 2002. It became very popular, but received mixed reviews due to accusations in aestheticization of violence. The miniseries follows the story of four best frie",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/19/48725.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Chosen",
+        "year": 2013,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Thriller"
+        ],
+        "genre": "Drama • Action • Thriller",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2013 Drama & Action streaming on Roku Channel.",
+        "synopsis": "Chosen follows Ian Mitchell -- a husband, father and lawyer -- who awakens one morning to discover a mysterious box on his doorstep containing a loaded gun and a photo of a stranger he must kill within the next three days. Ian quickly learns that if he doesn't kill this man, he m",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/206/515178.jpg"
+      },
+      {
+        "id": 6,
+        "title": "Harlan Coben's The Five",
+        "year": 2016,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "Five friends, one goes missing.",
+        "synopsis": "Five friends, one goes missing. Flash forward 20 years and his DNA turns up at a murder scene. The four friends are forced to revisit the past and uncover the truth about the question: Is he really alive?",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/58/146726.jpg"
+      },
+      {
+        "id": 7,
+        "title": "The Amazing Race",
+        "year": 2001,
+        "communityScore": 75,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Family"
+        ],
+        "genre": "Action • Adventure • Family",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2001 Action & Adventure streaming on Roku Channel.",
+        "synopsis": "From athletes and actors to tattoo artists, social workers and musicians - a diverse mix of teams will need to utilize their street smarts and savvy know-how to compete in the race of their lifetime.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/642/1606113.jpg"
+      },
+      {
+        "id": 8,
+        "title": "Extant",
+        "year": 2014,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Science-Fiction",
+          "Thriller"
+        ],
+        "genre": "Drama • Science-Fiction • Thriller",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2014 Drama & Science-Fiction streaming on Roku Channel.",
+        "synopsis": "Molly Woods is an astronaut who returns home from a year-long solo mission in space and tries to reconnect with her husband and son in their everyday life. Her experiences in space and home lead to events that ultimately will change the course of human history.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/464/1162011.jpg"
+      },
+      {
+        "id": 9,
+        "title": "The Tomorrow People",
+        "year": 2013,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Science-Fiction"
+        ],
+        "genre": "Action • Science-Fiction",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2013 Action & Science-Fiction streaming on Roku Channel.",
+        "synopsis": "They are the next evolutionary leap of mankind, a generation of humans born with paranormal abilities - The Tomorrow People . Stephen Jameson stands at the crossroads between the world we know and the shifting world of the future. Up until a year ago, Stephen was a \"normal\" teena",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/55/138044.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Jane by Design",
+        "year": 2012,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy"
+        ],
+        "genre": "Drama • Comedy",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2012 Drama & Comedy streaming on Roku Channel.",
+        "synopsis": "Jane by Design follows Jane Quimby a quirky teen with an eclectic chic fashion sense who lands a job at a hip fashion house when they mistake her for an adult. Torn between her love of fashion and the need to finish high school, Jane conceals her true age to assist the demanding,",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/302/755993.jpg"
+      },
+      {
+        "id": 11,
+        "title": "The Universe",
+        "year": 2007,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Adventure",
+          "Family",
+          "Science-Fiction"
+        ],
+        "genre": "Adventure • Family • Science-Fiction",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2007 Adventure & Family streaming on Roku Channel.",
+        "synopsis": "From the planets to the stars and out to the edge of the unknown, history and science collide in this epic exploration of the Universe and its mysteries. It's a very old universe. Yet just 50 years since man first ventured into outer space, the heavens are yielding their greatest",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/3/9118.jpg"
+      },
+      {
+        "id": 12,
+        "title": "Pawn Stars",
+        "year": 2009,
+        "communityScore": 75,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "History"
+        ],
+        "genre": "History",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "Long before banks, ATMS and check-cashing services, there were pawn shops.",
+        "synopsis": "Long before banks, ATMS and check-cashing services, there were pawn shops. Pawning was the leading form of consumer credit in the United States until the 1950s, and pawn shops are still helping everyday people make ends meet. Pawn Stars takes you inside the colorful world of the ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/644/1612373.jpg"
+      },
+      {
+        "id": 13,
+        "title": "Home Improvement",
+        "year": 1991,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "1991 Comedy & Family streaming on Roku Channel.",
+        "synopsis": "The universal themes of family, parenting, the battle of the sexes -- and of course, man's need for \"more power\" -- come to play each and every weekday on Home Improvement . Every episode finds Tim the \"Tool Man\" Taylor causing his share of goof-ups and mishaps and leaving his lo",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/4/11457.jpg"
+      },
+      {
+        "id": 14,
+        "title": "Younger",
+        "year": 2015,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "genre": "Comedy • Romance",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2015 Comedy & Romance streaming on Roku Channel.",
+        "synopsis": "Younger follows 40-year old Liza, a suddenly single mother who tries to get back into the working world, only to find it's nearly impossible to start at the bottom at her age. When a chance encounter with a young guy at a bar convinces her she looks younger than she is, Liza trie",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/310/775414.jpg"
+      },
+      {
+        "id": 15,
+        "title": "Bar Rescue",
+        "year": 2011,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Food"
+        ],
+        "genre": "Food",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "2011 Food streaming on Roku Channel.",
+        "synopsis": "Bar Rescue follows Jon Taffer, one of the country's top restaurant and bar consultants, will give failing establishments one last chance to succeed. The show will delve into every business facet of running a bar from creating a profitable drink/food menu to crowd management to mu",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/615/1538578.jpg"
+      },
+      {
+        "id": 16,
+        "title": "The Jonathan Ross Show",
+        "year": 2011,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "Jonathan Ross, the king of chat, is back.",
+        "synopsis": "Jonathan Ross, the king of chat, is back. Employing his infectious wit and sense of fun, he chats to some terrific celebrity guests and asks the questions to which everyone wants to know the answers.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/510/1277472.jpg"
+      },
+      {
+        "id": 17,
+        "title": "Winter",
+        "year": 2015,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Thriller"
+        ],
+        "genre": "Drama • Crime • Thriller",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "2015 Drama & Crime streaming on Roku Channel.",
+        "synopsis": "Winter is an Australian mystery-drama-thriller television series set to screen on the Seven Network in 2015. It is a spin-off of the 2014 telemovie The Killing Field which starred Rebecca Gibney as Detective Sergeant Eve Winter with Peter O'Brien, Chloe Boreham and Liam McIntyre.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/13/34566.jpg"
+      },
+      {
+        "id": 18,
+        "title": "Irwin Allen's Voyage to the Bottom of the Sea",
+        "year": 1964,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Science-Fiction"
+        ],
+        "genre": "Action • Adventure • Science-Fiction",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "1964 Action & Adventure streaming on Roku Channel.",
+        "synopsis": "In this 60s show, the first of four Irwin Allen science fiction productions, the advanced submarine Seaview takes on all kinds of missions for the American government. Under the leadership of Admiral Nelson and Captain Crane, the Seaview takes on a variety of gritty real-world mi",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/18/47398.jpg"
+      },
+      {
+        "id": 19,
+        "title": "Secret Garden",
+        "year": 2010,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Fantasy"
+        ],
+        "genre": "Drama • Comedy • Fantasy",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2010 Drama & Comedy streaming on Roku Channel.",
+        "synopsis": "Kim Joo-won is the arrogant, eccentric heir to a large company who is poised to inherit a large department store. He constantly rejects the girls his matchmaking mother sends his way. When he meets Gil Ra-im, a beautiful, driven stunt-woman, she changes his life as he becomes fas",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/19/47635.jpg"
+      },
+      {
+        "id": 20,
+        "title": "This is Life with Lisa Ling",
+        "year": 2014,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2014 Drama streaming on Roku Channel.",
+        "synopsis": "In This is Life with Lisa Ling , award-winning journalist and author Lisa Ling reports on unconventional lifestyles in the U.S. The former co-host of \"The View'' introduces viewers to subcultures and communities that are extraordinary and sometimes dangerous, and her interpersona",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/432/1080280.jpg"
+      },
+      {
+        "id": 21,
+        "title": "Home and Away",
+        "year": 1988,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "1988 Drama streaming on Roku Channel.",
+        "synopsis": "Home and Away follows the lives and loves of the residents in Summer Bay, a fictional seaside town of New South Wales. The series initially focuses on the Fletcher family – Tom, Pippa and their five foster children, Frank Morgan, Carly Morris, Lynn Davenport, Steven Matheson and ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/609/1523576.jpg"
+      },
+      {
+        "id": 22,
+        "title": "The Loud House",
+        "year": 2016,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Children",
+          "Family"
+        ],
+        "genre": "Comedy • Children • Family",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "Welcome to the Loud House, where life can get pretty crazy.",
+        "synopsis": "Welcome to the Loud House, where life can get pretty crazy. One boy, TEN girls?! Lincoln Loud wouldn't change it for the world!",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/617/1544440.jpg"
+      },
+      {
+        "id": 23,
+        "title": "Stalker",
+        "year": 2014,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Crime",
+          "Thriller"
+        ],
+        "genre": "Crime • Thriller",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2014 Crime & Thriller streaming on Roku Channel.",
+        "synopsis": "Stalker is a psychological thriller about detectives who investigate stalking incidents - including voyeurism, cyber harassment and romantic fixation - for the Threat Assessment Unit of the LAPD. Det. Jack Larsen is a recent transfer to the Unit from New York City's homicide divi",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/0/647.jpg"
+      },
+      {
+        "id": 24,
+        "title": "Salem",
+        "year": 2014,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Thriller",
+          "Supernatural"
+        ],
+        "genre": "Drama • Thriller • Supernatural",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2014 Drama & Thriller streaming on Roku Channel.",
+        "synopsis": "Set in 17th century colonial Massachusetts—a significant time in the history of American politics, religion and society— Salem brings you the real story behind the infamous witch trials. In Salem, witches are real, and they're behind it all. Salem Village and Salem Town feuded ov",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/73/184895.jpg"
+      },
+      {
+        "id": 25,
+        "title": "TekWar",
+        "year": 1994,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Science-Fiction"
+        ],
+        "genre": "Action • Science-Fiction",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "1994 Action & Science-Fiction streaming on Roku Channel.",
+        "synopsis": "In the year 2045, an addictive computer-based reality drug call \"tek\" has ignited a war that stretches throughout society. Recruited by a mysterious benefactor to stop the advancing drug is Jake Cardigan, a cop who teams up with a colorful array of partners as the government plot",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/3/9202.jpg"
+      },
+      {
+        "id": 26,
+        "title": "Saving Grace",
+        "year": 2007,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Fantasy"
+        ],
+        "genre": "Drama • Crime • Fantasy",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2007 Drama & Crime streaming on Roku Channel.",
+        "synopsis": "Holly Hunter stars as a detective who kills a man in a drunken car crash and is given a second chance at life from an angel.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16211.jpg"
+      },
+      {
+        "id": 27,
+        "title": "The New Adventures of Old Christine",
+        "year": 2006,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2006 Comedy & Family streaming on Roku Channel.",
+        "synopsis": "The New Adventures of Old Christine is a comedy about a divorced working mom who's juggling the daily stresses of motherhood, work and dating, while maintaining a positive relationship with her ex-husband, which is easier when his pretty new girlfriend isn't around to complicate ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16526.jpg"
+      },
+      {
+        "id": 28,
+        "title": "Wonderfalls",
+        "year": 2004,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Fantasy"
+        ],
+        "genre": "Drama • Comedy • Fantasy",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "From the producer of Angel and Firefly comes Wonderfalls .",
+        "synopsis": "From the producer of Angel and Firefly comes Wonderfalls . Although a recent graduate of Brown University, Jaye Tyler decides to ignore her degree, live in a trailer and work at a tourist gift shop in Niagara Falls called Wonderfalls—-much to the despair of her well-to-do family.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16927.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Cranford",
+        "year": 2007,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2007 Drama streaming on Roku Channel.",
+        "synopsis": "A rich and comic drama about the people of Cranford , a small Cheshire town on the cusp of change in the 1840s. Adapted from the novels by Elizabeth Gaskell.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/17199.jpg"
+      },
+      {
+        "id": 30,
+        "title": "Cold Justice",
+        "year": 2013,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Crime",
+          "Legal"
+        ],
+        "genre": "Crime • Legal",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "2013 Crime & Legal streaming on Roku Channel.",
+        "synopsis": "Kelly Siegler and her team travel to small towns to dig into unsolved homicide cases that have lingered for years without answers or justice for the victims.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/585/1464455.jpg"
+      },
+      {
+        "id": 31,
+        "title": "Welcome to Sweden",
+        "year": 2014,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2014 Comedy streaming on Roku Channel.",
+        "synopsis": "American Bruce Evans moves from New York to Stockholm with his Swedish girlfriend Emma to start a new life. But it will not be easy for Bruce with the conversion, it means moving to a new country with a different culture and the question is whether their love will survive.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/19567.jpg"
+      },
+      {
+        "id": 32,
+        "title": "Star Trek Continues",
+        "year": 2013,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Adventure",
+          "Science-Fiction"
+        ],
+        "genre": "Adventure • Science-Fiction",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2013 Adventure & Science-Fiction streaming on Roku Channel.",
+        "synopsis": "Star Trek Continues is a fan-created science fiction series set in the Star Trek universe produced by Trek Continues Inc., Far From Home, and Dracogen. The series is an unofficial direct continuation of the third and last season of Star Trek: The Original Series , whose visual an",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/105/263130.jpg"
+      },
+      {
+        "id": 33,
+        "title": "Agent X",
+        "year": 2015,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action"
+        ],
+        "genre": "Drama • Action",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "2015 Drama & Action streaming on Roku Channel.",
+        "synopsis": "In times of extreme crisis, when traditional law and government aren't in a position to help, there is an unseen hand that works to protect this country and its citizens from all manner of threats by any means necessary. Hidden from the view of the public -- and even from the Pre",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/380/951829.jpg"
+      },
+      {
+        "id": 34,
+        "title": "Alice",
+        "year": 1976,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "Alice was based on the 1975 film, Alice Doesn't Live Here Anymore.",
+        "synopsis": "Alice was based on the 1975 film, Alice Doesn't Live Here Anymore. After her husband, Donald, was killed in a truck accident, Alice Hyatt and her 12-year-old son, Tommy, moved out of their home in New Jersey and headed for Hollywood. Alice's dream was to become a singer but for t",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/27/69654.jpg"
+      },
+      {
+        "id": 35,
+        "title": "The Fosters",
+        "year": 2013,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Family",
+          "Romance"
+        ],
+        "genre": "Drama • Family • Romance",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "2013 Drama & Family streaming on Roku Channel.",
+        "synopsis": "The Fosters is a critically-acclaimed series that centers on biracial lesbian couple Stef and Lena Foster, who are raising a multi-ethnic family mix of foster and biological kids. The second season will continue to explore the growing Fosters clan, with all the triumphs and trava",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/116/292055.jpg"
+      },
+      {
+        "id": 36,
+        "title": "Aquarius",
+        "year": 2015,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "It's 1967 and the era of free love, drug experimentation and Vietnam is in full effect.",
+        "synopsis": "It's 1967 and the era of free love, drug experimentation and Vietnam is in full effect. When the teenage daughter of a respected lawyer goes missing, LA Police Sergeant Sam Hodiak starts asking around. He soon discovers that the hippie kids he's questioning don't take kindly to c",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/38/95845.jpg"
+      },
+      {
+        "id": 37,
+        "title": "Broad City",
+        "year": 2014,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2014 Comedy streaming on Roku Channel.",
+        "synopsis": "Broad City is an odd-couple comedy about two best friends navigating their 20s in New York City. Abbi and Ilana are broke and flawed, and they don't shy away from the sticky situations NYC throws at them -- they dive right into the muck. No matter how bad it gets, these broads ar",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/405/1012900.jpg"
+      },
+      {
+        "id": 38,
+        "title": "Walker, Texas Ranger",
+        "year": 1993,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "1993 Drama & Action streaming on Roku Channel.",
+        "synopsis": "Texas Ranger Cordell Walker, one of the last old-fashioned heroes in the West, is a protective friend but a relentless foe who will stop at nothing to bring a criminal to justice.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/70/176011.jpg"
+      },
+      {
+        "id": 39,
+        "title": "Allegiance",
+        "year": 2015,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Thriller"
+        ],
+        "genre": "Drama • Crime • Thriller",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2015 Drama & Crime streaming on Roku Channel.",
+        "synopsis": "Alex O'Connor, a young idealistic CIA analyst specializing in Russian affairs, learns a shocking secret and his close-knit, affluent family is about to be split apart when its revealed that his parents, Mark and Katya are covert Russian spies deactivated decades ago. But today th",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/20832.jpg"
+      },
+      {
+        "id": 40,
+        "title": "Days of Our Lives",
+        "year": 1965,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Family",
+          "Romance"
+        ],
+        "genre": "Drama • Family • Romance",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "Days of our Lives is set in the fictitious Midwestern town of Salem.",
+        "synopsis": "Days of our Lives is set in the fictitious Midwestern town of Salem. The core families are the Bradys, the Hortons and the DiMeras, and the multi-layered storylines involve elements of romance, adventure, mystery, comedy and drama. Beginning on September 12, 2022, DAYS became exc",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/598/1496284.jpg"
+      },
+      {
+        "id": 41,
+        "title": "Bewitched",
+        "year": 1964,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family",
+          "Fantasy"
+        ],
+        "genre": "Comedy • Family • Fantasy",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "1964 Comedy & Family streaming on Roku Channel.",
+        "synopsis": "Bewitched is an American fantasy sitcom television series about a witch (Samantha) who marries an ordinary mortal man (Darrin) and vows to lead the life of a typical suburban housewife. Although they agree that Sam is not to use witchcraft now that they are married, a problem alw",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/206/515175.jpg"
+      },
+      {
+        "id": 42,
+        "title": "Dallas",
+        "year": 1978,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Family"
+        ],
+        "genre": "Drama • Family",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "The world's first mega-soap, and one of the most popular ever produced, Dallas had it all.",
+        "synopsis": "The world's first mega-soap, and one of the most popular ever produced, Dallas had it all. Beautiful women, expensive cars, and men playing Monopoly with real buildings. Famous for one of the best cliffhangers in TV history, as the world asked \"Who shot J.R.?\" A slow-burner to be",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15927.jpg"
+      },
+      {
+        "id": 43,
+        "title": "Kingdom Hospital",
+        "year": 2004,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Horror",
+          "Thriller",
+          "Medical"
+        ],
+        "genre": "Horror • Thriller • Medical",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2004 Horror & Thriller streaming on Roku Channel.",
+        "synopsis": "Kingdom Hospital is the haunting new 15-hour drama series developed directly for television by the award-winning, best-selling master of horror. Using Lars Von Trier's Danish miniseries \"Riget\" (a.k.a. \"The Kingdom\") as a point of inspiration, King tells the terrifying story of T",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/17967.jpg"
+      },
+      {
+        "id": 44,
+        "title": "The Vicar of Dibley",
+        "year": 1994,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "1994 Comedy streaming on Roku Channel.",
+        "synopsis": "Award-winning sitcom starring Dawn French who is assigned as the Vicar of the rural parish of Dibley.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/21325.jpg"
+      },
+      {
+        "id": 45,
+        "title": "Friday Night Dinner",
+        "year": 2011,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2011 Comedy & Family streaming on Roku Channel.",
+        "synopsis": "For the Goodman family, Friday Night Dinner is just like Sunday lunch: just take two days away, change the meal to dinner, and you've pretty much got it. Adam and his brother, Jonny, view Friday night dinner as a necessary annoyance - necessary because they get fed, and annoying ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/402/1006105.jpg"
+      },
+      {
+        "id": 46,
+        "title": "The Fall Guy",
+        "year": 1981,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Mystery"
+        ],
+        "genre": "Action • Adventure • Mystery",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "1981 Action & Adventure streaming on Roku Channel.",
+        "synopsis": "Colt Seavers is a stunt man moonlighting as a bounty hunter who uses Hollywood stunt tactics to capture criminals.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/28370.jpg"
+      },
+      {
+        "id": 47,
+        "title": "Penn & Teller: Fool Us",
+        "year": 2011,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "Penn &amp; Teller: Fool Us is a British-American television show.",
+        "synopsis": "Penn &amp; Teller: Fool Us is a British-American television show. Hosted by Jonathan Ross its first two seasons and Alyson Hannigan starting its third, Fool Us was filmed at Fountain Studios in London, England (Seasons 1) and the Rio All-Suites Hotel in Las Vegas (Season 2 onward",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/481/1203390.jpg"
+      },
+      {
+        "id": 48,
+        "title": "The Fairly OddParents",
+        "year": 2001,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Children"
+        ],
+        "genre": "Comedy • Children",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "Timmy Turner is your average 10-year-old kid with a not-so-average secret.",
+        "synopsis": "Timmy Turner is your average 10-year-old kid with a not-so-average secret. You see, his life used to be miserable. He couldn't catch a break - not from bullies at school, not from his insane teacher Mr. Crocker, and DEFINITELY not from Vicky, his evil babysitter. But he's got jus",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/402/1006095.jpg"
+      },
+      {
+        "id": 49,
+        "title": "War & Peace",
+        "year": 2016,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance",
+          "History"
+        ],
+        "genre": "Drama • Romance • History",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2016 Drama & Romance streaming on Roku Channel.",
+        "synopsis": "In a new adaptation of Leo Tolstoy's timeless novel, three young people experience life, love and loss against the epic backdrop of Russia's wars with Napoleon.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/37/93943.jpg"
+      },
+      {
+        "id": 50,
+        "title": "Rawhide",
+        "year": 1959,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Western"
+        ],
+        "genre": "Action • Adventure • Western",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "Gil Favor is trail boss of a continuous cattle drive; he is assisted by Rowdy Yates.",
+        "synopsis": "Gil Favor is trail boss of a continuous cattle drive; he is assisted by Rowdy Yates. The crew runs into characters and adventures along the way.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/18/46291.jpg"
+      },
+      {
+        "id": 51,
+        "title": "Murder One",
+        "year": 1995,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Legal"
+        ],
+        "genre": "Drama • Crime • Legal",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "Theodore Hoffman is a prominent defense attorney in a prestigious Los Angeles law firm.",
+        "synopsis": "Theodore Hoffman is a prominent defense attorney in a prestigious Los Angeles law firm. After successfully defending the wealthy but suspicious Richard Cross in a lurid murder trial, he is now involved in the defense of Neil Avedon. Neil is a famous young actor who has had severe",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/18/46906.jpg"
+      },
+      {
+        "id": 52,
+        "title": "Mysteries at the Museum",
+        "year": 2010,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "2010 Drama streaming on Roku Channel.",
+        "synopsis": "In Mysteries at the Museum , Don Wildman visits America's museums, where strange and curious remnants of the past are revealed.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/506/1267159.jpg"
+      },
+      {
+        "id": 53,
+        "title": "Fingersmith",
+        "year": 2005,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "Drama set in Dickensian London adapted from the novel by Sarah Waters.",
+        "synopsis": "Drama set in Dickensian London adapted from the novel by Sarah Waters. Conman Richard Rivers enlists the help of petty thief, Sue Trinder in his plot to rob a wealthy heiress.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/25/63898.jpg"
+      },
+      {
+        "id": 54,
+        "title": "Under the Dome",
+        "year": 2013,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Science-Fiction",
+          "Thriller"
+        ],
+        "genre": "Drama • Science-Fiction • Thriller",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "2013 Drama & Science-Fiction streaming on Roku Channel.",
+        "synopsis": "Under the Dome is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where i",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/610/1525272.jpg"
+      },
+      {
+        "id": 55,
+        "title": "Trailer Park Boys",
+        "year": 2001,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Crime"
+        ],
+        "genre": "Comedy • Crime",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2001 Comedy & Crime streaming on Roku Channel.",
+        "synopsis": "Follow the booze-fueled misadventures of three longtime pals and petty serial criminals who run scams from their Nova Scotia trailer park.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/2/5013.jpg"
+      },
+      {
+        "id": 56,
+        "title": "Atlantis",
+        "year": 2013,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Adventure",
+          "Fantasy"
+        ],
+        "genre": "Drama • Adventure • Fantasy",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "A fantasy drama set in a world of legendary heroes and mythical creatures.",
+        "synopsis": "A fantasy drama set in a world of legendary heroes and mythical creatures. Far from home, Jason washes up on the shores of the ancient and mysterious city of Atlantis .",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/2/5335.jpg"
+      },
+      {
+        "id": 57,
+        "title": "Wilfred",
+        "year": 2011,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Mystery"
+        ],
+        "genre": "Drama • Comedy • Mystery",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2011 Drama & Comedy streaming on Roku Channel.",
+        "synopsis": "Everyone else sees Wilfred as a dog, but Ryan sees a crude, surly, irrepressibly brave and honest man in a dog suit.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/4/11623.jpg"
+      },
+      {
+        "id": 58,
+        "title": "Deception",
+        "year": 2013,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2013 Drama & Crime streaming on Roku Channel.",
+        "synopsis": "The death of wealthy party girl Vivian Bowers doesn't add up for FBI agent Will Moreno, especially in a family as suspicious as the Bowers. Convinced that the tabloid staple's death was a homicide, he recruits his former SFPD partner and Vivian's childhood best friend, Joanna Pad",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16423.jpg"
+      },
+      {
+        "id": 59,
+        "title": "8 Simple Rules",
+        "year": 2002,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2002 Comedy & Family streaming on Roku Channel.",
+        "synopsis": "Legendary sitcom stars John Ritter and Katey Sagal team up in 8 Simple Rules , ABC's hit family comedy that is laugh-out-loud funny. \"If you make my daughters cry, I'll make you cry.\" That's the rallying cry of Paul Hennessy. A little rusty in the parenting department, Paul is fo",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/64/161760.jpg"
+      },
+      {
+        "id": 60,
+        "title": "The Wonder Years",
+        "year": 1988,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Drama • Comedy • Family",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "1988 Drama & Comedy streaming on Roku Channel.",
+        "synopsis": "Set in 1968-1973, the series tackles the social issues and historic events of that time through the eyes of main character Kevin Arnold. Kevin also deals with typical teenage social issues, including those prompted by his main love interest, Winnie Cooper, as well as typical fami",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/62/155340.jpg"
+      },
+      {
+        "id": 61,
+        "title": "Powers",
+        "year": 2015,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Science-Fiction"
+        ],
+        "genre": "Drama • Action • Science-Fiction",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2015 Drama & Action streaming on Roku Channel.",
+        "synopsis": "Combining the genres of superhero fantasy, crime noir and police procedural, Powers is set in a world full of people with superhuman abilities and where all of those powers are just another catalyst for mayhem and murder. The series follows Detective Christian Walker, who is in c",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/60/151212.jpg"
+      },
+      {
+        "id": 62,
+        "title": "One Big Happy",
+        "year": 2015,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "Best friends Lizzy and Luke are like family.",
+        "synopsis": "Best friends Lizzy and Luke are like family. As kids, they saw each other's parents go through divorce and have ever since formed an inseparable bond. Now, all grown up and still single, they've decided to start a family of their own, but in a non-traditional way. Lizzy, who is a",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/51/127823.jpg"
+      },
+      {
+        "id": 63,
+        "title": "Little Britain",
+        "year": 2003,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2003 Comedy streaming on Roku Channel.",
+        "synopsis": "The zany comedy show with Matt Lucas and David Walliams, featuring characters from all over Little Britain .",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/24068.jpg"
+      },
+      {
+        "id": 64,
+        "title": "Stephen King's The Stand",
+        "year": 1994,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Horror"
+        ],
+        "genre": "Drama • Fantasy • Horror",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "1994 Drama & Fantasy streaming on Roku Channel.",
+        "synopsis": "When a government-run lab accidentally lets loose a deadly virus, the population of the world is decimated. Survivors begin having dreams about two figures: a mystical old woman, or a foreboding, scary man. As the story tracks various people, we begin to realize that the two figu",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/10/25437.jpg"
+      },
+      {
+        "id": 65,
+        "title": "Ashes to Ashes",
+        "year": 2008,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Fantasy"
+        ],
+        "genre": "Drama • Crime • Fantasy",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "Crime drama series featuring Life on Mars' DCI Gene Hunt.",
+        "synopsis": "Crime drama series featuring Life on Mars' DCI Gene Hunt. After being shot in 2008, DI Alex Drake lands in 1981, where she finds herself in familiar company.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/266/665207.jpg"
+      },
+      {
+        "id": 66,
+        "title": "Dave Gorman: Modern Life is Goodish",
+        "year": 2013,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "Dave Gorman performs a series of witty stand-up shows, exclusive to Dave.",
+        "synopsis": "Dave Gorman performs a series of witty stand-up shows, exclusive to Dave. The bearded wonder takes a sideways look at the messages we receive every day.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/358/897143.jpg"
+      },
+      {
+        "id": 67,
+        "title": "The Last Panthers",
+        "year": 2015,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2015 Drama & Action streaming on Roku Channel.",
+        "synopsis": "A daring jewel heist bears all the hallmarks of the notorious 'Pink Panthers' gang but with one tragic difference: the death of a little girl sets off a chain of events across Europe. A British insurance loss adjuster, her nefarious boss, a French-Algerian cop and a Serbian gang ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/26/65542.jpg"
+      },
+      {
+        "id": 68,
+        "title": "MasterChef Australia",
+        "year": 2009,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Food"
+        ],
+        "genre": "Food",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2009 Food streaming on Roku Channel.",
+        "synopsis": "MasterChef Australia is an Australian competitive cooking game show consisting of a group of hopeful contestants that cook and present food to judges in order to win the title of MasterChef Australia.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/622/1555668.jpg"
+      },
+      {
+        "id": 69,
+        "title": "The Last Leg",
+        "year": 2013,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "2013 Comedy streaming on Roku Channel.",
+        "synopsis": "Adam Hills and co-hosts Josh Widdicombe and Alex Brooker provide some offbeat commentary on the significant moments of the past seven days.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/620/1551073.jpg"
+      },
+      {
+        "id": 70,
+        "title": "RuPaul's Drag Race: All Stars",
+        "year": 2012,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "2012 Drama streaming on Roku Channel.",
+        "synopsis": "A twist on the mega-hit RuPaul's Drag Race as queens from previous seasons are pitted against each other in a wig-to-wig drag battle royale to determine which of these All Stars will claim the ultimate title and be declared Queen amongst queens",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/625/1563396.jpg"
+      },
+      {
+        "id": 71,
+        "title": "Dominion",
+        "year": 2014,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Fantasy"
+        ],
+        "genre": "Action • Adventure • Fantasy",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "Dominion is an epic supernatural drama set in the near future.",
+        "synopsis": "Dominion is an epic supernatural drama set in the near future. Specifically, 25 years after \"The Extinction War,\" when an army of lower angels, assembled by the archangel Gabriel, waged war against mankind. The archangel Michael, turning against his own kind, chose to side with h",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/0/775.jpg"
+      },
+      {
+        "id": 72,
+        "title": "Two and a Half Men",
+        "year": 2003,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "2003 Comedy & Family streaming on Roku Channel.",
+        "synopsis": "Charlie is a well-to-do bachelor with a house at the beach, a Jaguar in the front, and an easy way with women. His casual Malibu lifestyle is interrupted when his tightly wound brother Alan, who's facing a divorce, and his son Jake, come to live with him. Together, these two and ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/118/296850.jpg"
+      },
+      {
+        "id": 73,
+        "title": "GCB",
+        "year": 2012,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Romance"
+        ],
+        "genre": "Drama • Comedy • Romance",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2012 Drama & Comedy streaming on Roku Channel.",
+        "synopsis": "Amanda Vaughn once the ultimate high school \"mean girl\", is forced to return home in disgrace after her marriage ends in scandal. Amanda is nothing like the girl she was 20 years ago, but as her old classmates reacquaint themselves with the new Amanda, will her home town welcome ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/84/212122.jpg"
+      },
+      {
+        "id": 74,
+        "title": "Shark Tank",
+        "year": 2009,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2009 Drama streaming on Roku Channel.",
+        "synopsis": "Shark Tank is an American reality television series where entrepreneurs pitch their business ideas to a panel of wealthy investors, known as \"Sharks,\" who risk their own money to invest in promising ventures in exchange for equity. The show follows aspiring entrepreneurs as they ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/643/1608639.jpg"
+      },
+      {
+        "id": 75,
+        "title": "The Batman",
+        "year": 2004,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Science-Fiction"
+        ],
+        "genre": "Action • Adventure • Science-Fiction",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2004 Action & Adventure streaming on Roku Channel.",
+        "synopsis": "Hidden in the shadows, The Batman casts a protective eye while tracking the thugs, thieves and criminal masterminds that claim Gotham City's dark alleys each night. In one magnificent swoop, he descends up on opponents and battles with a fierceness that seems almost inhuman. This",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/3/9370.jpg"
+      },
+      {
+        "id": 76,
+        "title": "Reno 911!",
+        "year": 2003,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Comedy • Action • Crime",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "From the network that has no business bringing you a cop show—it's Reno 911!",
+        "synopsis": "From the network that has no business bringing you a cop show—it's Reno 911! Ride shotgun with the brave—and shameless—officers of the Reno Sheriff's Department for their unscripted adventures and high-octane thrills.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/268/672171.jpg"
+      },
+      {
+        "id": 77,
+        "title": "The Curse of Oak Island",
+        "year": 2014,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Adventure",
+          "Mystery",
+          "Nature"
+        ],
+        "genre": "Adventure • Mystery • Nature",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2014 Adventure & Mystery streaming on Roku Channel.",
+        "synopsis": "The Curse of Oak Island documents brothers Rick and Marty Lagina as they pursue their lifelong dream of solving more than a 220-year old Oak Island mystery. For over two centuries, teams of searchers, including Franklin D. Roosevelt, have attempted to crack the code that will une",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/595/1489989.jpg"
+      },
+      {
+        "id": 78,
+        "title": "Invasion",
+        "year": 2005,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Science-Fiction",
+          "Thriller",
+          "Supernatural"
+        ],
+        "genre": "Science-Fiction • Thriller • Supernatural",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "For centuries man has searched the skies for signs of intelligent life forms.",
+        "synopsis": "For centuries man has searched the skies for signs of intelligent life forms. But what if those life forms were already here, and what if a storm was masking something far more menacing?",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/21128.jpg"
+      },
+      {
+        "id": 79,
+        "title": "Física o Química",
+        "year": 2008,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "The students are hyaenas, never show them your fears.",
+        "synopsis": "The students are hyaenas, never show them your fears. Never! A spanish series centered around the teachers and students at Zurbarán secondary school. Love, action, drama, friendship, lots of surprising and funny moments! It all begins with a dark secret that cost two students the",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/23889.jpg"
+      },
+      {
+        "id": 80,
+        "title": "Shadowhunters: The Mortal Instruments",
+        "year": 2016,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Supernatural"
+        ],
+        "genre": "Drama • Fantasy • Supernatural",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2016 Drama & Fantasy streaming on Roku Channel.",
+        "synopsis": "Based on the bestselling young adult fantasy book series The Mortal Instruments by Cassandra Clare, Shadowhunters follows 18-year-old Clary Fray, who finds out on her birthday that she is not who she thinks she is but rather comes from a long line of Shadowhunters - human-angel h",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/181/454353.jpg"
+      },
+      {
+        "id": 81,
+        "title": "Moonbeam City",
+        "year": 2015,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Crime"
+        ],
+        "genre": "Drama • Comedy • Crime",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2015 Drama & Comedy streaming on Roku Channel.",
+        "synopsis": "The animated series, Moonbeam City stars Rob Lowe as Dazzle Novak, a detective in America's most fluorescent metropolis, whose desire to serve is second only to his nonstop sex drive. But with Chief Pizzaz Miller cramping his style and his rival Rad Cunningham undermining him at ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/18/47238.jpg"
+      },
+      {
+        "id": 82,
+        "title": "Kung Fu Panda: Legends of Awesomeness",
+        "year": 2011,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Adventure",
+          "Children"
+        ],
+        "genre": "Adventure • Children",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2011 Adventure & Children streaming on Roku Channel.",
+        "synopsis": "Kung Fu Panda: Legends of Awesomeness is based on DreamWorks Animation's hit feature film, Kung Fu Panda which has grossed over $630 million at the worldwide box office and became the studio's most successful original feature film ever. Kung Fu Panda garnered an Oscar nomination ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/19/49606.jpg"
+      },
+      {
+        "id": 83,
+        "title": "Outback Truckers",
+        "year": 2012,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Action • Adventure",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2012 Action & Adventure streaming on Roku Channel.",
+        "synopsis": "They drive the biggest trucks on earth along the toughest roads and loneliest highways in the world. They are Australia's Outback Truckers , men and women in monster rigs, on marathon runs, through some of the most inhospitable terrain on the planet. Out here only one thing matte",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/236/591906.jpg"
+      },
+      {
+        "id": 84,
+        "title": "Hey Arnold!",
+        "year": 1996,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Children"
+        ],
+        "genre": "Children",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "1996 Children streaming on Roku Channel.",
+        "synopsis": "The adventures of a daydreaming, jazz-loving, football-headed 9-year-old, who lives in a boarding house with his grandparents and some eccentric boarders, encounters life in the city with his best friend Gerald, a loofah-haired kid, who is the keeper of the urban tales and cooles",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/24/61868.jpg"
+      },
+      {
+        "id": 85,
+        "title": "The Event",
+        "year": 2010,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Science-Fiction"
+        ],
+        "genre": "Drama • Action • Science-Fiction",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2010 Drama & Action streaming on Roku Channel.",
+        "synopsis": "Sean Walker, stumbles into a national conspiracy after his girlfriend Leila mysteriously disappears from a Caribbean cruise. Elsewhere, President Elias Martinez is scheduled to announce the release of a group of detainees led by Sophia Maguire -- despite the disapproval of his Di",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/394/985754.jpg"
+      },
+      {
+        "id": 86,
+        "title": "The Pretender",
+        "year": 1996,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Adventure",
+          "Mystery"
+        ],
+        "genre": "Drama • Adventure • Mystery",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "1996 Drama & Adventure streaming on Roku Channel.",
+        "synopsis": "Jarod is a Pretender - a genius whose exceptional intelligence allows him to assume various identities at will, be it doctor, test pilot or lawyer. Taken from his parents at an early age, Jarod was brought up in the Centre, a think-tank facility where he believed his computer-lik",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/5/14846.jpg"
+      },
+      {
+        "id": 87,
+        "title": "CHiPs",
+        "year": 1977,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "1977 Drama & Action streaming on Roku Channel.",
+        "synopsis": "Where the rubber meets the road and the bad guys meet the badge -- that's where you'll find California Highway Patrol motorcycle officers Jon and Ponch. Set in the sun-drenched sprawl of Los Angeles, CHiPs combines action, heroics and fun.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15962.jpg"
+      },
+      {
+        "id": 88,
+        "title": "Queer As Folk",
+        "year": 2000,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "genre": "Drama • Romance",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "2000 Drama & Romance streaming on Roku Channel.",
+        "synopsis": "Brash humor and genuine emotion make up this original series revolving around the lives, loves, ambitions, careers and friendships of a group of gay men and women living on Liberty Avenue in contemporary Pittsburgh, PA. The show offers an unapologetic look at modern, urban gay an",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16017.jpg"
+      },
+      {
+        "id": 89,
+        "title": "My Mad Fat Diary",
+        "year": 2013,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Romance"
+        ],
+        "genre": "Drama • Comedy • Romance",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "Drama looking at life from the perspective of funny, music-mad Rae.",
+        "synopsis": "Drama looking at life from the perspective of funny, music-mad Rae.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/17978.jpg"
+      },
+      {
+        "id": 90,
+        "title": "Wings",
+        "year": 1990,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy"
+        ],
+        "genre": "Drama • Comedy",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "1990 Drama & Comedy streaming on Roku Channel.",
+        "synopsis": "The sky's the limit when estranged brothers - Joe and Brian Hackett reunite to run a commuter airline together. On the small island of Nantucket, the Hacketts run with a first-class crew of neighbors and co-workers, including lunch counter manager and childhood friend Helen Chapp",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/21252.jpg"
+      },
+      {
+        "id": 91,
+        "title": "Port Protection Alaska",
+        "year": 2015,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "Port Protection Alaska profiles individuals trying to survive way above the Lower 48.",
+        "synopsis": "Port Protection Alaska profiles individuals trying to survive way above the Lower 48. Surrounded by the North Pacific, Port Protection is a remote community tucked into the northwest corner of Prince of Wales Island, Alaska. The approximately 100 residents who call the rugged, un",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/310/775836.jpg"
+      },
+      {
+        "id": 92,
+        "title": "Bad Guys",
+        "year": 2014,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Crime",
+          "Thriller"
+        ],
+        "genre": "Action • Crime • Thriller",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2014 Action & Crime streaming on Roku Channel.",
+        "synopsis": "To combat rising violent crimes, the Police Chief asks Detective Oh Goo Tak to form a team consisting of criminals. He is currently suspended from the police force for using excessive force. He then gathers team members: Park Woong Chul who is a gangster, Lee Jung Moon who is the",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/619/1548041.jpg"
+      },
+      {
+        "id": 93,
+        "title": "Britain's Got Talent",
+        "year": 2007,
+        "communityScore": 75,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Family"
+        ],
+        "genre": "Family",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2007 Family streaming on Roku Channel.",
+        "synopsis": "Britain's Got Talent brings together the very best variety acts from across the nation as they compete to win a life changing £250,000 and a coveted spot on The Royal Variety Performance.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/614/1537335.jpg"
+      },
+      {
+        "id": 94,
+        "title": "Escape to the Country",
+        "year": 2007,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "A series which helps prospective buyers find their dream home in the country.",
+        "synopsis": "A series which helps prospective buyers find their dream home in the country.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/624/1561172.jpg"
+      },
+      {
+        "id": 95,
+        "title": "POV",
+        "year": 1988,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "1988 Drama streaming on Roku Channel.",
+        "synopsis": "POV (a cinema term for \"point of view\" ) is television's longest-running showcase for independent non-fiction films. POV premieres 14-16 of the best, boldest and most innovative programs every year on PBS. Since 1988, POV has presented over 400 films to public television audience",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/641/1603946.jpg"
+      },
+      {
+        "id": 96,
+        "title": "McCloud",
+        "year": 1970,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Adventure",
+          "Crime"
+        ],
+        "genre": "Drama • Adventure • Crime",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "Deputy Marshal Sam McCloud of the Taos police travels to NYC to track down a criminal.",
+        "synopsis": "Deputy Marshal Sam McCloud of the Taos police travels to NYC to track down a criminal. He ends up loaned to the NYPD as a special investigator, and his laid-back cowboy ways are a strict contrast to the rough-and-tumble NY police officers that he works with. The series was part o",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/286/715788.jpg"
+      },
+      {
+        "id": 97,
+        "title": "War of the Worlds",
+        "year": 1988,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Science-Fiction",
+          "War"
+        ],
+        "genre": "Drama • Science-Fiction • War",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "1988 Drama & Science-Fiction streaming on Roku Channel.",
+        "synopsis": "In this sequel to the highly acclaimed 1953 movie, it is revealed that the alien invaders weren't killed by the bacteria: they went into a state of suspended animation. An incident at a nuclear plant exposes them to radiation, which they can survive but which kills the bacteria, ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/79/199471.jpg"
+      },
+      {
+        "id": 98,
+        "title": "Coffee Prince",
+        "year": 2007,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Romance"
+        ],
+        "genre": "Drama • Comedy • Romance",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2007 Drama & Comedy streaming on Roku Channel.",
+        "synopsis": "The life of Go Eun Chan is not easy; she works many jobs to pay off debts and even gave up her feminine image. Choi Han Kyul is the heir of a big food company, but his grandmother wants him to settle down, so she arranged many dates for him. After Eun Chan bumped into Han Kyul an",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/543/1359039.jpg"
+      },
+      {
+        "id": 99,
+        "title": "Growing Up Fisher",
+        "year": 2014,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2014 Comedy & Family streaming on Roku Channel.",
+        "synopsis": "Growing Up Fisher follows Mel Fisher, the proud family patriarch who does not let his blindness affect him as a father, husband and breadwinner.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/20/52131.jpg"
+      },
+      {
+        "id": 100,
+        "title": "Stacey Dooley",
+        "year": 2009,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Roku Channel"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2009 Drama streaming on Roku Channel.",
+        "synopsis": "Series of documentaries in which Stacey Dooley investigates current affairs issues affecting young people around the world.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/645/1614176.jpg"
+      }
+    ]
+  },
+  {
+    "id": "shudder",
+    "name": "Shudder",
+    "brand": "#880000",
+    "accent": "#ff3333",
+    "shows": [
+      {
+        "id": 1,
+        "title": "Slasher",
+        "year": 2016,
+        "communityScore": 72,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Horror",
+          "Thriller",
+          "Mystery"
+        ],
+        "genre": "Horror • Thriller • Mystery",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2016 Horror & Thriller streaming on Shudder.",
+        "synopsis": "Slasher is a Canadian-American horror anthology series in which each season sees a new rampaging serial killer leave carnage in their wake as their next victims fight to stay alive. From a quiet town to a former summer camp, dark secrets are unearthed as the past refuses to die. ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/455/1138494.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Afterlife",
+        "year": 2005,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Supernatural"
+        ],
+        "genre": "Drama • Supernatural",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2005 Drama & Supernatural streaming on Shudder.",
+        "synopsis": "University Lecturer Robert Bridge and medium Alison Munday become involved in a number of supernatural events in this chilling drama series.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/104/260026.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Tatort",
+        "year": 1970,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "1970 Drama & Crime streaming on Shudder.",
+        "synopsis": "Tatort is a long-running German/Austrian/Swiss, crime television series set in various parts of these countries. The show is broadcast on the channels of ARD in Germany, ORF 2 in Austria and SF1 in Switzerland. The first episode was broadcast on November 29, 1970. The opening seq",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/24/61771.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Arne Dahl",
+        "year": 2011,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Crime",
+          "Thriller"
+        ],
+        "genre": "Crime • Thriller",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "Swedish crime thriller series about an elite team of detectives.",
+        "synopsis": "Swedish crime thriller series about an elite team of detectives.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/78/197351.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Van Helsing",
+        "year": 2016,
+        "communityScore": 75,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Horror"
+        ],
+        "genre": "Drama • Action • Horror",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2016 Drama & Action streaming on Shudder.",
+        "synopsis": "Van Helsing centers on Vanessa Helsing, the daughter of famous vampire hunter and Dracula nemesis Abraham Van Helsing. She is resurrected five years in the future to find out that vampires have taken over the world and that she possesses unique power over them. She is humanity's ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/302/755126.jpg"
+      },
+      {
+        "id": 6,
+        "title": "Vegas",
+        "year": 2012,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2012 Drama streaming on Shudder.",
+        "synopsis": "Vegas is a drama inspired by the true story of former Las Vegas Sheriff Ralph Lamb, a fourth-generation rancher tasked with bringing order to Las Vegas in the 1960s, a gambling and entertainment mecca emerging from the tumbleweeds. Ralph Lamb wants to be left in peace to run his ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/3781.jpg"
+      },
+      {
+        "id": 7,
+        "title": "Caprica",
+        "year": 2010,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Science-Fiction"
+        ],
+        "genre": "Drama • Science-Fiction",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2010 Drama & Science-Fiction streaming on Shudder.",
+        "synopsis": "Set 58 years before Battlestar Galactica , Caprica follows two rival families - the Graystones and the Adamas - as they grow, compete, and thrive in the vibrant world of the peaceful 12 Colonies, living in a society close to our own. Entangled in the burgeoning technology of arti",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/3/8928.jpg"
+      },
+      {
+        "id": 8,
+        "title": "Hercules: The Legendary Journeys",
+        "year": 1994,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Fantasy"
+        ],
+        "genre": "Action • Adventure • Fantasy",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "1994 Action & Adventure streaming on Shudder.",
+        "synopsis": "Long ago... In a time of myth and legend, when ancient gods plagued man with suffering - only one man dared to challenge their power. Hercules! Kevin Sorbo's fresh, hip and good-natured spin on the legendary hero carried this witty, adventure-filled action drama to high critical ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16007.jpg"
+      },
+      {
+        "id": 9,
+        "title": "Psychoville",
+        "year": 2009,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Thriller",
+          "Mystery"
+        ],
+        "genre": "Comedy • Thriller • Mystery",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "2009 Comedy & Thriller streaming on Shudder.",
+        "synopsis": "Psychoville is a BBC dark mystery psychological thriller television sit-com written by and starring The League of Gentlemen members Reece Shearsmith and Steve Pemberton. It debuted on BBC Two on 18 June 2009. Pemberton and Shearsmith each play numerous characters, with Dawn Frenc",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/49/123998.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Combat Hospital",
+        "year": 2011,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "War",
+          "Medical"
+        ],
+        "genre": "Drama • War • Medical",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2011 Drama & War streaming on Shudder.",
+        "synopsis": "The war zone of Southern Afghanistan is the workplace for the doctors, nurses and medics of the Role 3 Medical Unit, a Canadian-led NATO team delivering the highest level of care available in Kandahar. Leading the hospital staff on behalf of the Canadian forces is Col. Xavier Mar",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/18548.jpg"
+      },
+      {
+        "id": 11,
+        "title": "Lois & Clark: The New Adventures of Superman",
+        "year": 1993,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Science-Fiction"
+        ],
+        "genre": "Action • Adventure • Science-Fiction",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "1993 Action & Adventure streaming on Shudder.",
+        "synopsis": "A sleek, sexy, Emmy-nominated 1990s take on the enduring superhero, culled from DC Comics, which has spawned numerous successful film and TV versions of him as boy and man. All of which further demonstrated that while Kryptonite can kill the Man of Steel, changing times can't. He",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/18569.jpg"
+      },
+      {
+        "id": 12,
+        "title": "Celebrity Family Feud",
+        "year": 2015,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Family"
+        ],
+        "genre": "Family",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "2015 Family streaming on Shudder.",
+        "synopsis": "Teams of celebrities and their families face off to name the top responses to questions posed to 100 people.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/631/1578700.jpg"
+      },
+      {
+        "id": 13,
+        "title": "Crazy Ex-Girlfriend",
+        "year": 2015,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Music"
+        ],
+        "genre": "Comedy • Music",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "2015 Comedy & Music streaming on Shudder.",
+        "synopsis": "Crazy Ex-Girlfriend revolves around Rebecca Bunch is a successful, driven, and possibly crazy young woman who impulsively gives up everything - her partnership at a prestigious law firm and her upscale apartment in Manhattan - in a desperate attempt to find love and happiness in ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/228/570611.jpg"
+      },
+      {
+        "id": 14,
+        "title": "Childhood's End",
+        "year": 2015,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Science-Fiction"
+        ],
+        "genre": "Drama • Science-Fiction",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "Written by Arthur C.",
+        "synopsis": "Written by Arthur C. Clarke and hailed as a revolutionary work of science fiction since its publishing in 1953, Childhood's End follows the peaceful alien invasion of Earth by the mysterious \"Overlords,\" whose arrival begins decades of apparent utopia under indirect alien rule, a",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/483/1208949.jpg"
+      },
+      {
+        "id": 15,
+        "title": "You, Me and the Apocalypse",
+        "year": 2015,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Science-Fiction"
+        ],
+        "genre": "Drama • Comedy • Science-Fiction",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "2015 Drama & Comedy streaming on Shudder.",
+        "synopsis": "You, Me and the Apocalypse is a bold, adrenaline-fuelled comedy drama about the last days of mankind - boasting a relentlessly entertaining mix of action, adventure, romance and wit set against a backdrop of apocalyptic chaos. The story follows an eclectic group of seemingly unco",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/29/73997.jpg"
+      },
+      {
+        "id": 16,
+        "title": "The Frankenstein Chronicles",
+        "year": 2015,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Horror"
+        ],
+        "genre": "Drama • Crime • Horror",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2015 Drama & Crime streaming on Shudder.",
+        "synopsis": "In The Frankenstein Chronicles , Inspector John Marlott investigates a series of crimes in 19th Century London, which may have been committed by a scientist intent on re-animating the dead.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/138/345992.jpg"
+      },
+      {
+        "id": 17,
+        "title": "Gogglebox",
+        "year": 2013,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2013 Drama streaming on Shudder.",
+        "synopsis": "Gogglebox is a British observational documentary television show which has aired on Channel 4 since 2013. The show focuses on families, friends and couples from around the country in their living rooms watching the last week's of British television.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/639/1599889.jpg"
+      },
+      {
+        "id": 18,
+        "title": "The Royle Family",
+        "year": 1998,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "1998 Comedy streaming on Shudder.",
+        "synopsis": "On the surface, The Royle Family appeared to be humdrum and low on incident - but such ordinary appearances belie the fact that it was a groundbreaking work of exceptional comedy invention.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/19/49586.jpg"
+      },
+      {
+        "id": 19,
+        "title": "Two Pints of Lager and a Packet of Crisps",
+        "year": 2001,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "Sitcom about the lives and loves of five twenty-somethings in Runcorn.",
+        "synopsis": "Sitcom about the lives and loves of five twenty-somethings in Runcorn.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/19/49587.jpg"
+      },
+      {
+        "id": 20,
+        "title": "Men Behaving Badly",
+        "year": 1992,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "Gary needs a lodger to help pay the mortgage on his flat.",
+        "synopsis": "Gary needs a lodger to help pay the mortgage on his flat. Unfortunately, neither of his lodgers seems to be able (or willing) to pay any rent at all! First there's Dermot and then Tony. Both of these fall for Deborah, who owns the flat upstairs, but get nowhere. Gary also has tho",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/240/600962.jpg"
+      },
+      {
+        "id": 21,
+        "title": "Big Time Rush",
+        "year": 2009,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Children",
+          "Music"
+        ],
+        "genre": "Comedy • Children • Music",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2009 Comedy & Children streaming on Shudder.",
+        "synopsis": "A look at life for the members of a boy band who are trying to make it big in the music industry.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/22/57325.jpg"
+      },
+      {
+        "id": 22,
+        "title": "The Late Show with David Letterman",
+        "year": 1993,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "A mix of comedy and talk show, including alot of celebrity guests and musical performances.",
+        "synopsis": "A mix of comedy and talk show, including alot of celebrity guests and musical performances.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/4702.jpg"
+      },
+      {
+        "id": 23,
+        "title": "Derek",
+        "year": 2012,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy"
+        ],
+        "genre": "Drama • Comedy",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2012 Drama & Comedy streaming on Shudder.",
+        "synopsis": "An award-winning bittersweet comedy-drama about a group of outsiders living on society's margins, Derek centers around Derek Noakes (a tender, innocent man whose love for his job at a retirement home shines through. Derek cares deeply for the home's residents, because they are ki",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/2/6206.jpg"
+      },
+      {
+        "id": 24,
+        "title": "El Internado",
+        "year": 2007,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Thriller",
+          "Mystery"
+        ],
+        "genre": "Drama • Thriller • Mystery",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2007 Drama & Thriller streaming on Shudder.",
+        "synopsis": "El Internado was a Spanish television drama thriller focusing on the students of a fictional boarding school in a forest, where teenagers are sent by their parents to study. The boarding school is situated in a forest far from the city, on the outskirts on which macabre events oc",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16703.jpg"
+      },
+      {
+        "id": 25,
+        "title": "Cupid",
+        "year": 1998,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Romance"
+        ],
+        "genre": "Drama • Comedy • Romance",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "1998 Drama & Comedy streaming on Shudder.",
+        "synopsis": "Hale belives, that as a punishment for his arrogance, that he needs to get 100 couples romantically involved.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/17209.jpg"
+      },
+      {
+        "id": 26,
+        "title": "Slings & Arrows",
+        "year": 2003,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Romance"
+        ],
+        "genre": "Drama • Comedy • Romance",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2003 Drama & Comedy streaming on Shudder.",
+        "synopsis": "Geoffrey Tennant is the passionate but unstable artistic director of the New Burbage Theatre Festival. Haunted by the ghost of his predecessor, he struggles to realize his creative vision while handling touchy actors, a jittery general manager, a pretentious guest director and hi",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/18392.jpg"
+      },
+      {
+        "id": 27,
+        "title": "Combat!",
+        "year": 1962,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "War"
+        ],
+        "genre": "Drama • Action • War",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "1962 Drama & Action streaming on Shudder.",
+        "synopsis": "Combat! was one of the television's most popular series, the groundbreaking Combat!! offers a gritty, unflinching look at American soldiers battling in Europe during World War II, confronting imposing odds and demonstrating remarkable levels of ingenuity and courage.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/80/202316.jpg"
+      },
+      {
+        "id": 28,
+        "title": "Human Planet",
+        "year": 2011,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Nature"
+        ],
+        "genre": "Nature",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2011 Nature streaming on Shudder.",
+        "synopsis": "Following in the footsteps of Planet Earth and Life , this epic eight-part blockbuster is a breathtaking celebration of the amazing, complex, profound and sometimes challenging relationship between humankind and nature. Humans are the ultimate animals – the most successful specie",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/408/1021304.jpg"
+      },
+      {
+        "id": 29,
+        "title": "The Bible",
+        "year": 2013,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Drama • Action • Adventure",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "The Bible comes to life in HISTORY's epic new series.",
+        "synopsis": "The Bible comes to life in HISTORY's epic new series. From Genesis to Revelation, these unforgettable stories unfold through live action and cutting-edge computer-generated imagery, offering new insight into famous scenes and iconic characters. Created by producer Mark Burnett an",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/24077.jpg"
+      },
+      {
+        "id": 30,
+        "title": "Scream: The TV Series",
+        "year": 2015,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Horror",
+          "Mystery"
+        ],
+        "genre": "Horror • Mystery",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "Scream: The TV Series is based on the eponymous, international hit horror franchise.",
+        "synopsis": "Scream: The TV Series is based on the eponymous, international hit horror franchise. After a cyber-bullying incident results in a brutal murder, the shocking violence stirs up memories of a killing spree from the past that has haunted some, intrigued others and maybe just inspire",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/203/508247.jpg"
+      },
+      {
+        "id": 31,
+        "title": "Tales from the Darkside",
+        "year": 1984,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Fantasy",
+          "Horror",
+          "Supernatural"
+        ],
+        "genre": "Fantasy • Horror • Supernatural",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "Each week presents another standalone story of horror fantasy, and/or science fiction.",
+        "synopsis": "Each week presents another standalone story of horror fantasy, and/or science fiction. Some episodes are gruesome, a few are of a lighter comedic style.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/18/46489.jpg"
+      },
+      {
+        "id": 32,
+        "title": "Unsolved Mysteries",
+        "year": 1988,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Crime • Mystery",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "1988 Crime & Mystery streaming on Shudder.",
+        "synopsis": "Unsolved Mysteries explores unsolved cases in which you, the viewer, can call in or write and solve them. The show looks at cases such as: lost loves, missing persons, homicide, supernatural, the unexplained, wanted, etc. Unsolved Mysteries usually has four segments in one show, ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/21/53051.jpg"
+      },
+      {
+        "id": 33,
+        "title": "Austin City Limits",
+        "year": 1974,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Music"
+        ],
+        "genre": "Music",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "1974 Music streaming on Shudder.",
+        "synopsis": "Austin City Limits is an American television music program and a staple of the Public Broadcasting Service. Austin City Limits was initially created with an eye and ear toward original Texas music, featuring artists that created innovative new sounds in everything from western sw",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/485/1213122.jpg"
+      },
+      {
+        "id": 34,
+        "title": "Ask This Old House",
+        "year": 2002,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "DIY"
+        ],
+        "genre": "DIY",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2002 DIY streaming on Shudder.",
+        "synopsis": "The crew at This Old House take on some pretty big projects, which means they can only work on one or two houses a year. But homeowners have a virtual truckload of questions on smaller projects, and the TOH crew is ready to answer. Ask This Old House solves the steady stream of h",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/641/1603950.jpg"
+      },
+      {
+        "id": 35,
+        "title": "The Crazy Ones",
+        "year": 2013,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2013 Comedy streaming on Shudder.",
+        "synopsis": "The Crazy Ones is a comedy about a larger-than-life advertising genius whose unorthodox methods and unpredictable behavior would get him fired... if he weren't the boss. Simon Roberts is the head of a powerful agency, with the biggest clients and brands in the world, but even mor",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/3713.jpg"
+      },
+      {
+        "id": 36,
+        "title": "Painkiller Jane",
+        "year": 2007,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Science-Fiction"
+        ],
+        "genre": "Action • Adventure • Science-Fiction",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "In a very imaginable future, the world battles terrorism and unrest.",
+        "synopsis": "In a very imaginable future, the world battles terrorism and unrest. Out of this chaos emerges a new hero: Jane Vasco, a.k.a. Painkiller Jane. Once the DEA's top agent, Jane Vasco is formidable, both mentally and physically. As a child, her father nicknamed her Painkiller Jane, d",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/3/9387.jpg"
+      },
+      {
+        "id": 37,
+        "title": "An Idiot Abroad",
+        "year": 2010,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Adventure",
+          "Travel"
+        ],
+        "genre": "Comedy • Adventure • Travel",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2010 Comedy & Adventure streaming on Shudder.",
+        "synopsis": "Ricky Gervais and Stephen Merchant's partner in crime, Karl Pilkington, isn't much of a traveller, but now he is set to experience a variety of people and cultures as he explores the Seven Wonders of the World in this unmissable series.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/37/92764.jpg"
+      },
+      {
+        "id": 38,
+        "title": "L.A. Law",
+        "year": 1986,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Legal"
+        ],
+        "genre": "Drama • Crime • Legal",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "1986 Drama & Crime streaming on Shudder.",
+        "synopsis": "L.A. Law takes us inside the law firm of McKenzie, Brackman, Chaney and Kuzak. There, a team of ambitious and competitive attorneys must face the conflicts between their personal desires, their obligations as lawyers, and their principles as human beings. A portrayal of the law a",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/21145.jpg"
+      },
+      {
+        "id": 39,
+        "title": "Big Time in Hollywood, FL",
+        "year": 2015,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2015 Comedy streaming on Shudder.",
+        "synopsis": "After their parents decide to kick them out, delusional brothers and self-proclaimed filmmakers Ben and Jack Dolfe stage an elaborate ruse to maintain their financial dependence on Mom and Dad. But when their plan takes a dark and dangerous turn, the brothers find themselves embr",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/302/755277.jpg"
+      },
+      {
+        "id": 40,
+        "title": "RoboCop",
+        "year": 1994,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Science-Fiction"
+        ],
+        "genre": "Action • Adventure • Science-Fiction",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "1994 Action & Adventure streaming on Shudder.",
+        "synopsis": "In this continuation of the movie franchise, Alex Murphy is RoboCop , a deceased cop brought back to life through cybernetic technology. Now he fights crime on the streets of Detroit and deals with the machinations of OCP, the company that \"created\" him.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/27697.jpg"
+      },
+      {
+        "id": 41,
+        "title": "The Cosby Show",
+        "year": 1984,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "1984 Comedy & Family streaming on Shudder.",
+        "synopsis": "The show focuses on the Huxtables, an affluent African-American family living and growing up in Brooklyn, New York.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/313/782979.jpg"
+      },
+      {
+        "id": 42,
+        "title": "Earth's Natural Wonders",
+        "year": 2015,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Nature"
+        ],
+        "genre": "Nature",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2015 Nature streaming on Shudder.",
+        "synopsis": "Earth's Natural Wonders will reveal a handful of places that can lay claim to being the greatest landscapes on our planet. Viewers will be taken on a landmark tour of Earth, discovering connections between some incredible places and the life and death struggles of the animals and",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/145/362633.jpg"
+      },
+      {
+        "id": 43,
+        "title": "Betrayal",
+        "year": 2013,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2013 Drama & Crime streaming on Shudder.",
+        "synopsis": "On Betrayal , a chance meeting between photographer Sara Hadley (Hannah Ware) and Attorney Jack McAllister (Stuart Townsend) leads to an instant and undeniable attraction. Sarah's husband, Drew (Chris Johnson), is a successful prosecutor with political aspirations, while Jack is ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/340/851211.jpg"
+      },
+      {
+        "id": 44,
+        "title": "Benson",
+        "year": 1979,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "Benson Dubois is the assistant to his state's governor in this \"Soap\" spinoff.",
+        "synopsis": "Benson Dubois is the assistant to his state's governor in this \"Soap\" spinoff.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/27/67813.jpg"
+      },
+      {
+        "id": 45,
+        "title": "Franklin & Bash",
+        "year": 2011,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Legal"
+        ],
+        "genre": "Drama • Comedy • Legal",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "2011 Drama & Comedy streaming on Shudder.",
+        "synopsis": "Two young, fly-by-the-seat-of-their-pants street lawyers cause a seismic culture clash when they join a legendary, button-down law firm.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/4800.jpg"
+      },
+      {
+        "id": 46,
+        "title": "Project Runway",
+        "year": 2004,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "Project Runway designers are given an opportunity to launch their careers in fashion.",
+        "synopsis": "Project Runway designers are given an opportunity to launch their careers in fashion.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/587/1468363.jpg"
+      },
+      {
+        "id": 47,
+        "title": "Primeval: New World",
+        "year": 2012,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Adventure",
+          "Fantasy"
+        ],
+        "genre": "Drama • Adventure • Fantasy",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "A spin-off of the UK hit.",
+        "synopsis": "A spin-off of the UK hit. Primeval: New World follows a team of scientists and animal experts that's called to action when dinosaurs appear in Vancouver.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/17178.jpg"
+      },
+      {
+        "id": 48,
+        "title": "King & Maxwell",
+        "year": 2013,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "Sean King and Michelle Maxwell aren't your typical private investigators.",
+        "synopsis": "Sean King and Michelle Maxwell aren't your typical private investigators. Both are former Secret Service agents, and their unique skills - not to mention their razor-sharp chemistry - give them a leg up on conventional law enforcement. Maxwell is a former Olympic athlete who uses",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/17736.jpg"
+      },
+      {
+        "id": 49,
+        "title": "Last Tango in Halifax",
+        "year": 2012,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Romance"
+        ],
+        "genre": "Drama • Comedy • Romance",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "Celia and Alan are both widowed and in their seventies.",
+        "synopsis": "Celia and Alan are both widowed and in their seventies. When their respective grandsons put their details on Facebook, they rediscover a passionate relationship that started over sixty years ago.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/89/224678.jpg"
+      },
+      {
+        "id": 50,
+        "title": "IRIS",
+        "year": 2009,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Espionage"
+        ],
+        "genre": "Drama • Action • Espionage",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "2009 Drama & Action streaming on Shudder.",
+        "synopsis": "Two elite National Security System (NSS) agents, Hyung Jun and Sa Woo who were sworn blood brothers, both fall for fellow agent Seung Hee. Sa Woo attempts to suppress his feelings for Seung Hee and wishes the couple the best.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/90/226597.jpg"
+      },
+      {
+        "id": 51,
+        "title": "The Love Boat",
+        "year": 1977,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Romance"
+        ],
+        "genre": "Drama • Comedy • Romance",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "1977 Drama & Comedy streaming on Shudder.",
+        "synopsis": "Each week, passengers looking for romance board the beautiful Pacific Princess cruise ship as it sails to tropical and exotic lands. Captain Stubing, Julie, Gopher, Dr. Adam, and Isaac help them to get the most out of their trips and do their best to help them fall in love.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/21183.jpg"
+      },
+      {
+        "id": 52,
+        "title": "Y Gwyll",
+        "year": 2013,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2013 Drama & Crime streaming on Shudder.",
+        "synopsis": "From the windswept sand dunes of the coastline to the badlands of the hinterland, this is a detective drama with pace, poetry and scale. A world of Blood, soil and belonging. A place that lives by its own rules: a natural crucible of colliding worlds where history and myth meet t",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/10/25008.jpg"
+      },
+      {
+        "id": 53,
+        "title": "Stitchers",
+        "year": 2015,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Science-Fiction"
+        ],
+        "genre": "Drama • Crime • Science-Fiction",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2015 Drama & Crime streaming on Shudder.",
+        "synopsis": "ABC Family's first procedural drama, Stitchers , follows Kirsten a young woman recruited into a covert government agency to be 'stitched' into the minds of the recently deceased, using their memories to investigate murders and decipher mysteries that otherwise would have gone to ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/10/26950.jpg"
+      },
+      {
+        "id": 54,
+        "title": "American Ninja Warrior",
+        "year": 2009,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Sports"
+        ],
+        "genre": "Action • Sports",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2009 Action & Sports streaming on Shudder.",
+        "synopsis": "American Ninja Warrior is an action-packed series that follows competitors as they tackle a series of challenging obstacle courses in both qualifying and finals rounds across the country. Those that successfully complete a course in their designated region move on to the national",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/626/1565986.jpg"
+      },
+      {
+        "id": 55,
+        "title": "Inside the Actors Studio",
+        "year": 1994,
+        "communityScore": 89,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "1994 Drama streaming on Shudder.",
+        "synopsis": "Inside the Actors Studio is the award-winning master class on the craft of acting, featuring an impressive roster of multiple hosts to engage with the guests and the students of The Actors Studio MFA program at Pace University.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/211/529281.jpg"
+      },
+      {
+        "id": 56,
+        "title": "Life in Pieces",
+        "year": 2015,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2015 Comedy & Family streaming on Shudder.",
+        "synopsis": "Life in Pieces is a single-camera comedy about one big happy family and their sometimes awkward, often hilarious and ultimately beautiful milestone moments as told by its various members. Of the three siblings, middle child Matt may have just found his true love, his co-worker, C",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/174/436007.jpg"
+      },
+      {
+        "id": 57,
+        "title": "The Island with Bear Grylls",
+        "year": 2014,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Action • Adventure",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "Bear Grylls drops groups of men and women on desert islands in the Pacific.",
+        "synopsis": "Bear Grylls drops groups of men and women on desert islands in the Pacific. Can they survive?",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/19/49731.jpg"
+      },
+      {
+        "id": 58,
+        "title": "The Beautiful Lie",
+        "year": 2015,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "genre": "Drama • Romance",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2015 Drama & Romance streaming on Shudder.",
+        "synopsis": "A contemporary re-imagining of Tolstoy's 'Anna Karenina' that explores over six episodes the different kinds of love and all that goes with it; family and loyalty, marriage and seduction, passion and obligation, jealousy and envy. This is a timeless love story that asks the quest",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/24/60221.jpg"
+      },
+      {
+        "id": 59,
+        "title": "SS-GB",
+        "year": 2017,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "War",
+          "Espionage"
+        ],
+        "genre": "Drama • War • Espionage",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "Drama series based on the novel by Len Deighton.",
+        "synopsis": "Drama series based on the novel by Len Deighton. It is 1941, and the Germans have won the Battle of Britain. Detective Douglas Archer finds himself working under the brutal SS in occupied London.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/98/247081.jpg"
+      },
+      {
+        "id": 60,
+        "title": "thirtysomething",
+        "year": 1987,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "1987 Drama streaming on Shudder.",
+        "synopsis": "thirtysomething is an American television drama about American baby boomers (in Philadelphia, Pennsylvania) who are now in their thirties. The series examines how this group of friends learns to negotiate their prior involvement with the early 1970s counterculture as young adults",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/26/66487.jpg"
+      },
+      {
+        "id": 61,
+        "title": "Last Resort",
+        "year": 2012,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "War"
+        ],
+        "genre": "Drama • Action • War",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "500 feet beneath the ocean's surface, the U.S.",
+        "synopsis": "500 feet beneath the ocean's surface, the U.S. ballistic missile submarine Colorado receive their orders. Over a radio channel, designed only to be used if their homeland has been wiped out, they're told to fire nuclear weapons at Pakistan. Captain Marcus Chaplin demands confirma",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/3741.jpg"
+      },
+      {
+        "id": 62,
+        "title": "New Tricks",
+        "year": 2004,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Crime"
+        ],
+        "genre": "Drama • Comedy • Crime",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2004 Drama & Comedy streaming on Shudder.",
+        "synopsis": "Drama about a police unit, made up of retired detectives and a long-suffering boss, looking at unsolved crimes.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/48/121589.jpg"
+      },
+      {
+        "id": 63,
+        "title": "EastEnders",
+        "year": 1985,
+        "communityScore": 75,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "1985 Drama streaming on Shudder.",
+        "synopsis": "Set in the East End of London, the show focuses on the tensions between love and family with stories ranging from hard-hitting social issues, to personal, human tragedies. And there's plenty of funny moments too. Classic characters old and new across thousands of episodes have sh",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15519.jpg"
+      },
+      {
+        "id": 64,
+        "title": "The Triangle",
+        "year": 2005,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Drama • Action • Adventure",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2005 Drama & Action streaming on Shudder.",
+        "synopsis": "Set against the mysteries of the Bermuda Triangle, this event will focus on a disparate group of professionals, brought together to investigate the dangerous truths behind one of the greatest legends of our time. In The Triangle , billionaire Eric Benirall is losing his cargo shi",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/28268.jpg"
+      },
+      {
+        "id": 65,
+        "title": "Blood & Oil",
+        "year": 2015,
+        "communityScore": 75,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2015 Drama streaming on Shudder.",
+        "synopsis": "Blood &amp; Oil (formerly Boom ) is about a young couple that moves to a contemporary boomtown in North Dakota in pursuit of the American dream and are seduced by the sudden wealth of frontier life.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/14/35885.jpg"
+      },
+      {
+        "id": 66,
+        "title": "Leave It to Beaver",
+        "year": 1957,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "1957 Comedy & Family streaming on Shudder.",
+        "synopsis": "Inspired by the real life experiences of creators Joe Connelly and Bob Moshers own children, Leave It To Beaver follows the hilarious everyday adventures of young Theodore 'Beaver' Cleaver and his older brother Wally. Whether at home, at school or playing around their suburban ne",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/29810.jpg"
+      },
+      {
+        "id": 67,
+        "title": "Nice Guy",
+        "year": 2012,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "genre": "Drama • Romance",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "2012 Drama & Romance streaming on Shudder.",
+        "synopsis": "The drama is a melodrama which depicts the story of a man called Kang Ma Roo who has been hurt by a woman he loves called Han Jae Hee and how he continues his own life by using several women. He sacrificed his well being for his girlfriend only to be dumped by her for another man",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/459/1148532.jpg"
+      },
+      {
+        "id": 68,
+        "title": "The Penguins of Madagascar",
+        "year": 2008,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Adventure",
+          "Children"
+        ],
+        "genre": "Comedy • Adventure • Children",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "2008 Comedy & Adventure streaming on Shudder.",
+        "synopsis": "While Alex, Marty, Gloria, and Melman are still relaxing in Africa, the four penguins: Skipper, Kowalski, Private and Rico, have returned to New York City in Central Park Zoo. The Penguins will rule the roost at their Central Park Zoo home, doing secret missions in the heart of N",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/19/49604.jpg"
+      },
+      {
+        "id": 69,
+        "title": "Il commissario Montalbano",
+        "year": 1999,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "1999 Drama & Crime streaming on Shudder.",
+        "synopsis": "Salvo Montalbano is the police commissioner of Vigàta, a gruff character who is responsible and serious at work, but often also open and friendly with people he knows he can trust. Montalbano finds he must investigate various criminal acts in his area, for which - thanks to his g",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/397/993451.jpg"
+      },
+      {
+        "id": 70,
+        "title": "Five Daughters",
+        "year": 2010,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2010 Drama & Crime streaming on Shudder.",
+        "synopsis": "Factually-based drama telling the stories of five young women who were tragically murdered in Ipswich in 2006.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/469/1173326.jpg"
+      },
+      {
+        "id": 71,
+        "title": "City Homicide",
+        "year": 2007,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2007 Drama streaming on Shudder.",
+        "synopsis": "No greater honour will ever be bestowed upon an officer, than when they are entrusted with an investigation into the death of a human being. Seven's new series follows young Homicide Detectives Simon (Daniel MacPherson, Neighbours, Tripping Over), Duncan (Aaron Pedersen, Water Ra",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/26/66430.jpg"
+      },
+      {
+        "id": 72,
+        "title": "Kara Sevda",
+        "year": 2015,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "genre": "Drama • Romance",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "A young artist finds herself obligated to sacrifice her love story for hiding a family secret.",
+        "synopsis": "A young artist finds herself obligated to sacrifice her love story for hiding a family secret.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/76/191358.jpg"
+      },
+      {
+        "id": 73,
+        "title": "What's New Scooby-Doo?",
+        "year": 2002,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Mystery"
+        ],
+        "genre": "Mystery",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "Cartoon capers with the cowardly canine and his human companions.",
+        "synopsis": "Cartoon capers with the cowardly canine and his human companions.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/634/1585517.jpg"
+      },
+      {
+        "id": 74,
+        "title": "Man Down",
+        "year": 2013,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2013 Comedy streaming on Shudder.",
+        "synopsis": "Comedy series written by and starring Greg Davies as Dan, a childish idiot whose world is on the brink of collapse.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/2/5425.jpg"
+      },
+      {
+        "id": 75,
+        "title": "Smash",
+        "year": 2012,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2012 Drama streaming on Shudder.",
+        "synopsis": "The hit-making Broadway writing team of Julia Houston and Tom Levitt unites with producer Eileen Rand to create a new musical based on the life of Marilyn Monroe, and seasoned chorus girl Ivy Lynn vies with newcomer Karen Cartwright for the dream role.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/2/6176.jpg"
+      },
+      {
+        "id": 76,
+        "title": "Dead Set",
+        "year": 2008,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Fantasy",
+          "Horror"
+        ],
+        "genre": "Comedy • Fantasy • Horror",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2008 Comedy & Fantasy streaming on Shudder.",
+        "synopsis": "Starring Jaime Winstone, Dead Set is E4's horror series in which the dead are returning to life and attacking the living. Curiously there are a few people left in Britain who aren't worried about any of this - that's because they're the remaining contestants in Big Brother. Cocoo",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/501/1253505.jpg"
+      },
+      {
+        "id": 77,
+        "title": "The Grid",
+        "year": 2004,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Thriller"
+        ],
+        "genre": "Drama • Thriller",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2004 Drama & Thriller streaming on Shudder.",
+        "synopsis": "British espionage agencies join forces with their American opposite numbers to disrupt a potentially violent group out to destroy the world's economic stability.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/4/10867.jpg"
+      },
+      {
+        "id": 78,
+        "title": "Breakout Kings",
+        "year": 2011,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "Breakout Kings follows an unconventional partnership between the U.S.",
+        "synopsis": "Breakout Kings follows an unconventional partnership between the U.S. Marshals' office and a group of convicts as they work to catch fugitives on the run. In Breakout Kings, veteran U.S. Marshals Charlie Duchamp and Ray Zancanelli decide to reject protocol and take an unorthodox ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/394/986366.jpg"
+      },
+      {
+        "id": 79,
+        "title": "Hardcore Pawn",
+        "year": 2010,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2010 Drama streaming on Shudder.",
+        "synopsis": "Hardcore Pawn takes viewers behind the scenes of the immense American Jewelry &amp; Loan, a family business owned by third-generation pawnbroker Les Gold. Working with Les are his son, Seth, who is being groomed to eventually take over the store, and daughter, Ashley, who thinks ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15898.jpg"
+      },
+      {
+        "id": 80,
+        "title": "1864",
+        "year": 2014,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "War"
+        ],
+        "genre": "Drama • War",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2014 Drama & War streaming on Shudder.",
+        "synopsis": "When Germany and Prussia declare war on Denmark, two brothers are called to serve in the bloodiest battle in Denmark's history. We follow the brothers Peter and Laust during the years of the Second Schleswig War, two brothers in love with the same woman.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/62/157336.jpg"
+      },
+      {
+        "id": 81,
+        "title": "Adam-12",
+        "year": 1968,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "1968 Drama & Action streaming on Shudder.",
+        "synopsis": "Race through the streets of Los Angeles with Adam-12 , the series that defined the police drama genre. Still mourning the death of his former partner, Officer Pete Malloy is teamed with rookie Officer Jim Reed and together they serve and protect the City of Angels as \"Adam-12\", t",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/29787.jpg"
+      },
+      {
+        "id": 82,
+        "title": "Who Wants to Be a Millionaire",
+        "year": 2002,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2002 Drama streaming on Shudder.",
+        "synopsis": "In Who Wants to Be a Millionaire , 15 questions need to be answered by the contestants to win the 1 million dollar prize.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/631/1579107.jpg"
+      },
+      {
+        "id": 83,
+        "title": "Shades of Blue",
+        "year": 2016,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2016 Drama & Crime streaming on Shudder.",
+        "synopsis": "Harlee Santos is a charismatic single mother and resourceful detective at the heart of a tight-knit crew of Brooklyn detectives, led by enigmatic Lieutenant Matt Wozniak, who often leads the team to step outside the limitations of the law in order to effectively protect their pre",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/154/386773.jpg"
+      },
+      {
+        "id": 84,
+        "title": "Inspector Morse",
+        "year": 1987,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "1987 Drama & Crime streaming on Shudder.",
+        "synopsis": "Inspector Morse is a detective drama based on Colin Dexter's series of Chief Inspector Morse novels. The series follows Chief Inspector Morse and Sergeant Lewis as they solve crimes.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/17/43885.jpg"
+      },
+      {
+        "id": 85,
+        "title": "Jack Taylor",
+        "year": 2010,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "2010 Drama & Crime streaming on Shudder.",
+        "synopsis": "Self-destructive, pigheaded, and over-fond of the bottle, Jack Taylor is a forty-something ex-cop trying to earn a living as a private detective in his native Galway. Taylor has burned a lot of bridges, but he still has a knack for uncovering ugly truths. Set against the rugged b",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/18/47329.jpg"
+      },
+      {
+        "id": 86,
+        "title": "The Fugitive",
+        "year": 1963,
+        "communityScore": 86,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Drama • Action • Adventure",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "1963 Drama & Action streaming on Shudder.",
+        "synopsis": "Dr. Richard Kimble, wrongly accused of murdering his wife, escapes custody while on the road to prison and must elude the police to continue his quest to find the real killer.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/26/66919.jpg"
+      },
+      {
+        "id": 87,
+        "title": "Burn Notice",
+        "year": 2007,
+        "communityScore": 87,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Action",
+          "Crime",
+          "Espionage"
+        ],
+        "genre": "Action • Crime • Espionage",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "My name is Michael Westen.",
+        "synopsis": "My name is Michael Westen. I used to be a spy. Until I got a burn notice, I was blacklisted. When you're burned, you've got nothing: no cash, no credit, no job history. You're stuck in whatever city they decide to dump you in. Miami. You do whatever work comes your way. You rely ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/5/14749.jpg"
+      },
+      {
+        "id": 88,
+        "title": "Ancient Aliens",
+        "year": 2009,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2009 Drama streaming on Shudder.",
+        "synopsis": "Ancient Aliens explores the controversial theory that extraterrestrials have visited Earth for millions of years. From the age of the dinosaurs to ancient Egypt, from early cave drawings to continued mass sightings in the US, each episode in this hit History series gives historic",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/561/1403626.jpg"
+      },
+      {
+        "id": 89,
+        "title": "7th Heaven",
+        "year": 1996,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Family"
+        ],
+        "genre": "Drama • Family",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "1996 Drama & Family streaming on Shudder.",
+        "synopsis": "Reverend Eric Camden and his wife Annie have always had their hands full caring for seven children, not to mention the friends, sweethearts and spouses that continually come and go in the Camden household. This year, Eric and Annie will find their family back together in Glenoak ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/494/1237230.jpg"
+      },
+      {
+        "id": 90,
+        "title": "The Young Indiana Jones Chronicles",
+        "year": 1992,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Fantasy"
+        ],
+        "genre": "Action • Adventure • Fantasy",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "The Young Indiana Jones Chronicles was based on the Indiana Jones series of films.",
+        "synopsis": "The Young Indiana Jones Chronicles was based on the Indiana Jones series of films. The series follows the Indiana Jones character (as a young boy and as a young man) as he was growing up and experiencing his early adventures, where he gets into trouble, learns life lessons and en",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16904.jpg"
+      },
+      {
+        "id": 91,
+        "title": "Death Comes to Pemberley",
+        "year": 2013,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance",
+          "Mystery"
+        ],
+        "genre": "Drama • Romance • Mystery",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "Adaptation of PD James's bestselling homage to Pride and Prejudice.",
+        "synopsis": "Adaptation of PD James's bestselling homage to Pride and Prejudice. Elizabeth and Darcy, now six years married, are preparing for their annual ball when festivities are brought to an abrupt halt.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/17213.jpg"
+      },
+      {
+        "id": 92,
+        "title": "The Dovekeepers",
+        "year": 2015,
+        "communityScore": 87,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Romance",
+          "History"
+        ],
+        "genre": "Drama • Romance • History",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2015 Drama & Romance streaming on Shudder.",
+        "synopsis": "Based on Alice Hoffman's historical novel about the Siege of Masada, the miniseries focuses on four extraordinary women whose lives intersect in a fight for survival at the siege of Masada. Set in ancient Israel, \"The Dovekeepers\" is based on the true events at Masada in 70 C.E. ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/23998.jpg"
+      },
+      {
+        "id": 93,
+        "title": "The Muppets",
+        "year": 2015,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Children",
+          "Family"
+        ],
+        "genre": "Comedy • Children • Family",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2015 Comedy & Children streaming on Shudder.",
+        "synopsis": "The Muppets return to prime time with a contemporary, documentary-style show that, for the first time ever, will explore the Muppets' personal lives and relationships, both at home and at work, as well as romances, break-ups, achievements, disappointments, wants and desires; a mo",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/27508.jpg"
+      },
+      {
+        "id": 94,
+        "title": "Diagnosis: Murder",
+        "year": 1992,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Medical"
+        ],
+        "genre": "Drama • Crime • Medical",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "1992 Drama & Crime streaming on Shudder.",
+        "synopsis": "Dr. Mark Sloan is chief of internal medicine at Community General Hospital in Los Angeles and a L.A.P.D. consultant, Sloan has a knack for getting into trouble, negotiating the twists and turns of mysteries and solving crimes with the help of his homicide detective son Steve.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/17/44006.jpg"
+      },
+      {
+        "id": 95,
+        "title": "Kolchak: The Night Stalker",
+        "year": 1972,
+        "communityScore": 87,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Comedy",
+          "Horror",
+          "Science-Fiction"
+        ],
+        "genre": "Comedy • Horror • Science-Fiction",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "1972 Comedy & Horror streaming on Shudder.",
+        "synopsis": "In this one-season series based on two high-rated TV movies, Carl Kolchak is a down-and-out reporter who finds himself in Chicago. He gets a job with the Independent News Service, and finds himself investigating cases involving the supernatural and the fantastical.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/297/742971.jpg"
+      },
+      {
+        "id": 96,
+        "title": "Father Dowling Mysteries",
+        "year": 1987,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Mystery"
+        ],
+        "genre": "Drama • Mystery",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "1987 Drama & Mystery streaming on Shudder.",
+        "synopsis": "The show began as an NBC Made for TV Movie in 1987 and the show was to have begun weekly in 1988 though because of a writer's strike in 1988 it didn't begin weekly until 1989. After it's 1st season the show left NBC and ABC took the show from 1990 until 1991.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/19/49656.jpg"
+      },
+      {
+        "id": 97,
+        "title": "NewsRadio",
+        "year": 1995,
+        "communityScore": 87,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "1995 Comedy streaming on Shudder.",
+        "synopsis": "NewsRadio showcases the hilarious antics of the whimsical #2 news radio station in New York City. The corral of characters are eccentric and witty, and they surprise each other with their back-and-forth banter. Their workplace humor also supplies an abundance of laughs amidst thi",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/20/50224.jpg"
+      },
+      {
+        "id": 98,
+        "title": "Top Chef Canada",
+        "year": 2011,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Food"
+        ],
+        "genre": "Food",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2011 Food streaming on Shudder.",
+        "synopsis": "In this high stakes competition series Top Chef Canada , audiences get to see 16 up-and-coming Canadian chefs battle it out to win a $100,000 cash prize, a GE Monogram Kitchen valued at over $30,000, and the coveted title of Canada's Top Chef.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/594/1485330.jpg"
+      },
+      {
+        "id": 99,
+        "title": "Building Alaska",
+        "year": 2012,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "DIY"
+        ],
+        "genre": "DIY",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "2012 DIY streaming on Shudder.",
+        "synopsis": "What does it take to build a house totally off the grid in some of the most unforgiving terrain on the planet? We follow a cast of characters who set out to construct three incredible cabins in the obscure Alaskan wilderness. With no roads and no building supply centers, they'll ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/342/855709.jpg"
+      },
+      {
+        "id": 100,
+        "title": "Intruders",
+        "year": 2014,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Thriller"
+        ],
+        "genre": "Drama • Fantasy • Thriller",
+        "platforms": [
+          "Shudder"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2014 Drama & Fantasy streaming on Shudder.",
+        "synopsis": "A contemporary, chilling, paranormal tale set in the moody Pacific Northwest, the series spins a fascinating and complex web of drama. As strange, apparently unrelated events start happening, multiple story-lines - a missing wife, an assassin covering his crimes, a child on the r",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/126/316698.jpg"
+      }
+    ]
+  },
+  {
+    "id": "espn",
+    "name": "ESPN+",
+    "brand": "#CC0000",
+    "accent": "#ff3333",
+    "shows": [
+      {
+        "id": 1,
+        "title": "UFC Fight Night",
+        "year": 2005,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2005 Drama streaming on ESPN+.",
+        "synopsis": "UFC Fight Night is a part of the Ultimate Fighting Championship (UFC) which is the largest mixed martial arts promotion company in the world featuring most of the top-ranked fighters in the sport. Based in the United States, the UFC produces events worldwide. The organization sho",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/293/734642.jpg"
+      },
+      {
+        "id": 2,
+        "title": "30 for 30",
+        "year": 2009,
+        "communityScore": 70,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Sports"
+        ],
+        "genre": "Sports",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2009 Sports streaming on ESPN+.",
+        "synopsis": "Inspired by ESPN's anniversary, ESPN Films is launching 30 for 30 , an unprecedented documentary series featuring 30 of today's finest storytellers telling thirty remarkable stories from the ESPN era. On their own, each of the films will be an intimate look at a specific story, r",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/604/1510934.jpg"
+      },
+      {
+        "id": 3,
+        "title": "NFL Live",
+        "year": 1998,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Sports"
+        ],
+        "genre": "Sports",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "1998 Sports streaming on ESPN+.",
+        "synopsis": "NFL Live is a National Football League studio show, currently airing Monday through Friday at 7:00 p.m ET on ESPN2. Formerly known as NFL 2Night , the program is one of the only NFL-related studio programs to air during the week along with NFL Insiders . As such, NFL Live is not ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/324/810590.jpg"
+      },
+      {
+        "id": 4,
+        "title": "SEC Storied",
+        "year": 2011,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "History",
+          "Sports"
+        ],
+        "genre": "History • Sports",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2011 History & Sports streaming on ESPN+.",
+        "synopsis": "ESPN's award-winning Content Development unit will create four one-hour documentaries highlighting the traditions, rivalries and unique stories of the Southeastern Conference. The SEC Storied series debuted on ESPNU Wednesday, Sept. 7 at 8 p.m. ET with Herschel, about former Univ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/23/58103.jpg"
+      },
+      {
+        "id": 5,
+        "title": "E:60",
+        "year": 2007,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Sports"
+        ],
+        "genre": "Sports",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2007 Sports streaming on ESPN+.",
+        "synopsis": "E:60 is ESPN's first multi-subject prime-time newsmagazine program offering a combination of investigative features, profiles of intriguing sports personalities, and cutting edge stories on innovation in the sports world, including emerging sports and new technology. The series w",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/22/56190.jpg"
+      },
+      {
+        "id": 6,
+        "title": "Playmakers",
+        "year": 2003,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Sports"
+        ],
+        "genre": "Drama • Sports",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2003 Drama & Sports streaming on ESPN+.",
+        "synopsis": "Playmakers is a gritty ensemble drama chronicling the behind-the-scenes and off-the-field lives of the players, families, coaches and owner of a fictional professional football team. The series weaves multiple storylines into an intricately patterned saga that changes minute-to-m",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/21210.jpg"
+      },
+      {
+        "id": 7,
+        "title": "Tilt",
+        "year": 2005,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2005 Drama streaming on ESPN+.",
+        "synopsis": "In the month before the World Poker Championships, three professional gamblers have teamed up to take down the reigning king of the table -- Don \"The Matador\" Everest on Tilt . Long held to be the most influential man in the game of poker, The Matador's alliances run deep-down to",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/20/52008.jpg"
+      },
+      {
+        "id": 8,
+        "title": "GLORY",
+        "year": 2012,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2012 Drama streaming on ESPN+.",
+        "synopsis": "The world's premier kickboxing league, Glory World Series maintains six different weight classes and utilizes a year-long tournament format series, comprised of both 8-man 'Slam' and 16-man 'Grand Slam,' one-night, single-elimination tournaments that test the physical and mental ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/26/65148.jpg"
+      },
+      {
+        "id": 9,
+        "title": "NBA Countdown",
+        "year": 2007,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Sports"
+        ],
+        "genre": "Sports",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "NBA Countdown serves as the primer for game telecasts on both ABC and ESPN.",
+        "synopsis": "NBA Countdown serves as the primer for game telecasts on both ABC and ESPN. It features a less-scripted format, highlighted by a lively round-table discussion and debate of the top story lines around the league. Seats at the table are reserved for host Sage Steele and analysts Do",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/396/991916.jpg"
+      },
+      {
+        "id": 10,
+        "title": "90210",
+        "year": 2008,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "genre": "Drama • Romance",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "The fifth season of 90210 will find the gang struggling with the biggest issues of their lives.",
+        "synopsis": "The fifth season of 90210 will find the gang struggling with the biggest issues of their lives. Having put their relatively carefree days at West Beverly behind them and launched themselves into adulthood, they will search for answers to their trials and tribulations with only th",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/4/11847.jpg"
+      },
+      {
+        "id": 11,
+        "title": "Law & Order: LA",
+        "year": 2010,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Legal"
+        ],
+        "genre": "Drama • Crime • Legal",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2010 Drama & Crime streaming on ESPN+.",
+        "synopsis": "In the City of Los Angeles, the people are represented by two separate yet equally important groups: the police who investigate crime and the district attorneys who prosecute the offenders. These are their stories.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/262/657208.jpg"
+      },
+      {
+        "id": 12,
+        "title": "Doogie Howser, M.D.",
+        "year": 1989,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Medical"
+        ],
+        "genre": "Comedy • Medical",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "Steven Bochco and David E.",
+        "synopsis": "Steven Bochco and David E. Kelley created this comedy about a 16-year-old wunderkind physician who graduated from medical school at age 14 and began his residency at an L.A. hospital. Making sure Doogie's head didn't get too big for his stethoscope were his father, also a doctor,",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/17223.jpg"
+      },
+      {
+        "id": 13,
+        "title": "Tour of Duty",
+        "year": 1987,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "War"
+        ],
+        "genre": "Drama • Action • War",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "1987 Drama & Action streaming on ESPN+.",
+        "synopsis": "As the first television drama series about the Vietnam War, Tour of Duty focuses on a single platoon of young U.S. soldiers through their one-year tour of combat duty in Vietnam during the late 1960's. While their own country is rocked by a massive anti-war movement, these young ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/355/888621.jpg"
+      },
+      {
+        "id": 14,
+        "title": "No Offence",
+        "year": 2015,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Crime"
+        ],
+        "genre": "Drama • Comedy • Crime",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "No Offence follows a team of cops in the heart of crime.",
+        "synopsis": "No Offence follows a team of cops in the heart of crime. This team of cops are tough but big-hearted who go above and beyond to bring down criminals. Set on one of the worst parts of town there is a demoralizing list of crimes: drug labs, arsonists, neo-Nazis and notorious murder",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/48/121682.jpg"
+      },
+      {
+        "id": 15,
+        "title": "Grand Designs Australia",
+        "year": 2010,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "No design is too ambitious when it comes to creating your dream home.",
+        "synopsis": "No design is too ambitious when it comes to creating your dream home. But discovering the hard realities that complicate your plans can often be too much to bear.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/538/1345757.jpg"
+      },
+      {
+        "id": 16,
+        "title": "One of Us",
+        "year": 2016,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Thriller"
+        ],
+        "genre": "Drama • Crime • Thriller",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "2016 Drama & Crime streaming on ESPN+.",
+        "synopsis": "A horrific double murder rocks the lives of two families living side-by-side in isolated rural Scotland. But instead of focusing on the investigation, One of Us explores the fallout for the grieving relatives, and the dark consequences that threaten to shatter their lives.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/72/180787.jpg"
+      },
+      {
+        "id": 17,
+        "title": "T. J. Hooker",
+        "year": 1982,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "After his partner was murdered, veteran plain clothes Detective T.J.",
+        "synopsis": "After his partner was murdered, veteran plain clothes Detective T.J. Hooker had reverted back to his former role as Sergeant, and returned to the beat to rid the streets of the type of scum that was responsible for his partner's death. Back in uniform, Hooker was assigned to trai",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/633/1582912.jpg"
+      },
+      {
+        "id": 18,
+        "title": "Dynasty",
+        "year": 1981,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "genre": "Drama • Romance",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "1981 Drama & Romance streaming on ESPN+.",
+        "synopsis": "The saga of a wealthy Denver family in the oil business: Blake Carrington, the patriarch; Krystle, his former secretary and wife; his children: Adam, lost in childhood after a kidnapping; Fallon, pampered and spoiled; Steven, openly gay; and Amanda, hidden from him by his ex-wife",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/22/55241.jpg"
+      },
+      {
+        "id": 19,
+        "title": "The Persuaders",
+        "year": 1971,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Drama • Action • Adventure",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "1971 Drama & Action streaming on ESPN+.",
+        "synopsis": "English Lord Brett Sinclair and American Danny Wilde are both wealthy playboys; they are teamed together by Judge Fulton to investigate crimes which the police can't solve.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/23/59438.jpg"
+      },
+      {
+        "id": 20,
+        "title": "Horrible Histories",
+        "year": 2009,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Children",
+          "History"
+        ],
+        "genre": "Comedy • Children • History",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2009 Comedy & Children streaming on ESPN+.",
+        "synopsis": "Sketches, cartoons and quizzes liberally splattered with blood and gore, based on the books published by Scholastic.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/595/1488730.jpg"
+      },
+      {
+        "id": 21,
+        "title": "The Streets of San Francisco",
+        "year": 1972,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "The show revolved around two police officers who investigated homicides in San Francisco.",
+        "synopsis": "The show revolved around two police officers who investigated homicides in San Francisco. The center of the series was a veteran cop and widower, Lt Mike Stone (Karl Malden), who had more than 20 years of police experience and was now assigned to the Homicide Detail of SFPD's Bur",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/27/69773.jpg"
+      },
+      {
+        "id": 22,
+        "title": "A to Z",
+        "year": 2014,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "genre": "Comedy • Romance",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2014 Comedy & Romance streaming on ESPN+.",
+        "synopsis": "This is the A to Z story of Andrew and Zelda - a pair that almost wasn't - and all that happened from the day they met. Andrew has always been a secret romantic... not above crooning to Celine Dion while driving to work, with dreams of finding \"the one.\" He imagines her to be jus",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/0/679.jpg"
+      },
+      {
+        "id": 23,
+        "title": "Conan",
+        "year": 2010,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "The biggest celebrities, the hottest musical guests, the craziest sketches...",
+        "synopsis": "The biggest celebrities, the hottest musical guests, the craziest sketches... and Andy Richter, to boot? Yes, some would say Conan O'Brien's talk show on TBS has everything a late night viewer could want.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/544/1361000.jpg"
+      },
+      {
+        "id": 24,
+        "title": "Anthony Bourdain: Parts Unknown",
+        "year": 2013,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Food",
+          "Travel"
+        ],
+        "genre": "Food • Travel",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2013 Food & Travel streaming on ESPN+.",
+        "synopsis": "Anthony Bourdain: Parts Unknown follows chef and author Anthony Bourdain to extraordinary locations across the globe to celebrate diverse cultures exploring their food and dining rituals. Known for his curiosity, candor, and acerbic wit, Bourdain took viewers off the beaten path ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/4660.jpg"
+      },
+      {
+        "id": 25,
+        "title": "The Astronaut Wives Club",
+        "year": 2015,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "History"
+        ],
+        "genre": "Drama • History",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2015 Drama & History streaming on ESPN+.",
+        "synopsis": "The Astronaut Wives Club tells the story of the women who were key players behind some of the biggest events in American history.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/12/30480.jpg"
+      },
+      {
+        "id": 26,
+        "title": "Boy Meets World",
+        "year": 1993,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Drama • Comedy • Family",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "Cory is your average guy.",
+        "synopsis": "Cory is your average guy. He has a best friend from the other side of the tracks, a teacher that constantly keeps him on his toes, and a friend named Topanga whom he has trouble understanding. With the support of his parents and his brother Eric, Cory learns to cope with the roll",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/400/1000796.jpg"
+      },
+      {
+        "id": 27,
+        "title": "CSI: Cyber",
+        "year": 2015,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2015 Drama & Action streaming on ESPN+.",
+        "synopsis": "CSI: Cyber is a drama inspired by the advanced technological work of real-life Cyber Psychologist Mary Aiken. Special Agent Avery Ryan heads the Cyber Crime Division of the FBI, a unit at the forefront of solving illegal activities that start in the mind, live online and play out",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/501/1254089.jpg"
+      },
+      {
+        "id": 28,
+        "title": "My So-Called Life",
+        "year": 1994,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "1994 Drama streaming on ESPN+.",
+        "synopsis": "An authentic portrayal of teenage and parental angst, My So-Called Life expressed the challenges of growing up and growing older.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/632/1580800.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Buck Rogers in the 25th Century",
+        "year": 1979,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Science-Fiction"
+        ],
+        "genre": "Action • Adventure • Science-Fiction",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "1979 Action & Adventure streaming on ESPN+.",
+        "synopsis": "Blast off with every groundbreaking episode of the action-packed sci-fi adventure, Buck Rogers in the 25th Century ! Join legendary intergalactic crimefighters William \"Buck\" Rogers and Colonel Wilma Deering as they lead the crew of the starship Searcher against a galaxy of evil ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/399/997542.jpg"
+      },
+      {
+        "id": 30,
+        "title": "Jeremiah",
+        "year": 2002,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Adventure",
+          "Science-Fiction"
+        ],
+        "genre": "Drama • Adventure • Science-Fiction",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "2002 Drama & Adventure streaming on ESPN+.",
+        "synopsis": "Jeremiah is one of the many young survivors of the \"Big Death\" that claimed the lives of every adult in the world 15 years ago. Now forging his way through a bleak wilderness fraught with danger and conspiracy, Jeremiah and his most trusted friend, Kurdy , are plunged into thrill",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/21138.jpg"
+      },
+      {
+        "id": 31,
+        "title": "Top Boy",
+        "year": 2011,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Thriller"
+        ],
+        "genre": "Drama • Crime • Thriller",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2011 Drama & Crime streaming on ESPN+.",
+        "synopsis": "A thrilling and raw drama about young lives lived on the edge in east London - an honest and gripping rendition of inner-city drug and gang culture.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/24784.jpg"
+      },
+      {
+        "id": 32,
+        "title": "Endgame",
+        "year": 2011,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Crime"
+        ],
+        "genre": "Drama • Comedy • Crime",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2011 Drama & Comedy streaming on ESPN+.",
+        "synopsis": "Endgame tells the story of former World Chess Champion Arkady Balagan, who develops a debilitating case of agoraphobia after witnessing the murder of his fiancée. Unable to leave his hotel and running out of money, the arrogant and charismatic Russian inadvertently becomes a dete",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/28058.jpg"
+      },
+      {
+        "id": 33,
+        "title": "WWE NXT",
+        "year": 2010,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "Each Wednesday at 8:00 p.m.",
+        "synopsis": "Each Wednesday at 8:00 p.m. ET, WWE Superstars and Divas of tomorrow face off on WWE NXT , a one-hour weekly show that features the brightest and best of WWE's rising stars. WWE NXT showcases the Superstars and Divas from WWE's Performance Center as well as appearances from WWE S",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/624/1560269.jpg"
+      },
+      {
+        "id": 34,
+        "title": "Jake 2.0",
+        "year": 2003,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Science-Fiction",
+          "Espionage"
+        ],
+        "genre": "Action • Science-Fiction • Espionage",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "2003 Action & Science-Fiction streaming on ESPN+.",
+        "synopsis": "Jake 2.0 surrounds NSA computer technician Jake Foley who is transformed into a secret agent after he is accidentally infected with nanobots, based on nanotechnology that reduce the size of a computer to the molecular level, which give him superhuman powers. With his new abilitie",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/12/32302.jpg"
+      },
+      {
+        "id": 35,
+        "title": "Great British Menu",
+        "year": 2006,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Food"
+        ],
+        "genre": "Food",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "2006 Food streaming on ESPN+.",
+        "synopsis": "Top chefs from across the nation compete for the chance to cook a four-course banquet for a high-profile figure.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/42/107064.jpg"
+      },
+      {
+        "id": 36,
+        "title": "Return to the Planet of the Apes",
+        "year": 1975,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Science-Fiction"
+        ],
+        "genre": "Drama • Action • Science-Fiction",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "1975 Drama & Action streaming on ESPN+.",
+        "synopsis": "Astronauts traveling aboard the NASA spacecraft Venture leave planet Earth in 1975 and return in the year A.D. 3979 only to learn that intelligent, technologically advanced apes now rule the planet.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/146/365889.jpg"
+      },
+      {
+        "id": 37,
+        "title": "Jake and the Fatman",
+        "year": 1987,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "Veteran district attorney J.L.",
+        "synopsis": "Veteran district attorney J.L. \"Fatman\" McCabe solves cases with the help of his easygoing private investigator partner Jake Styles.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/29/74119.jpg"
+      },
+      {
+        "id": 38,
+        "title": "Bluestone 42",
+        "year": 2013,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "War"
+        ],
+        "genre": "Drama • Comedy • War",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "Comedy drama series following the lives of a bomb disposal detachment serving in Afghanistan.",
+        "synopsis": "Comedy drama series following the lives of a bomb disposal detachment serving in Afghanistan.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/2/5052.jpg"
+      },
+      {
+        "id": 39,
+        "title": "Being Mary Jane",
+        "year": 2013,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Family"
+        ],
+        "genre": "Drama • Family",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2013 Drama & Family streaming on ESPN+.",
+        "synopsis": "Mary Jane Paul is a one-woman show: a successful TV news anchor, entirely self-sufficient – an all-around powerhouse who remains devoted to a family that doesn't share her motivation. As Mary Jane juggles her life, her work and her commitment to her family, we find out how far sh",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/20/50602.jpg"
+      },
+      {
+        "id": 40,
+        "title": "Hot in Cleveland",
+        "year": 2010,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "Hot in Cleveland revolves around three fabulous L.A.",
+        "synopsis": "Hot in Cleveland revolves around three fabulous L.A. women of a certain age who are best friends. Their lives are changed forever when their plane -- headed to Paris for a girls-only celebration -- unexpectedly lands in Cleveland and they soon rediscover themselves in a new 'prom",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/2/5358.jpg"
+      },
+      {
+        "id": 41,
+        "title": "My Family",
+        "year": 2000,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "Meet the Harpers – your ordinary, crazy family.",
+        "synopsis": "Meet the Harpers – your ordinary, crazy family. How can Ben and Susan cope when their kids are growing up – and growing wild?",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/17251.jpg"
+      },
+      {
+        "id": 42,
+        "title": "American Odyssey",
+        "year": 2015,
+        "communityScore": 75,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Thriller"
+        ],
+        "genre": "Action • Adventure • Thriller",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2015 Action & Adventure streaming on ESPN+.",
+        "synopsis": "When Sgt. Odelle Ballard stumbles upon an explosive secret, she must do whatever it takes to survive and find a way back to her family.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/76/191429.jpg"
+      },
+      {
+        "id": 43,
+        "title": "The Brady Bunch",
+        "year": 1969,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "1969 Comedy & Family streaming on ESPN+.",
+        "synopsis": "The Brady Bunch tells the story of Carol, a single mother of three girls – Marcia, Jan and Cindy and architect Mike Brady, a single father of three boys – Greg, Peter and Bobby who get married and blend the two families into one. Added to the mix are housekeeper Alice and dog Tig",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/494/1235849.jpg"
+      },
+      {
+        "id": 44,
+        "title": "Ink Master",
+        "year": 2012,
+        "communityScore": 75,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "An estimated 40 million Americans have at least one tattoo.",
+        "synopsis": "An estimated 40 million Americans have at least one tattoo. So who is the country's preeminent tattoo artist? Ink Master is the first-ever tattoo competition series featuring some of the nation's top tattoo artists on a quest to determine who is the best at their craft and win a ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/594/1487315.jpg"
+      },
+      {
+        "id": 45,
+        "title": "Women's Murder Club",
+        "year": 2007,
+        "communityScore": 75,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2007 Drama & Crime streaming on ESPN+.",
+        "synopsis": "Based on author James Patterson's bestselling novels, Women's Murder Club is a one-hour drama series about four successful working women in San Francisco. Homicide Inspector Lindsay Boxer, Medical Examiner Claire Washburn, Assistant D.A. Jill Bernhardt and crime reporter Cindy Th",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/18630.jpg"
+      },
+      {
+        "id": 46,
+        "title": "Wicked Tuna",
+        "year": 2012,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2012 Drama streaming on ESPN+.",
+        "synopsis": "Wicked Tuna follows a group of salty fishermen from the nation's oldest seaport, Gloucester, Massachusetts, as they make their living the way it's been done for centuries - rod and reel fishing, one catch at a time - all in pursuit of the bluefin tuna. One \"monstah\" bluefin can b",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/244/611003.jpg"
+      },
+      {
+        "id": 47,
+        "title": "Black Work",
+        "year": 2015,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Thriller"
+        ],
+        "genre": "Drama • Thriller",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2015 Drama & Thriller streaming on ESPN+.",
+        "synopsis": "Black Work is the story of Jo Gillespie, a woman who's husband is shot dead in the line of action, in his job as a undercover cop. Jo, a police officer herself soon has to confront issues in her marriage and family life in order to discover who really killed her husband.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/12/31205.jpg"
+      },
+      {
+        "id": 48,
+        "title": "Silk Stalkings",
+        "year": 1991,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "1991 Drama & Action streaming on ESPN+.",
+        "synopsis": "In Palm Beach Florida, crimes of passion are a frequent occurrence among the rich and beautiful. Enter Sgt. Rita Lance and Sgt. Chris Lorenzo the attractive young homicide detectives whose job it is to investigate these high-class murders--or Silk Stalkings, as they call them. Pu",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/27613.jpg"
+      },
+      {
+        "id": 49,
+        "title": "Long Way Round",
+        "year": 2004,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Adventure",
+          "Travel"
+        ],
+        "genre": "Adventure • Travel",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2004 Adventure & Travel streaming on ESPN+.",
+        "synopsis": "Setting off from London, Ewan and Charley travel through some of the most beautiful, but often dangerous, terrain the world has to offer. Crossing over into mainland Europe, they travelled through France, Belgium, Germany, Czech Republic, Slovakia, Ukraine, Russia, Kazakhstan, Mo",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/46/115890.jpg"
+      },
+      {
+        "id": 50,
+        "title": "Okkupert",
+        "year": 2015,
+        "communityScore": 85,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Thriller"
+        ],
+        "genre": "Drama • Thriller",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2015 Drama & Thriller streaming on ESPN+.",
+        "synopsis": "In the near future, Norway is occupied by Russia on behalf of the European Union, due to the fact that the newly elected environmental friendly Norwegian government has stopped the all important oil- and gas-production in the North Sea.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/229/574419.jpg"
+      },
+      {
+        "id": 51,
+        "title": "He-Man and the Masters of the Universe",
+        "year": 1983,
+        "communityScore": 75,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Fantasy",
+          "Science-Fiction"
+        ],
+        "genre": "Action • Fantasy • Science-Fiction",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "Prince Adam is the young son of Eternia's rulers, King Randor and Queen Marlena.",
+        "synopsis": "Prince Adam is the young son of Eternia's rulers, King Randor and Queen Marlena. Whenever Prince Adam uses the Sword of Power by holding it aloft and saying the magic words \"By the Power of Grayskull, I HAVE THE POWER\" he is transformed into He-Man, the most powerful man in the u",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/20/50749.jpg"
+      },
+      {
+        "id": 52,
+        "title": "China Beach",
+        "year": 1988,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "War",
+          "Medical"
+        ],
+        "genre": "Drama • War • Medical",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "1988 Drama & War streaming on ESPN+.",
+        "synopsis": "A group of women just trying to do their jobs at the 510th Evac Hospital at China Beach Vietnam in 1967 includes cool but callous Army nurse Colleen McMurphy, naive Red Cross newcomer Cherry White, singer Laurette Barber, and cynical civilian worker/prostitute K.C. Koloski. They ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/20/51706.jpg"
+      },
+      {
+        "id": 53,
+        "title": "Holiday Baking Championship",
+        "year": 2014,
+        "communityScore": 75,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Food"
+        ],
+        "genre": "Food",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "2014 Food streaming on ESPN+.",
+        "synopsis": "The search to find the greatest holiday baker begins as eight amateur bakers enter the kitchen, where they show off their family traditions and superb baking skills. To survive the challenges from week to week, they must prove their abilities in front of our tough-love judges: Du",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/595/1489979.jpg"
+      },
+      {
+        "id": 54,
+        "title": "Star-Crossed",
+        "year": 2014,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance",
+          "Science-Fiction"
+        ],
+        "genre": "Drama • Romance • Science-Fiction",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "When Emery was 6 years old, an alien spacecraft crash-landed in her small town.",
+        "synopsis": "When Emery was 6 years old, an alien spacecraft crash-landed in her small town. Whether they came in peace or with more sinister intentions didn't matter: a fierce battle erupted as humans fought for control over their new rivals, an alien species called the Atrians. In the midst",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/2776.jpg"
+      },
+      {
+        "id": 55,
+        "title": "Ravenswood",
+        "year": 2013,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Horror"
+        ],
+        "genre": "Drama • Horror",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2013 Drama & Horror streaming on ESPN+.",
+        "synopsis": "Ravenswood centered on a town not far from Rosewood, Pa., which has suffered under a deadly curse for generations. Five strangers find themselves connected by this fatal curse and need to dig into the town's mysterious and terrible history before it's too late for all of them.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/3700.jpg"
+      },
+      {
+        "id": 56,
+        "title": "Airwolf",
+        "year": 1984,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Science-Fiction"
+        ],
+        "genre": "Action • Adventure • Science-Fiction",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "1984 Action & Adventure streaming on ESPN+.",
+        "synopsis": "Stringfellow Hawke is a reclusive renegade pilot who's assigned to top-secret missions for the CIA by the mysterious \"Archangel\". Hawke's weapon of choice is the high-tech battle helicopter of the future, Airwolf . Loaded with cutting-edge surveillance equipment and unbelievable ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/5/14841.jpg"
+      },
+      {
+        "id": 57,
+        "title": "Mickey Mouse Clubhouse",
+        "year": 2006,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Children"
+        ],
+        "genre": "Comedy • Children",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2006 Comedy & Children streaming on ESPN+.",
+        "synopsis": "Disney's Mickey Mouse Clubhouse is the first computer generated 3-D animation television series to feature the \"Sensational Six.\" Mickey Mouse, Minnie Mouse, Donald Duck, Daisy Duck, Goofy, and Pluto star in this series, which focuses on interactivity with its primarily preschool",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15020.jpg"
+      },
+      {
+        "id": 58,
+        "title": "Swamp People",
+        "year": 2010,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Adventure",
+          "Nature"
+        ],
+        "genre": "Adventure • Nature",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2010 Adventure & Nature streaming on ESPN+.",
+        "synopsis": "The Swamp People featured in this History series are the proud descendants of French Canadian refugees who settled in the swamp region of Louisiana in the 18th century. Cameras follow members of this fiercely independent group as they struggle to preserve their way of life in the",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/617/1544316.jpg"
+      },
+      {
+        "id": 59,
+        "title": "The Adventures of Tintin",
+        "year": 1992,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Adventure",
+          "Children",
+          "Mystery"
+        ],
+        "genre": "Adventure • Children • Mystery",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "1992 Adventure & Children streaming on ESPN+.",
+        "synopsis": "This animated series tells of the adventures of boy reporter Tintin, his dog, Snowy, and their friend Captain Haddock. From the stories by Herge.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16996.jpg"
+      },
+      {
+        "id": 60,
+        "title": "The Apprentice",
+        "year": 2005,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2005 Drama streaming on ESPN+.",
+        "synopsis": "The Apprentice sees fourteen candidates, competing against each other for a position at Lord Alan Sugar's company. Each week the candidates take part in a task set by Lord Sugar. Each team will have a Team Leader who managers that group for that task. The team that performs the b",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/611/1527868.jpg"
+      },
+      {
+        "id": 61,
+        "title": "Интерны",
+        "year": 2010,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "The main characters of the sitcom are four interns.",
+        "synopsis": "The main characters of the sitcom are four interns. They always get into stupid situations, and their head looks at it with great pleasure. Dr. Kupitman helps his friend Bykov to make interns hopping mad, instead of chief physician, Anastasia, who tries to prevent them.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/191/479151.jpg"
+      },
+      {
+        "id": 62,
+        "title": "ANZAC Girls",
+        "year": 2014,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "War",
+          "History"
+        ],
+        "genre": "Drama • War • History",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2014 Drama & War streaming on ESPN+.",
+        "synopsis": "Honouring the Centenary of the commencement of WW1, ANZAC Girls is a moving new six-part series based on the unique, and rarely told true stories of Australian and New Zealand nurses serving at Gallipoli and the Western Front.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/17/44896.jpg"
+      },
+      {
+        "id": 63,
+        "title": "Forbidden History",
+        "year": 2013,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Mystery",
+          "History",
+          "Supernatural"
+        ],
+        "genre": "Mystery • History • Supernatural",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2013 Mystery & History streaming on ESPN+.",
+        "synopsis": "Jamie Theakston's Forbidden History uncovers the truth behind great myths, conspiracy theories, ancient treasures, lost civilisations, and wartime secrets. Theakston left after Season 5.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/502/1256184.jpg"
+      },
+      {
+        "id": 64,
+        "title": "Chappelle's Show",
+        "year": 2003,
+        "communityScore": 86,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "It's not just a show -- it's a social phenomenon.",
+        "synopsis": "It's not just a show -- it's a social phenomenon. Dave Chappelle's singular point of view is unleashed through a combination of stand-up bits and street-smart sketches. Hailed by critics and beloved by fans, Chappelle's Show brings the funk and the noise -- and some of the funnie",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/326/815523.jpg"
+      },
+      {
+        "id": 65,
+        "title": "Modus",
+        "year": 2015,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Thriller"
+        ],
+        "genre": "Drama • Crime • Thriller",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2015 Drama & Crime streaming on ESPN+.",
+        "synopsis": "During a snowy Christmas season in Sweden, psychologist and profiler Inger Johanne Vik finds not only herself but also her autistic daughter drawn into the investigation of a number of disturbing deaths, through which she meets detective Ingvar Nyman at the Stockholm Police. Nyma",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/139/348089.jpg"
+      },
+      {
+        "id": 66,
+        "title": "Totally Spies!",
+        "year": 2001,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Espionage"
+        ],
+        "genre": "Action • Adventure • Espionage",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "2001 Action & Adventure streaming on ESPN+.",
+        "synopsis": "Totally Spies! is a French and Canadian animated series created by Vincent Chalvon-Demersay and David Michel. The show was made to resemble anime and was originally based on the concept of a girl band. It focuses on three teenage girls in Beverly Hills, California, United States,",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/638/1596958.jpg"
+      },
+      {
+        "id": 67,
+        "title": "Bergerac",
+        "year": 1981,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Drama • Action • Adventure",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "1981 Drama & Action streaming on ESPN+.",
+        "synopsis": "Alcoholic and divorced father of a young daughter, DS Jim Bergerac is a true maverick who prefers doing things his own way, and consequently doesn't always carry out his investigations the way his boss would like.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/25/62810.jpg"
+      },
+      {
+        "id": 68,
+        "title": "Stan Lee's Lucky Man",
+        "year": 2016,
+        "communityScore": 86,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Fantasy"
+        ],
+        "genre": "Drama • Crime • Fantasy",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2016 Drama & Crime streaming on ESPN+.",
+        "synopsis": "James Nesbitt stars as down on his luck cop DI Harry Clayton whose chance encounter with a mysterious woman and an ancient bracelet changes everything. Based on an original idea by Stan Lee.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/161/404649.jpg"
+      },
+      {
+        "id": 69,
+        "title": "Greenleaf",
+        "year": 2016,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "2016 Drama streaming on ESPN+.",
+        "synopsis": "The drama series Greenleaf takes viewers into the unscrupulous world of the Greenleaf family and their sprawling Memphis megachurch, where scandalous secrets and lies are as numerous as the faithful. Born of the church, the Greenleaf family love and care for each other, but benea",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/263/659185.jpg"
+      },
+      {
+        "id": 70,
+        "title": "Highway to Heaven",
+        "year": 1984,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Family",
+          "Supernatural"
+        ],
+        "genre": "Drama • Family • Supernatural",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "Jonathan Smith is an angel sent down to earth \"on probation\".",
+        "synopsis": "Jonathan Smith is an angel sent down to earth \"on probation\". Jonathan and friend Mark Gordon are given \"assignments\" by \"The Boss\" (God) where they are required to use their humanity (and sometimes a little bit of \"The Stuff\") in order to help various troubled souls to overcome ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/635/1589524.jpg"
+      },
+      {
+        "id": 71,
+        "title": "Missing",
+        "year": 2012,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Thriller"
+        ],
+        "genre": "Drama • Action • Thriller",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "2012 Drama & Action streaming on ESPN+.",
+        "synopsis": "Becca Winstone learns that her son, Michael, disappears while studying abroad, and it's a race against time when she travels to Europe to track him down. A surprising turn of events reveals just how far one mother will go to protect her family. Exotic locations and thrilling twis",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/3808.jpg"
+      },
+      {
+        "id": 72,
+        "title": "Crossbones",
+        "year": 2014,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Drama • Action • Adventure",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "2014 Drama & Action streaming on ESPN+.",
+        "synopsis": "It's 1715 on the Bahamian island of Santa Campana, the first functioning democracy in the Americas, where the diabolical pirate Edward Teach, a.k.a. Blackbeard, reigns over a rogue nation of thieves, outlaws and miscreant sailors. Part shantytown, part marauder's paradise, this i",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/5/13668.jpg"
+      },
+      {
+        "id": 73,
+        "title": "Tanked",
+        "year": 2011,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2011 Drama streaming on ESPN+.",
+        "synopsis": "Following the antics of two brothers-in-law as they run the largest aquarium manufacturing company in the nation, Tanked dunks viewers into the high-decibel, family-owned business of Acrylic Tank Manufacturing (ATM). Led by business partners, best friends and rivals Wayde King an",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15085.jpg"
+      },
+      {
+        "id": 74,
+        "title": "Blue Mountain State",
+        "year": 2010,
+        "communityScore": 87,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Comedy",
+          "Sports"
+        ],
+        "genre": "Comedy • Sports",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2010 Comedy & Sports streaming on ESPN+.",
+        "synopsis": "Blue Mountain State follows the on and off-field antics of college football powerhouse, Blue Mountain State. Former NFL running back and veteran actor, Ed Marinaro (Hill Street Blues), stars as no-nonsense Coach Daniels. In season 3, Coach Daniels will have his authority challeng",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15136.jpg"
+      },
+      {
+        "id": 75,
+        "title": "Cold Case",
+        "year": 2003,
+        "communityScore": 87,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2003 Drama & Crime streaming on ESPN+.",
+        "synopsis": "Cold Case is a drama about Lilly Rush, an enigmatic and highly effective detective on the Philadelphia Homicide Squad. Rush's instinctive understanding of the criminal mind and her singular passion for uncovering the truth makes her the perfect fit for investigating cold cases, y",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15363.jpg"
+      },
+      {
+        "id": 76,
+        "title": "Late Night with Conan O'Brien",
+        "year": 1993,
+        "communityScore": 87,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "1993 Comedy streaming on ESPN+.",
+        "synopsis": "\"Keep Cool My Babies!\" Smart-alecky, ribald and whimsical, Late Night with Conan O'Brien rose to become a critical darling and dorm favorite after a rocky start in 1993. There are many recurring characters (including Triumph the Insult Comic Dog, Vomiting Kermit, Eyeballs O'Shaug",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15808.jpg"
+      },
+      {
+        "id": 77,
+        "title": "Jack of All Trades",
+        "year": 2000,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Comedy • Action • Adventure",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2000 Comedy & Action streaming on ESPN+.",
+        "synopsis": "American spy Jack Stiles is sent by Thomas Jefferson to the tiny East Indies island of Palau Palau, where he teams up with British agent and inventor Emilia Rothschild to thwart the efforts of Napoleon and France in that region of the world. While acting as Emilia's man servant, ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16514.jpg"
+      },
+      {
+        "id": 78,
+        "title": "Robin Hood",
+        "year": 2006,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Drama • Action • Adventure",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2006 Drama & Action streaming on ESPN+.",
+        "synopsis": "Drama series which gives a contemporary feel to the classic Robin Hood legend, focusing on Robin Hood's fight against the evil and corrupt Sheriff of Nottingham.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16798.jpg"
+      },
+      {
+        "id": 79,
+        "title": "Wolfblood",
+        "year": 2012,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Supernatural"
+        ],
+        "genre": "Drama • Action • Supernatural",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "Being a teenager is hard enough.",
+        "synopsis": "Being a teenager is hard enough. Being a Wolfblood teenager is ten times more complicated.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/18459.jpg"
+      },
+      {
+        "id": 80,
+        "title": "Conviction",
+        "year": 2006,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Legal"
+        ],
+        "genre": "Drama • Crime • Legal",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2006 Drama & Crime streaming on ESPN+.",
+        "synopsis": "Conviction is a legal drama series from Dick Wolf is a fast-paced, character-oriented story focusing on young assistant district attorneys of the New York District Attorney's office, headed by bureau chief Alexandra Cabot, who handle tough, high-profile cases that challenge their",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/19/47561.jpg"
+      },
+      {
+        "id": 81,
+        "title": "Remedy",
+        "year": 2014,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Family",
+          "Medical"
+        ],
+        "genre": "Drama • Family • Medical",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2014 Drama & Family streaming on ESPN+.",
+        "synopsis": "A unique, high-stakes medical drama that goes beyond the operating room and the ER, to reveal a compelling community of hospital staff who make the healing happen. The series follows Griffin Conners, son of the Chief of Staff, brother to both a surgeon and a nurse, and now – medi",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/10/25284.jpg"
+      },
+      {
+        "id": 82,
+        "title": "Black Sheep Squadron",
+        "year": 1976,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "War"
+        ],
+        "genre": "Drama • War",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "1976 Drama & War streaming on ESPN+.",
+        "synopsis": "In World War II Marine Corps Major Greg 'Pappy' Boyington commanded a squadron of fighter pilots. They were a collection of misfits and screwballs who became the terrors of the South Pacific. They were known as the Black Sheep. Baa Baa Black Sheep (renamed Black Sheep Squadron fo",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/594/1486922.jpg"
+      },
+      {
+        "id": 83,
+        "title": "Bordertown",
+        "year": 2016,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "Bordertown centers on two clans: the Buckwalds and the Gonzalezes.",
+        "synopsis": "Bordertown centers on two clans: the Buckwalds and the Gonzalezes. Bud Buckwald is a married father of three and a Border Patrol agent who is just a tad behind the times and feels slightly threatened by the cultural changes transforming his neighborhood. He lives next door to Ern",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/82/205525.jpg"
+      },
+      {
+        "id": 84,
+        "title": "The Voice UK",
+        "year": 2012,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Music"
+        ],
+        "genre": "Music",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "2012 Music streaming on ESPN+.",
+        "synopsis": "Join will.i.am and our other superstar coaches on their mission to find the next big thing for the music business. Alongside Will we have award-winning Jennifer Hudson, Lord of rock Gavin Rossdale and the legend that is Sir Tom Jones - all on the look out for the next big superst",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/637/1594694.jpg"
+      },
+      {
+        "id": 85,
+        "title": "Fatal Attraction",
+        "year": 2013,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Thriller"
+        ],
+        "genre": "Drama • Crime • Thriller",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2013 Drama & Crime streaming on ESPN+.",
+        "synopsis": "Each pulse-pounding hour-long episode of Fatal Attraction centers around an incredible and dangerous romance. Shocking crime, kidnapping or even murder is only half of the story! In the end, the \"true love\" that draws these couples together isn't the kind that celebrates silver a",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/574/1436125.jpg"
+      },
+      {
+        "id": 86,
+        "title": "People Just Do Nothing",
+        "year": 2014,
+        "communityScore": 87,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Music"
+        ],
+        "genre": "Drama • Comedy • Music",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "Mockumentary series that follows west London pirate radio station 'Kurupt FM'.",
+        "synopsis": "Mockumentary series that follows west London pirate radio station 'Kurupt FM'.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/81/203605.jpg"
+      },
+      {
+        "id": 87,
+        "title": "Countryfile",
+        "year": 1988,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Nature"
+        ],
+        "genre": "Nature",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "The people, places and stories making news in the British countryside.",
+        "synopsis": "The people, places and stories making news in the British countryside.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/592/1480564.jpg"
+      },
+      {
+        "id": 88,
+        "title": "Animaniacs",
+        "year": 1993,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Children"
+        ],
+        "genre": "Comedy • Children",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "1993 Comedy & Children streaming on ESPN+.",
+        "synopsis": "The two Warner Brothers Yakko and Wakko and their Warner sister Dot had been (supposedly) created in the 1930's, but their cartoons were too screwy for the general public to handle. The three Warners were locked up in the studio water tower until they escaped in the 90's. There, ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/25/64454.jpg"
+      },
+      {
+        "id": 89,
+        "title": "Resurrection",
+        "year": 2014,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Science-Fiction",
+          "Mystery"
+        ],
+        "genre": "Drama • Science-Fiction • Mystery",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "2014 Drama & Science-Fiction streaming on ESPN+.",
+        "synopsis": "The people of Arcadia, Missouri are forever changed when their deceased loved ones suddenly start to reappear. An 8-year-old American boy wakes up alone in a rice paddy in a rural Chinese province with no idea how he got there. Details start to emerge when the boy, who calls hims",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/0/350.jpg"
+      },
+      {
+        "id": 90,
+        "title": "The Carrie Diaries",
+        "year": 2013,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Romance"
+        ],
+        "genre": "Drama • Comedy • Romance",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "2013 Drama & Comedy streaming on ESPN+.",
+        "synopsis": "It's the summer of 1985, and, for the first time, 17-year-old Carrie Bradshaw can call Manhattan home. After her boyfriend Sebastian and best friend Maggie betrayed her, Carrie is happy to accept the offer to spend the summer living in the downtown loft apartment of her Interview",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/3037.jpg"
+      },
+      {
+        "id": 91,
+        "title": "The Firm",
+        "year": 2012,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Legal"
+        ],
+        "genre": "Drama • Crime • Legal",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2012 Drama & Crime streaming on ESPN+.",
+        "synopsis": "Based on the best-selling novel by John Grisham, The Firm continues the story of attorney Mitchell McDeere who, as a young associate 10 years earlier, had brought down the prestigious Memphis law firm of Bendini, Lambert &amp; Locke, which had been operating as a front for the Ch",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15930.jpg"
+      },
+      {
+        "id": 92,
+        "title": "Dr. Quinn, Medicine Woman",
+        "year": 1993,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Family",
+          "Western"
+        ],
+        "genre": "Drama • Family • Western",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "The trials and adventures of a female doctor in a small wild west town.",
+        "synopsis": "The trials and adventures of a female doctor in a small wild west town.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/17225.jpg"
+      },
+      {
+        "id": 93,
+        "title": "Planet of the Apes",
+        "year": 1974,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Adventure",
+          "Science-Fiction"
+        ],
+        "genre": "Drama • Adventure • Science-Fiction",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "1974 Drama & Adventure streaming on ESPN+.",
+        "synopsis": "After their spacecraft travels through a time warp, two astronauts from 1981 crash-land back on Earth in the year 3085--a time when intelligent apes rule and humans have been reduced to servants or pets. Captured by the apes and sentenced to death, they are saved by a curious chi",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/17292.jpg"
+      },
+      {
+        "id": 94,
+        "title": "Off the Map",
+        "year": 2011,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Adventure",
+          "Medical"
+        ],
+        "genre": "Drama • Adventure • Medical",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2011 Drama & Adventure streaming on ESPN+.",
+        "synopsis": "Six doctors who have lost their way will go to the ends of the earth to try to remember the reasons why they wanted to become doctors in the first place.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/18382.jpg"
+      },
+      {
+        "id": 95,
+        "title": "Nazi Megastructures",
+        "year": 2013,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "War",
+          "History"
+        ],
+        "genre": "War • History",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2013 War & History streaming on ESPN+.",
+        "synopsis": "Did you know that the Nazis built some of the biggest and deadliest pieces of military hardware and malevolent technology in history in the quest for world domination? Creating huge terror machines, hi-tech superguns , and some of the original weapons of mass destruction, they ai",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/298/747373.jpg"
+      },
+      {
+        "id": 96,
+        "title": "Threshold",
+        "year": 2005,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Science-Fiction",
+          "Thriller"
+        ],
+        "genre": "Drama • Science-Fiction • Thriller",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "2005 Drama & Science-Fiction streaming on ESPN+.",
+        "synopsis": "The suspense drama focuses on a team of experts who, after a strange phenomenon is discovered, must try to thwart the possible global threats that stem from it.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/27910.jpg"
+      },
+      {
+        "id": 97,
+        "title": "King",
+        "year": 2011,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2011 Drama & Crime streaming on ESPN+.",
+        "synopsis": "In the new season of King, Detective Jessica King continues to face the challenges of each case while juggling her pregnancy, her husband's gambling and the changing dynamics of the team. King and husband Danny Sless (Gabriel Hogan, Heartland) have decided to start afresh: they'v",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/29095.jpg"
+      },
+      {
+        "id": 98,
+        "title": "The Amazing Race Canada",
+        "year": 2013,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Travel"
+        ],
+        "genre": "Travel",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2013 Travel streaming on ESPN+.",
+        "synopsis": "The Amazing Race Canada will provide a uniquely Canadian take on the original series, with competitors discovering the world within the borders of Canada.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/633/1583830.jpg"
+      },
+      {
+        "id": 99,
+        "title": "The Forgotten",
+        "year": 2009,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "A team of dedicated amateurs work on cases involving unidentified victims.",
+        "synopsis": "A team of dedicated amateurs work on cases involving unidentified victims. After the police have given up, this group must first solve the puzzle of the victim's identity in order to then help catch the killer. They work to give the deceased back their names, lest they become -- ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/19/48272.jpg"
+      },
+      {
+        "id": 100,
+        "title": "Played",
+        "year": 2013,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Drama • Action • Crime",
+        "platforms": [
+          "ESPN+"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2013 Drama & Action streaming on ESPN+.",
+        "synopsis": "Played tracks the CIU (Covert Investigations Unit) as it risks going undercover to infiltrate and bring down criminal organizations. In this new style of intense, short-term undercover work, each covert \"play\" is crafted quickly and executed at an even faster pace. Placed into va",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/21/52816.jpg"
+      }
+    ]
+  },
+  {
+    "id": "britbox",
+    "name": "BritBox",
+    "brand": "#1b2a4a",
+    "accent": "#4a7fc1",
+    "shows": [
+      {
+        "id": 1,
+        "title": "Billions",
+        "year": 2016,
+        "communityScore": 87,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "Billions is a complex drama about power politics in the world of New York high finance.",
+        "synopsis": "Billions is a complex drama about power politics in the world of New York high finance. Shrewd, savvy U.S. Attorney Chuck Rhoades and the brilliant, ambitious hedge fund king Bobby \"Axe\" Axelrod are on an explosive collision course, with each using all of his considerable smarts,",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/471/1179691.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Eerie, Indiana",
+        "year": 1991,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Adventure",
+          "Science-Fiction",
+          "Mystery"
+        ],
+        "genre": "Adventure • Science-Fiction • Mystery",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "1991 Adventure & Science-Fiction streaming on BritBox.",
+        "synopsis": "Marshall Teller is a young boy who moves with his family to the small town of Eerie, which he soon discovers is the focus of all sorts of strange and inexplicable events, and is inhabited by oddballs, weirdos, and even Elvis Presley. Along with his best friend Simon, Marshall inv",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/24/61888.jpg"
+      },
+      {
+        "id": 3,
+        "title": "In the Heat of the Night",
+        "year": 1988,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "1988 Drama & Crime streaming on BritBox.",
+        "synopsis": "Based on the critically acclaimed novel of the same name, this series provided a hopeful, yet honest look at life in the new South. Set in the fictional Sparta, Mississippi, the show was a marvelous blend of heartfelt drama and folksy humor. It portrayed both the professional and",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/28/70115.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Glue",
+        "year": 2014,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2014 Drama streaming on BritBox.",
+        "synopsis": "Bafta-winning writer Jack Thorne's compelling eight-part drama series about murder and secrets set in the English countryside.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/118/295401.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Melissa & Joey",
+        "year": 2010,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2010 Comedy & Family streaming on BritBox.",
+        "synopsis": "Mel is the grown-up former wild child of a political family who is now a local politician herself. When her sister ends up in prison and brother-in-law flees after a scandal hits, Mel must take responsibility for her teenaged niece Lennox and adolescent nephew Ryder. Spread too t",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/44/111223.jpg"
+      },
+      {
+        "id": 6,
+        "title": "Portlandia",
+        "year": 2011,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2011 Comedy streaming on BritBox.",
+        "synopsis": "Portlandia is a follow up to the Fred Armisen (SNL)/Carrie Brownstein comedy collaboration, Thunderant. In the new IFC series (executive- produced by Lorne Michaels), the pair lovingly skewer the people and values of Portland, Ore. by introducing us to Portland archetypes like a ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/150/375346.jpg"
+      },
+      {
+        "id": 7,
+        "title": "The Great Christmas Light Fight",
+        "year": 2013,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2013 Drama streaming on BritBox.",
+        "synopsis": "It's beginning to look a lot like Christmas with the hit holiday decorating competition series, The Great Christmas Light Fight . Decorating their homes to the extreme for Christmas, families and neighborhoods across America compete to win a cash prize and the coveted Light Fight",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/359/898301.jpg"
+      },
+      {
+        "id": 8,
+        "title": "Reba",
+        "year": 2001,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Drama • Comedy • Family",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "Single mother of three, Reba Hart, tackles parenthood and other obstacles along the way.",
+        "synopsis": "Single mother of three, Reba Hart, tackles parenthood and other obstacles along the way. After her dentist husband of 20 years, Brock, leaves her for his dental hygienist, Barbra Jean, Reba's seemingly perfect world is turned upside down.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16218.jpg"
+      },
+      {
+        "id": 9,
+        "title": "House of Anubis",
+        "year": 2011,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Mystery"
+        ],
+        "genre": "Drama • Fantasy • Mystery",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "2011 Drama & Fantasy streaming on BritBox.",
+        "synopsis": "It's up to Eddie and his friends to reform Sibuna in order to stop an ancient curse from being unleashed. But when teachers and even friends are not what they seem, who can be trusted?",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16422.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Adventures of Superman",
+        "year": 1952,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Crime"
+        ],
+        "genre": "Action • Adventure • Crime",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "1952 Action & Adventure streaming on BritBox.",
+        "synopsis": "Adventures of Superman (originally known as The Adventures of Superman ) is an American syndicated children's television series based on comic book characters and concepts created in 1938 by Jerry Siegel and Joe Shuster. The series saw six seasons and one-hundred-four half-hour e",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/18484.jpg"
+      },
+      {
+        "id": 11,
+        "title": "Malibu Country",
+        "year": 2012,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2012 Comedy streaming on BritBox.",
+        "synopsis": "Reba McKenzie very publicly discovers that her country music legend husband, Bobby Gallagher, has been cheating on her. Determined to get a fresh start and perhaps revive her own country music career, Reba packs up her sharp-tongued mother and two kids and drives cross country to",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/18577.jpg"
+      },
+      {
+        "id": 12,
+        "title": "Felicity",
+        "year": 1998,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "genre": "Drama • Romance",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "1998 Drama & Romance streaming on BritBox.",
+        "synopsis": "A smart series about an idealistic student getting lessons in life and love at a Manhattan university after following her high-school crush east from California. Throughout most of the series' run, she was emotionally torn between somber Ben and sensitive Noel. A doctor's daughte",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/486/1215683.jpg"
+      },
+      {
+        "id": 13,
+        "title": "Rosemary's Baby",
+        "year": 2014,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Horror",
+          "Thriller"
+        ],
+        "genre": "Drama • Horror • Thriller",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "2014 Drama & Horror streaming on BritBox.",
+        "synopsis": "Rosemary's Baby centers on a young married couple who move into a Paris apartment that has a haunted past. After getting pregnant, the wife becomes increasingly suspicious that both her husband and their neighbors will have ulterior motives when her child is born.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/19805.jpg"
+      },
+      {
+        "id": 14,
+        "title": "The Messengers",
+        "year": 2015,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Mystery",
+          "Supernatural"
+        ],
+        "genre": "Drama • Mystery • Supernatural",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "2015 Drama & Mystery streaming on BritBox.",
+        "synopsis": "An apocalyptic event on Earth gives five strangers angelic powers, and it also brings a mysterious dark figure to the planet.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/10/25876.jpg"
+      },
+      {
+        "id": 15,
+        "title": "Happyish",
+        "year": 2015,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy"
+        ],
+        "genre": "Drama • Comedy",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "2015 Drama & Comedy streaming on BritBox.",
+        "synopsis": "Happyish is a scathing examination of our pursuit of happiness, a pursuit that might just be the very thing causing our unhappiness in the first place. The new half-hour pilot stars Steve Coogan as Thom Payne, a 44 year-old man whose world is thrown into disarray when his 25 year",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/24094.jpg"
+      },
+      {
+        "id": 16,
+        "title": "Destination Truth",
+        "year": 2007,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Adventure",
+          "Mystery",
+          "Supernatural"
+        ],
+        "genre": "Adventure • Mystery • Supernatural",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2007 Adventure & Mystery streaming on BritBox.",
+        "synopsis": "Led by intrepid world adventurer Josh Gates, each episode of Destination Truth takes viewers on a trek across the globe as Josh investigates stories of the unexplained. Accompanied by his small crew, Josh dives into the local cultures and searches for clues to the existence of st",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/28180.jpg"
+      },
+      {
+        "id": 17,
+        "title": "Engrenages",
+        "year": 2005,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2005 Drama & Crime streaming on BritBox.",
+        "synopsis": "When the badly beaten body of a young Romanian woman is discovered on a Parisian rubbish dump, the investigation plunges us deep into the murky worlds of prostitution, drugs, business, politics and justice… The investigation is led by Pierre Clément, a young recently-named public",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/28898.jpg"
+      },
+      {
+        "id": 18,
+        "title": "The Invaders",
+        "year": 1967,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Science-Fiction"
+        ],
+        "genre": "Science-Fiction",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "1967 Science-Fiction streaming on BritBox.",
+        "synopsis": "David Vincent knows that The Invaders, alien beings from a dying planet, have arrived to take over the Earth! To make matters worse, the aliens know who he is, and most of the time where he is. Somehow he must convince a disbelieving world that the nightmare has already begun.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/29908.jpg"
+      },
+      {
+        "id": 19,
+        "title": "Kojak",
+        "year": 1973,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "1973 Drama & Crime streaming on BritBox.",
+        "synopsis": "Set in New York City's 13th Precinct, Kojak revolves around the efforts of the incorruptible, but not adverse to bending the rules when it's needed, Lt.Theo Kojak, a tough, bald cop who was fond of using the catchphrase, \"Who loves ya, baby?\" and had given up smoking and had take",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/12/30576.jpg"
+      },
+      {
+        "id": 20,
+        "title": "LEGO Star Wars: Droid Tales",
+        "year": 2015,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Science-Fiction"
+        ],
+        "genre": "Action • Adventure • Science-Fiction",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2015 Action & Adventure streaming on BritBox.",
+        "synopsis": "If you've played with the countless Lego Star Wars sets, watched one of the Lego Star Wars animated television specials or sat down with one of the many Lego Star Wars video games, you know that the company that makes plastic building blocks and the film studio responsible for a ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/27/68857.jpg"
+      },
+      {
+        "id": 21,
+        "title": "Midwinter of the Spirit",
+        "year": 2015,
+        "communityScore": 84,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Thriller"
+        ],
+        "genre": "Drama • Crime • Thriller",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "Merrily Watkins, a single mother who is not your average country vicar.",
+        "synopsis": "Merrily Watkins, a single mother who is not your average country vicar. Her newly acquired training in the works of exorcisms has pulled her to the dark side of the pulpit. She has become one of the very few women priests who are working as exorcists - a job which is mistrusted b",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/23/57633.jpg"
+      },
+      {
+        "id": 22,
+        "title": "The Commish",
+        "year": 1991,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "1991 Drama & Crime streaming on BritBox.",
+        "synopsis": "The Commish stars Michael Chiklis as Tony Scali, a former NYPD detective who is now the police commissioner in the small upstate New York town of Eastbridge, and tends to work through problems with humor and creativity more often than with violence or force.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/25/62519.jpg"
+      },
+      {
+        "id": 23,
+        "title": "Invader ZIM",
+        "year": 2001,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Children"
+        ],
+        "genre": "Children",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "Invader ZIM is an eccentric alien soldier from the planet Irk.",
+        "synopsis": "Invader ZIM is an eccentric alien soldier from the planet Irk. He was banished from the Irken Empire after nearly destroying his home planet on an early mission. After begging his superiors, the Almighty Tallest Red and Purple, for another chance, they decide to get rid of him on",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/2/6242.jpg"
+      },
+      {
+        "id": 24,
+        "title": "Blade: The Series",
+        "year": 2006,
+        "communityScore": 75,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Supernatural"
+        ],
+        "genre": "Action • Supernatural",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2006 Action & Supernatural streaming on BritBox.",
+        "synopsis": "Blade: The Series follows the title character who is half-man, half-vampire and employs his extraordinary powers in a crusade to save mankind from the demonic creatures who walk the night. Set in Detroit, Blade investigates the vampire house of Chthon. Along the way he forms an u",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/3/9153.jpg"
+      },
+      {
+        "id": 25,
+        "title": "ReGenesis",
+        "year": 2004,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Science-Fiction",
+          "Mystery"
+        ],
+        "genre": "Drama • Science-Fiction • Mystery",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2004 Drama & Science-Fiction streaming on BritBox.",
+        "synopsis": "Cloning, bioterrorism, genetic engineering, not since the atom bomb has science had such potential to change the world. Canada, Mexico, and the United States have created a trilateral taskforce, The North American Biotechnology Advisory Commission, or NorBAC, to investigate quest",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/3/9283.jpg"
+      },
+      {
+        "id": 26,
+        "title": "Battle Creek",
+        "year": 2015,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Crime"
+        ],
+        "genre": "Drama • Comedy • Crime",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2015 Drama & Comedy streaming on BritBox.",
+        "synopsis": "A series about two mismatched law enforcement officers whose polar opposite views of the world and crime-solving breed frustration, disdain and humor as they clean up the hardscrabble streets of Battle Creek , Mich.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/81/202751.jpg"
+      },
+      {
+        "id": 27,
+        "title": "The Partridge Family",
+        "year": 1970,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Music"
+        ],
+        "genre": "Comedy • Music",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "1970 Comedy & Music streaming on BritBox.",
+        "synopsis": "It's TV's favorite family of rock 'n 'rollers, who hit the road in their groovy bus and turn the world on to the catchy pop songs such as \"I Think I Love You\", \"I Woke Up In Love This Morning\", and \"Somebody Wants to Love You\". The Partridge Family's six members feature mom Shirl",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/628/1572454.jpg"
+      },
+      {
+        "id": 28,
+        "title": "Lone Star",
+        "year": 2010,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "A charismatic, brilliant schemer leads two different lives in two different parts of Texas.",
+        "synopsis": "A charismatic, brilliant schemer leads two different lives in two different parts of Texas. In Houston, he goes by Bob Allen and is married to Cat, part of a wealthy oil family. More than 400 miles away, in Midland, he's known as Robert and lives with naive girlfriend Lindsay. Bo",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/23701.jpg"
+      },
+      {
+        "id": 29,
+        "title": "Jordskott",
+        "year": 2014,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Fantasy"
+        ],
+        "genre": "Drama • Crime • Fantasy",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2014 Drama & Crime streaming on BritBox.",
+        "synopsis": "A detective returns to her hometown ten years after her daughters disappearance trying to find a connection to a current case.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/17/44702.jpg"
+      },
+      {
+        "id": 30,
+        "title": "The Green Hornet",
+        "year": 1966,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Action • Adventure",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "1966 Action & Adventure streaming on BritBox.",
+        "synopsis": "In this 60s TV series based on the exploits of the radio hero, Britt Reid is a publisher by day, on a crusade against the city's resident crime boss The Green Hornet. By night, Britt dons the mask of the Green Hornet. With the aid of his chauffeur Kato, the Hornet defeats crimina",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/19/47922.jpg"
+      },
+      {
+        "id": 31,
+        "title": "Gogglebox Australia",
+        "year": 2015,
+        "communityScore": 75,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "Gogglebox Australia is based on the U.K.",
+        "synopsis": "Gogglebox Australia is based on the U.K. smash hit of the same name and is a weekly observational series which captures the reactions of ordinary Australians as they watch the news, argue over politics, cheer their favourite sporting teams and digest current affairs and documenta",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/637/1594847.jpg"
+      },
+      {
+        "id": 32,
+        "title": "Bad Judge",
+        "year": 2014,
+        "communityScore": 81,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "No excuses, no apologies, no compromises.",
+        "synopsis": "No excuses, no apologies, no compromises. Wild child Rebecca Wright knows how to have a good time, but she also happens to be one of L.A.'s toughest and most respected criminal court judges. She has a reputation for unorthodox behavior in the courtroom, including creative rulings",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/0/678.jpg"
+      },
+      {
+        "id": 33,
+        "title": "MasterChef Junior",
+        "year": 2013,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Children",
+          "Food"
+        ],
+        "genre": "Children • Food",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "MasterChef Junior goes back for seconds...and thirds!",
+        "synopsis": "MasterChef Junior goes back for seconds...and thirds! This culinary competition series gives talented kids between the ages of eight and 13 the chance to showcase their culinary abilities and passion for food through a series of delicious challenges.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/507/1267821.jpg"
+      },
+      {
+        "id": 34,
+        "title": "Ice Road Truckers",
+        "year": 2007,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action"
+        ],
+        "genre": "Drama • Action",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2007 Drama & Action streaming on BritBox.",
+        "synopsis": "Ice Road Truckers charts the lives of extraordinary men who haul vital supplies to diamond mines over frozen lakes that double as roads. The livelihood of many depends on these tenuous roads, which through the years have been responsible for the deaths of dozens of men. With one ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/589/1474578.jpg"
+      },
+      {
+        "id": 35,
+        "title": "Trophy Wife",
+        "year": 2013,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2013 Comedy streaming on BritBox.",
+        "synopsis": "They say the third time's the charm, and reformed party girl Kate is hoping that's true when she becomes Pete's third wife. She fell into his arms (literally) at a karaoke bar, and a year later Kate's got an insta-family, complete with three stepchildren and two ex-wives. Diane i",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16950.jpg"
+      },
+      {
+        "id": 36,
+        "title": "WPC 56",
+        "year": 2013,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Romance"
+        ],
+        "genre": "Drama • Crime • Romance",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "Drama following Gina Dawson, the first WPC to serve in her West Midlands hometown in 1956.",
+        "synopsis": "Drama following Gina Dawson, the first WPC to serve in her West Midlands hometown in 1956.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/9/24011.jpg"
+      },
+      {
+        "id": 37,
+        "title": "Eigen Kweek",
+        "year": 2013,
+        "communityScore": 86,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Drama • Comedy • Family",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2013 Drama & Comedy streaming on BritBox.",
+        "synopsis": "In the west Flemish city of Wijtschate, Jos and his son Steven are growing cannabis instead of potatoes to save their own business.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/177/444610.jpg"
+      },
+      {
+        "id": 38,
+        "title": "Degrassi",
+        "year": 2001,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2001 Drama streaming on BritBox.",
+        "synopsis": "Degrassi is a Canadian teen drama television series, set in the fictional universe created by Linda Schuyler and Kit Hood in 1980. It is the fourth fictional series in the franchise, following The Kids of Degrassi Street , Degrassi Junior High , and Degrassi High . Like its prede",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/18/47039.jpg"
+      },
+      {
+        "id": 39,
+        "title": "The Mary Tyler Moore Show",
+        "year": 1970,
+        "communityScore": 86,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "1970 Comedy streaming on BritBox.",
+        "synopsis": "The Mary Tyler Moore Show was one of the most literate, realistic, and enduring situation comedies of the 1970s. Mary Richards was the idealized single career woman. She had come to Minneapolis after breaking up with a man she had been dating for four years. Ambitious, and lookin",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/19/49640.jpg"
+      },
+      {
+        "id": 40,
+        "title": "Corner Gas",
+        "year": 2004,
+        "communityScore": 86,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2004 Comedy streaming on BritBox.",
+        "synopsis": "Following the adventures of a bunch of nobodies who get up to a whole lot of nothing in the fictional prairie town of Dog River, Saskatchewan, Corner Gas focuses on the life (or lack thereof) of Brent LeRoy, proprietor of a gas station that is the only stop for miles around and a",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/206/515201.jpg"
+      },
+      {
+        "id": 41,
+        "title": "Helix",
+        "year": 2014,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Horror",
+          "Science-Fiction",
+          "Thriller"
+        ],
+        "genre": "Horror • Science-Fiction • Thriller",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "Helix is a science fiction thriller that focuses on a CDC expedition into the arctic.",
+        "synopsis": "Helix is a science fiction thriller that focuses on a CDC expedition into the arctic. They go there to investigate the potential outbreak of a disease with no idea what they are getting themselves into. They encounter an almost zombie-like threat that could threaten mankind itsel",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/126/316697.jpg"
+      },
+      {
+        "id": 42,
+        "title": "From Dusk Till Dawn: The Series",
+        "year": 2014,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Crime",
+          "Horror"
+        ],
+        "genre": "Action • Crime • Horror",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2014 Action & Crime streaming on BritBox.",
+        "synopsis": "From Dusk Till Dawn: The Series , based on the thrill-ride film of the same name, is a supernatural crime saga centered around bank robber, Seth Gecko and his violent, unpredictable brother, Richard \"Richie\" Gecko, who are wanted by the FBI and Texas Rangers Earl McGraw and Fredd",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/70/176381.jpg"
+      },
+      {
+        "id": 43,
+        "title": "Don't Trust the B---- in Apartment 23",
+        "year": 2012,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2012 Comedy streaming on BritBox.",
+        "synopsis": "After a naive Midwestern girl's big city dreams are dashed during her first week in New York, she finds herself living with her worst nightmare, in a hilarious, contemporary comedy about a female odd couple who are surrounded by an outrageous cast of characters. On May 23 2012, t",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/2/6145.jpg"
+      },
+      {
+        "id": 44,
+        "title": "Jeeves & Wooster",
+        "year": 1990,
+        "communityScore": 87,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "1990 Comedy streaming on BritBox.",
+        "synopsis": "Perfectly capturing the wit of P.G Wodehouse's novels, this impeccable series traces the insane shenanigans of Bertram Wooster and his faithful butler Jeeves. Set against a 1930s backdrop of Hooray Henries and splendidly indomitable aunts, Jeeves battles against Wooster's relentl",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/5/14977.jpg"
+      },
+      {
+        "id": 45,
+        "title": "The Profit",
+        "year": 2013,
+        "communityScore": 87,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "2013 Drama streaming on BritBox.",
+        "synopsis": "When Marcus Lemonis isn't running his multi-billion dollar company, Camping World, he goes on the hunt for struggling businesses that are desperate for cash and ripe for a deal. In the past 10 years, he's successfully turned around over 100 companies. Now he's bringing those skil",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15106.jpg"
+      },
+      {
+        "id": 46,
+        "title": "Battlestar Galactica: Blood & Chrome",
+        "year": 2012,
+        "communityScore": 87,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Action",
+          "Science-Fiction"
+        ],
+        "genre": "Drama • Action • Science-Fiction",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "2012 Drama & Action streaming on BritBox.",
+        "synopsis": "Battlestar Galactica: Blood &amp; Chrome (a prequel to the critically acclaimed hit series, Battlestar Galactica) takes place in the midst of the First Cylon war. As the battle between humans and their creation, the sentient robotic Cylons, rages across the 12 colonial worlds, a ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15949.jpg"
+      },
+      {
+        "id": 47,
+        "title": "Drake & Josh",
+        "year": 2004,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "Fifteen-year-old Drake and Josh are schoolmates, but not close friends.",
+        "synopsis": "Fifteen-year-old Drake and Josh are schoolmates, but not close friends. As a matter of fact, Drake thinks Josh is a bit of a goof. Imagine his shock when he discovers this goof is about to become his stepbrother and new roommate when his mother marries Josh's father!",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/258/647005.jpg"
+      },
+      {
+        "id": 48,
+        "title": "That's So Raven",
+        "year": 2003,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Children",
+          "Fantasy"
+        ],
+        "genre": "Comedy • Children • Fantasy",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "2003 Comedy & Children streaming on BritBox.",
+        "synopsis": "That's So Raven is a hit live-action sitcom about Raven Baxter, a winsome teen whose ability to glimpse flashes of the future often gets her into hot water.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/20019.jpg"
+      },
+      {
+        "id": 49,
+        "title": "In Search of.....",
+        "year": 1977,
+        "communityScore": 87,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Mystery",
+          "History",
+          "Supernatural"
+        ],
+        "genre": "Mystery • History • Supernatural",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "1977 Mystery & History streaming on BritBox.",
+        "synopsis": "Leonard Nimoy, hosts and narrates this documentary series that takes you to the world of Unsolved Mysteries and those strange and unusual things in the world that defy explanation and often understanding. The world is filled with unexplained mysteries, paranormal phenomena, stran",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/21127.jpg"
+      },
+      {
+        "id": 50,
+        "title": "The Fall and Rise of Reginald Perrin",
+        "year": 1976,
+        "communityScore": 87,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "1976 Comedy streaming on BritBox.",
+        "synopsis": "Leonard Rossiter stars in David Nobbs's black comedy about a sales executive whose mid-life crisis results in him faking his own death.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/28838.jpg"
+      },
+      {
+        "id": 51,
+        "title": "Step by Step",
+        "year": 1991,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Comedy • Family",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "1991 Comedy & Family streaming on BritBox.",
+        "synopsis": "Frank Lambert is a construction worker and a single father of 3 kids: J.T., Alicia \"Al\", and Brendan. Carol Foster, a beautician, also has 3 children: Dana, Karen, and Mark. After Frank and Carol run into each other on vacation and spontaneously get married, they and their childr",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609101.jpg"
+      },
+      {
+        "id": 52,
+        "title": "Star",
+        "year": 2016,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Music"
+        ],
+        "genre": "Drama • Music",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2016 Drama & Music streaming on BritBox.",
+        "synopsis": "Featuring a soundtrack of original music and stunning music performances, Star follows three talented singers, desperate for a new start and with ambitions of stardom, as they navigate the cut-throat music business on their road to success. Meet Star, a tough-as-nails young woman",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/88/222182.jpg"
+      },
+      {
+        "id": 53,
+        "title": "Riverdale",
+        "year": 2017,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2017 Drama & Crime streaming on BritBox.",
+        "synopsis": "Riverdale is a bold, subversive take on Archie, Betty, Veronica and their friends from the comics, exploring the surreality of small-town life - the darkness and weirdness bubbling beneath Riverdale's wholesome facade.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/455/1138820.jpg"
+      },
+      {
+        "id": 54,
+        "title": "Barney Miller",
+        "year": 1975,
+        "communityScore": 87,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Comedy"
+        ],
+        "genre": "Drama • Comedy",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "Barney Miller is the kind of cop we'd all like to run into.",
+        "synopsis": "Barney Miller is the kind of cop we'd all like to run into. He is always sensible. He maintains order over a squad room of detectives who gamble for a hobby, get hit on by anything in skirts, go to renaissance philosophy conventions for fun, and would really prefer to be writing.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/206/515173.jpg"
+      },
+      {
+        "id": 55,
+        "title": "Rosemary & Thyme",
+        "year": 2003,
+        "communityScore": 77,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Mystery"
+        ],
+        "genre": "Drama • Crime • Mystery",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2003 Drama & Crime streaming on BritBox.",
+        "synopsis": "Rosemary Boxer and Laura Thyme are two amateur green-fingered sleuths who came together through a mutual love of plants and troubled social lives. Together they start a gardening business, tackling horticultural problems for anybody who requires help. However, mystery is never ve",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/23/58877.jpg"
+      },
+      {
+        "id": 56,
+        "title": "The Oblongs",
+        "year": 2001,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Science-Fiction"
+        ],
+        "genre": "Comedy • Science-Fiction",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2001 Comedy & Science-Fiction streaming on BritBox.",
+        "synopsis": "The tight-knit Oblong clan lives in Hill Valley, a toxic valley downstream from your typical industrial waste site, which has caused a variety of bizarre physical and emotional abnormalities. At the head of the dinner table is the loving, limbless, tirelessly upbeat patriarch Bob",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/24/60509.jpg"
+      },
+      {
+        "id": 57,
+        "title": "Sassy Go Go",
+        "year": 2015,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Romance"
+        ],
+        "genre": "Drama • Comedy • Romance",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "Background of the drama series is at a high school cheerleading club.",
+        "synopsis": "Background of the drama series is at a high school cheerleading club. Sassy Go Go depicts the friendships and loves of youths, while dealing with a harsh educational environment that emphasizes competition. Set against the backdrop of an incredibly competitive high school, a grou",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/460/1150608.jpg"
+      },
+      {
+        "id": 58,
+        "title": "Jack & Bobby",
+        "year": 2004,
+        "communityScore": 87,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2004 Drama streaming on BritBox.",
+        "synopsis": "If \"greatness is thrust upon us,\" as Winston Churchill once said, then it stands to reason that those who are destined for greatness are rarely aware of it. Take Jack and Bobby McCallister for example: two bright young brothers growing up under the watchful eye of their eccentric",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/26/66024.jpg"
+      },
+      {
+        "id": 59,
+        "title": "The Adventures of Jimmy Neutron: Boy Genius",
+        "year": 2002,
+        "communityScore": 82,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Children",
+          "Science-Fiction"
+        ],
+        "genre": "Comedy • Children • Science-Fiction",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2002 Comedy & Children streaming on BritBox.",
+        "synopsis": "The Adventures of Jimmy Neutron: Boy Genius follows Jimmy Neutron, his faithful robotic dog, Goddard, and his eclectic friends and family as they experience life in Retroville. Jimmy is a typical kid, who just happens to be a genius. He creates gadgets to improve his everyday lif",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/494/1235083.jpg"
+      },
+      {
+        "id": 60,
+        "title": "The New Normal",
+        "year": 2012,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2012 Comedy streaming on BritBox.",
+        "synopsis": "These days, families come in all forms - single dads, double moms, sperm donors, egg donors, one-night-stand donors. Bryan and David are a Los Angeles couple and they have it all. Well, almost. With successful careers and a committed, loving partnership, there is one thing that t",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/1/3817.jpg"
+      },
+      {
+        "id": 61,
+        "title": "The Secret Life of the American Teenager",
+        "year": 2008,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Family"
+        ],
+        "genre": "Drama • Comedy • Family",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "The teens at Grant High are living life in the fast lane.",
+        "synopsis": "The teens at Grant High are living life in the fast lane. Between their love triangles, secrets, drama, accusations, gossip, confusion, and scandalous rumors, there's never a dull moment. The he-said, she-said gets intense! Their parents' lives are just as complicated. From pater",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15243.jpg"
+      },
+      {
+        "id": 62,
+        "title": "Hannah Montana",
+        "year": 2006,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Family",
+          "Music"
+        ],
+        "genre": "Comedy • Family • Music",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2006 Comedy & Family streaming on BritBox.",
+        "synopsis": "A pop singer moves to Malibu, Cal., where she keeps her celebrity status under wraps as she tries to maintain some semblance of a 'normal' life among her new schoolmates.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15391.jpg"
+      },
+      {
+        "id": 63,
+        "title": "The Dead Zone",
+        "year": 2002,
+        "communityScore": 88,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Thriller"
+        ],
+        "genre": "Drama • Fantasy • Thriller",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "2002 Drama & Fantasy streaming on BritBox.",
+        "synopsis": "Based on the characters and story from the best-selling novel by Stephen King, The Dead Zone is a unique psychological thriller that combines a rich mix of the paranormal, action, and a continuing quest for justice.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16191.jpg"
+      },
+      {
+        "id": 64,
+        "title": "Lip Service",
+        "year": 2010,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "genre": "Drama • Romance",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "Lesbian drama series with irreverent humour as a group of friends search for happiness.",
+        "synopsis": "Lesbian drama series with irreverent humour as a group of friends search for happiness.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/17247.jpg"
+      },
+      {
+        "id": 65,
+        "title": "The Spoils of Babylon",
+        "year": 2014,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2014 Comedy streaming on BritBox.",
+        "synopsis": "The six-part dark comedy is the bizarre adaptation of a non-existent novel penned by fictional author Eric Jonrosh. The show follows a dysfunctional family of oil tycoons led by Jonas Morehouse. His children are set to inherit the fortune if they can fight their forbidden love fo",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/19133.jpg"
+      },
+      {
+        "id": 66,
+        "title": "Total Divas",
+        "year": 2013,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Sports"
+        ],
+        "genre": "Drama • Sports",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "2013 Drama & Sports streaming on BritBox.",
+        "synopsis": "Revealing the real women behind the WWE Divas for the first time, this new one-hour series proves that the drama is even bigger when the sexy superstars step outside the ring. Total Divas goes inside the personal lives of these glitzy, glamorous celebrities who entertain sold-out",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/316/790622.jpg"
+      },
+      {
+        "id": 67,
+        "title": "Shark",
+        "year": 2006,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Legal"
+        ],
+        "genre": "Drama • Crime • Legal",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "2006 Drama & Crime streaming on BritBox.",
+        "synopsis": "Sebastian Stark, a charismatic, supremely self-confident defense attorney who, after a shocking outcome in one of his cases and a personal epiphany, brings his cutthroat tactics to the prosecutor's office as the head of the Los Angeles District Attorney's High Profile Crime Unit.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/329/823329.jpg"
+      },
+      {
+        "id": 68,
+        "title": "Code of a Killer",
+        "year": 2015,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "genre": "Drama • Crime",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "2015 Drama & Crime streaming on BritBox.",
+        "synopsis": "Code of a Killer is based on the extraordinary true story of Alec Jeffreys' discovery of DNA fingerprinting and its first use by Detective Chief Superintendent David Baker in catching a double murderer. The drama focuses on how Jeffreys' science and Baker's investigative vision c",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/13/34643.jpg"
+      },
+      {
+        "id": 69,
+        "title": "Eve",
+        "year": 2015,
+        "communityScore": 78,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Adventure",
+          "Science-Fiction"
+        ],
+        "genre": "Drama • Adventure • Science-Fiction",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "Eve is the star of a brand new sci-fi drama from CBBC.",
+        "synopsis": "Eve is the star of a brand new sci-fi drama from CBBC. She's no ordinary girl – Eve is the result of an incredibly advanced robotics experiment.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/17/43083.jpg"
+      },
+      {
+        "id": 70,
+        "title": "Bref.",
+        "year": 2011,
+        "communityScore": 83,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "There it is, he is 40 years old.",
+        "synopsis": "There it is, he is 40 years old. And the observation is bitter: By not making choices and never really taking charge of himself, he finds himself in the same place again and again, struggling for money, without a girlfriend and without a job. Yet another return to square one that",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/557/1392780.jpg"
+      },
+      {
+        "id": 71,
+        "title": "Семнадцать мгновений весны",
+        "year": 1973,
+        "communityScore": 88,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "War",
+          "Espionage"
+        ],
+        "genre": "Drama • War • Espionage",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "1973 Drama & War streaming on BritBox.",
+        "synopsis": "The series is based on a \"true story\" of a Russian spy Colonel Isaev (Stirlitz) in Nazi Germany during 17 days at the very end of WWII. Stirlitz has worked his way to the very top of the Nazi hierarchy without being discovered. However, his \"colleagues\", top Hitler's officers Bor",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/29/73905.jpg"
+      },
+      {
+        "id": 72,
+        "title": "Rugrats",
+        "year": 1991,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Children"
+        ],
+        "genre": "Comedy • Children",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "Rugrats reveals the world from a baby's point of view.",
+        "synopsis": "Rugrats reveals the world from a baby's point of view. Everything looks bigger, more mysterious and uncontrollable. Angelica, the oldest, likes to terrorize her cousin, Tommy, and his friends, and is famous for screaming, \"You stupid babies!\" The adults in the series are often cl",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/402/1007439.jpg"
+      },
+      {
+        "id": 73,
+        "title": "Roswell",
+        "year": 1999,
+        "communityScore": 84,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Romance",
+          "Science-Fiction"
+        ],
+        "genre": "Drama • Romance • Science-Fiction",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "1999 Drama & Romance streaming on BritBox.",
+        "synopsis": "Human/Alien hybrids, must hide their alien sides to fit into their New Mexico-high school, while attempting to learn about their past, their gifts, and love as outsiders. Their destinies clash with their feelings as they discover the extraordinary circumstances that led them to E",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/417/1044575.jpg"
+      },
+      {
+        "id": 74,
+        "title": "Man Seeking Woman",
+        "year": 2015,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Fantasy",
+          "Romance"
+        ],
+        "genre": "Comedy • Fantasy • Romance",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "2015 Comedy & Fantasy streaming on BritBox.",
+        "synopsis": "Man Seeking Woman follows naïve twenty-something \"Josh Greenberg\" on his unrelenting quest for love. Josh soldiers through one-night stands, painful break-ups, a blind date with a troll, time travel, sex aliens, many deaths and a Japanese penis monster named Tanaka on his fantast",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/46/116897.jpg"
+      },
+      {
+        "id": 75,
+        "title": "Mind Your Language",
+        "year": 1977,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "The series focuses on adult students in a London school.",
+        "synopsis": "The series focuses on adult students in a London school. The classes take place in the early evening, and are taught by Mr. Brown, though on occasion other individuals take over the class if he is not available. The class consists of foreigners with varying degrees of English pro",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/87/218704.jpg"
+      },
+      {
+        "id": 76,
+        "title": "Masters of Illusion",
+        "year": 2014,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2014 Drama streaming on BritBox.",
+        "synopsis": "In Masters of Illusion , the world's greatest magicians and illusionists perform magic in front of a live studio audience. There are no camera or computer tricks involved and you'll see tricks such as women turning into tigers, birds appearing from nowhere and sleight of hands in",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/485/1213504.jpg"
+      },
+      {
+        "id": 77,
+        "title": "Frisky Dingo",
+        "year": 2006,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Science-Fiction"
+        ],
+        "genre": "Comedy • Science-Fiction",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "2006 Comedy & Science-Fiction streaming on BritBox.",
+        "synopsis": "Frisky Dingo is an eleven minute animated series airing on Adult Swim by Matt Thompson and Adam Reed, co-creators of the cult hit, Sealab 2021. Supervillain Killface is finding that, in theory, destroying the world seems like a lot of fun, but in actual practice, it is a very dul",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/13/34447.jpg"
+      },
+      {
+        "id": 78,
+        "title": "Partners in Crime",
+        "year": 2015,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Espionage"
+        ],
+        "genre": "Drama • Crime • Espionage",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "Agatha Christie spy drama.",
+        "synopsis": "Agatha Christie spy drama. Husband and wife team Tommy and Tuppence Beresford are amateur sleuths who foil plots in 1950s Cold War Britain.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/13/34826.jpg"
+      },
+      {
+        "id": 79,
+        "title": "Serangoon Road",
+        "year": 2013,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action"
+        ],
+        "genre": "Drama • Action",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "2013 Drama & Action streaming on BritBox.",
+        "synopsis": "1964-65. Singapore is a city at a crossroads. Political and racial tensions are at fever pitch as the British pull out, and a new nation is about to be born. The lights of Bugis Street have never burned so bright: bootleg copies of Motown songs boom out from street stalls; the Ro",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/18/46831.jpg"
+      },
+      {
+        "id": 80,
+        "title": "Join or Die with Craig Ferguson",
+        "year": 2016,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2016 Drama streaming on BritBox.",
+        "synopsis": "Join or Die with Craig Ferguson features the comedian debating provocative and timely topics in his unorthodox and iconoclastic manner. Each episode features a panel of guests which will include celebrities, comedians and experts, as well as the American public through social med",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/45/114193.jpg"
+      },
+      {
+        "id": 81,
+        "title": "BJ and the Bear",
+        "year": 1979,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Comedy • Action • Adventure",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "1979 Comedy & Action streaming on BritBox.",
+        "synopsis": "A trucker and his pet chimp travel the highways of America, getting into various adventures and misadventures along the way.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/494/1236539.jpg"
+      },
+      {
+        "id": 82,
+        "title": "Get Smart",
+        "year": 1965,
+        "communityScore": 84,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Comedy",
+          "Science-Fiction",
+          "Espionage"
+        ],
+        "genre": "Comedy • Science-Fiction • Espionage",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "1965 Comedy & Science-Fiction streaming on BritBox.",
+        "synopsis": "In 1965 the cold war was made a little warmer and a lot funnier due in part to the efforts of an inept, underpaid, overzealous spy: Maxwell Smart, Agent 86. The hit comedy series Get Smart is the creation of comic geniuses Buck Henry and Mel Brooks.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/20/51443.jpg"
+      },
+      {
+        "id": 83,
+        "title": "The Good Guys",
+        "year": 2010,
+        "communityScore": 84,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Comedy",
+          "Action",
+          "Crime"
+        ],
+        "genre": "Comedy • Action • Crime",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#b91c1c",
+          "#1a0a1f"
+        ],
+        "tagline": "2010 Comedy & Action streaming on BritBox.",
+        "synopsis": "The Good Guys is an action packed and comedic look at what happens when a washed up, old school cop and a by the book, modern day detective try to expose the big picture of small crime.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/148/370466.jpg"
+      },
+      {
+        "id": 84,
+        "title": "Eastwick",
+        "year": 2009,
+        "communityScore": 84,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Horror",
+          "Mystery"
+        ],
+        "genre": "Drama • Horror • Mystery",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#1d4ed8",
+          "#0b1230"
+        ],
+        "tagline": "2009 Drama & Horror streaming on BritBox.",
+        "synopsis": "Three very different women find themselves drawn together by a mysterious man who unleashes unique powers in each of them, and this small New England town will never be the same. The series is based on the popular movie \"The Witches of Eastwick\" and on the novel of the same title",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/20/52094.jpg"
+      },
+      {
+        "id": 85,
+        "title": "Chewing Gum",
+        "year": 2015,
+        "communityScore": 84,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#db2777",
+          "#1f0a24"
+        ],
+        "tagline": "2015 Comedy streaming on BritBox.",
+        "synopsis": "Chewing Gum is a comedy series following religious, Beyoncé-obsessed 24-year-old Tracey Gordon who is fast finding out that the more she learns about the world, the less she understands.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/111/279098.jpg"
+      },
+      {
+        "id": 86,
+        "title": "UFO",
+        "year": 1970,
+        "communityScore": 79,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Science-Fiction"
+        ],
+        "genre": "Action • Science-Fiction",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#4338ca",
+          "#0f0a24"
+        ],
+        "tagline": "1970 Action & Science-Fiction streaming on BritBox.",
+        "synopsis": "Around 1970, the British and American governments receive incontrovertible evidence that aliens exist and are abducting humans. In cooperation with the United Nations, they set up a secret worldwide organization, SHADO (Supreme Headquarters Alien Defence Organisation), which oper",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/23/58452.jpg"
+      },
+      {
+        "id": 87,
+        "title": "Birds of a Feather",
+        "year": 1989,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#0ea5e9",
+          "#3b0764"
+        ],
+        "tagline": "Return of the classic sitcom.",
+        "synopsis": "Return of the classic sitcom. Sharon is back living in her council flat and Tracey is still in Chigwell with younger son Travis - but what has become of Dorien?",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/2/5559.jpg"
+      },
+      {
+        "id": 88,
+        "title": "Wolf Lake",
+        "year": 2001,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Supernatural"
+        ],
+        "genre": "Drama • Crime • Supernatural",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#15803d",
+          "#0c1a0e"
+        ],
+        "tagline": "2001 Drama & Crime streaming on BritBox.",
+        "synopsis": "Seattle police detective John Kanin, finds his world turned upsidedown when his girlfriend Ruby mysteriously disappears one night after leaving his apartment. After months of searching, an anonymous tip leads Kanin back to Ruby's hometown Wolf Lake, a place where the residents ar",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/3/9132.jpg"
+      },
+      {
+        "id": 89,
+        "title": "Drawn Together",
+        "year": 2004,
+        "communityScore": 75,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy"
+        ],
+        "genre": "Comedy",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#0369a1",
+          "#081420"
+        ],
+        "tagline": "2004 Comedy streaming on BritBox.",
+        "synopsis": "This is the true story of eight animated characters, picked to live together in a house to find out what happens when people stop being polite and start getting real. Meet the stars of Drawn Together , eight cartoons from all walks of life who have to deal with each others quirks",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/21274.jpg"
+      },
+      {
+        "id": 90,
+        "title": "Special Unit 2",
+        "year": 2001,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Comedy",
+          "Action",
+          "Horror"
+        ],
+        "genre": "Comedy • Action • Horror",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#7e22ce",
+          "#0f172a"
+        ],
+        "tagline": "2001 Comedy & Action streaming on BritBox.",
+        "synopsis": "A young Chicago cop and a veteran officer battle monsters terrorizing the city in a tongue-in-cheek adventure that suggests the creatures are the missing link between man and apes.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/27783.jpg"
+      },
+      {
+        "id": 91,
+        "title": "Quantico",
+        "year": 2015,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Crime",
+          "Mystery",
+          "Espionage"
+        ],
+        "genre": "Crime • Mystery • Espionage",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#d97706",
+          "#2a1305"
+        ],
+        "tagline": "2015 Crime & Mystery streaming on BritBox.",
+        "synopsis": "Quantico is about a diverse group of recruits that have arrived at the FBI Quantico Base for training. They are the best, the brightest and the most vetted, so it seems impossible that one of them is suspected of masterminding the biggest attack on New York City since 9/11.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/14/35887.jpg"
+      },
+      {
+        "id": 92,
+        "title": "American Dreams",
+        "year": 2002,
+        "communityScore": 85,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#0f766e",
+          "#0a1a24"
+        ],
+        "tagline": "In 1963 Philadelphia, the Pryors are a close Irish-Catholic family.",
+        "synopsis": "In 1963 Philadelphia, the Pryors are a close Irish-Catholic family. World War II veteran John \"Jack\" Pryor owns a television and radio store. He and his homemaker wife Helen have five children: High school senior and football player \"JJ\", younger sisters Meg and Patty, and younge",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/302/755456.jpg"
+      },
+      {
+        "id": 93,
+        "title": "The Smurfs",
+        "year": 1976,
+        "communityScore": 75,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Children",
+          "Fantasy"
+        ],
+        "genre": "Children • Fantasy",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#ca8a04",
+          "#181109"
+        ],
+        "tagline": "1976 Children & Fantasy streaming on BritBox.",
+        "synopsis": "The Smurfs is a comic and television franchise centered on a group of small blue fictional creatures called Smurfs, created and first introduced as a series of comic strips by the Belgian cartoonist Peyo (pen name of Pierre Culliford) on October 23, 1958. The original term and th",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/20/52251.jpg"
+      },
+      {
+        "id": 94,
+        "title": "Bitchin' Rides",
+        "year": 2014,
+        "communityScore": 75,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#dc2626",
+          "#0f172a"
+        ],
+        "tagline": "2014 Drama streaming on BritBox.",
+        "synopsis": "Dave Kindig, owner and operator of Kindig-It Design in Salt Lake City, Utah turns out one-of-a-kind vehicles for his demanding (and sometimes famous) clientele. In Velocity's Bitchin' Rides , viewers will see Kindig and his team working on all types and periods of cars. From rend",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/450/1126289.jpg"
+      },
+      {
+        "id": 95,
+        "title": "Starsky & Hutch",
+        "year": 1975,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Crime"
+        ],
+        "genre": "Action • Crime",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#f59e0b",
+          "#701a75"
+        ],
+        "tagline": "1975 Action & Crime streaming on BritBox.",
+        "synopsis": "Produced by Aaron Spelling, Starsky &amp; Hutch roared onto small screens in 1975 to become one of the most popular, iconic series of the decade. This was TV's coolest buddy cop show, fueled by full-throttle car chases, offbeat humor, colorful characters and a hip vibe.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/22/55916.jpg"
+      },
+      {
+        "id": 96,
+        "title": "Critics' Choice Awards",
+        "year": 2000,
+        "communityScore": 80,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama"
+        ],
+        "genre": "Drama",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#2563eb",
+          "#0f172a"
+        ],
+        "tagline": "2000 Drama streaming on BritBox.",
+        "synopsis": "The Critics Choice Awards are bestowed annually by the The Broadcast Film Critics Association (BFCA) and the Broadcast Television Journalists Association (BTJA) to honor the finest in cinematic and television achievement.",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/605/1514123.jpg"
+      },
+      {
+        "id": 97,
+        "title": "Mutant X",
+        "year": 2001,
+        "communityScore": 76,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Science-Fiction"
+        ],
+        "genre": "Action • Adventure • Science-Fiction",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#16a34a",
+          "#052e2b"
+        ],
+        "tagline": "Protecting a world that doesn't know they exist.",
+        "synopsis": "Protecting a world that doesn't know they exist. Mutant X is a team of human mutants who possess extraordinary powers as a result of genetic engineering. Like hundreds of other unsuspecting subjects, these people were altered in secret experiments conducted in a covert government",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/4/10319.jpg"
+      },
+      {
+        "id": 98,
+        "title": "The Honourable Woman",
+        "year": 2014,
+        "communityScore": 86,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Thriller",
+          "Espionage"
+        ],
+        "genre": "Drama • Thriller • Espionage",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#991b1b",
+          "#090d16"
+        ],
+        "tagline": "2014 Drama & Thriller streaming on BritBox.",
+        "synopsis": "The Honourable Woman tells the story of one woman's personal journey to right her father's wrongs. Featuring a stellar cast including Academy Award nominee Maggie Gyllenhaal in the lead role as Nessa Stein, this compelling drama written and directed by BAFTA winning Hugo Blick (T",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15276.jpg"
+      },
+      {
+        "id": 99,
+        "title": "Baywatch",
+        "year": 1989,
+        "communityScore": 74,
+        "seasons": 4,
+        "episodes": 40,
+        "genres": [
+          "Drama",
+          "Action",
+          "Adventure"
+        ],
+        "genre": "Drama • Action • Adventure",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#475569",
+          "#0f172a"
+        ],
+        "tagline": "1989 Drama & Action streaming on BritBox.",
+        "synopsis": "This long-running series follows the adventures of a team of lifeguards on the crowded beaches of Los Angeles County. Veteran lifeguard Mitch Buchannon watches over the younger lifeguards that come and go with each passing season as they keep the beaches safe for vacationers. Fre",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/206/515174.jpg"
+      },
+      {
+        "id": 100,
+        "title": "Herman Wouk's War and Remembrance",
+        "year": 1988,
+        "communityScore": 86,
+        "seasons": 3,
+        "episodes": 30,
+        "genres": [
+          "Drama",
+          "Romance",
+          "War"
+        ],
+        "genre": "Drama • Romance • War",
+        "platforms": [
+          "BritBox"
+        ],
+        "colors": [
+          "#ea580c",
+          "#1c1917"
+        ],
+        "tagline": "1988 Drama & Romance streaming on BritBox.",
+        "synopsis": "Filmed on location in ten countries, this extraordinary production is the largest and most ambitious undertaking in television and motion picture history. Featuring an all-star cast and spectacular reenactments of the Allied invasions at Normandy and the Philippines, Herman Wouk ",
+        "posterUrl": "https://static.tvmaze.com/uploads/images/original_untouched/8/22128.jpg"
       }
     ]
   }

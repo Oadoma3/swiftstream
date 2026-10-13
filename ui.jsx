@@ -85,8 +85,16 @@ export function ProviderIcon({ id, name, size = 48, shadow = false, className = 
         <circle cx="58" cy="50" r="12" fill="#fff" />
       </>
     ),
+      starz: <text x="50" y="65" fontSize="32" fill="#fff" style={t}>STARZ</text>,
+    amc: <text x="50" y="62" fontSize="32" fill="#fff" style={t}>AMC+</text>,
+    discovery: <text x="50" y="62" fontSize="28" fill="#fff" style={t}>discovery+</text>,
+    pluto: <text x="50" y="62" fontSize="30" fill="#fff" style={t}>PLUTO</text>,
+    roku: <text x="50" y="62" fontSize="32" fill="#fff" style={t}>ROKU</text>,
+    shudder: <text x="50" y="62" fontSize="26" fill="#fff" style={t}>SHUDDER</text>,
+    espn: <text x="50" y="65" fontSize="36" fill="#fff" style={t}>ESPN</text>,
+    britbox: <text x="50" y="62" fontSize="28" fill="#fff" style={t}>BRITBOX</text>,
   };
-  const dim = typeof size === "number" ? { width: size, height: size } : { width: size, height: "auto" };
+    const dim = typeof size === "number" ? { width: size, height: size } : { width: size, height: "auto" };
   return (
     <svg
       role="img"

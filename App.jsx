@@ -437,8 +437,6 @@ export default function App() {
                 onPick={pickProvider}
                 activeId={pid}
                 counts={sortedCounts}
-                logs={logs}
-                onLog={setLog}
               />
             </aside>
 

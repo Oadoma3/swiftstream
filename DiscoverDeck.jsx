@@ -307,15 +307,13 @@ function ProviderList({ onPick, activeId, counts = {}, logs = {}, onLog, sidebar
   );
 }
 
-export function ProviderSidebar({ onPick, activeId, counts, logs, onLog }) {
+export function ProviderSidebar({ onPick, activeId, counts }) {
   return (
     <div className="px-5 pb-6 pt-3">
       <ProviderList
         onPick={onPick}
         activeId={activeId}
         counts={counts}
-        logs={logs}
-        onLog={onLog}
         sidebar
       />
     </div>
@@ -410,29 +408,94 @@ function CentralBrandHero({ compact = false }) {
   const gradientId = useId();
   return (
     <div className={`flex flex-col items-center text-center ${compact ? "gap-2" : "gap-4"}`}>
-      <div className={`relative ${compact ? "w-12 h-12" : "w-20 h-20 md:w-28 md:h-28"}`}>
+      <div className={`relative ${compact ? "w-52 h-32" : "w-80 h-48 md:w-[26rem] md:h-60"}`}>
         <div
-          className="absolute inset-0 rounded-full blur-2xl"
-          style={{ background: "rgba(34,211,238,.5)", transform: "scale(1.5)" }}
+          className="absolute inset-x-12 inset-y-6 rounded-full blur-3xl"
+          style={{ background: "linear-gradient(90deg, rgba(248,60,112,.35), rgba(124,58,237,.42), rgba(34,211,238,.38))" }}
           aria-hidden="true"
         />
-        <svg className="relative h-full w-full drop-shadow-[0_0_22px_rgba(34,211,238,.55)]" viewBox="0 0 96 96" fill="none" role="img" aria-label="SwiftStream flame">
+        <svg className="relative h-full w-full overflow-visible" viewBox="0 0 360 210" fill="none" role="img" aria-label="Three streaming cards with a flame and play symbol">
           <defs>
-            <linearGradient id={gradientId} x1="16" y1="8" x2="82" y2="88" gradientUnits="userSpaceOnUse">
+            <linearGradient id={`${gradientId}-red`} x1="50" y1="40" x2="150" y2="190" gradientUnits="userSpaceOnUse">
+              <stop stopColor="#FB7185" />
+              <stop offset="1" stopColor="#BE123C" />
+            </linearGradient>
+            <linearGradient id={`${gradientId}-purple`} x1="120" y1="20" x2="235" y2="190" gradientUnits="userSpaceOnUse">
+              <stop stopColor="#8B5CF6" />
+              <stop offset="1" stopColor="#4C1D95" />
+            </linearGradient>
+            <linearGradient id={`${gradientId}-cyan`} x1="205" y1="42" x2="310" y2="190" gradientUnits="userSpaceOnUse">
+              <stop stopColor="#22D3EE" />
+              <stop offset="1" stopColor="#0E7490" />
+            </linearGradient>
+            <linearGradient id={`${gradientId}-flame`} x1="143" y1="44" x2="208" y2="115" gradientUnits="userSpaceOnUse">
               <stop stopColor="#67E8F9" />
-              <stop offset=".48" stopColor="#22D3EE" />
-              <stop offset="1" stopColor="#8B5CF6" />
+              <stop offset=".55" stopColor="#22D3EE" />
+              <stop offset="1" stopColor="#A78BFA" />
             </linearGradient>
           </defs>
+          <g opacity=".7" strokeLinecap="round" aria-hidden="true">
+            <motion.path
+              d="M14 103c35-21 55-20 82-13"
+              stroke="#FB7185"
+              strokeWidth="2"
+              initial={{ pathLength: 0.65, opacity: 0.35 }}
+              animate={{ pathLength: [0.65, 1, 0.65], opacity: [0.35, 0.7, 0.35] }}
+              transition={{ duration: 3.8, repeat: Infinity, ease: "easeInOut" }}
+            />
+            <motion.path
+              d="M10 116c33-13 54-13 76-8"
+              stroke="#A78BFA"
+              strokeWidth="2.5"
+              initial={{ pathLength: 0.6, opacity: 0.4 }}
+              animate={{ pathLength: [0.6, 1, 0.6], opacity: [0.4, 0.8, 0.4] }}
+              transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut", delay: 0.35 }}
+            />
+            <motion.path
+              d="M278 89c26-10 47-8 69 2"
+              stroke="#67E8F9"
+              strokeWidth="2.5"
+              initial={{ pathLength: 0.6, opacity: 0.4 }}
+              animate={{ pathLength: [0.6, 1, 0.6], opacity: [0.4, 0.8, 0.4] }}
+              transition={{ duration: 3.4, repeat: Infinity, ease: "easeInOut", delay: 0.15 }}
+            />
+            <motion.path
+              d="M282 103c27-4 45 1 65 12"
+              stroke="#22D3EE"
+              strokeWidth="2"
+              initial={{ pathLength: 0.65, opacity: 0.35 }}
+              animate={{ pathLength: [0.65, 1, 0.65], opacity: [0.35, 0.7, 0.35] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+            />
+          </g>
           <path
-            d="M52 7c4 18-5 23-12 33-5 7-8 13-5 21 2-7 7-11 13-15 0 11 10 15 11 25 1 7-4 13-11 14-12 2-23-7-23-20 0-11 7-19 13-27C48 26 56 19 52 7Z"
-            fill={`url(#${gradientId})`}
+            d="M90 54h89a16 16 0 0 1 16 16v111a16 16 0 0 1-16 16h-89a16 16 0 0 1-16-16V70a16 16 0 0 1 16-16Z"
+            transform="rotate(-13 132 125)"
+            fill={`url(#${gradientId}-red)`}
+            stroke="rgba(255,255,255,.38)"
+            strokeWidth="2"
           />
           <path
-            d="M66 34c1 10 9 14 12 23 5 14-4 29-20 31 6-5 8-11 5-17-2-5-7-8-9-14 8-4 12-11 12-23Z"
-            fill={`url(#${gradientId})`}
-            opacity=".78"
+            d="M181 54h89a16 16 0 0 1 16 16v111a16 16 0 0 1-16 16h-89a16 16 0 0 1-16-16V70a16 16 0 0 1 16-16Z"
+            transform="rotate(13 222 125)"
+            fill={`url(#${gradientId}-cyan)`}
+            stroke="rgba(255,255,255,.4)"
+            strokeWidth="2"
           />
+          <path
+            d="M135 29h90a17 17 0 0 1 17 17v119a17 17 0 0 1-17 17h-90a17 17 0 0 1-17-17V46a17 17 0 0 1 17-17Z"
+            fill={`url(#${gradientId}-purple)`}
+            stroke="rgba(255,255,255,.55)"
+            strokeWidth="2.5"
+            style={{ filter: "drop-shadow(0 14px 22px rgba(0,0,0,.45))" }}
+          />
+          <path
+            d="M180 49c4 15-4 19-10 28-5 6-7 11-5 17 2-6 6-9 11-12 0 9 9 13 10 21 1 6-3 11-9 12-10 2-19-6-19-17 0-9 6-16 11-23 10-11 14-17 11-26Z"
+            fill={`url(#${gradientId}-flame)`}
+            style={{ filter: "drop-shadow(0 0 9px rgba(34,211,238,.65))" }}
+          />
+          <circle cx="180" cy="135" r="20" fill="rgba(8,6,16,.45)" stroke="rgba(255,255,255,.72)" strokeWidth="1.5" />
+          <path d="M176 125.5v19l15-9.5-15-9.5Z" fill="white" />
         </svg>
       </div>
       <h1
@@ -447,6 +510,11 @@ function CentralBrandHero({ compact = false }) {
       >
         SwiftStream
       </h1>
+      <div
+        className={`${compact ? "w-32 h-1" : "w-48 h-1.5"} -mt-1 rounded-full`}
+        style={{ background: "linear-gradient(90deg, #fb7185 0%, #a78bfa 50%, #22d3ee 100%)", boxShadow: "0 0 18px rgba(124,58,237,.45)" }}
+        aria-hidden="true"
+      />
       <p className={`${compact ? "text-sm" : "text-lg md:text-xl"} max-w-2xl`} style={{ color: "var(--muted)" }}>
         Pick a streaming app on the left, or hit Shuffle All to start swiping.
       </p>
@@ -467,7 +535,7 @@ function Home({ onPick, counts, logs, onLog }) {
     <div className="relative min-h-full md:h-full overflow-visible md:overflow-hidden">
       <HeroMesh />
 
-      <div className="lg:hidden px-5 pt-3 pb-5 max-w-xl mx-auto w-full">
+      <div className="md:hidden px-5 pt-3 pb-5 max-w-xl mx-auto w-full">
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
           <CentralBrandHero compact />
         </motion.div>
@@ -477,7 +545,7 @@ function Home({ onPick, counts, logs, onLog }) {
       </div>
 
       <motion.div
-        className="hidden md:flex relative z-10 h-full flex-col items-center justify-center px-4 lg:px-10 pb-[60px] text-center"
+        className="hidden md:flex relative z-10 min-h-[75vh] w-full flex-1 flex-col items-center justify-center p-8 text-center"
         variants={heroContainer}
         initial="hidden"
         animate="show"
@@ -486,7 +554,11 @@ function Home({ onPick, counts, logs, onLog }) {
           <CentralBrandHero />
         </motion.div>
 
-        <ul className="mt-10 grid gap-8 xl:grid-cols-3 w-full max-w-3xl">
+        <motion.div variants={heroItem} className="mt-7 w-full max-w-2xl">
+          <QuickCatalogSearch logs={logs} onLog={onLog} />
+        </motion.div>
+
+        <ul className="mt-7 grid gap-5 xl:grid-cols-3 w-full max-w-3xl">
           {steps.map(s => (
             <motion.li key={s.t} variants={heroItem} className="flex flex-col items-center text-center gap-2">
               <span
@@ -500,7 +572,7 @@ function Home({ onPick, counts, logs, onLog }) {
           ))}
         </ul>
 
-        <motion.p variants={heroItem} className="mt-8 text-sm" style={{ color: "var(--muted)" }}>
+        <motion.p variants={heroItem} className="mt-6 text-sm" style={{ color: "var(--muted)" }}>
           Tap any card to flip it for the synopsis, trailer, and streaming links.
         </motion.p>
       </motion.div>
@@ -862,7 +934,7 @@ function ActionBar({ onMatch, onInvite, onOpenAuth, streak = 0, user = null, onS
           onClick={onOpenAuth}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.96 }}
-          className="flex items-center gap-2 rounded-xl bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-lg transition hover:bg-indigo-500"
+          className="z-30 flex items-center gap-2 rounded-xl bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-indigo-500/20 transition hover:bg-indigo-500"
         >
           <UsersIcon />
           <span>Sign In</span>

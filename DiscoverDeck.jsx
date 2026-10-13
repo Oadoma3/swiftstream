@@ -721,31 +721,7 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
       </main>
 
       {/* Desktop-only Scoreboard Footer */}
-      <footer className="hidden md:block sticky bottom-0 px-5 pb-5 pt-1 md:max-w-lg md:mx-auto md:w-full">
-        <div
-          className="flex items-center justify-between rounded-3xl px-5 py-2.5"
-          style={{ background: "rgba(26,22,48,.88)", backdropFilter: "blur(12px)", boxShadow: "0 -8px 30px -12px rgba(0,0,0,.6), inset 0 0 0 1px rgba(255,255,255,.07)" }}
-        >
-          <Count value={seenCount} color="var(--seen)" label="Seen" />
-          <Count value={savedCount} color="var(--save)" label="Saved" />
-          <Count value={skipCount} color="var(--skip)" label="Not seen" />
-          <div className="flex flex-col items-center min-w-[64px]">
-            <AnimatePresence mode="wait" initial={false}>
-              <motion.span
-                key={streak}
-                className="display text-3xl leading-9"
-                style={{ fontWeight: 800, color: streak >= 2 ? "var(--seen)" : "var(--muted)" }}
-                initial={{ scale: streak >= 2 ? 1.7 : 1, rotate: streak >= 2 ? -8 : 0 }}
-                animate={{ scale: 1, rotate: 0 }}
-                transition={{ type: "spring", stiffness: 500, damping: 16 }}
-              >
-                {"\u00D7"}{streak}
-              </motion.span>
-            </AnimatePresence>
-            <span className="text-xs mt-0.5" style={{ color: "var(--muted)" }}>Seen streak</span>
-          </div>
-        </div>
-      </footer>
+      
     </div>
   );
 }
@@ -872,16 +848,9 @@ export default function DiscoverDeck({
   locked, onGate, onSwipe, swipes, user, onSignOut, onOpenMatch, onOpenInvite,
 }) {
   return (
-    <div className="h-full lg:flex">
-      <aside
-        className="hidden lg:flex flex-col w-72 xl:w-80 shrink-0 h-full px-5 pt-6 pb-16 overflow-y-auto no-scroll"
-        style={{ borderRight: "1px solid rgba(255,255,255,.07)" }}
-      >
-        <h2 className="display text-xl" style={{ fontWeight: 800 }}>Streaming apps</h2>
-        <p className="text-xs mt-1 mb-4" style={{ color: "var(--muted)" }}>Pick one or quick-search</p>
-        <ProviderList onPick={onPick} activeId={pid} counts={counts} logs={logs} onLog={onLog} />
-      </aside>
-      <div className="h-full lg:flex-1 min-w-0 flex flex-col">
+    <div className="h-full">
+      
+      <div className="h-full min-w-0 flex flex-col">
         <div className={provider ? "hidden lg:block" : "block"}>
           <ActionBar onMatch={onOpenMatch} onInvite={onOpenInvite} streak={swipes} user={user} onSignOut={onSignOut} />
         </div>

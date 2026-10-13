@@ -16,7 +16,7 @@ import AuthModal from "./AuthModal";
 
 function deriveItems(logsObj) {
   const entries = Object.entries(logsObj)
-    .flatMap(([id, l]) => l.map(e => ({ ...e.show, providerId: e.show.providerId || id, action: e.action, rating: e.rating, t: e.t })))
+    .flatMap(([id, l]) => l.map(e => ({ ...e.show, providerId: e.show.providerId || id, action: e.action, t: e.t })))
     .sort((a, b) => b.t - a.t);
   return {
     seen: dedupeByShow(entries.filter(e => e.action === "seen")),
@@ -237,13 +237,13 @@ export default function App() {
         next[k] = l.map(e => {
           if (e.show.id === item.id && (e.show.providerId || k) === provId) {
             found = true;
-            return { ...e, action: "seen", rating: "seen", t: Date.now() };
+            return { ...e, action: "seen", t: Date.now() };
           }
           return e;
         });
       });
       if (!found) {
-        next[provId] = [...(next[provId] || []), { show: item, action: "seen", rating: "seen", t: Date.now() }];
+        next[provId] = [...(next[provId] || []), { show: item, action: "seen", t: Date.now() }];
       }
       return next;
     });
@@ -364,8 +364,7 @@ export default function App() {
 
         {!booting && (
           <>
-            <div className="relative z-10 h-full flex flex-col md:flex-row">
-              <SideNav tab={tab} onTab={setTab} counts={navCounts} />
+            <div className="relative z-10 h-full flex flex-col max-w-[480px] mx-auto w-full bg-[#080610] sm:border-x sm:border-white/10 shadow-2xl overflow-hidden">
               <div className="flex-1 min-h-0 min-w-0 flex flex-col">
                 <div className={tab === "discover" && pid ? "hidden md:block" : "block"}><AuthBar user={user} onSignedOut={handleSignOut} /></div>
                 <div className="flex-1 min-h-0">
@@ -413,7 +412,7 @@ export default function App() {
                         kind="library"
                         items={seenItems}
                         onDiscover={() => setTab("discover")}
-                        onRate={rateShow}
+                        
                         onRemove={removeFromCollection}
                         guest={!user}
                         onAuth={() => openAuth("banner")}

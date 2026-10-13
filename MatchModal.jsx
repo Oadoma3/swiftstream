@@ -488,7 +488,7 @@ export function WatchMatchModal({ onClose, onMatches, initialCode = "", onClearC
             <ul className="mt-5 space-y-3 text-left">
               {matched.map(m => (
                 <li key={showKey(m)} className="flex gap-3 rounded-2xl p-3" style={{ background: "var(--surface)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,.08)" }}>
-                  <div className="relative overflow-hidden shrink-0 rounded-xl flex items-center justify-center display text-2xl" style={{ width: 64, height: 96, fontWeight: 800, color: "rgba(255,255,255,.35)", background: `linear-gradient(160deg, ${m.colors[0]}, ${m.colors[1]})` }}>
+                  <div className="relative overflow-hidden shrink-0 rounded-xl flex items-center justify-center display text-2xl" style={{ width: 64, height: 96, fontWeight: 800, color: "rgba(255,255,255,.35)", background: "linear-gradient(160deg, #16122b, #080610)" }}>
                     {m.posterUrl ? (
                       <img src={m.posterUrl} alt="" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
                     ) : (

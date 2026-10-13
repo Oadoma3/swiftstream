@@ -1,14 +1,6 @@
 // sync-catalog.mjs - Uncapped Full-Database Harvester: Pulls every available show across all 18 platforms
 import fs from "fs";
 
-const PALETTES = [
-  ["#b91c1c", "#1a0a1f"], ["#1d4ed8", "#0b1230"], ["#db2777", "#1f0a24"],
-  ["#4338ca", "#0f0a24"], ["#0ea5e9", "#3b0764"], ["#15803d", "#0c1a0e"],
-  ["#0369a1", "#081420"], ["#7e22ce", "#0f172a"], ["#d97706", "#2a1305"],
-  ["#0f766e", "#0a1a24"], ["#ca8a04", "#181109"], ["#dc2626", "#0f172a"],
-  ["#f59e0b", "#701a75"], ["#2563eb", "#0f172a"], ["#16a34a", "#052e2b"],
-  ["#991b1b", "#090d16"], ["#475569", "#0f172a"], ["#ea580c", "#1c1917"],
-];
 
 const PROVIDERS_META = [
   { id: "netflix",     name: "Netflix",      brand: "#E50914", accent: "#ff4d57", match: ["netflix"] },
@@ -145,7 +137,7 @@ function addShowToProv(prov, raw, customTitle = null, allMatchedNames = null) {
   const poster = (raw.image.medium || raw.image.original || "").replace(/^http:/, "https:");
   const seasons = Math.max(1, Math.min(20, Math.round((raw.weight || 65) / 24)));
   const episodes = Math.max(6, seasons * 10);
-  const colors = PALETTES[(nextId + prov.id.length) % PALETTES.length];
+  
   const platforms = allMatchedNames && allMatchedNames.length ? allMatchedNames : [prov.name];
 
   buckets[prov.id].push({
@@ -157,7 +149,6 @@ function addShowToProv(prov, raw, customTitle = null, allMatchedNames = null) {
     episodes,
     genres: genres.slice(0, 3),
     platforms,
-    colors,
     tagline: makeTagline(syn, genres, year, prov.name),
     synopsis: syn.slice(0, 240),
     posterUrl: poster,
@@ -237,13 +228,13 @@ PROVIDERS_META.forEach(p => {
 // Serialize using compact 1-line S(...) helper calls so 25,000+ shows stay compact & fast
 const providerBlocks = PROVIDERS_META.map(p => {
   const lines = buckets[p.id].map(s =>
-    `S(${s.id},${JSON.stringify(s.title)},${s.year},${s.communityScore},${s.seasons},${s.episodes},${JSON.stringify(s.genres)},${JSON.stringify(s.platforms)},${JSON.stringify(s.colors[0])},${JSON.stringify(s.colors[1])},${JSON.stringify(s.tagline)},${JSON.stringify(s.synopsis)},${JSON.stringify(s.posterUrl)})`
+    `S(${s.id},${JSON.stringify(s.title)},${s.year},${s.communityScore},${s.seasons},${s.episodes},${JSON.stringify(s.genres)},${JSON.stringify(s.platforms)},${JSON.stringify(s.tagline)},${JSON.stringify(s.synopsis)},${JSON.stringify(s.posterUrl)})`
   );
   return `  {\n    id: ${JSON.stringify(p.id)},\n    name: ${JSON.stringify(p.name)},\n    brand: ${JSON.stringify(p.brand)},\n    accent: ${JSON.stringify(p.accent)},\n    shows: [\n      ${lines.join(",\n      ")}\n    ]\n  }`;
 });
 
 const fileOut = `// data.js - Uncapped ${totalShows}-show catalog across all 18 streaming services.
-const S = (id, title, year, communityScore, seasons, episodes, genres, platforms, c1, c2, tagline, synopsis, posterUrl) => ({
+const S = (id, title, year, communityScore, seasons, episodes, genres, platforms, tagline, synopsis, posterUrl) => ({
   id, title, year, communityScore, seasons, episodes, genres,
   genre: genres.join(" \\u2022 "),
   platforms,
@@ -263,13 +254,6 @@ export const ACTIONS = {
   save: { label: "Save to watch", color: "var(--save)", key: "\\u2191" },
 };
 
-export const RATINGS = {
-  loved: { emoji: "\\uD83D\\uDD25", label: "Loved it", color: "#ff8a3d" },
-  mid:   { emoji: "\\uD83D\\uDE10", label: "Mid",      color: "#ffd23f" },
-  hated: { emoji: "\\uD83D\\uDDD1\\uFE0F", label: "Hated it", color: "#ff6b7a" },
-  seen:  { emoji: "\\u2713",       label: "Seen",     color: "#5ce1c4" },
-};
-export const RATING_CHOICES = ["loved", "mid", "hated"];
 
 export const ALL_SHOWS = PROVIDERS.flatMap(p => p.shows.map(s => ({ ...s, network: p.name, providerId: p.id })));
 
@@ -301,7 +285,7 @@ export function applyRemoteCatalog(rows) {
       genres: Array.isArray(r.genres) && r.genres.length ? r.genres : ["Drama"],
       genre: (Array.isArray(r.genres) && r.genres.length ? r.genres : ["Drama"]).join(" \\u2022 "),
       platforms: Array.isArray(r.platforms) && r.platforms.length ? r.platforms : [prov.name],
-      colors: Array.isArray(r.colors) && r.colors.length >= 2 ? r.colors : [prov.brand || "#4338ca", "#0f0a24"],
+      "#0f0a24"],
       tagline: r.tagline || "",
       synopsis: r.synopsis || "",
       posterUrl: r.poster_url || null,

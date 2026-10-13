@@ -87,7 +87,7 @@ export function PosterFace({ show, compact = false, badge = null, prominent = fa
     <div
       className={`absolute inset-0 overflow-hidden ${compact ? "rounded-[20px]" : "rounded-[26px]"}`}
       style={{
-        background: `radial-gradient(circle at 18% 12%, rgba(255,255,255,.28), transparent 42%), linear-gradient(160deg, ${c1}, ${c2})`,
+        background: "linear-gradient(160deg, #16122b 0%, #080610 100%)",
         boxShadow: "0 26px 50px -18px rgba(0,0,0,.75), inset 0 0 0 1px rgba(255,255,255,.14)",
       }}
     >
@@ -173,11 +173,11 @@ export function BackFace({ show, compact = false, onMarkSeen = null, onRemove = 
     <div
       className={`absolute inset-0 overflow-hidden flex flex-col ${compact ? "rounded-[20px]" : "rounded-[26px]"}`}
       style={{
-        background: `linear-gradient(165deg, ${c2} 0%, #0d0a1c 88%)`,
+        background: "linear-gradient(165deg, #1a1533 0%, #080610 88%)",
         boxShadow: "0 26px 50px -18px rgba(0,0,0,.75), inset 0 0 0 1px rgba(255,255,255,.16)",
       }}
     >
-      <div className="h-1.5 shrink-0" style={{ background: `linear-gradient(90deg, ${c1}, transparent)` }} />
+      <div className="h-1.5 shrink-0" style={{ background: "linear-gradient(165deg, #1a1533 0%, #080610 88%)" }} />
 
       <div className={`flex-1 min-h-0 flex flex-col ${compact ? "p-2.5" : "p-4 sm:p-5"}`}>
         {/* Header: Title + Flip */}

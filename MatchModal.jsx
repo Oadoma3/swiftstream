@@ -89,7 +89,7 @@ export function WatchMatchModal({ onClose, onMatches, initialCode = "" }) {
   const [dir, setDir] = useState("seen");
   const chanRef = useRef(null);
 
-  const fullLink = `https://swiftstream-seven.vercel.app/?match=${code}`;
+  const fullLink = `https://swiftstream-seven.vercel.app/?room=${code}`;
 
   const scope = useMemo(() => ALL_SHOWS.filter(s => !provId || s.providerId === provId), [provId]);
   const genreOptions = useMemo(() => [...new Set(scope.flatMap(s => s.genres))].sort(), [scope]);

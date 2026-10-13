@@ -1,10 +1,10 @@
 // DiscoverDeck.jsx - Zero-lag O(1) swipe queue, instant catalog quick-search, genre filter pills, and mobile haptics.
 import { useState, useEffect, useCallback, useMemo, useRef, useContext, useDeferredValue } from "react";
 import { motion, AnimatePresence, useAnimationControls } from "framer-motion";
-import { ACTIONS, ALL_SHOWS, PROVIDERS, RATINGS, RATING_CHOICES } from "./data";
-import { BookmarkIcon, CheckIcon, LinkIcon, ProviderIcon, ToastCtx, UndoIcon, UsersIcon, XIcon } from "./ui";
+import { ACTIONS, ALL_SHOWS, PROVIDERS } from "./data";
+import { BookmarkIcon, CheckIcon, LinkIcon, ProviderIcon, Toast } from "./ui";
 import { PosterFace, SwipeCard, launchStream } from "./Card";
-import { shuffle } from "./utils";
+import { RATINGS, RATING_CHOICES, shuffle } from "./utils";
 
 const haptic = (ms = 12) => {
   try { if (typeof navigator !== "undefined" && navigator.vibrate) navigator.vibrate(ms); } catch { /* ignore */ }

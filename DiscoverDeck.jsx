@@ -710,10 +710,10 @@ function Sorter({ provider, log, onLog, onHome, locked = false, onGate, onSwipe 
             </div>
 
             <div className="flex items-start justify-center w-full" style={{ minHeight: 86 }}>
-              <div className="flex items-start justify-center gap-6">
-                <ActionButton action="skip" onClick={() => requestAction("skip")}><XIcon /></ActionButton>
-                <ActionButton action="save" onClick={() => requestAction("save")} size={56}><BookmarkIcon /></ActionButton>
-                <ActionButton action="seen" onClick={() => requestAction("seen")}><CheckIcon /></ActionButton>
+              <div className="flex items-center justify-center gap-6 pb-2">
+                <div className="mt-8"><ActionButton action="skip" onClick={() => requestAction("skip")}><XIcon /></ActionButton></div>
+                <div className="mb-8"><ActionButton action="save" onClick={() => requestAction("save")} size={58}><BookmarkIcon /></ActionButton></div>
+                <div className="mt-8"><ActionButton action="seen" onClick={() => requestAction("seen")}><CheckIcon /></ActionButton></div>
               </div>
             </div>
           </>

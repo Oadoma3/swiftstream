@@ -387,12 +387,19 @@ export function WatchMatchModal({ onClose, onMatches, initialCode = "", onClearC
           <motion.button
             onClick={() => begin(round)}
             disabled={pool.length === 0}
+            animate={friendConnected ? { scale: [1, 1.03, 1], boxShadow: ["0 0 0 0 rgba(92,225,196,0)", "0 0 20px 4px rgba(92,225,196,0.4)", "0 0 0 0 rgba(92,225,196,0)"] } : {}}
+            transition={friendConnected ? { duration: 1.5, repeat: Infinity, ease: "easeInOut" } : {}}
             whileHover={{ scale: pool.length ? 1.02 : 1 }}
             whileTap={{ scale: pool.length ? 0.96 : 1 }}
-            className="w-full rounded-full py-3.5 display text-lg"
-            style={{ background: "var(--text)", color: "var(--bg)", fontWeight: 800, opacity: pool.length === 0 ? 0.4 : 1 }}
+            className="w-full rounded-full py-3.5 display text-lg transition-colors"
+            style={{ 
+              background: friendConnected ? "var(--seen)" : "var(--text)", 
+              color: "var(--bg)", 
+              fontWeight: 800, 
+              opacity: pool.length === 0 ? 0.4 : 1 
+            }}
           >
-            Start matching ({deckSize} shows)
+            {friendConnected ? "Ready \u2014 Start matching" : `Start matching (${deckSize} shows)`}
           </motion.button>
         </div>
       )}
